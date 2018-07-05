@@ -4,6 +4,7 @@
   <w-ico-status/>
   <w-atention/>
   <w-what-is/>
+  <w-faq/>
 </section>
 </template>
 
@@ -13,6 +14,7 @@ import wDescription from '@/components/WoonklyHero'
 import wIcoStatus from '@/components/WoonklyIcoStatus'
 import wAtention from '@/components/WoonklyAtention'
 import wWhatIs from '@/components/WoonklyWhat'
+import wFaq from '@/components/WoonklyFaq'
 
 export default {
   name: 'home',
@@ -20,7 +22,8 @@ export default {
     wDescription,
     wIcoStatus,
     wAtention,
-    wWhatIs
+    wWhatIs,
+    wFaq
   },
   mounted () {
     console.log('this shit is mounted')
