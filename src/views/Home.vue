@@ -5,6 +5,7 @@
   <w-atention/>
   <w-what-is/>
   <w-tv/>
+  <w-faq/>
 </section>
 </template>
 
@@ -15,6 +16,8 @@ import wIcoStatus from '@/components/WoonklyIcoStatus'
 import wAtention from '@/components/WoonklyAtention'
 import wWhatIs from '@/components/WoonklyWhat'
 import wTv from '@/components/WoonklyTv'
+import wFaq from '@/components/WoonklyFaq'
+
 
 export default {
   name: 'home',
@@ -23,7 +26,8 @@ export default {
     wIcoStatus,
     wAtention,
     wWhatIs,
-    wTv
+    wTv,
+    wFaq
   },
   mounted () {
     console.log('this shit is mounted')
