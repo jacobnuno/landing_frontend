@@ -12,7 +12,13 @@ In order to run this project locally you must follow the next steps:
  npm install
 
  // Run dev server
- npm serve
+ npm run serve
+
+ // Or if you prefer yarn
+ yarn install
+
+ // Run development server
+ yarn serve
  ````
 *If you didn't change the default configuration the project stars at: http://localhost:8080/*
 
