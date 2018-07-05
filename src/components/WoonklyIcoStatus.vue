@@ -2,7 +2,7 @@
 <section id="woonkly-ico-status" class="section">
   <div class="columns is-mobile is-multiline">
 
-    <div class="column is-12 has-text-centered">
+    <div class="column is-12 has-text-centered phase">
       <strong>
         Fase <span>2</span> (40% Bonus)
       </strong>
@@ -44,6 +44,14 @@ export default {
 
 <style lang="scss">
 #woonkly-ico-status {
+  background: #06062c;
+
+  .phase {
+    strong {
+      color: white;
+    }
+  }
+
   div.progress {
     height: 3em;
   }
@@ -59,12 +67,12 @@ export default {
 
     .time-digit {
       text-align: center;
-      line-height: 1.5;
+      line-height: 2;
       border-radius: 50%;
       border: 2px #08c2ee solid;
       display: inline-block;
-      height: 2em;
-      width: 2em;
+      height: 2.5em;
+      width: 2.5em;
       position: relative;
       box-shadow: 0px 0px 45px 4px #08c2ee;
       text-shadow: 0px 0px 16px #08c2ee;
