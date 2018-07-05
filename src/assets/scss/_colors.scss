@@ -1,0 +1,6 @@
+$woonkly-background-dark: #05003b;
+$woonkly-background-light: #04013e;
+
+:root {
+  --woonkly-gradient-1: linear-gradient(to rigth, #{$woonkly-background-dark} 0%, #{$woonkly-background-light} 100%);
+}

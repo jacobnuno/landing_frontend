@@ -1,18 +1,35 @@
 <template>
-  <div class="home">
-    <img src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<section id="woonkly-home">
+  <w-description/>
+  <w-ico-status/>
+  <w-atention/>
+  <w-what-is/>
+</section>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import wDescription from '@/components/WoonklyHero'
+import wIcoStatus from '@/components/WoonklyIcoStatus'
+import wAtention from '@/components/WoonklyAtention'
+import wWhatIs from '@/components/WoonklyWhat'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    wDescription,
+    wIcoStatus,
+    wAtention,
+    wWhatIs
+  },
+  mounted () {
+    console.log('this shit is mounted')
   }
 }
 </script>
+
+<style>
+#woonkly-home {
+  color: white;
+}
+</style>
