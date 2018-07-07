@@ -9,12 +9,16 @@
     </div>
 
     <div class="column is-12 progress">
-      <progress class="progress is-large" value="60" max="100">60%</progress>
+      <w-progress value="90" />
+      <!-- <progress class="progress is-large" value="60" max="100">60%</progress> -->
     </div>
 
-    <w-button class="column">Compra WNK con 30% bonus</w-button>
-
-    <w-button class="column">Whitepaper Woonkly</w-button>
+    <div class="column has-text-centered">
+      <w-button>Compra WNK con 30% bonus</w-button>
+    </div>
+    <div class="column has-text-centered">
+      <w-button>Whitepaper Woonkly</w-button>
+    </div>
 
     <div class="column is-12">
       <div class="counter">
@@ -32,11 +36,18 @@
 </template>
 
 <script>
+import { counter } from '@/assets/utils/woonklyCounter'
+
+import wProgress from '@/components/shared/WoonklyProgress'
 import wButton from '@/components/shared/WoonklyButton'
 
 export default {
+  mounted () {
+    counter()
+  },
   components: {
-    wButton
+    wButton,
+    wProgress
   }
 }
 </script>
