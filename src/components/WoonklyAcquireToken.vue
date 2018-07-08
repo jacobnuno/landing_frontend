@@ -1,7 +1,12 @@
 <template>
     <section id="woonkly-ac-token" class="section">
-        <h3 class="title is-4 has-text-centered">ADQUIRIR TOKENS</h3>
-        <p class="brief">
+
+        <div class="container-tkn">
+            <img src="/img/icons/linea_luz.svg" width="40%" class="linealuz-tkn">
+            <h3 class="title is-4 has-text-centered">ADQUIRIR TOKENS</h3>
+        </div>
+        
+        <p class="text-tkn">
             Con el objetivo de premiar la atención de las
             personas cuando ven vídeos o interactúan con
             el contenido , hemos creado nuestra
@@ -10,12 +15,19 @@
             woonks para repartirlos entre las personas que
             vean, compartan e interactuen con su
         </p>
+        <br>
         <ul>
-            <li v-for="(list, listIndex) in lists" :key="listIndex">
-                <h1 class="title is-5">{{list.title}}</h1>
-                {{list.content}}
+            <li v-for="(list, listIndex) in lists" :key="listIndex" class="list-tkn">
+                <img src="/img/icons/group.svg" width="30px" class="img-tkn">
+                <div class="des-tkn">
+                    <h1 class="title is-5">{{list.title}}</h1>
+                    {{list.content}}
+                </div>
             </li>
         </ul>
+        <img src="/img/icons/linea_luz.svg" width="45%" class="linealuzz-tkn">
+        <img src="/img/icons/ilustracion.svg" width="40%" class="ilustracion-tkn">
+
     </section>
 </template>
 
@@ -93,9 +105,48 @@ export default {
     margin-top: 1.5em;
   }
 }
-ul {
-  margin: 20px;
-  list-style-image: url("/img/icons/group.svg");
+
+.list-tkn {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+
+.img-tkn{
+    margin: 10px;
 }
+
+.text-tkn{
+    font-size: 1em;
+    margin: 10px;
+}
+
+.des-tkn{
+    font-size: 1.1em;
+}
+
+.container-tkn{
+    align-items: center;
+}
+
+.linealuz-tkn{
+    position: absolute;
+    transform: translate(-35%, -50%);
+    z-index: 1;
+}
+
+.ilustracion-tkn{
+    position: absolute;
+    transform: translate( 150%, -90%);
+    z-index: 2;
+}
+.linealuzz-tkn{
+    position: absolute;
+    transform: translate(105%, -220%);
+    z-index: 3;
+}
+
+
+
 </style>
 
