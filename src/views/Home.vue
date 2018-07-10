@@ -5,6 +5,7 @@
   <w-atention/>
   <w-what-is/>
   <w-tv/>
+  <w-team/>
   <w-ac-token/>
   <w-dis-token/>
   <w-faq/>
@@ -20,6 +21,7 @@ import wIcoStatus from '@/components/WoonklyIcoStatus'
 import wAtention from '@/components/WoonklyAtention'
 import wWhatIs from '@/components/WoonklyWhat'
 import wTv from '@/components/WoonklyTv'
+import wTeam from '@/components/woonkly-team/WoonklyTeam'
 import wFaq from '@/components/WoonklyFaq'
 import wQuestion from '@/components/WoonklyQuestion'
 import wFooter from '@/components/WoonklyFooter'
@@ -28,13 +30,14 @@ import wDisToken from '@/components/WoonklyDistributionToken'
 
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     wDescription,
     wIcoStatus,
     wAtention,
     wWhatIs,
     wTv,
+    wTeam,
     wFaq,
     faq,
     wQuestion,

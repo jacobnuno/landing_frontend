@@ -1,17 +1,26 @@
 <template>
   <button class="woonkly-button">
-    <slot/>
+    <span class="inner-border">
+      <slot/>
+    </span>
   </button>
 </template>
 
 <style lang="scss">
 .woonkly-button {
-  margin: 0 0.3em;
-  background: #06062c;
-  color: #00d3ff;
-  line-height: 1.5em;
-  min-height: 1.5em;
-  border: 2px #00d3ff solid;
-  border-radius: 1.5em;
+  border: none;
+  background: none;
+  color: var(--woonkly-light-blue);
+  padding: 0.5em;
+  border: 1px var(--woonkly-light-blue-opacity) solid;
+  cursor: pointer;
+  border-radius: 3em;
+
+  .inner-border {
+    border-radius: inherit;
+    padding: 0.9em;
+    display: block;
+    border: 1.5px var(--woonkly-light-blue) solid;
+  }
 }
 </style>
