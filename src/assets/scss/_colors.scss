@@ -3,11 +3,13 @@ $woonkly-light-blue: #00d3ff;
 $woonkly-dark-blue: #02004a;
 // w/opacity
 $woonkly-light-blue-opacity: rgba(0, 211, 255, 0.5);
+$woonkly-light-blue-quarter-opacity: rgba(0, 211, 255, 0.25);
 
 :root {
   --woonkly-black-blue: #{$woonkly-black-blue};
   --woonkly-light-blue: #{$woonkly-light-blue};
   --woonkly-dark-blue: #{$woonkly-dark-blue};
   --woonkly-light-blue-opacity: #{$woonkly-light-blue-opacity};
+  --woonkly-light-blue-quarter-opacity: #{$woonkly-light-blue-quarter-opacity};
   --woonkly-gradient-1: linear-gradient(to rigth, #{$woonkly-dark-blue} 0%, #{$woonkly-light-blue} 100%);
 }
