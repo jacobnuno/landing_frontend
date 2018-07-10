@@ -5,6 +5,8 @@
   <w-atention/>
   <w-what-is/>
   <w-tv/>
+  <w-ac-token/>
+  <w-dis-token/>
   <w-faq/>
 </section>
 </template>
@@ -17,6 +19,8 @@ import wAtention from '@/components/WoonklyAtention'
 import wWhatIs from '@/components/WoonklyWhat'
 import wTv from '@/components/WoonklyTv'
 import wFaq from '@/components/WoonklyFaq'
+import wAcToken from '@/components/WoonklyAcquireToken'
+import wDisToken from '@/components/WoonklyDistributionToken'
 
 
 export default {
@@ -27,7 +31,9 @@ export default {
     wAtention,
     wWhatIs,
     wTv,
-    wFaq
+    wFaq,
+    wAcToken,
+    wDisToken
   },
   mounted () {
     console.log('this shit is mounted')
