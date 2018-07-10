@@ -1,0 +1,141 @@
+<template>
+  <section id="woonkly-question" class="section">
+    <span class="w-span">DUDAS</span>
+
+    <div class="title is-size-1-desktop is-size-5-mobile is-uppercase">DUDAS</div>
+
+    <div class="line"></div>
+
+    <div class="columns is-mobile">
+      <p class="is-size-7-mobile is-size-4-tablet space column is-12-mobile is-6-desktop is-offset-3-desktop">
+          Si quieres más información estamos a tu disposición para resolverte las dudas que puedan sugerirte.
+      </p>
+    </div>
+
+    <div class="columns is-mobile woonkly-container">
+      <div class="column is-6-mobile is-one-third-desktop is-offset-2-desktop">
+        <fai :icon="['fas', 'envelope']" class="icons" />
+        <span class="is-size-7-mobile is-size-5-tablet woonkly-span">info@woonkly.com</span>
+      </div>
+      <div class="column is-6-mobile is-one-third-desktop">
+        <fai :icon="['fab', 'telegram-plane']" class="icons" />
+        <a href="https://t.me/joinchat/Hu8281CBxcNDycg10WZKLw">
+          <span class="is-size-7-mobile is-size-5-tablet woonkly-span">Únete al grupo de Telegram</span>
+        </a>
+      </div>
+    </div>
+
+    <w-input w-placeholder="Tu Nombre"></w-input>
+    <w-input w-placeholder="Tu Email"></w-input>
+    <w-input w-placeholder="Tu Mensaje"></w-input>
+    <button type="button" class="w-button has-text-uppercase">Contactar ahora</button>
+    <img src="/img/icons/gradient-circle1.svg" id="gradient-circle1">
+
+  </section>
+</template>
+
+<script>
+import wInput from '@/components/shared/WoonklyInput'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTelegramPlane } from '@fortawesome/fontawesome-free-brands'
+import { faEnvelope } from '@fortawesome/fontawesome-free-solid'
+library.add(faEnvelope)
+library.add(faTelegramPlane)
+
+export default {
+  components: {
+    wInput
+  }
+}
+</script>
+
+<style lang="scss">
+  #woonkly-question {
+    background: #0a0830;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    & > div.title:nth-of-type(1) {
+      margin: 3em 0 0 0;
+    }
+
+    .line {
+      height: 25px;
+      width: 1px;
+      background-color: #00d2ff;
+      margin: 10px auto;
+    }
+
+    .space {
+      margin-bottom: 20px;
+    }
+
+    .woonkly-container {
+      font-size: smaller;
+      line-height: 1;
+
+      .icons {
+        color: #00d2ff;
+        margin-right: 5px;
+      }
+
+      .woonkly-span {
+        color: white;
+      }
+    }
+
+    .w-button {
+      margin:3em 0.3em;
+      background: #06062c;
+      color: #00d3ff;
+      line-height: 1.5em;
+      height: 4.5em;
+      width: 14em;
+      border: 1px #00d3ff solid;
+      border-radius: 3em;
+      font-size: .5rem;
+    }
+
+    #gradient-circle1 {
+      position: absolute;
+      bottom: 1.5em;
+      transform: translateX(35%);
+    }
+
+    .w-span {
+      font-weight: bold;
+      position: absolute;
+      right: 0;
+      left: 0;
+      display: inline-block;
+      opacity: 0.06;
+      font-size: 6.2em;
+      top: 0;
+      line-height: 1.4;
+    }
+  }
+  @media only screen and (min-width: 769px) {
+    #woonkly-question > * {
+      margin-top: 4em;
+    }
+    #woonkly-question {
+      .svg-inline--fa {
+        font-size: 3em;
+      }
+      .w-span {
+        font-size: 16em;
+        line-height: 1.9;
+        margin-top: 0;
+      }
+      .line {
+        height: 4em;
+      }
+      #gradient-circle1 {
+        top: 50em;
+        width: 24em;
+        transform: translateX(65%);
+      }
+    }
+  }
+</style>

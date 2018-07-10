@@ -8,6 +8,8 @@
   <w-ac-token/>
   <w-dis-token/>
   <w-faq/>
+  <w-question/>
+  <w-footer/>
 </section>
 </template>
 
@@ -19,6 +21,8 @@ import wAtention from '@/components/WoonklyAtention'
 import wWhatIs from '@/components/WoonklyWhat'
 import wTv from '@/components/WoonklyTv'
 import wFaq from '@/components/WoonklyFaq'
+import wQuestion from '@/components/WoonklyQuestion'
+import wFooter from '@/components/WoonklyFooter'
 import wAcToken from '@/components/WoonklyAcquireToken'
 import wDisToken from '@/components/WoonklyDistributionToken'
 
@@ -32,8 +36,11 @@ export default {
     wWhatIs,
     wTv,
     wFaq,
+    faq,
+    wQuestion,
+    wFooter,
     wAcToken,
-    wDisToken
+
   },
   mounted () {
     console.log('this shit is mounted')
