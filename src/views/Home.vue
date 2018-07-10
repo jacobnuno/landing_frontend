@@ -5,6 +5,7 @@
   <w-atention/>
   <w-what-is/>
   <w-tv/>
+  <w-team/>
 </section>
 </template>
 
@@ -15,15 +16,17 @@ import wIcoStatus from '@/components/WoonklyIcoStatus'
 import wAtention from '@/components/WoonklyAtention'
 import wWhatIs from '@/components/WoonklyWhat'
 import wTv from '@/components/WoonklyTv'
+import wTeam from '@/components/woonkly-team/WoonklyTeam'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     wDescription,
     wIcoStatus,
     wAtention,
     wWhatIs,
-    wTv
+    wTv,
+    wTeam
   },
   mounted () {
     console.log('this shit is mounted')
