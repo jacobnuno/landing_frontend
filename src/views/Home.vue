@@ -7,14 +7,14 @@
   <w-tv/>
   <w-team/>
   <w-ac-token/>
-  <w-dis-token/>
+  <w-token-distribution/>
   <w-faq/>
   <w-question/>
   <w-footer/>
 </section>
 </template>
 
-<script>
+<script>  
 // @ is an alias to /src
 import wDescription from '@/components/WoonklyHero'
 import wIcoStatus from '@/components/WoonklyIcoStatus'
@@ -26,7 +26,7 @@ import wFaq from '@/components/WoonklyFaq'
 import wQuestion from '@/components/WoonklyQuestion'
 import wFooter from '@/components/WoonklyFooter'
 import wAcToken from '@/components/WoonklyAcquireToken'
-import wDisToken from '@/components/WoonklyDistributionToken'
+import wTokenDistribution from '@/components/WoonklyDistributionToken'
 
 
 export default {
@@ -39,11 +39,10 @@ export default {
     wTv,
     wTeam,
     wFaq,
-    faq,
     wQuestion,
     wFooter,
     wAcToken,
-
+    wTokenDistribution
   },
   mounted () {
     console.log('this shit is mounted')
