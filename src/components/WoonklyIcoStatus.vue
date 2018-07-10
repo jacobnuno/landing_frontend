@@ -9,7 +9,7 @@
     </div>
 
     <div class="column is-12 progress">
-      <w-progress value="90" />
+      <w-progress :value="90" />
       <!-- <progress class="progress is-large" value="60" max="100">60%</progress> -->
     </div>
 
