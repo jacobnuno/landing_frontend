@@ -1,7 +1,7 @@
 <template>
   <div class="columns is-mobile">
-    <div class="woonkly-input column is-12">
-      <input type="text" class="w-input" :placeholder="wPlaceholder">
+    <div class="woonkly-input column is-12-mobile is-6-desktop is-offset-3-desktop">
+      <input type="text" class="w-input is-size-6-mobile is-size-4-tablet" :placeholder="wPlaceholder">
     </div>
   </div>
 </template>

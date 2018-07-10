@@ -1,15 +1,17 @@
 <template lang="html">
-  <div class="wrap-collabsible">
-    <input :id="collapsibleId" v-model="isOpened" class="toggle" type="checkbox">
-    <label :for="collapsibleId" class="lbl-toggle">
-      <span><slot name="label"/></span>
-      <fai icon="chevron-down" :class="['chevron', {'rotated':isOpened}]"/>
-    </label>
-    <div class="collapsible-content">
-      <div class="content-inner">
-        <p class="has-text-left w-p">
-          <slot name="content"/>
-        </p>
+  <div class="columns is-mobile">
+    <div class="wrap-collabsible column is-12-mobile is-8-tablet is-offset-2-tablet">
+      <input :id="collapsibleId" v-model="isOpened" class="toggle" type="checkbox">
+      <label :for="collapsibleId" class="lbl-toggle">
+        <span><slot name="label"/></span>
+        <fai icon="chevron-down" :class="['chevron', {'rotated':isOpened}]"/>
+      </label>
+      <div class="collapsible-content">
+        <div class="content-inner">
+          <p class="has-text-left w-p">
+            <slot name="content"/>
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -39,7 +41,7 @@ export default {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    font-size: .7rem;
+    font-size: .7em;
     text-align: center;
     padding: 1rem;
     color: white;
@@ -87,6 +89,14 @@ export default {
 
     &.rotated {
       transform: rotate(-180deg);
+    }
+  }
+  @media only screen and (min-width: 769px) {
+    .lbl-toggle {
+      font-size: 1.8em;
+    }
+    .w-p {
+      font-size: 1.4em;
     }
   }
 </style>

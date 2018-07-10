@@ -21,7 +21,7 @@ export default {
     padding: .5em;
     display: inline-block;
     position: relative;
-    width: 150px;
+    width: 10em;
 
     .text-background {
       font-weight: bold;
@@ -46,6 +46,11 @@ export default {
     &.blue-purple {
       background: linear-gradient(to right, #4582fd 30%, #ab23fa);
       border-radius: .2em;
+    }
+  }
+  @media only screen and (min-width: 769px) {
+    .woonkly-gradient-button {
+      font-size: 2em;
     }
   }
 </style>

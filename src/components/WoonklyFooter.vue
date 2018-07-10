@@ -15,7 +15,7 @@
         </a>
     </div>
     <div class="w-div">
-      <p class="is-size-7">
+      <p class="is-size-7-mobile is-size-5-tablet">
         Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Políticas de privacidad |
       </p>
     </div>
@@ -56,6 +56,13 @@ export default {
 
     & > p {
       padding: 1em;
+    }
+  }
+}
+@media only screen and (min-width: 769px) {
+  #woonkly-footer {
+    .svg-inline--fa {
+      font-size: 2em;
     }
   }
 }

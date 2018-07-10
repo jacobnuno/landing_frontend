@@ -1,13 +1,18 @@
 <template>
   <section id="woonkly-faq" class="section">
+    <div>
+      <span class="w-span">PREGUNTAS</span>
+    </div>
 
-    <div class="title is-5 has-text-uppercase">Preguntas Frecuentes</div>
+    <div class="title is-size-1-desktop is-size-5-mobile is-uppercase">Preguntas Frecuentes</div>
 
     <div class="line"></div>
 
-    <p class="is-small">
+    <div class="columns is-mobile is-multiline">
+      <div class="column is-12-mobile is-half-tablet is-half-desktop is-offset-3-tablet is-offset-3-desktop is-small is-size-5-desktop">
         Si tienes dudas aquí te las intentaremos resolver, y si no encuentras la solución a tu pregunta siempre puedes contactarnos a contacto@woonkly.com
-    </p>
+      </div>
+    </div>
 
     <w-gradient-button class="green-blue has-text-uppercase" back-text="USU">
       Usuarios
@@ -48,10 +53,6 @@
       </template>
     </w-collabsible>
 
-    <div>
-      <span class="w-span">PRE</span>
-    </div>
-
   </section>
 </template>
 
@@ -73,7 +74,7 @@ export default {
   text-align: center;
   position: relative;
 
-  & > div.title:nth-of-type(1) {
+  & > div.title:nth-of-type(2) {
     margin: 3em 0 0 0;
   }
 
@@ -98,7 +99,26 @@ export default {
     opacity: 0.06;
     font-size: 12em;
     top: 0;
-    line-height: 1.1;
+    line-height: .8;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #woonkly-faq {
+    .w-span {
+      font-size: 19em;
+      line-height: 1.5;
+    }
+    .woonkly-gradient-button {
+      margin: 3em 1em 3em 1em;
+    }
+    .line {
+        height: 4em;
+        margin-bottom: 4em;
+    }
+    & > div.title:nth-of-type(2) {
+      margin-top: 3em;
+    }
   }
 }
 </style>

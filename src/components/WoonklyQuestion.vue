@@ -1,23 +1,26 @@
 <template>
   <section id="woonkly-question" class="section">
+    <span class="w-span">DUDAS</span>
 
-    <h3 class="title is-5">DUDAS</h3>
+    <div class="title is-size-1-desktop is-size-5-mobile is-uppercase">DUDAS</div>
 
     <div class="line"></div>
 
-    <p class="is-small space">
-        Si quieres más información estamos a tu disposición para resolverte las dudas que puedan sugerirte.
-    </p>
+    <div class="columns is-mobile">
+      <p class="is-size-7-mobile is-size-4-tablet space column is-12-mobile is-6-desktop is-offset-3-desktop">
+          Si quieres más información estamos a tu disposición para resolverte las dudas que puedan sugerirte.
+      </p>
+    </div>
 
     <div class="columns is-mobile woonkly-container">
-      <div class="column is-6">
-        <fai :icon="['far', 'envelope']" class="icons" />
-        <span class="is-small woonkly-span">info@woonkly.com</span>
+      <div class="column is-6-mobile is-one-third-desktop is-offset-2-desktop">
+        <fai :icon="['fas', 'envelope']" class="icons" />
+        <span class="is-size-7-mobile is-size-5-tablet woonkly-span">info@woonkly.com</span>
       </div>
-      <div class="column is-6">
+      <div class="column is-6-mobile is-one-third-desktop">
         <fai :icon="['fab', 'telegram-plane']" class="icons" />
         <a href="https://t.me/joinchat/Hu8281CBxcNDycg10WZKLw">
-          <span class="is-small woonkly-span">Únete al grupo de Telegram</span>
+          <span class="is-size-7-mobile is-size-5-tablet woonkly-span">Únete al grupo de Telegram</span>
         </a>
       </div>
     </div>
@@ -28,16 +31,14 @@
     <button type="button" class="w-button has-text-uppercase">Contactar ahora</button>
     <img src="/img/icons/gradient-circle1.svg" id="gradient-circle1">
 
-    <span class="w-span">DUDAS</span>
-
   </section>
 </template>
 
 <script>
 import wInput from '@/components/shared/WoonklyInput'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faEnvelope } from '@fortawesome/fontawesome-free-regular'
 import { faTelegramPlane } from '@fortawesome/fontawesome-free-brands'
+import { faEnvelope } from '@fortawesome/fontawesome-free-solid'
 library.add(faEnvelope)
 library.add(faTelegramPlane)
 
@@ -67,7 +68,7 @@ export default {
     }
 
     .space {
-      margin: 20px;
+      margin-bottom: 20px;
     }
 
     .woonkly-container {
@@ -112,6 +113,29 @@ export default {
       font-size: 6.2em;
       top: 0;
       line-height: 1.4;
+    }
+  }
+  @media only screen and (min-width: 769px) {
+    #woonkly-question > * {
+      margin-top: 4em;
+    }
+    #woonkly-question {
+      .svg-inline--fa {
+        font-size: 3em;
+      }
+      .w-span {
+        font-size: 16em;
+        line-height: 1.9;
+        margin-top: 0;
+      }
+      .line {
+        height: 4em;
+      }
+      #gradient-circle1 {
+        top: 50em;
+        width: 24em;
+        transform: translateX(65%);
+      }
     }
   }
 </style>
