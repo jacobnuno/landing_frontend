@@ -8,6 +8,7 @@
   <w-team/>
   <w-ac-token/>
   <w-dis-token/>
+  <w-allies/>
   <w-faq/>
   <w-question/>
   <w-footer/>
@@ -27,6 +28,7 @@ import wQuestion from '@/components/WoonklyQuestion'
 import wFooter from '@/components/WoonklyFooter'
 import wAcToken from '@/components/WoonklyAcquireToken'
 import wDisToken from '@/components/WoonklyDistributionToken'
+import wAllies from '@/components/WoonklyAllies'
 
 
 export default {
@@ -39,10 +41,11 @@ export default {
     wTv,
     wTeam,
     wFaq,
-    faq,
     wQuestion,
     wFooter,
     wAcToken,
+    wDisToken,
+    wAllies
 
   },
   mounted () {
