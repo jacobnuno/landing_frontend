@@ -5,6 +5,7 @@
   <w-atention/>
   <w-what-is/>
   <w-tv/>
+  <w-Benefits/>
   <w-team/>
   <w-ac-token/>
   <w-token-distribution/>
@@ -23,6 +24,7 @@ import wWhatIs from '@/components/WoonklyWhat'
 import wTv from '@/components/WoonklyTv'
 import wTeam from '@/components/woonkly-team/WoonklyTeam'
 import wFaq from '@/components/WoonklyFaq'
+import wBenefits from '@/components/woonkly-benefits/WoonklyBenefits'
 import wQuestion from '@/components/WoonklyQuestion'
 import wFooter from '@/components/WoonklyFooter'
 import wAcToken from '@/components/WoonklyAcquireToken'
@@ -37,12 +39,15 @@ export default {
     wAtention,
     wWhatIs,
     wTv,
+    wFaq,
+    wBenefits,
     wTeam,
     wFaq,
     wQuestion,
     wFooter,
     wAcToken,
     wTokenDistribution
+
   },
   mounted () {
     console.log('this shit is mounted')
