@@ -6,7 +6,7 @@
       </div>
       <figcaption class="has-text-centered">
         <span class="w-name is-size-5">{{member.name}}</span>
-        <span class="w-positon is-size-7 has-text-weight-light">Presidente & CEO</span>
+        <span class="w-positon is-size-7 has-text-weight-light">{{member.position}}</span>
       </figcaption>
     </figure>
     <div class="icons is-flex">
@@ -86,9 +86,8 @@ export default {
     }
     figcaption {
       margin-top: 1.4em;
-      .w-name {
-        line-height: 0.7;
-      }
+      line-height: 1;
+      
       .w-name, .w-position {
         display: block;
       }
