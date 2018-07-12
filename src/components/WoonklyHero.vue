@@ -34,6 +34,7 @@
   }
 
   .wrapper {
+    position: relative;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
