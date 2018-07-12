@@ -5,12 +5,31 @@
     <div class="black-line"></div>
 
     <img src="/img/icons/gradient-circle1.svg" id="gradient-circle-left">
-    <img src="/img/icons/plugandplay.png">
-    <img src="/img/icons/unitedcoin.png">
+    <figure>
+      <img id="plugandplay" src="/img/icons/plugandplay.png">
+    </figure>
+    <figure>
+      <img id="unitedcoin" src="/img/icons/unitedcoin.png">
+    </figure>
 
-    <span class="is-size-1-desktop is-size-5-mobile">VISTO EN</span>
+    <span class="is-size-1-desktop is-size-5-mobile has-text-centered">VISTO EN</span>
 
     <div class="black-line"></div>
+
+    <div class="seen-on">
+      <figure>
+        <img id="forbes" src="/img/icons/forbes.png">
+      </figure>
+      <figure>
+          <img id="cointelegraph" src="/img/icons/cointelegraph.png">
+      </figure>
+      <figure>
+        <img id="wbf" src="/img/icons/wbf.png">
+      </figure>
+      <figure>
+        <img id="bef-logo" src="/img/icons/bef.svg">
+      </figure>
+    </div>
 
     <img src="/img/icons/gradient-circle1.svg" id="gradient-circle-right">
 
@@ -34,7 +53,7 @@ export default {
     height: 3em;
     width: 1px;
     background-color: var(--woonkly-black-blue);
-    margin: 1em auto;
+    margin: 1em auto 0;
   }
 
   #gradient-circle-left {
@@ -43,11 +62,66 @@ export default {
     right: 13em;
     width: 14em;
   }
+
   #gradient-circle-right {
     position: absolute;
     bottom: 1em;
     transform: translateX(90%);
     width: 7em;
+  }
+
+  #plugandplay {
+    max-width: 80%;
+  }
+  #unitedcoin {
+    max-width: 80%;
+  }
+  #forbes {
+    max-width: 60%;
+  }
+  #cointelegraph {
+    max-width: 60%;
+  }
+  #wbf {
+    max-width: 50%;
+    margin: 1em;
+  }
+  #bef-logo {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #woonkly-allies {
+    .seen-on {
+      display: flex;
+      justify-content: space-between;
+      & > * {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    #plugandplay {
+      max-width: 30%;
+    }
+
+    #unitedcoin {
+      max-width: 30%;
+    }
+    #gradient-circle-left {
+      top: -27%;
+      left: -32%;
+      width: 60em;
+    }
+
+    #gradient-circle-right {
+      bottom: -2%;
+      width: 20em;
+      left: 65%;
+    }
   }
 }
 </style>
