@@ -16,11 +16,11 @@
    x="0px"
    viewBox="0 0 1677.1281 1080"
    id="svg32780"
-   sodipodi:docname="woonkly-main-2.svg"
+   sodipodi:docname="woonkly-main-3.svg"
    inkscape:version="0.92.3 (unknown)"><metadata
    id="metadata32786"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs32784" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -34,13 +34,13 @@
    inkscape:window-height="1017"
    id="namedview32782"
    showgrid="false"
-   inkscape:zoom="0.21851852"
-   inkscape:cx="1383.2507"
-   inkscape:cy="128.27963"
+   inkscape:zoom="2.4722548"
+   inkscape:cx="479.76839"
+   inkscape:cy="614.4491"
    inkscape:window-x="0"
    inkscape:window-y="30"
    inkscape:window-maximized="1"
-   inkscape:current-layer="svg32780" />
+   inkscape:current-layer="Lineas" />
 <style
    type="text/css"
    id="style29732">
@@ -267,6 +267,108 @@
 	.st220{fill:url(#SVGID_167_);}
 </style>
 <g
+   inkscape:groupmode="layer"
+   id="layer8"
+   inkscape:label="money1"
+   style="display:inline"><g
+     id="money"
+     inkscape:label="#g36152"><polygon
+       points="772,555.6 792.8,543.8 792.8,543.1 730.4,530.7 730.4,531.5 "
+       class="st160"
+       id="polygon32216"
+       style="display:inline;fill:url(#SVGID_124_)"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><polygon
+       points="730.4,530.7 751.2,518.7 792.8,542.7 772,554.7 "
+       class="st161"
+       id="polygon32231"
+       style="display:inline;fill:url(#SVGID_125_)"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><ellipse
+       rx="9.8999996"
+       ry="5.4000001"
+       cy="536"
+       cx="760.90002"
+       class="st172"
+       id="ellipse32233"
+       style="display:inline;fill:#003437"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><ellipse
+       rx="8.5"
+       ry="4.5999999"
+       cy="536"
+       cx="760.90002"
+       class="st162"
+       id="ellipse32248"
+       style="display:inline;fill:url(#SVGID_126_)"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><text
+       transform="matrix(0.99630496,0.58896928,-1.2638423,0.7868308,434.76941,441.0432)"
+       class="st4 st174 st175"
+       font-size="11.157px"
+       id="text32250"
+       style="font-size:11.15670013px;font-family:MyriadPro-Bold;display:inline;fill:#ffffff">$</text>
+<polygon
+       points="772,552.2 792.8,540.3 792.8,539.7 730.4,527.3 730.4,528.1 "
+       class="st163"
+       id="polygon32265"
+       style="display:inline;fill:url(#SVGID_127_)"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><polygon
+       points="772,551.3 730.4,527.3 751.2,515.3 792.8,539.3 "
+       class="st164"
+       id="polygon32280"
+       style="display:inline;fill:url(#SVGID_128_)"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><ellipse
+       rx="9.8999996"
+       ry="5.4000001"
+       cy="532.59998"
+       cx="760.90002"
+       class="st172"
+       id="ellipse32282"
+       style="display:inline;fill:#003437"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><ellipse
+       rx="8.5"
+       ry="4.5999999"
+       cy="532.59998"
+       cx="760.90002"
+       class="st165"
+       id="ellipse32297"
+       style="display:inline;fill:url(#SVGID_129_)"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><text
+       transform="matrix(0.99630496,0.58896928,-1.2638423,0.7868308,434.76941,435.92172)"
+       class="st4 st174 st175"
+       font-size="11.157px"
+       id="text32299"
+       style="font-size:11.15670013px;font-family:MyriadPro-Bold;display:inline;fill:#ffffff">$</text>
+<polygon
+       points="772,548.1 792.8,536.3 792.8,535.7 730.4,523.2 730.4,524.1 "
+       class="st166"
+       id="polygon32314"
+       style="display:inline;fill:url(#SVGID_130_)"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><polygon
+       points="792.8,535.2 772,547.2 730.4,523.2 751.2,511.2 "
+       class="st167"
+       id="polygon32329"
+       style="display:inline;fill:url(#SVGID_131_)"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><ellipse
+       rx="9.8999996"
+       ry="5.4000001"
+       cy="528.59998"
+       cx="760.90002"
+       class="st172"
+       id="ellipse32331"
+       style="display:inline;fill:#003437"
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)" /><ellipse
+       transform="matrix(1.4888,0,0,1.4888,-689.98921,-357.86177)"
+       rx="8.5"
+       ry="4.5999999"
+       cy="528.59998"
+       cx="760.90002"
+       class="st4"
+       id="ellipse32333"
+       style="display:inline;fill:#ffffff" /><text
+       transform="matrix(0.99630496,0.58896928,-1.2638423,0.7868308,434.76941,429.89208)"
+       class="st172 st174 st175"
+       font-size="11.157px"
+       id="text32335"
+       style="font-size:11.15670013px;font-family:MyriadPro-Bold;display:inline;fill:#003437">$</text>
+</g></g><g
    id="Guias_Isometricas"
    class="st1"
    stroke="#fff"
@@ -2131,10 +2233,40 @@
    id="line30262" />
 	</g>
 </g>
+
 <g
-   transform="matrix(1.4888,0,0,1.4888,-468.89669,-37.580691)"
-   id="g32778"><g
-     id="Particulas">
+   inkscape:groupmode="layer"
+   id="layer4"
+   inkscape:label="hidden"
+   style="display:none"><circle
+     transform="matrix(1.4888,0,0,1.4888,-565,-238.94)"
+     id="Brillo"
+     cy="525.70001"
+     cx="769.40002"
+     r="47.299999"
+     class="st181"
+     style="display:inline;fill:url(#Brillo_2_)" /><circle
+     transform="matrix(1.4888,0,0,1.4888,-565,-238.94)"
+     id="Brillo_1_"
+     cy="658.5"
+     cx="1002.1"
+     r="72.599998"
+     class="st191"
+     style="display:inline;fill:url(#Brillo_3_)" /><circle
+     transform="matrix(1.4888,0,0,1.4888,-565,-238.94)"
+     id="brillo"
+     cy="550.5"
+     cx="1104.5"
+     r="52.799999"
+     class="st201"
+     style="display:inline;fill:url(#brillo_1_)" /></g><g
+   inkscape:groupmode="layer"
+   id="layer6"
+   inkscape:label="everything"
+   style="display:inline"><g
+     transform="matrix(1.4888,0,0,1.4888,-666.93295,-358.67076)"
+     id="g32778"><g
+       id="Particulas">
 	<path
    class="st5"
    d="m 889.1,468.2 -9.4,6 c 0,0 -0.8,-6 3.3,-7.2 4.1,-1.2 6.1,1.2 6.1,1.2 z"
@@ -2586,7 +2718,7 @@
    id="circle30423"
    style="fill:url(#SVGID_11_)" />
 </g><g
-     id="Plataforma_x5F_centro_personajes">
+       id="Plataforma_x5F_centro_personajes">
 		<linearGradient
    id="SVGID_12_"
    y2="681.58002"
@@ -2792,7 +2924,7 @@
    inkscape:connector-curvature="0"
    style="fill:url(#SVGID_17_)" />
 </g><g
-     id="Plataforma_x5F_derecha_personajes">
+       id="Plataforma_x5F_derecha_personajes">
 		<linearGradient
    id="SVGID_18_"
    y2="702.67999"
@@ -2998,7 +3130,7 @@
    inkscape:connector-curvature="0"
    style="fill:url(#SVGID_23_)" />
 </g><g
-     id="Plataforma_x5F_izquierda_personajes">
+       id="Plataforma_x5F_izquierda_personajes">
 		<linearGradient
    id="SVGID_24_"
    y2="825.28998"
@@ -3204,7 +3336,7 @@
    inkscape:connector-curvature="0"
    style="fill:url(#SVGID_29_)" />
 </g><g
-     id="Plataforma_Smart_Contrat">
+       id="Plataforma_Smart_Contrat">
 	<g
    id="Ondas_inferiores">
 			<radialGradient
@@ -3437,7 +3569,7 @@
    id="stop30743" />
 		</linearGradient>
 		<polygon
-   points="828.7,319.9 873.6,293.6 873.6,429 828.2,455.2 "
+   points="873.6,293.6 873.6,429 828.2,455.2 828.7,319.9 "
    class="st47"
    id="polygon30746"
    style="fill:url(#SVGID_36_)" />
@@ -3464,7 +3596,7 @@
    id="stop30752" />
 		</linearGradient>
 		<polygon
-   points="926.4,395.5 971.4,369.2 971.4,504.6 926,530.8 "
+   points="971.4,369.2 971.4,504.6 926,530.8 926.4,395.5 "
    class="st48"
    id="polygon30755"
    style="fill:url(#SVGID_37_)" />
@@ -3492,7 +3624,7 @@
    id="stop30761" />
 		</linearGradient>
 		<polygon
-   points="879.3,395.5 834.4,369.2 834.4,504.6 879.7,530.8 "
+   points="834.4,369.2 834.4,504.6 879.7,530.8 879.3,395.5 "
    class="st49"
    id="polygon30764"
    style="fill:url(#SVGID_38_)" />
@@ -3520,7 +3652,7 @@
    id="stop30770" />
 		</linearGradient>
 		<polygon
-   points="982.7,323.3 937.8,297.1 937.8,432.5 983.1,458.6 "
+   points="937.8,297.1 937.8,432.5 983.1,458.6 982.7,323.3 "
    class="st50"
    id="polygon30773"
    style="fill:url(#SVGID_39_)" />
@@ -3555,7 +3687,7 @@
    inkscape:connector-curvature="0"
    style="fill:#070909" />
 				<polygon
-   points="908.1,427 906.9,427.8 906.9,422.1 908.1,421.4 "
+   points="906.9,427.8 906.9,422.1 908.1,421.4 908.1,427 "
    class="st60"
    id="polygon30784"
    style="fill:#070909" />
@@ -3623,7 +3755,7 @@
    id="stop30808" />
 					</radialGradient>
 					<polygon
-   points="882.2,435.4 883.5,434.6 883.5,436 882.2,436.8 "
+   points="883.5,434.6 883.5,436 882.2,436.8 882.2,435.4 "
    clip-path="url(#SVGID_40_)"
    id="polygon30811"
    style="fill:url(#SVGID_41_)" />
@@ -3679,7 +3811,7 @@
    id="stop30829" />
 					</radialGradient>
 					<polygon
-   points="877.6,438.3 879,437.5 879,438.8 877.6,439.6 "
+   points="879,437.5 879,438.8 877.6,439.6 877.6,438.3 "
    clip-path="url(#SVGID_42_)"
    id="polygon30832"
    style="fill:url(#SVGID_43_)" />
@@ -3715,9 +3847,9 @@
    inkscape:connector-curvature="0" />
 	</g>
 </g><g
-     id="Lineas"
-     stroke-miterlimit="10"
-     style="fill:none;stroke-width:0.76800001;stroke-miterlimit:10">
+       id="Lineas"
+       stroke-miterlimit="10"
+       style="fill:none;stroke-width:0.76800001;stroke-miterlimit:10">
 	<radialGradient
    id="SVGID_44_"
    gradientUnits="userSpaceOnUse"
@@ -3794,9 +3926,10 @@
 	</radialGradient>
 	<path
    d="m 807.8,558.1 -45.5,23.5 c -1.5,0.8 -3.3,0.7 -4.7,-0.1 L 648.2,518.7 c -1.3,-0.8 -1.3,-2.6 0,-3.4 l 108,-62.9 c 1.3,-0.8 1.3,-2.6 0,-3.4 L 691,411.4"
-   id="path30874"
+   id="top-left-path"
    inkscape:connector-curvature="0"
-   style="stroke:url(#SVGID_45_)" />
+   style="stroke:url(#SVGID_45_)"
+   inkscape:label="#path30874" />
 	<radialGradient
    id="SVGID_46_"
    gradientUnits="userSpaceOnUse"
@@ -3892,7 +4025,7 @@
    inkscape:connector-curvature="0"
    style="stroke:url(#SVGID_47_)" />
 </g><g
-     id="Lineas_brillos">
+       id="Lineas_brillos">
 		<linearGradient
    id="_x34__1_"
    y2="1312.1"
@@ -4110,7 +4243,7 @@
    inkscape:connector-curvature="0"
    style="fill:url(#_x31__1_)" />
 </g><g
-     id="Lineas_Brillos_down">
+       id="Lineas_Brillos_down">
 	<linearGradient
    id="SVGID_48_"
    y2="520.20001"
@@ -4224,7 +4357,7 @@
    inkscape:connector-curvature="0"
    style="fill:url(#SVGID_51_)" />
 </g><g
-     id="Personajes">
+       id="Personajes">
 	<g
    id="Personaje_Varon">
 		<g
@@ -5063,7 +5196,7 @@
 		</g>
 	</g>
 </g><g
-     id="Edificios">
+       id="Edificios">
 	<g
    id="Edificio_derecha_2_">
 			<linearGradient
@@ -5145,7 +5278,7 @@
    id="stop31312" />
 			</linearGradient>
 			<polygon
-   points="802.1,259.3 802.4,271.6 816.4,251.4 816.4,263.1 830.8,242.9 830.8,254.6 844.3,234.7 844.3,247.5 858.7,226.8 858.7,238.7 873,217.9 873,230.2 887.5,209.6 887.5,273.2 789,330.7 789,279.9 "
+   points="830.8,254.6 844.3,234.7 844.3,247.5 858.7,226.8 858.7,238.7 873,217.9 873,230.2 887.5,209.6 887.5,273.2 789,330.7 789,279.9 802.1,259.3 802.4,271.6 816.4,251.4 816.4,263.1 830.8,242.9 "
    id="polygon31315"
    style="fill:url(#SVGID_55_)" />
 		<linearGradient
@@ -5177,7 +5310,7 @@
    id="stop31325" />
 		</linearGradient>
 		<polygon
-   points="741.3,250 789,279.9 789,330.6 741.3,300.8 "
+   points="789,279.9 789,330.6 741.3,300.8 741.3,250 "
    id="polygon31328"
    style="fill:url(#SVGID_56_)" />
 		<linearGradient
@@ -5209,7 +5342,7 @@
    id="stop31338" />
 		</linearGradient>
 		<polygon
-   points="802.4,271.5 802.1,259.3 754.5,229.5 760.9,232.8 767.7,220.7 816.3,251.3 "
+   points="816.3,251.3 802.4,271.5 802.1,259.3 754.5,229.5 760.9,232.8 767.7,220.7 "
    id="polygon31341"
    style="fill:url(#SVGID_57_)" />
 		<linearGradient
@@ -5241,7 +5374,7 @@
    id="stop31351" />
 		</linearGradient>
 		<polygon
-   points="816.3,263.1 816.3,251.3 774.4,225.1 775.2,224 783,212.9 830.8,242.8 "
+   points="830.8,242.8 816.3,263.1 816.3,251.3 774.4,225.1 775.2,224 783,212.9 "
    id="polygon31354"
    style="fill:url(#SVGID_58_)" />
 		<linearGradient
@@ -5273,7 +5406,7 @@
    id="stop31364" />
 		</linearGradient>
 		<polygon
-   points="830.8,254.5 830.8,242.8 788.7,216.5 788.9,216 796.6,204.9 844.3,234.7 "
+   points="844.3,234.7 830.8,254.5 830.8,242.8 788.7,216.5 788.9,216 796.6,204.9 "
    class="st72"
    id="polygon31367"
    style="fill:url(#SVGID_59_)" />
@@ -5306,7 +5439,7 @@
    id="stop31377" />
 		</linearGradient>
 		<polygon
-   points="844.3,247.4 844.2,234.8 802.8,208.8 803.1,208.3 810.9,196.9 858.7,226.8 "
+   points="858.7,226.8 844.3,247.4 844.2,234.8 802.8,208.8 803.1,208.3 810.9,196.9 "
    class="st73"
    id="polygon31380"
    style="fill:url(#SVGID_60_)" />
@@ -5339,7 +5472,7 @@
    id="stop31390" />
 		</linearGradient>
 		<polygon
-   points="858.7,238.6 858.7,226.8 816.6,200.5 817,200 825.2,188 873,217.9 "
+   points="873,217.9 858.7,238.6 858.7,226.8 816.6,200.5 817,200 825.2,188 "
    class="st74"
    id="polygon31393"
    style="fill:url(#SVGID_61_)" />
@@ -5372,7 +5505,7 @@
    id="stop31403" />
 		</linearGradient>
 		<polygon
-   points="873,230.2 873,217.9 831.2,191.7 831.5,191.2 839.8,179.7 887.5,209.5 "
+   points="887.5,209.5 873,230.2 873,217.9 831.2,191.7 831.5,191.2 839.8,179.7 "
    class="st89"
    id="polygon31406"
    style="fill:url(#SVGID_62_)" />
@@ -5405,7 +5538,7 @@
    id="stop31416" />
 		</linearGradient>
 		<polygon
-   points="741.3,250 754.7,229.7 802.1,259.3 789,279.9 "
+   points="754.7,229.7 802.1,259.3 789,279.9 741.3,250 "
    class="st90"
    id="polygon31419"
    style="fill:url(#SVGID_63_)" />
@@ -5598,7 +5731,7 @@
    id="stop31491" />
 		</linearGradient>
 		<polygon
-   points="849.7,255.1 875.3,240.3 875.3,255.1 849.7,269.9 "
+   points="875.3,240.3 875.3,255.1 849.7,269.9 849.7,255.1 "
    class="st95"
    id="polygon31494"
    style="fill:url(#SVGID_68_)" />
@@ -5627,7 +5760,7 @@
    id="stop31502" />
 		</linearGradient>
 		<polygon
-   points="810.7,276.4 836.2,261.6 836.2,276.4 810.7,291.1 "
+   points="836.2,261.6 836.2,276.4 810.7,291.1 810.7,276.4 "
    class="st96"
    id="polygon31505"
    style="fill:url(#SVGID_69_)" />
@@ -5748,7 +5881,7 @@
    id="stop31547" />
 			</linearGradient>
 			<polygon
-   points="822.7,291.1 820.6,296.2 826.3,302.8 830.9,300.2 "
+   points="820.6,296.2 826.3,302.8 830.9,300.2 822.7,291.1 "
    class="st99"
    id="polygon31550"
    style="fill:url(#SVGID_72_)" />
@@ -5791,7 +5924,7 @@
    id="stop31562" />
 			</linearGradient>
 			<polygon
-   points="826.3,293 828.2,288 834.2,284.6 836.6,287.1 "
+   points="828.2,288 834.2,284.6 836.6,287.1 826.3,293 "
    id="polygon31565"
    style="clip-rule:evenodd;fill:url(#SVGID_73_);fill-rule:evenodd" />
 				<linearGradient
@@ -5834,7 +5967,7 @@
    id="stop31577" />
 			</linearGradient>
 			<polygon
-   points="826.3,293 828.2,288 834.2,284.6 836.6,287.1 "
+   points="828.2,288 834.2,284.6 836.6,287.1 826.3,293 "
    id="polygon31580"
    style="clip-rule:evenodd;fill:url(#SVGID_74_);fill-rule:evenodd" />
 				<linearGradient
@@ -5968,7 +6101,7 @@
    id="stop31623" />
 		</linearGradient>
 		<polygon
-   points="643.5,365.4 688.9,339.3 688.9,208.3 643.5,182.1 598.1,208.3 598.1,340.6 "
+   points="598.1,340.6 643.5,365.4 688.9,339.3 688.9,208.3 643.5,182.1 598.1,208.3 "
    class="st106"
    id="polygon31626"
    style="fill:url(#SVGID_79_)" />
@@ -5997,7 +6130,7 @@
    id="stop31634" />
 		</linearGradient>
 		<polygon
-   points="598.1,208.3 643.5,234.5 688.9,208.3 643.5,182.1 "
+   points="643.5,234.5 688.9,208.3 643.5,182.1 598.1,208.3 "
    class="st107"
    id="polygon31637"
    style="fill:url(#SVGID_80_)" />
@@ -6030,39 +6163,39 @@
    id="stop31647" />
 		</linearGradient>
 		<polygon
-   points="643.5,234.5 643.5,365.4 688.9,339.3 688.9,208.3 "
+   points="643.5,365.4 688.9,339.3 688.9,208.3 643.5,234.5 "
    class="st111"
    id="polygon31650"
    style="fill:url(#SVGID_81_)" /><g
    id="g31664"
    style="fill:#00d9ff">
 		<polygon
-   points="643.5,260.7 598.1,234.5 598.2,226.7 643.5,251.6 688.9,226.7 688.9,234.5 "
+   points="598.1,234.5 598.2,226.7 643.5,251.6 688.9,226.7 688.9,234.5 643.5,260.7 "
    class="st26"
    id="polygon31652"
    style="fill:#00d9ff" />
 		<polygon
-   points="643.5,277.7 598.1,251.5 598.2,243.7 643.5,268.6 688.9,243.7 688.9,251.5 "
+   points="598.1,251.5 598.2,243.7 643.5,268.6 688.9,243.7 688.9,251.5 643.5,277.7 "
    class="st26"
    id="polygon31654"
    style="fill:#00d9ff" />
 		<polygon
-   points="643.5,294.7 598.1,268.5 598.2,260.7 643.5,285.6 688.9,260.7 688.9,268.5 "
+   points="598.1,268.5 598.2,260.7 643.5,285.6 688.9,260.7 688.9,268.5 643.5,294.7 "
    class="st26"
    id="polygon31656"
    style="fill:#00d9ff" />
 		<polygon
-   points="643.5,311.7 598.1,285.5 598.2,277.7 643.5,302.6 688.9,277.7 688.9,285.5 "
+   points="598.1,285.5 598.2,277.7 643.5,302.6 688.9,277.7 688.9,285.5 643.5,311.7 "
    class="st26"
    id="polygon31658"
    style="fill:#00d9ff" />
 		<polygon
-   points="643.5,328.7 598.1,302.5 598.2,294.7 643.5,319.6 688.9,294.7 688.9,302.5 "
+   points="598.1,302.5 598.2,294.7 643.5,319.6 688.9,294.7 688.9,302.5 643.5,328.7 "
    class="st26"
    id="polygon31660"
    style="fill:#00d9ff" />
 		<polygon
-   points="643.5,345.7 598.1,319.5 598.2,311.7 643.5,336.6 688.9,311.7 688.9,319.5 "
+   points="598.1,319.5 598.2,311.7 643.5,336.6 688.9,311.7 688.9,319.5 643.5,345.7 "
    class="st26"
    id="polygon31662"
    style="fill:#00d9ff" />
@@ -6395,7 +6528,7 @@
    id="stop31773" />
 				</linearGradient>
 				<polygon
-   points="535.3,463.9 598.4,427.5 598.4,308.5 535.3,344.2 "
+   points="598.4,427.5 598.4,308.5 535.3,344.2 535.3,463.9 "
    class="st120"
    id="polygon31776"
    style="fill:url(#SVGID_90_)" />
@@ -6428,7 +6561,7 @@
    id="stop31786" />
 				</linearGradient>
 				<polygon
-   points="488.1,317.1 535.3,344.2 535.3,463.9 488.1,436.7 "
+   points="535.3,344.2 535.3,463.9 488.1,436.7 488.1,317.1 "
    class="st121"
    id="polygon31789"
    style="fill:url(#SVGID_91_)" />
@@ -6457,7 +6590,7 @@
    id="stop31797" />
 				</linearGradient>
 				<polygon
-   points="551.1,281.3 598.4,308.5 535.3,344.2 488.1,317.1 "
+   points="598.4,308.5 535.3,344.2 488.1,317.1 551.1,281.3 "
    class="st125"
    id="polygon31800"
    style="fill:url(#SVGID_92_)" />
@@ -6465,42 +6598,42 @@
    id="g31818"
    style="fill:#00d9ff">
 				<polygon
-   points="506.6,363.1 492.2,354.8 492.5,338.6 506.6,346.8 "
+   points="492.2,354.8 492.5,338.6 506.6,346.8 506.6,363.1 "
    class="st26"
    id="polygon31802"
    style="fill:#00d9ff" />
 				<polygon
-   points="526.8,373.2 512.4,364.9 512.7,348.7 526.8,356.8 "
+   points="512.4,364.9 512.7,348.7 526.8,356.8 526.8,373.2 "
    class="st26"
    id="polygon31804"
    style="fill:#00d9ff" />
 				<polygon
-   points="506.6,385.5 492.2,377.1 492.5,360.9 506.6,369.1 "
+   points="492.2,377.1 492.5,360.9 506.6,369.1 506.6,385.5 "
    class="st26"
    id="polygon31806"
    style="fill:#00d9ff" />
 				<polygon
-   points="526.8,395.5 512.4,387.2 512.7,371 526.8,379.2 "
+   points="512.4,387.2 512.7,371 526.8,379.2 526.8,395.5 "
    class="st26"
    id="polygon31808"
    style="fill:#00d9ff" />
 				<polygon
-   points="506.6,407.8 492.2,399.5 492.5,383.3 506.6,391.5 "
+   points="492.2,399.5 492.5,383.3 506.6,391.5 506.6,407.8 "
    class="st26"
    id="polygon31810"
    style="fill:#00d9ff" />
 				<polygon
-   points="526.8,417.9 512.4,409.6 512.7,393.4 526.8,401.6 "
+   points="512.4,409.6 512.7,393.4 526.8,401.6 526.8,417.9 "
    class="st26"
    id="polygon31812"
    style="fill:#00d9ff" />
 				<polygon
-   points="506.6,430.2 492.2,421.8 492.5,405.6 506.6,413.8 "
+   points="492.2,421.8 492.5,405.6 506.6,413.8 506.6,430.2 "
    class="st26"
    id="polygon31814"
    style="fill:#00d9ff" />
 				<polygon
-   points="526.8,440.3 512.4,431.9 512.7,415.7 526.8,423.9 "
+   points="512.4,431.9 512.7,415.7 526.8,423.9 526.8,440.3 "
    class="st26"
    id="polygon31816"
    style="fill:#00d9ff" />
@@ -6508,32 +6641,32 @@
    id="g31832"
    style="fill:#00d9ff">
 			<polygon
-   points="561.8,364.2 576.2,355.9 576,339.7 561.8,347.8 "
+   points="576.2,355.9 576,339.7 561.8,347.8 561.8,364.2 "
    class="st26"
    id="polygon31820"
    style="fill:#00d9ff" />
 			<polygon
-   points="541.6,374.3 556,365.9 555.8,349.7 541.6,357.9 "
+   points="556,365.9 555.8,349.7 541.6,357.9 541.6,374.3 "
    class="st26"
    id="polygon31822"
    style="fill:#00d9ff" />
 			<polygon
-   points="561.8,386.5 576.2,378.2 576,362 561.8,370.2 "
+   points="576.2,378.2 576,362 561.8,370.2 561.8,386.5 "
    class="st26"
    id="polygon31824"
    style="fill:#00d9ff" />
 			<polygon
-   points="541.6,396.6 556,388.3 555.8,372.1 541.6,380.3 "
+   points="556,388.3 555.8,372.1 541.6,380.3 541.6,396.6 "
    class="st26"
    id="polygon31826"
    style="fill:#00d9ff" />
 			<polygon
-   points="561.8,408.9 576.2,400.6 576,384.4 561.8,392.5 "
+   points="576.2,400.6 576,384.4 561.8,392.5 561.8,408.9 "
    class="st26"
    id="polygon31828"
    style="fill:#00d9ff" />
 			<polygon
-   points="541.6,419 556,410.7 555.8,394.5 541.6,402.6 "
+   points="556,410.7 555.8,394.5 541.6,402.6 541.6,419 "
    class="st26"
    id="polygon31830"
    style="fill:#00d9ff" />
@@ -6570,24 +6703,24 @@
    id="stop31844" />
 			</linearGradient>
 			<polygon
-   points="576,406.7 561.8,414.9 561.8,431.2 576.2,422.9 "
+   points="561.8,414.9 561.8,431.2 576.2,422.9 576,406.7 "
    class="st128"
    id="polygon31847"
    style="fill:url(#SVGID_93_)" /><g
    id="g31855"
    style="fill:#00d9ff">
 			<polygon
-   points="580.1,354.1 594.5,345.8 594.3,329.6 580.1,337.8 "
+   points="594.5,345.8 594.3,329.6 580.1,337.8 580.1,354.1 "
    class="st26"
    id="polygon31849"
    style="fill:#00d9ff" />
 			<polygon
-   points="580.1,376.5 594.5,368.1 594.3,351.9 580.1,360.1 "
+   points="594.5,368.1 594.3,351.9 580.1,360.1 580.1,376.5 "
    class="st26"
    id="polygon31851"
    style="fill:#00d9ff" />
 			<polygon
-   points="580.1,398.8 594.5,390.5 594.3,374.3 580.1,382.5 "
+   points="594.5,390.5 594.3,374.3 580.1,382.5 580.1,398.8 "
    class="st26"
    id="polygon31853"
    style="fill:#00d9ff" />
@@ -6616,7 +6749,7 @@
    id="stop31863" />
 			</linearGradient>
 			<polygon
-   points="594.3,396.6 580.1,404.8 580.1,421.2 594.5,412.8 "
+   points="580.1,404.8 580.1,421.2 594.5,412.8 594.3,396.6 "
    class="st129"
    id="polygon31866"
    style="fill:url(#SVGID_94_)" />
@@ -6649,7 +6782,7 @@
    id="stop31876" />
 			</linearGradient>
 			<polygon
-   points="555.8,416.8 541.6,425 541.6,441.3 556,433 "
+   points="541.6,425 541.6,441.3 556,433 555.8,416.8 "
    class="st130"
    id="polygon31879"
    style="fill:url(#SVGID_95_)" />
@@ -6923,7 +7056,7 @@
    style="fill:url(#SVGID_101_)" />
 	</g>
 </g><g
-     id="Brillos">
+       id="Brillos">
 	<radialGradient
    id="SVGID_102_"
    gradientUnits="userSpaceOnUse"
@@ -7274,7 +7407,7 @@
    id="circle32095"
    style="fill:url(#SVGID_109_)" />
 </g><g
-     id="Megafonos">
+       id="Megafonos">
 	<g
    id="Megafono_izquierda_2_">
 		<linearGradient
@@ -7316,7 +7449,7 @@
    id="stop32107" />
 		</linearGradient>
 		<polygon
-   points="568.1,585.2 576.1,591.5 576.1,605.1 568.7,609.3 "
+   points="568.7,609.3 568.1,585.2 576.1,591.5 576.1,605.1 "
    class="st147"
    id="polygon32110"
    style="fill:url(#SVGID_111_)" />
@@ -7478,7 +7611,7 @@
    id="stop32159" />
 		</linearGradient>
 		<polygon
-   points="927.9,308.3 933.5,312.7 933.5,322.3 928.3,325.2 "
+   points="928.3,325.2 927.9,308.3 933.5,312.7 933.5,322.3 "
    class="st154"
    id="polygon32162"
    style="fill:url(#SVGID_118_)" />
@@ -7600,7 +7733,7 @@
    style="fill:url(#SVGID_123_)" />
 	</g>
 </g><g
-     id="Dinero">
+       id="Dinero">
 				<linearGradient
    id="SVGID_124_"
    y2="543.15997"
@@ -7633,11 +7766,7 @@
    offset="1"
    id="stop32213" />
 				</linearGradient>
-				<polygon
-   points="792.8,543.1 730.4,530.7 730.4,531.5 772,555.6 792.8,543.8 "
-   class="st160"
-   id="polygon32216"
-   style="fill:url(#SVGID_124_)" />
+				
 					<linearGradient
    id="SVGID_125_"
    y2="536.71997"
@@ -7670,19 +7799,8 @@
    offset="1"
    id="stop32228" />
 					</linearGradient>
-					<polygon
-   points="792.8,542.7 772,554.7 730.4,530.7 751.2,518.7 "
-   class="st161"
-   id="polygon32231"
-   style="fill:url(#SVGID_125_)" />
-					<ellipse
-   rx="9.8999996"
-   ry="5.4000001"
-   cy="536"
-   cx="760.90002"
-   class="st172"
-   id="ellipse32233"
-   style="fill:#003437" />
+					
+					
 					<linearGradient
    id="SVGID_126_"
    y2="536.04999"
@@ -7715,21 +7833,8 @@
    offset="1"
    id="stop32245" />
 					</linearGradient>
-					<ellipse
-   rx="8.5"
-   ry="4.5999999"
-   cy="536"
-   cx="760.90002"
-   class="st162"
-   id="ellipse32248"
-   style="fill:url(#SVGID_126_)" />
-					<text
-   transform="matrix(0.6692,0.3956,-0.8489,0.5285,755.48,536.61)"
-   class="st4 st174 st175"
-   font-size="11.157px"
-   id="text32250"
-   style="font-size:11.15670013px;font-family:MyriadPro-Bold;fill:#ffffff">$</text>
-
+					
+					
 				<linearGradient
    id="SVGID_127_"
    y2="539.71997"
@@ -7762,11 +7867,7 @@
    offset="1"
    id="stop32262" />
 				</linearGradient>
-				<polygon
-   points="792.8,539.7 730.4,527.3 730.4,528.1 772,552.2 792.8,540.3 "
-   class="st163"
-   id="polygon32265"
-   style="fill:url(#SVGID_127_)" />
+				
 					<linearGradient
    id="SVGID_128_"
    y2="533.27002"
@@ -7799,19 +7900,8 @@
    offset="1"
    id="stop32277" />
 					</linearGradient>
-					<polygon
-   points="792.8,539.3 772,551.3 730.4,527.3 751.2,515.3 "
-   class="st164"
-   id="polygon32280"
-   style="fill:url(#SVGID_128_)" />
-					<ellipse
-   rx="9.8999996"
-   ry="5.4000001"
-   cy="532.59998"
-   cx="760.90002"
-   class="st172"
-   id="ellipse32282"
-   style="fill:#003437" />
+					
+					
 					<linearGradient
    id="SVGID_129_"
    y2="532.59998"
@@ -7844,21 +7934,8 @@
    offset="1"
    id="stop32294" />
 					</linearGradient>
-					<ellipse
-   rx="8.5"
-   ry="4.5999999"
-   cy="532.59998"
-   cx="760.90002"
-   class="st165"
-   id="ellipse32297"
-   style="fill:url(#SVGID_129_)" />
-					<text
-   transform="matrix(0.6692,0.3956,-0.8489,0.5285,755.48,533.17)"
-   class="st4 st174 st175"
-   font-size="11.157px"
-   id="text32299"
-   style="font-size:11.15670013px;font-family:MyriadPro-Bold;fill:#ffffff">$</text>
-
+					
+					
 				<linearGradient
    id="SVGID_130_"
    y2="535.66998"
@@ -7891,11 +7968,7 @@
    offset="1"
    id="stop32311" />
 				</linearGradient>
-				<polygon
-   points="792.8,535.7 730.4,523.2 730.4,524.1 772,548.1 792.8,536.3 "
-   class="st166"
-   id="polygon32314"
-   style="fill:url(#SVGID_130_)" />
+				
 					<linearGradient
    id="SVGID_131_"
    y2="529.22998"
@@ -7928,34 +8001,12 @@
    offset="1"
    id="stop32326" />
 					</linearGradient>
-					<polygon
-   points="792.8,535.2 772,547.2 730.4,523.2 751.2,511.2 "
-   class="st167"
-   id="polygon32329"
-   style="fill:url(#SVGID_131_)" />
-					<ellipse
-   rx="9.8999996"
-   ry="5.4000001"
-   cy="528.59998"
-   cx="760.90002"
-   class="st172"
-   id="ellipse32331"
-   style="fill:#003437" />
-					<ellipse
-   rx="8.5"
-   ry="4.5999999"
-   cy="528.59998"
-   cx="760.90002"
-   class="st4"
-   id="ellipse32333"
-   style="fill:#ffffff" />
-					<text
-   transform="matrix(0.6692,0.3956,-0.8489,0.5285,755.48,529.12)"
-   class="st172 st174 st175"
-   font-size="11.157px"
-   id="text32335"
-   style="font-size:11.15670013px;font-family:MyriadPro-Bold;fill:#003437">$</text>
-
+					
+					
+					
+					<g
+   id="g36102"
+   transform="translate(-15.486474,0.54338505)" />
 		<radialGradient
    id="Brillo_2_"
    gradientUnits="userSpaceOnUse"
@@ -8007,13 +8058,7 @@
    offset="1"
    id="stop32353" />
 		</radialGradient>
-		<circle
-   id="Brillo"
-   cy="525.70001"
-   cx="769.40002"
-   r="47.299999"
-   class="st181"
-   style="fill:url(#Brillo_2_)" />
+		
 	<g
    id="Dinero_izquierda">
 				<linearGradient
@@ -8086,7 +8131,7 @@
    id="stop32382" />
 					</linearGradient>
 					<polygon
-   points="942.2,666.3 974.1,647.9 1038,684.8 1006.1,703.2 "
+   points="974.1,647.9 1038,684.8 1006.1,703.2 942.2,666.3 "
    class="st169"
    id="polygon32385"
    style="fill:url(#SVGID_133_)" />
@@ -8215,7 +8260,7 @@
    id="stop32431" />
 					</linearGradient>
 					<polygon
-   points="942.2,661 974.1,642.6 1038,679.5 1006.1,697.9 "
+   points="974.1,642.6 1038,679.5 1006.1,697.9 942.2,661 "
    class="st173"
    id="polygon32434"
    style="fill:url(#SVGID_136_)" />
@@ -8344,7 +8389,7 @@
    id="stop32480" />
 					</linearGradient>
 					<polygon
-   points="942.2,654.8 974.1,636.4 1038,673.3 1006.1,691.7 "
+   points="974.1,636.4 1038,673.3 1006.1,691.7 942.2,654.8 "
    class="st178"
    id="polygon32483"
    style="fill:url(#SVGID_139_)" />
@@ -8422,13 +8467,7 @@
    offset="1"
    id="stop32507" />
 		</radialGradient>
-		<circle
-   id="Brillo_1_"
-   cy="658.5"
-   cx="1002.1"
-   r="72.599998"
-   class="st191"
-   style="fill:url(#Brillo_3_)" />
+		
 	</g>
 	<g
    id="Dinero_derecha">
@@ -8502,7 +8541,7 @@
    id="stop32537" />
 					</linearGradient>
 					<polygon
-   points="1061,556.1 1084.2,542.7 1130.7,569.5 1107.4,583 "
+   points="1130.7,569.5 1107.4,583 1061,556.1 1084.2,542.7 "
    class="st180"
    id="polygon32540"
    style="fill:url(#SVGID_141_)" />
@@ -8631,7 +8670,7 @@
    id="stop32586" />
 					</linearGradient>
 					<polygon
-   points="1061,552.3 1084.2,538.9 1130.7,565.7 1107.4,579.1 "
+   points="1130.7,565.7 1107.4,579.1 1061,552.3 1084.2,538.9 "
    class="st184"
    id="polygon32589"
    style="fill:url(#SVGID_144_)" />
@@ -8760,7 +8799,7 @@
    id="stop32635" />
 					</linearGradient>
 					<polygon
-   points="1061,547.8 1084.2,534.4 1130.7,561.2 1107.4,574.6 "
+   points="1130.7,561.2 1107.4,574.6 1061,547.8 1084.2,534.4 "
    class="st188"
    id="polygon32638"
    style="fill:url(#SVGID_147_)" />
@@ -8838,16 +8877,10 @@
    offset="1"
    id="stop32662" />
 		</radialGradient>
-		<circle
-   id="brillo"
-   cy="550.5"
-   cx="1104.5"
-   r="52.799999"
-   class="st201"
-   style="fill:url(#brillo_1_)" />
+		
 	</g>
 </g><g
-     id="Phone">
+       id="Phone">
 			<linearGradient
    id="SVGID_148_"
    y2="398.57001"
@@ -8997,7 +9030,7 @@
    id="stop32715" />
 		</linearGradient>
 		<polygon
-   points="1143.8,416.4 1143.8,366 1120,379.9 1120,425.2 1120,430.2 "
+   points="1120,379.9 1120,425.2 1120,430.2 1143.8,416.4 1143.8,366 "
    class="st193"
    id="polygon32718"
    style="fill:url(#SVGID_151_)" />
@@ -9026,7 +9059,7 @@
    inkscape:connector-curvature="0"
    style="fill:#ffffff" />
 </g><g
-     id="Icono_Musica">
+       id="Icono_Musica">
 				<linearGradient
    id="SVGID_152_"
    y2="726.03998"
@@ -9078,7 +9111,7 @@
    inkscape:connector-curvature="0"
    style="fill:#e4ebfd" />
 </g><g
-     id="Icono_Play">
+       id="Icono_Play">
 				<linearGradient
    id="SVGID_154_"
    y2="539.35999"
@@ -9124,12 +9157,12 @@
    inkscape:connector-curvature="0"
    style="fill:url(#SVGID_155_)" />
 			<polygon
-   points="1258.4,523.6 1280.7,548.6 1258.3,547.8 "
+   points="1258.3,547.8 1258.4,523.6 1280.7,548.6 "
    class="st216"
    id="polygon32760"
    style="fill:#e4ebfd" />
 </g><g
-     id="Globo_de_conversacion">
+       id="Globo_de_conversacion">
 		<linearGradient
    id="SVGID_156_"
    y2="633.44"
@@ -9174,11 +9207,4 @@
    id="path32775"
    inkscape:connector-curvature="0"
    style="fill:url(#SVGID_157_)" />
-</g></g>
-<g
-   inkscape:groupmode="layer"
-   id="layer4"
-   inkscape:label="hidden" /><g
-   inkscape:groupmode="layer"
-   id="layer6"
-   inkscape:label="everything" /></svg>
+</g></g></g></svg>
