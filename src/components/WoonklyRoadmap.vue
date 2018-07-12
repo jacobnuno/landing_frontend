@@ -130,6 +130,6 @@ export default Vue.extend({
     }
 
     .is-bold{
-        font-weight: 800;
+        font-weight: bolder;
     }
 </style>
