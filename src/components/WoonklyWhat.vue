@@ -21,6 +21,7 @@
 <style lang="scss">
 #woonkly-what-is {
   background: #0a0830;
+  padding-bottom: 5em;  
   .extended-brief {
     margin-top: 1.5em;
   }
