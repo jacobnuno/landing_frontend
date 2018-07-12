@@ -8,6 +8,7 @@
   <w-team/>
   <w-ac-token/>
   <w-token-distribution/>
+  <w-roadmap/>
   <w-faq/>
   <w-question/>
   <w-footer/>
@@ -27,6 +28,7 @@ import wQuestion from '@/components/WoonklyQuestion'
 import wFooter from '@/components/WoonklyFooter'
 import wAcToken from '@/components/WoonklyAcquireToken'
 import wTokenDistribution from '@/components/WoonklyDistributionToken'
+import wRoadmap from '@/components/WoonklyRoadmap'
 
 
 export default {
@@ -42,7 +44,8 @@ export default {
     wQuestion,
     wFooter,
     wAcToken,
-    wTokenDistribution
+    wTokenDistribution,
+    wRoadmap
   },
   mounted () {
     console.log('this shit is mounted')
