@@ -122,6 +122,7 @@ export default {
         {
           name: 'Rodrigo de la Peña',
           position: 'Inversor',
+          img: 'rodrigodelapena.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/rodrigo-de-la-pe%C3%B1a-30a4b522/'
           }
