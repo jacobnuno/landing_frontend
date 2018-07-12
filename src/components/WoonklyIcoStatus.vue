@@ -55,7 +55,9 @@ export default {
 
 <style lang="scss">
 #woonkly-ico-status {
-  background: #06062c;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  // background: #06062c;
 
   .phase {
     strong {
