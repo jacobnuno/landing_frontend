@@ -4,6 +4,10 @@
      
 
      <div class="graf-tkn column is-6">
+
+ <section id="woonkly-dis-token" class="section">
+     <div class="graf-tkn">
+
         <h3 class="title is-4 has-text-centered">Distribución de tokens</h3>
 
         <a class="des-dtkn atkn">
@@ -66,28 +70,20 @@
         <img src="/img/sections/grafica_tkn2.svg" class="graf-two">
      </div>
 
+
 </section>
     
+
 </template>
 
-<script>
-export default {
-    data(){
-        return{
-
-        }
-    }
-}
-    
-</script>
-
-<style lang="scss" scope>
+<style lang="scss">
 #woonkly-dis-token {
   background: #0a0830;
+  
   .extended-brief {
     margin-top: 1.5em;
   }
-}
+
 
 .graf-tkn {
     position: relative;
@@ -344,7 +340,11 @@ small{
     display: block;
 }
 
-
-
+  .graf-tkn {
+    display: absolute;
+    align-items: center;
+    text-align: center;
+  }
+}
 </style>
 
