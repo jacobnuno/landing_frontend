@@ -5,8 +5,11 @@
   <w-atention/>
   <w-what-is/>
   <w-tv/>
+  <w-Benefits/>
   <w-team/>
   <w-ac-token/>
+  <w-dis-token/>
+  <w-allies/>
   <w-token-distribution/>
   <w-roadmap/>
   <w-faq/>
@@ -24,11 +27,15 @@ import wWhatIs from '@/components/WoonklyWhat'
 import wTv from '@/components/WoonklyTv'
 import wTeam from '@/components/woonkly-team/WoonklyTeam'
 import wFaq from '@/components/WoonklyFaq'
+import wBenefits from '@/components/woonkly-benefits/WoonklyBenefits'
 import wQuestion from '@/components/WoonklyQuestion'
 import wFooter from '@/components/WoonklyFooter'
 import wAcToken from '@/components/WoonklyAcquireToken'
+import wDisToken from '@/components/WoonklyDistributionToken'
+import wAllies from '@/components/WoonklyAllies'
 import wTokenDistribution from '@/components/WoonklyDistributionToken'
 import wRoadmap from '@/components/WoonklyRoadmap'
+
 
 
 export default {
@@ -39,13 +46,19 @@ export default {
     wAtention,
     wWhatIs,
     wTv,
+    wFaq,
+    wBenefits,
     wTeam,
     wFaq,
     wQuestion,
     wFooter,
     wAcToken,
-    wTokenDistribution,
-    wRoadmap
+    wRoadmap,
+    wDisToken,
+    wAllies,
+    wTokenDistribution
+
+
   },
   mounted () {
     console.log('this shit is mounted')

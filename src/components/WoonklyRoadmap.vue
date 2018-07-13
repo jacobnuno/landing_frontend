@@ -20,10 +20,10 @@
                             <img class="roadmap-circle" :src="getCircleImg(roadmap[i*2].date)" alt="Done circle">
                             <img class="roadmap-line" :src="getLineImg(roadmap[i*2].date)" alt="Done line">
                             <div class="data-container">
-                                <h3 class="roadmap-title is-uppercase is-bold">
+                                <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
                                     {{ roadmap[i * 2].title }}
                                 </h3>
-                                <p class="roadmap-description">
+                                <p class="roadmap-description is-size-7-mobile">
                                     {{ roadmap[i * 2].description }}
                                 </p>
                             </div>
@@ -32,10 +32,10 @@
                             <img class="roadmap-line" :src="getLineImg(roadmap[i*2+1].date)" alt="Done line">
                             <img class="roadmap-circle" :src="getCircleImg(roadmap[i*2+1].date)" alt="Done circle">
                             <div class="data-container">
-                                <h3 class="roadmap-title is-uppercase is-bold">
+                                <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
                                     {{ roadmap[i * 2 + 1].title }}
                                 </h3>
-                                <p class="roadmap-description">
+                                <p class="roadmap-description is-size-7-mobile">
                                     {{ roadmap[i * 2 + 1].description }}
                                 </p>
                             </div>
@@ -88,6 +88,11 @@ export default Vue.extend({
 
 
 <style lang="scss">
+
+    body, html{
+        overflow-x: hidden;
+    }
+
     #woonkly-roadmap{
         background-color: #0a0830;
         background-image: url('/img/backgrounds/BACKGROUND 5_2.png');
@@ -191,6 +196,9 @@ export default Vue.extend({
         @media screen and (max-width: 892px){
             right: -20%;
         }
+        @media screen and (max-width: 466px){
+            right: -40%;
+        }
     }
 
 
@@ -241,6 +249,44 @@ export default Vue.extend({
         .small{
             .roadmap-line{
                 width: 75px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 572px){
+        .roadmap-circle {
+            width: 119px;
+            margin: -70px;
+        }
+
+        .roadmap-line{
+            width: 75px;
+        }
+
+        .is-aligned-to-left{
+            .roadmap-circle{
+                margin-left: -35px;
+            }
+        }
+        .is-aligned-to-right{
+            .roadmap-circle{
+                margin-right: -30px;
+            }
+        }
+
+        .small{
+            .roadmap-line{
+                width: 55px;
+            }
+            &.is-aligned-to-right{
+                .roadmap-circle{
+                    margin-right: -35px;
+                }
+            }
+            &.is-aligned-to-left{
+                .roadmap-circle{
+                    margin-left: -40px;
+                }
             }
         }
     }
