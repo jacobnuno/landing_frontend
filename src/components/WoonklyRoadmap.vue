@@ -88,6 +88,11 @@ export default Vue.extend({
 
 
 <style lang="scss">
+
+    body, html{
+        overflow-x: hidden;
+    }
+
     #woonkly-roadmap{
         background-color: #0a0830;
         background-image: url('/img/backgrounds/BACKGROUND 5_2.png');
@@ -191,6 +196,9 @@ export default Vue.extend({
         @media screen and (max-width: 892px){
             right: -20%;
         }
+        @media screen and (max-width: 466px){
+            right: -40%;
+        }
     }
 
 
@@ -241,6 +249,41 @@ export default Vue.extend({
         .small{
             .roadmap-line{
                 width: 75px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 572px){
+        .roadmap-circle {
+            width: 119px;
+            margin: -70px;
+        }
+        .roadmap-line{
+            width: 75px;
+        }
+        .is-aligned-to-left{
+            .roadmap-circle{
+                margin-left: -35px;
+            }
+        }
+        .is-aligned-to-right{
+            .roadmap-circle{
+                margin-right: -30px;
+            }
+        }
+        .small{
+            .roadmap-line{
+                width: 55px;
+            }
+            &.is-aligned-to-right{
+                .roadmap-circle{
+                    margin-right: -35px;
+                }
+            }
+            &.is-aligned-to-left{
+                .roadmap-circle{
+                    margin-left: -40px;
+                }
             }
         }
     }
