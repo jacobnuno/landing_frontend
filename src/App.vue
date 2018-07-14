@@ -26,5 +26,16 @@ export default {
     font-family: 'Futura', arial, sans-serif;
     font-weight: bold;
   }
+
+  // TODO: Set max width for whole components
+  // @media (min-width: 769px) {
+  //   & > section {
+  //     & > * {
+  //       max-width: 700px;
+  //       margin-left: auto;
+  //       margin-right: auto;
+  //     }
+  //   }
+  // }
 }
 </style>
