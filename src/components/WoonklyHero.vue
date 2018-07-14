@@ -3,7 +3,7 @@
   <div class="columns is-mobile is-multiline">
     <div class="column is-12-mobile is-half-tablet wrapper">
       <div id="wavy-background"></div>
-      <img id="main-image" src="/img/sections/woonkly-main-2.svg" alt="Woonkly Main Illustration">
+      <img id="main-image" src="/img/sections/woonkly-illustration-2.svg" alt="Woonkly Main Illustration">
       <img class="woonkzalo" src="/img/sections/front-standing-woonkzalo.png" alt="Woonkzalo">
       <img class="circle" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Circle">
     </div>
@@ -81,6 +81,26 @@ export default {
     position: relative;
     z-index: 10;
     .subtitle { color: white }
+  }
+}
+
+@media (min-width: 769px) {
+  #woonkly-description {
+    & > .columns {
+
+      & > .column {
+        &:nth-of-type(1) {
+          order: 2;
+        }
+        &:nth-of-type(2) {
+          order: 1;
+          #woonkly-ico-status {
+            max-width: 400px;
+            margin: auto;
+          }
+        }
+      }
+    }
   }
 }
 </style>
