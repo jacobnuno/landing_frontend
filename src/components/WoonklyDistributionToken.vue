@@ -32,7 +32,6 @@
 // import vue components from src
 import useFunds from '@/components/svg-components/UseFunds'
 import distributionToken from '@/components/svg-components/DistributionToken'
-
 export default {
 // export components to use in the current component
   components: {
@@ -46,12 +45,10 @@ export default {
 #woonkly-dis-token {
   background: var(--woonkly-black-blue);
   position: relative;
-
   .blue-line {
     display: none;
   }
 }
-
 // changes the css properties if the size of the screen is equal or bigger than a tablet
 @media only screen and (min-width: 769px) {
   #woonkly-dis-token {
@@ -78,5 +75,4 @@ export default {
     }
   }
 }
-
 </style>
