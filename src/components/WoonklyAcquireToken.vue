@@ -115,6 +115,8 @@ export default {
 
 <style lang="scss" scope>
 #woonkly-ac-token {
+  overflow-x: hidden;
+  position: relative;
   background: var(--woonkly-black-blue);
   .extended-brief {
     margin-top: 1.5em;
