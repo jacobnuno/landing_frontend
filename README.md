@@ -2,12 +2,12 @@
 
 [![Woonkly](https://woonkly.com/img/powered_woonkly.png)](https://woonkly.com)
 
-This is the awesome Woonkly´s landing page.
+This is the awesome Woonkly's landing page.
 We created this project because we want to let developers from all the globe to use it or modify it, according to their different preferences.
 
 ## Technoligies you will need.
 * [Vue.js](https://vuejs.org/) -  An open-source JavaScript framework for building user interfaces.
-* [Vue CLI](https://github.com/vuejs/vue-cli) - Vue´s developer tool.
+* [Vue CLI](https://github.com/vuejs/vue-cli) - Vue's developer tool.
 * [vue-router](https://router.vuejs.org/) - Vue Router is the official router for Vue.js.
 * [Bulma](https://bulma.io/) - An open-source CSS framwork based on Flexbox.
 * [Sass](https://sass-lang.com/) - An extension of CSS. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. 
@@ -27,28 +27,34 @@ In order to run this project locally you must follow the next steps:
  ````
 *If you didn't change the default configuration the project starts at: http://localhost:8080/*
 
-## Sections.
-We designed a few sections to explain what is Woonkly, the purposes of the enterprise, etc.
-* **What is Woonkly:** In this section we explain the purpose of Woonkly, how the platform works, what are the Woonks, etc.
+## How to modify the landing page.
+If you want to modify the landing page, you must modify the components in the project according to your needs. We consider that  a good ICO landing page should have or show:
+* An introduction.
+* The current status of the ICO.
+* The benefits of investing wiht us.
+* Information about the ICO and the cryptocurrency.
+* Statistics about the token distribution
+* Enterprise's members.
+* F.A.Q. section.
 
-* **Discover Woonkly T.V. 1.0:** Here, we explain a new project which is coming soon, Woonkly T.V. 1.0. Be sure to see this sections for future updates.
+### Introduction.
+The introduction needs to be clear and straight, it should explain to the user what is the purpose of you ICO, what are you doing with the ICO. If you want to look for an example, you can find a template in the _WoonklyWhat.vue_ file, in the _src/components/_ directory.
 
-* **Benefits for each group:** Here, we explain how Woonkly gives benefits its users.
+### ICO´s Current Status.
+This is a very important section, the page should display the current phase the ICO is, total amount of Woonks sold, phase's countdown, etc. If you want to look for an example, you can find a template in the _WoonklyIcoStatus.vue_ file, in the _src/components/_ directory.
 
-* **Acquire tokens:** This is a very important section. This section contains the offer phases when you can buy Woonks and all the basic information about the Woonk cryptocurrency.
+### Benefits.
+Here, you need to explain to the user why you are the best option to invest. Show them what makes your ICO unique, why you are the best option in the market. You can find a template in the _WoonklyBenefit.vue_ file, in the _src/components/woonkly-benefits/_ directory.
 
-* **Token Distribution & Funds use:** You can see how we use our funds and how the token is ditributed in this section.
+### ICO´s information.
+It must contain all the information related to the ICO (important dates, investment methods, exchance rate, etc.). You can find a template in the _WoonklyAcquireToken.vue_ file, in the _src/components/_ directory.
 
-* **Goals & Objectives:** A timeline with the most remarkable moments in Woonkly´s history.
+### Statistics about the token distribution.
+Statistics about how the token is used. You can find a template in the _WoonklyDistributionToken.vue_ file, in the _src/components/_ directory.
 
-* **Team made up by experts:** You can see everyone in the Woonkly team here.
+### Enterprise's Members
+A list of the people responsable for the ICO. You can find a template in the _WoonklyTeamMembers.vue_ file, in the _src/components/woonkly-team/_ directory.
 
-* **Investors & Advisors:** Here, you will see all oof our backers and advisors that have helped in the creation of Woonkly.
 
-* **Tech Allies:**
-
-* **Seen in:**
-
-* **FAQ:** The most common questions asked by users.
-
-* **Doubts:** If you have a specific question, you can contact us here.
+### F.A.Q. section
+It is very important to clear the user's doubts of the ICO, that is why you need a F.A.Q. section. You can find a template in the _WoonklyFaq.vue_ file, in the _src/components/_ directory.
