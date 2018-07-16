@@ -68,12 +68,14 @@
 
 
         <img src="/img/sections/grafica_tkn2.svg" class="graf-two">
+
      </div>
 
 
 </section>
      </div>
  </section>
+
 
 </template>
 
