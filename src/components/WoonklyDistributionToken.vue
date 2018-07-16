@@ -21,7 +21,10 @@
     <img src="/img/icons/blue-line.svg" class="blue-line" id="blue-line-middle">
     <img src="/img/icons/blue-line.svg" class="blue-line" id="blue-line-right">
 
-  </section>
+
+ </section>
+
+
 
 </template>
 
