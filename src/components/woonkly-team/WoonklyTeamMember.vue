@@ -9,7 +9,7 @@
         <span class="w-positon is-size-7 has-text-weight-light">{{member.position}}</span>
       </figcaption>
     </figure>
-    <div class="icons is-flex">
+    <div v-if="member.links" class="icons is-flex">
       <a v-if="member.links.youtube" :href="member.links.youtube" target="_blank">
         <fai :icon="['fab', 'youtube']"/>
       </a>

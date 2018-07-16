@@ -1,7 +1,6 @@
 <template>
 <section id="woonkly-home">
   <w-description/>
-  <w-ico-status/>
   <w-atention/>
   <w-what-is/>
   <w-tv/>
@@ -20,7 +19,6 @@
 <script>
 // @ is an alias to /src
 import wDescription from '@/components/WoonklyHero'
-import wIcoStatus from '@/components/WoonklyIcoStatus'
 import wAtention from '@/components/WoonklyAtention'
 import wWhatIs from '@/components/WoonklyWhat'
 import wTv from '@/components/WoonklyTv'
@@ -35,11 +33,11 @@ import wAllies from '@/components/WoonklyAllies'
 import wRoadmap from '@/components/WoonklyRoadmap'
 
 
+
 export default {
   name: 'Home',
   components: {
     wDescription,
-    wIcoStatus,
     wAtention,
     wWhatIs,
     wTv,

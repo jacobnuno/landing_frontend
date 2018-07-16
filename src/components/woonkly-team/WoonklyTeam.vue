@@ -7,7 +7,7 @@
     </div>
     <h3 class="title is-3 has-text-centered has-text-white is-uppercase">Inversores y Advisors</h3>
     <div class="columns is-mobile is-multiline">
-      <w-team-member v-for="a in advisors" :key="a.name" :member="a" class="column"/>
+      <w-team-member v-for="a in advisors" :key="a.name" :member="a" class="column is-half-mobile is-one-third-tablet"/>
     </div>
   </section>
 </template>
@@ -122,9 +122,56 @@ export default {
         {
           name: 'Rodrigo de la Peña',
           position: 'Inversor',
+          img: 'rodrigodelapena.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/rodrigo-de-la-pe%C3%B1a-30a4b522/'
           }
+        },
+        {
+          name: 'Luis Riveroll',
+          position: 'Inversor',
+          img: 'luisriveroll.jpg'
+        },
+        {
+          name: 'Paul D´Souza',
+          position: 'Silicon Valley Advisor',
+          img: 'pauldsouza.png'
+        },
+        {
+          name: 'Álvaro Santos',
+          position: 'Advisor',
+          img: 'alvarosantos.png',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/%C3%A1lvaro-santos-g%C3%B3mez-9a456435/'
+          }
+        },
+        {
+          name: 'Jorge Espinosa (Criptón)',
+          position: 'Youtube Blockchain Influencer',
+          img: 'jorgeespinosa.jpg'
+        },
+        {
+          name: 'Javier García',
+          position: 'Plug & Play Advisor',
+          img: 'javergarcia.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/javier-garc%C3%ADa-9921a7141/'
+          }
+        },
+        {
+          name: 'Daniel Muvdi',
+          position: 'Advisor',
+          img: 'danielmuvdi.jpg'
+        },
+        {
+          name: 'Mendy Srugo',
+          position: 'Advisor & Investor',
+          img: 'mendysrugo.jpg'
+        },
+        {
+          name: 'David Battaglia',
+          position: 'Advisor',
+          img: 'davidbattaglia.jpg'
         }
       ]
     }
@@ -139,5 +186,15 @@ export default {
 <style lang="scss">
 #woonkly-team {
   background: var(--woonkly-black-blue);
+}
+
+@media screen and (min-width: 769px) {
+  #woonkly-team {
+    & > .columns {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 800px;
+    }
+  }
 }
 </style>
