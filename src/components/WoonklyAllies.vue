@@ -4,7 +4,10 @@
 
     <div class="black-line"></div>
 
+    <!-- static circle decoration svg  -->
     <img src="/img/icons/gradient-circle1.svg" id="gradient-circle-left">
+
+    <!-- static images  -->
     <figure>
       <img id="plugandplay" src="/img/icons/plugandplay.png">
     </figure>
@@ -16,6 +19,7 @@
 
     <div class="black-line"></div>
 
+    <!-- static images  -->
     <div class="seen-on">
       <figure>
         <img id="forbes" src="/img/icons/forbes.png">
@@ -31,6 +35,7 @@
       </figure>
     </div>
 
+    <!-- static circle decoration svg  -->
     <img src="/img/icons/gradient-circle1.svg" id="gradient-circle-right">
 
 
@@ -91,6 +96,7 @@ export default {
   }
 }
 
+// changes the css properties if the size of the screen is equal or bigger than a tablet
 @media only screen and (min-width: 769px) {
   #woonkly-allies {
     .seen-on {
