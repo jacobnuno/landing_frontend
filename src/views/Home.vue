@@ -35,8 +35,6 @@ import wAllies from '@/components/WoonklyAllies'
 import wRoadmap from '@/components/WoonklyRoadmap'
 
 
-
-
 export default {
   name: 'Home',
   components: {
