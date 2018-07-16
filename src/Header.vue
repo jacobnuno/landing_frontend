@@ -1,21 +1,23 @@
 <template>
 <header id="woonkly-header">
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav :class="['navbar', {'scrolled':isScrolledDown}]" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
         <img src="/img/logo.svg" alt="Woonkly Logo" width="112" height="28">
       </a>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <button class="hamburger hamburger--collapse" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+      <a @click="isMenuOpen = true" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
+
     </div>
   </nav>
-  <aside id="woonkly-menu" class="container">
+  <aside id="woonkly-menu" :class="['container', {'open':isMenuOpen}]">
+
+    <button class="w-close-button" @click="isMenuOpen = false">&times;</button>
+
     <div class="columns is-multiline">
       <div class="column profile">
         <figure class="image is-96x96">
@@ -61,10 +63,31 @@
 </template>
 
 <script>
+import { throttle } from 'lodash'
 import wButton from '@/components/shared/WoonklyButton'
 
 export default {
   name: 'WoonklyHeader',
+  data () {
+    return {
+      isMenuOpen: false,
+      isScrolledDown: false,
+    }
+  },
+  methods: {
+    pageScroll: throttle(function () {
+      let currentScroll = window.scrollY
+
+      if (currentScroll > 100) {
+        this.isScrolledDown = true
+      } else {
+        this.isScrolledDown = false
+      }
+    }, 1000)
+  },
+  mounted () {
+    window.addEventListener('scroll', this.pageScroll)
+  },
   components: {
     wButton
   }
@@ -78,10 +101,34 @@ export default {
   left: 0;
   right: 0;
   top: 0;
+
+  .w-close-button {
+    background: none;
+    color: white;
+    border: none;
+    margin: none;
+    outline: none;
+    font-size: 2.5em;
+    line-height: 0.5;
+    user-select: none;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    z-index: 2010;
+    cursor: pointer;
+  }
+
+  .navbar {
+    background: rgba(0, 0, 0, 0);
+    transition: background-color 400ms ease-in-out;
+    
+    &.scrolled {
+      background: var(--woonkly-black-blue);
+    }
+  }
   
   .navbar-burger {
-    position: relative;
-    z-index: 2020;
+    color: white;
   }
 
   #woonkly-menu {
@@ -93,7 +140,13 @@ export default {
     bottom: 0;
     right: 0;
     left: 2em;
-    transform: translateY(100%);
+
+    transition: transform 500ms linear;
+    transform: translateX(100%);
+
+    &.open {
+      transform: translateX(0);
+    }
 
     .buttons {
       .woonkly-button {
@@ -103,6 +156,7 @@ export default {
 
     .navigation {
       padding: 0;
+
       a { outline: none }
       li {
         height: 2.7em;
