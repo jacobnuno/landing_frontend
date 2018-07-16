@@ -354,7 +354,7 @@
     <text x="124.47401" y="74.746208" fill="#00c6f4" style="line-height:1.25" xml:space="preserve"><tspan x="124.47401" y="74.746208" fill="#00d3ff" font-family="'Futura Hv BT'" font-size="24px">5%</tspan></text>
     <text x="122.75853" y="86.411247" fill="#000000" style="line-height:1.25" xml:space="preserve"><tspan x="122.75853" y="86.411247" fill="#00d3ff" font-family="'Futura Hv BT'" font-size="10.667px">(Legal y fiscal)</tspan></text>
     <text x="428.66678" y="317.34378" fill="#00c6f4" style="line-height:1.25" xml:space="preserve"><tspan x="428.66678" y="317.34378" fill="#00d3ff" font-family="'Futura Hv BT'" font-size="24px">10%</tspan></text>
-    <text x="432.44083" y="329.00882" fill="#000000" style="line-height:1.25" xml:space="preserve"><tspan x="432.44083" y="329.00882" fill="#00d3ff" font-family="'Futura Hv BT'" font-size="10.667px">(Desarrollo Apps)</tspan></text>
+    <text x="429" y="329.00882" fill="#000000" style="line-height:1.25" xml:space="preserve"><tspan x="429" y="329.00882" fill="#00d3ff" font-family="'Futura Hv BT'" font-size="10.667px">(Desarrollo Apps)</tspan></text>
    </g>
    <g fill="#ffffff" font-family="sans-serif" font-size="40px" letter-spacing="0px" word-spacing="0px">
     <text x="51.635071" y="250.93246" style="line-height:1.25" xml:space="preserve"><tspan x="51.635071" y="250.93246" fill="#ffffff" font-family="'Futura Hv BT'" font-size="24px">30%</tspan></text>

@@ -5,11 +5,13 @@
 
       <div class="column is-12-mobile is-6-tablet">
         <h3 class="title is-6-mobile is-1-desktop has-text-centered">Distribución de tokens</h3>
+        <!-- start svg DistributionToken -->
         <distribution-token></distribution-token>
       </div>
 
       <div class="column is-12-mobile is-6-tablet">
         <h3 class="title is-4-mobile is-1-desktop has-text-centered">Uso de fondos</h3>
+        <!-- start svg UseFunds -->
         <use-funds></use-funds>
       </div>
 
