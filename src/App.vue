@@ -18,5 +18,13 @@ export default {
 
 
 <style lang="scss">
+#woonkly {
+  font-family: 'Futura', arial, sans-serif;
+  font-weight: normal;
 
+  .title {
+    font-family: 'Futura', arial, sans-serif;
+    font-weight: bold;
+  }
+}
 </style>

@@ -1,0 +1,9 @@
+// This mixins declare the styles for a top divider section
+@mixin divider($url) {
+  height: 3em;
+  margin-top: -3em;
+  background-image: url($url);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
