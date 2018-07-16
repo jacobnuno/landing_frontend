@@ -10,7 +10,6 @@
   <w-ac-token/>
   <w-dis-token/>
   <w-allies/>
-  <w-token-distribution/>
   <w-roadmap/>
   <w-faq/>
   <w-question/>
@@ -18,7 +17,7 @@
 </section>
 </template>
 
-<script>  
+<script>
 // @ is an alias to /src
 import wDescription from '@/components/WoonklyHero'
 import wIcoStatus from '@/components/WoonklyIcoStatus'
@@ -33,10 +32,7 @@ import wFooter from '@/components/WoonklyFooter'
 import wAcToken from '@/components/WoonklyAcquireToken'
 import wDisToken from '@/components/WoonklyDistributionToken'
 import wAllies from '@/components/WoonklyAllies'
-import wTokenDistribution from '@/components/WoonklyDistributionToken'
 import wRoadmap from '@/components/WoonklyRoadmap'
-
-
 
 
 export default {
@@ -56,8 +52,7 @@ export default {
     wAcToken,
     wRoadmap,
     wDisToken,
-    wAllies,
-    wTokenDistribution
+    wAllies
 
 
   },
