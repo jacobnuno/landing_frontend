@@ -1,10 +1,8 @@
 <template>
 <section id="woonkly-tv">
-  <div class="top-divider"></div>
-  <!-- <img src="/img/wavy/top-divider.svg" alt="Top Divider"> -->
+  <w-divider/>
   <div class="section">
     <div class="columns is-mobile is-multiline">
-
       <div class="column is-12">
         <h3 class="title is-3 has-text-centered">Descubre Woonkly TV 1.0</h3>
         <p class="brief">
@@ -28,6 +26,17 @@
   </div>
 </section>
 </template>
+
+<script>
+import wDivider from '@/components/wavy-dividers/WoonklyWavy1'
+
+export default {
+  components: {
+    wDivider
+  }
+}
+</script>
+
 
 <style lang="scss">
 @import '../assets/scss/mixins';
