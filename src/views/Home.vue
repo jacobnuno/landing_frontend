@@ -5,11 +5,11 @@
   <w-what-is/>
   <w-tv/>
   <w-Benefits/>
-  <w-team/>
   <w-ac-token/>
   <w-dis-token/>
-  <w-allies/>
   <w-roadmap/>
+  <w-team/>
+  <w-allies/>
   <w-faq/>
   <w-question/>
   <w-footer/>
