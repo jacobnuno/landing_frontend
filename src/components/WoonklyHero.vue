@@ -77,6 +77,8 @@ export default {
 
 @media (min-width: 769px) {
   #woonkly-description {
+    padding: 4em;
+    
     & > .columns {
 
       & > .column {
