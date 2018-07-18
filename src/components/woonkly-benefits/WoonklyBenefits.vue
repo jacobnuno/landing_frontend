@@ -33,6 +33,7 @@
 
 <style lang="scss">
 	#woonkly-benefits{
+		padding-bottom: 6em;
 		h3{
 			color: black;
 		}
