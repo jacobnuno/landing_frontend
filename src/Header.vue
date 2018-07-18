@@ -175,4 +175,33 @@ export default {
     }
   }
 }
+
+@media screen and (min-width: 769px) {
+  #woonkly-header {
+
+    .w-close-button {
+      display: none;
+    }
+
+    .navbar-burger {
+      display: none;
+    }
+
+    #woonkly-menu {
+      left: 100%;
+      transform: none;
+
+      .navigation {
+        position: fixed;
+        display: inline-block;
+        right: 2em;
+        top: 0;
+
+        ul {
+          display: inline-flex;
+        }
+      }
+    }
+  }
+}
 </style>
