@@ -1,50 +1,51 @@
 <template>
-  <section id="woonkly-ac-token" class="section">
-    <!-- static blue line decoration svg  -->
+<section id="woonkly-ac-token">
+  <w-divider/>
+  <div class="section">
     <img src="/img/icons/linea_luz.svg" id="blue-line-left">
 
     <div class="is-size-4-mobile is-size-2-tablet has-text-centered">ADQUIRIR TOKENS</div>
-      <div class="columns">
-        <div class="column is-12-mobile is-4-tablet is-offset-2-tablet">
-          <p class="has-text-left is-size-7-mobile is-size-6-tablet is-3-tablet w-p">
-              Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido , hemos creado nuestra criptomoneda, llamada “woonk”. Los creadores de contenido y anunciantes pueden comprar woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido.
-              Estas son las fases de la Oferta inicial de nuestra criptomoneda:
-          </p>
-          <!-- we use v-for to iterate a list that contains the ICO's basic information -->
-          <ul>
-            <li v-for="(list1, listIndex) in list1" :key="listIndex" class="list-tkn">
-              <img src="/img/icons/group.svg" class="bullet">
-              <div>
-                <div class="is-size-6-mobile is-size-4-tablet">{{ list1.title }}</div>
-                {{ list1.content }}
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- we use v-for to iterate a second list that contains the ICO's basic information -->
-        <div class="column is-12-mobile is-6-tablet is-offset-1-tablet w-div-right">
-          <ul>
-            <li v-for="(list2, listIndex) in list2" :key="listIndex" class="list-tkn">
-              <img src="/img/icons/group.svg" class="bullet">
-              <div>
-                <div class="is-size-6-mobile is-size-4-tablet">{{ list2.title }}</div>
-                {{ list2.content }}
-              </div>
-            </li>
-          </ul>
-
-        </div>
+    <div class="columns">
+      <div class="column is-12-mobile is-4-tablet is-offset-2-tablet">
+        <p class="has-text-left is-size-7-mobile is-size-6-tablet is-3-tablet w-p">
+          Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido , hemos creado nuestra
+          criptomoneda, llamada “woonk”. Los creadores de contenido y anunciantes pueden comprar woonks para repartirlos
+          entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial
+          de nuestra criptomoneda:
+        </p>
+        <ul>
+          <li v-for="(list1, listIndex) in list1" :key="listIndex" class="list-tkn">
+            <img src="/img/icons/group.svg" class="bullet">
+            <div>
+              <div class="is-size-6-mobile is-size-4-tablet">{{ list1.title }}</div>
+              {{ list1.content }}
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="column is-12-mobile is-6-tablet is-offset-1-tablet w-div-right">
+        <ul>
+          <li v-for="(list2, listIndex) in list2" :key="listIndex" class="list-tkn">
+            <img src="/img/icons/group.svg" class="bullet">
+            <div>
+              <div class="is-size-6-mobile is-size-4-tablet">{{ list2.title }}</div>
+              {{ list2.content }}
+            </div>
+          </li>
+        </ul>
 
       </div>
-      <!-- static blue line decoration svg  -->
-      <img src="/img/icons/linea_luz.svg" id="blue-line-right">
-      <!-- static blue cube decoration svg  -->
-      <img src="/img/icons/ilustracion.svg" id="blue-cube">
 
-    </section>
+    </div>
+    <img src="/img/icons/linea_luz.svg" id="blue-line-right">
+    <img src="/img/icons/ilustracion.svg" id="blue-cube">
+  </div>
+</section>
 </template>
 
 <script>
+import wDivider from '@/components/wavy-dividers/WoonklyWavy2'
+
 export default {
   data () {
     return{
@@ -109,15 +110,22 @@ export default {
         }
       ]
     }
+  },
+  components: {
+    wDivider
   }
-};
+}
 </script>
 
 <style lang="scss" scope>
 #woonkly-ac-token {
-  overflow-x: hidden;
-  position: relative;
-  background: var(--woonkly-black-blue);
+
+  & > div.section {
+    overflow-x: hidden;
+    position: relative;
+    background: var(--woonkly-black-blue);
+  }
+  
   .extended-brief {
     margin-top: 1.5em;
   }
