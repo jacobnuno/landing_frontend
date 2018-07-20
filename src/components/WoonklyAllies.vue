@@ -1,49 +1,48 @@
 <template>
-  <section id="woonkly-allies" class="section">
-    <span class="is-size-1-desktop is-size-5-mobile">ALIADOS TECNOLÓGICOS</span>
-
-    <div class="black-line"></div>
-
-    <!-- static circle decoration svg  -->
-    <img src="/img/icons/gradient-circle1.svg" id="gradient-circle-left">
-
-    <!-- static images  -->
-    <figure>
-      <img id="plugandplay" src="/img/icons/plugandplay.png">
-    </figure>
-    <figure>
-      <img id="unitedcoin" src="/img/icons/unitedcoin.png">
-    </figure>
-
-    <span class="is-size-1-desktop is-size-5-mobile has-text-centered">VISTO EN</span>
-
-    <div class="black-line"></div>
-
-    <!-- static images  -->
-    <div class="seen-on">
+  <section id="woonkly-allies">
+    <w-divider/>
+    <div class="section">
+      <span class="is-size-1-desktop is-size-5-mobile">ALIADOS TECNOLÓGICOS</span>
+      <div class="black-line"></div>
+      <!-- static circle decoration svg  -->
+      <img src="/img/icons/gradient-circle1.svg" id="gradient-circle-left">
+      <!-- static images  -->
       <figure>
-        <img id="forbes" src="/img/icons/forbes.png">
+        <img id ="plugandplay" src="/img/icons/plugandplay.png">
       </figure>
       <figure>
-          <img id="cointelegraph" src="/img/icons/cointelegraph.png">
+        <img id="unitedcoin" src="/img/icons/unitedcoin.png">
       </figure>
-      <figure>
-        <img id="wbf" src="/img/icons/wbf.png">
-      </figure>
-      <figure>
-        <img id="bef-logo" src="/img/icons/bef.svg">
-      </figure>
+      <span class="is-size-1-desktop is-size-5-mobile has-text-centered">VISTO EN</span>
+      <div class="black-line"></div>
+      <!-- static images  -->
+      <div class="seen-on">
+        <figure>
+          <img id="forbes" src="/img/icons/forbes.png">
+        </figure>
+        <figure>
+            <img id="cointelegraph" src="/img/icons/cointelegraph.png">
+        </figure>
+        <figure>
+          <img id="wbf" src="/img/icons/wbf.png">
+        </figure>
+        <figure>
+          <img id="bef-logo" src="/img/icons/bef.svg">
+        </figure>
+      </div>
+      <!-- static circle decoration svg  -->
+      <img src="/img/icons/gradient-circle1.svg" id="gradient-circle-right">
     </div>
-
-    <!-- static circle decoration svg  -->
-    <img src="/img/icons/gradient-circle1.svg" id="gradient-circle-right">
-
-
   </section>
 </template>
 
 <script>
+import wDivider from '@/components/wavy-dividers/WoonklyWavy3'
+
 export default {
+  components: {
+    wDivider
+  }
 }
 </script>
 
@@ -52,7 +51,8 @@ export default {
   color: var(--woonkly-black-blue);
   text-align: center;
   position: relative;
-  overflow: hidden;
+  padding-bottom: 3em;
+  // overflow: hidden;
 
   .black-line {
     height: 3em;
@@ -99,6 +99,8 @@ export default {
 // changes the css properties if the size of the screen is equal or bigger than a tablet
 @media only screen and (min-width: 769px) {
   #woonkly-allies {
+    padding-bottom: 7em;
+
     .seen-on {
       display: flex;
       justify-content: space-between;

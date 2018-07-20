@@ -4,6 +4,8 @@
     <div class="column is-12-mobile is-half-tablet wrapper">
       <div id="wavy-background"></div>
       <img id="main-image" src="/img/sections/woonkly-illustration-2.svg" alt="Woonkly Main Illustration">
+      <!-- <w-path-animation/>
+      <w-people-animation/> -->
       <img class="circle" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Circle">
     </div>
     <div class="column is-12-mobile is-half-tablet titles section">
@@ -16,11 +18,15 @@
 </template>
 
 <script>
+import wPeopleAnimation from '@/components/shared/WoonklyPeople'
+import wPathAnimation from '@/components/shared/WoonklyMainAnimation'
 import wIcoStatus from '@/components/WoonklyIcoStatus'
 
 export default {
   components: {
-    wIcoStatus
+    wIcoStatus,
+    wPathAnimation,
+    wPeopleAnimation
   }
 }
 </script>
@@ -38,19 +44,34 @@ export default {
     margin-left: auto;
     margin-right: auto;
 
-    // TODO: Correct wavy background
-    // #wavy-background {
-    //   position: absolute;
-    //   z-index: 1;
-    //   top: 52px;
-    //   left: 0;
-    //   right: 0;
-    //   bottom: 0;
-    //   background-image: url(/img/wavy/main-wavy.svg);
-    //   background-repeat: no-repeat;
-    //   background-size: 100% 85%;
-    //   background-position: center bottom;
-    // }
+    #svg20387 { // woonkly animated paths
+      position: absolute;
+      width: 100%;
+      left: 0;
+      z-index: 1000;
+      top: 5em;
+    }
+
+    #svg32166 { // woonkly animated people
+      position: absolute;
+      width: 100%;
+      left: 0;
+      z-index: 1000;
+      top: 5em;
+    }
+
+    #wavy-background {
+      position: absolute;
+      z-index: 1;
+      top: 52px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url(/img/wavy/main-wavy.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 85%;
+      background-position: center bottom;
+    }
 
     #main-image {
       position: relative;
@@ -67,10 +88,11 @@ export default {
       width: 2em;
     }
   }
-  
+
   .titles {
     position: relative;
     z-index: 10;
+    background: var(--woonkly-gradient-to-bottom);
     .subtitle { color: white }
   }
 }
@@ -78,17 +100,54 @@ export default {
 @media (min-width: 769px) {
   #woonkly-description {
     padding: 4em;
-    
+
+    .titles {
+      background: none;
+    }
+    .wrapper {
+      position: relative;
+
+      // TODO: Wavy divider on desktop
+      #wavy-background {
+        background-image: url(/img/wavy/main-wavy-2.svg);
+      }
+
+      #main-image {
+        display: block;
+        margin-top: 50%;
+        transform: translateY(-25%) scale(1.4);
+      }
+
+      #svg20387 { // Animated paths with cash and woonklys
+        position: absolute;
+        display: block;
+        margin-top: 50%;
+        transform: translateY(-50%) scale(1.4);
+      }
+
+      #svg32166 { // Animated people
+        position: absolute;
+        display: block;
+        margin-top: 50%;
+        transform: translateY(-50%) scale(1.4);
+      }
+
+      .circle {
+        top: 40%;
+      }
+
+    }
+
     & > .columns {
 
-      & > .column {
+    & > .column {
         &:nth-of-type(1) {
           order: 2;
         }
         &:nth-of-type(2) {
           order: 1;
           #woonkly-ico-status {
-            max-width: 400px;
+            max-width: 550px;
             margin: auto;
           }
         }

@@ -1,5 +1,7 @@
 <template>
   <section id="woonkly-what-is" class="section">
+    <img src="/img/icons/woonk-infinity.svg" alt="Woonk Inifnity" id="woonk-infinity">
+    <img src="/img/icons/woonk-infinity.svg" alt="Woonk Inifnity" id="woonk-infinity2">
     <div class="columns">
       <div class="column is-12-mobile is-half-tablet what-is-woonkly">
         <figure class="image">
@@ -23,8 +25,21 @@
 
 <style lang="scss">
 #woonkly-what-is {
+  position: relative;
+
+  #woonk-infinity {
+    position: absolute;
+    width: 22em;
+    left: -20%;
+  }
+
+  #woonk-infinity2 {
+    position: absolute;
+    bottom: 8em;
+  }
+
   background: #0a0830;
-  padding-bottom: 5em;  
+  padding-bottom: 5em;
   .extended-brief {
     margin-top: 1.5em;
   }

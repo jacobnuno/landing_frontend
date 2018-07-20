@@ -4,3 +4,8 @@
 @import './fonts';
 @import './colors'; 
 @import './classes';
+
+// Remove outline to everything
+* {
+  outline: none !important;
+}

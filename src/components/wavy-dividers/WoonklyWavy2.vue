@@ -29,7 +29,7 @@ export default {
   methods: {
     setHeigth () {
       let { height } = this.$refs.svgPath.getClientRects()[0]
-      this.svgHeigth = height - 5
+      this.svgHeigth = Math.round(height)
     }
   },
   mounted () {

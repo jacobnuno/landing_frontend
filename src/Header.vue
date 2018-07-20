@@ -1,9 +1,9 @@
 <template>
-<header id="woonkly-header">
-  <nav :class="['navbar', {'scrolled':isScrolledDown}]" role="navigation" aria-label="main navigation">
+<header id="woonkly-header" :class="[{'scrolled':isScrolledDown}]">
+  <nav :class="['navbar']" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="/img/logo.svg" alt="Woonkly Logo" width="112" height="28">
+        <img src="/img/logo.svg" alt="Woonkly Logo">
       </a>
 
       <a @click="isMenuOpen = true" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -13,58 +13,53 @@
       </a>
 
     </div>
+    <aside id="woonkly-menu" :class="['container', {'open':isMenuOpen}]">
+
+      <button class="w-close-button" @click="isMenuOpen = false">&times;</button>
+
+      <div class="columns is-multiline">
+        <div class="column profile">
+          <figure class="image is-96x96">
+            <img src="/img/defaults/profile.jpg" alt="Profile Picture">
+          </figure>
+        </div>
+        <div class="column is-12-mobile is-1-tablet language">
+          <w-language-selector/>
+        </div>
+        <div class="column is-12-mobile is-3-tablet buttons">
+          <w-button>Comprar</w-button>
+          <w-button>Faucet Beta</w-button>
+        </div>
+        <nav class="column is-12-mobile is-8-tablet navigation">
+          <ul>
+            <li class="selected">
+              <a href="" target="_blank">Proyecto</a>
+            </li>
+            <li>
+              <a href="" target="_blank">Tokens</a>
+            </li>
+            <li>
+              <a href="" target="_blank">Objetivos</a>
+            </li>
+            <li>
+              <a href="" target="_blank">Equipo</a>
+            </li>
+            <li>
+              <a href="" target="_blank">FAQs</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
   </nav>
-  <aside id="woonkly-menu" :class="['container', {'open':isMenuOpen}]">
-
-    <button class="w-close-button" @click="isMenuOpen = false">&times;</button>
-
-    <div class="columns is-multiline">
-      <div class="column profile">
-        <figure class="image is-96x96">
-          <img src="/img/defaults/profile.jpg" alt="Profile Picture">
-        </figure>
-      </div>
-      <div class="column language">
-        <span>Next...</span>
-        <!-- TODO: Actual language selector -->
-      </div>
-      <div class="column buttons">
-        <w-button>Comprar</w-button>
-        <w-button>Faucet Beta</w-button>
-      </div>
-      <nav class="column navigation">
-        <ul>
-          <li class="selected">
-            <a href="" target="_blank">Proyecto</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Tokens</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Objetivos</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Equipo</a>
-          </li>
-          <li>
-            <a href="" target="_blank">FAQs</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Confiugraicon</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Cerrar sesión</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </aside>
 </header>
 </template>
 
 <script>
 import { throttle } from 'lodash'
 import wButton from '@/components/shared/WoonklyButton'
+// TODO: Create language selector
+import wLanguageSelector from '@/components/shared/WoonklyLanguageSelector'
 
 export default {
   name: 'WoonklyHeader',
@@ -89,7 +84,8 @@ export default {
     window.addEventListener('scroll', this.pageScroll)
   },
   components: {
-    wButton
+    wButton,
+    wLanguageSelector
   }
 }
 </script>
@@ -101,6 +97,12 @@ export default {
   left: 0;
   right: 0;
   top: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background-color 400ms ease-in-out;
+
+  &.scrolled {
+    background: var(--woonkly-black-blue);
+  }
 
   .w-close-button {
     background: none;
@@ -119,14 +121,16 @@ export default {
   }
 
   .navbar {
-    background: rgba(0, 0, 0, 0);
-    transition: background-color 400ms ease-in-out;
-    
-    &.scrolled {
-      background: var(--woonkly-black-blue);
+    background: none;
+
+    .navbar-item {
+      img {
+        max-height: unset;
+        height: 2.5em;
+      }
     }
   }
-  
+
   .navbar-burger {
     color: white;
   }
@@ -179,6 +183,11 @@ export default {
 @media screen and (min-width: 769px) {
   #woonkly-header {
 
+    nav.navbar {
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+
     .w-close-button {
       display: none;
     }
@@ -188,20 +197,49 @@ export default {
     }
 
     #woonkly-menu {
-      left: 100%;
-      transform: none;
+      position: unset;
+      padding: 0;
+      background: none;
+      top: unset;
+      bottom: unset;
+      right: unset;
+      left: unset;
+      transform: none !important;
 
-      .navigation {
-        position: fixed;
-        display: inline-block;
-        right: 2em;
-        top: 0;
+      div.columns {
+        width: 100%;
 
-        ul {
-          display: inline-flex;
+        .column {
+          display: flex;
+          align-items: center;
+        }
+
+        .profile {
+          display: none;
+        }
+
+        .language {
+          order: 2;
+        }
+
+        .buttons {
+          order: 3;
+          margin: 0;
+
+          .woonkly-button {
+            margin: 0;
+          }
+        }
+
+        .navigation {
+          order: 1;
+          li {
+            display: inline;
+          }
         }
       }
-    }
+    } // End of woonkly menu styles
+
   }
 }
 </style>

@@ -5,11 +5,7 @@
       <div class="column is-12">
         <h3 class="title is-12">Los beneficios principales para cada grupo son</h3>
       </div>
-
       <!-- TODO: Poner los cuadros de los beneficios aqui -->
-
-    	
-
     </div>
 
     <aside>
@@ -32,12 +28,19 @@
 </template>
 
 <style lang="scss">
-	#woonkly-benefits{
-		padding-bottom: 6em;
-		h3{
-			color: black;
-		}
+#woonkly-benefits{
+	padding-bottom: 6em;
+	h3 {
+    margin-bottom: 3em;
+		color: black;
 	}
+}
+
+@media screen and (min-width: 1070px) {
+	#woonkly-benefits{
+		padding-bottom: 10em;
+	}
+}
 </style>
 
 <script>
