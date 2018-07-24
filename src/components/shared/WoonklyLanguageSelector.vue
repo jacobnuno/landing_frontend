@@ -1,37 +1,69 @@
 <template lang="html">
-  <div class="w-language-selector">
-    <figure class="image is-inline-block">
-      <img class="is-rounded" src="/img/icons/flags/spain.svg" alt="Spain">
-      <span class="triangle"></span>
-    </figure>
+  <div @click="addClickListener" class="is-inline woonkly-language-selector">
+    <input type="hidden" name="selected-language" :value="selectedLanguage">
+    <span v-if="selectedLanguage">{{selectedLanguage.label}}</span>
+    <ul :class="['options', {'opened':isListVisible}]">
+      <li v-for="lang in languages" :key="lang.label" @click="selectedLanguage = lang">{{lang.label}}</li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'WoonklylanguageSelector',
+  data () {
+    return {
+      isListVisible: false,
+      selectedLanguage: null,
+      languages: [
+        {
+          label: 'Español',
+          img: 'spanish.jpg'
+        },
+        {
+          label: 'English',
+          img: 'english.jpg'
+        },
+        {
+          label: 'French',
+          img: 'French.jgp'
+        },
+        {
+          label: 'Japanese',
+          img: 'japansese.jpg'
+        }
+      ]
+    }
+  },
+  methods: {
+    addClickListener () {
+      this.isListVisible = true
+      setTimeout(() => { document.body.addEventListener('click', this.test) }, 500)
+    },
+    test (e) {
+      console.log('click on body')
+      this.isListVisible = false
+      document.body.removeEventListener('click', this.test)
+    }
+  },
+  mounted () {
+    this.selectedLanguage = this.languages[0]
+  }
 }
 </script>
 
 <style lang="scss">
-.w-language-selector {
-  display: flex;
-  align-items: center;
-  padding: 0.5em;
-
-  .triangle {
-    margin-left: 2.6em;
-    width: 0;
-    height: 0;
-    border-left: 0.8em solid transparent;
-    border-right: 0.8em solid transparent;
-    border-top: 0.8em solid var(--woonkly-light-blue);
-    display: inline-block;
-    transform: translateY(-1.3em);
-  }
-  .image {
-    img {
-      width: 2em;
-      height: 2em;
+.woonkly-language-selector {
+  cursor: pointer;
+  position: relative;
+  color: var(--woonkly-light-blue);
+  .options {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    &.opened {
+      display: inline;
     }
   }
 }
