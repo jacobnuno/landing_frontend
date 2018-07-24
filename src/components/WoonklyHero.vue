@@ -1,11 +1,13 @@
 <template>
 <section id="woonkly-description" class="hero">
+  <div id="wavy-background-desktop"></div>
   <div class="columns is-mobile is-multiline">
     <div class="column is-12-mobile is-half-tablet wrapper">
       <div id="wavy-background"></div>
-      <img id="main-image" src="/img/sections/woonkly-illustration-2.svg" alt="Woonkly Main Illustration">
-      <!-- <w-path-animation/>
-      <w-people-animation/> -->
+      <w-path-animation/>
+      <w-people-animation/>
+      <!-- <img id="main-image" src="/img/sections/woonkly-illustration-2.svg" alt="Woonkly Main Illustration"> -->
+      <img id="main-image" src="/img/sections/woonkly-illustration-final.svg" alt="Woonkly Main Illustration">
       <img class="circle" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Circle">
     </div>
     <div class="column is-12-mobile is-half-tablet titles section">
@@ -44,7 +46,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
 
-    #svg20387 { // woonkly animated paths
+    #woonkly-paths { // woonkly animated paths
       position: absolute;
       width: 100%;
       left: 0;
@@ -52,7 +54,7 @@ export default {
       top: 5em;
     }
 
-    #svg32166 { // woonkly animated people
+    #people-svg { // woonkly animated people
       position: absolute;
       width: 100%;
       left: 0;
@@ -102,15 +104,26 @@ export default {
     padding: 4em;
 
     .titles {
-      background: none;
+      background:   none;
     }
+
+    #wavy-background-desktop {
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background-image: url(/img/wavy/main-wavy-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      background-size: 80% 100%;
+    }
+
     .wrapper {
       position: relative;
 
       // TODO: Wavy divider on desktop
-      #wavy-background {
-        background-image: url(/img/wavy/main-wavy-2.svg);
-      }
+      #wavy-background { display: none }
 
       #main-image {
         display: block;
@@ -118,14 +131,14 @@ export default {
         transform: translateY(-25%) scale(1.4);
       }
 
-      #svg20387 { // Animated paths with cash and woonklys
+      #woonkly-paths { // Animated paths with cash and woonklys
         position: absolute;
         display: block;
         margin-top: 50%;
         transform: translateY(-50%) scale(1.4);
       }
 
-      #svg32166 { // Animated people
+      #people-svg { // Animated people
         position: absolute;
         display: block;
         margin-top: 50%;
