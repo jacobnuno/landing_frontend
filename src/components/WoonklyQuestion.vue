@@ -95,6 +95,10 @@ export default {
       border: 1px #00d3ff solid;
       border-radius: 3em;
       font-size: .5rem;
+
+      @media screen and (min-width: 769px) {
+        font-size: 1em;
+      }
     }
 
     #gradient-circle1 {

@@ -6,12 +6,18 @@
 </template>
 
 <script>
+// Parallax library
+import Rellax from 'rellax'
+
 import wHeader from '@/Header'
 
 export default {
   name: 'App',
   components: {
     wHeader
+  },
+  mounted () {
+    var rellaxVar = new Rellax()
   }
 }
 </script>
@@ -27,4 +33,11 @@ export default {
     font-weight: bold;
   }
 }
+
+// TODO: max-width limit
+// #woonkly {
+//   section > .section {
+//     max-width: 800px;
+//   }
+// }
 </style>

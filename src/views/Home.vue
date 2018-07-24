@@ -1,51 +1,59 @@
 <template>
 <section id="woonkly-home">
   <w-description/>
-  <w-ico-status/>
   <w-atention/>
   <w-what-is/>
   <w-tv/>
-  <w-team/>
+  <w-Benefits/>
   <w-ac-token/>
-  <w-token-distribution/>
+  <w-dis-token/>
   <w-roadmap/>
+  <w-team/>
+  <w-allies/>
   <w-faq/>
   <w-question/>
   <w-footer/>
 </section>
 </template>
 
-<script>  
+<script>
 // @ is an alias to /src
 import wDescription from '@/components/WoonklyHero'
-import wIcoStatus from '@/components/WoonklyIcoStatus'
 import wAtention from '@/components/WoonklyAtention'
 import wWhatIs from '@/components/WoonklyWhat'
 import wTv from '@/components/WoonklyTv'
 import wTeam from '@/components/woonkly-team/WoonklyTeam'
 import wFaq from '@/components/WoonklyFaq'
+import wBenefits from '@/components/woonkly-benefits/WoonklyBenefits'
 import wQuestion from '@/components/WoonklyQuestion'
 import wFooter from '@/components/WoonklyFooter'
 import wAcToken from '@/components/WoonklyAcquireToken'
-import wTokenDistribution from '@/components/WoonklyDistributionToken'
+import wDisToken from '@/components/WoonklyDistributionToken'
+import wAllies from '@/components/WoonklyAllies'
 import wRoadmap from '@/components/WoonklyRoadmap'
+
+
 
 
 export default {
   name: 'Home',
   components: {
     wDescription,
-    wIcoStatus,
     wAtention,
     wWhatIs,
     wTv,
+    wFaq,
+    wBenefits,
     wTeam,
     wFaq,
     wQuestion,
     wFooter,
     wAcToken,
-    wTokenDistribution,
-    wRoadmap
+    wRoadmap,
+    wDisToken,
+    wAllies
+
+
   },
   mounted () {
     console.log('this shit is mounted')
