@@ -4,10 +4,11 @@
   <div class="columns is-mobile is-multiline">
     <div class="column is-12-mobile is-half-tablet wrapper">
       <div id="wavy-background"></div>
-      <w-path-animation/>
-      <w-people-animation/>
+      <img id="main-image" src="/img/sections/woonkly-illustration-final2.svg" alt="Woonkly Main Illustration">
+      <w-smart-contract-svg/>
+      <w-path-animation @animationEnded="triggerAnimation"/>
+      <w-people-animation :class="[{'animate':isPathAnimationStarted}]"/>
       <!-- <img id="main-image" src="/img/sections/woonkly-illustration-2.svg" alt="Woonkly Main Illustration"> -->
-      <img id="main-image" src="/img/sections/woonkly-illustration-final.svg" alt="Woonkly Main Illustration">
       <img class="circle" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Circle">
     </div>
     <div class="column is-12-mobile is-half-tablet titles section">
@@ -20,12 +21,25 @@
 </template>
 
 <script>
+import wSmartContractSvg from '@/components/shared/WoonklySmartContractSVG'
 import wPeopleAnimation from '@/components/shared/WoonklyPeople'
 import wPathAnimation from '@/components/shared/WoonklyMainAnimation'
 import wIcoStatus from '@/components/WoonklyIcoStatus'
 
 export default {
+  data () {
+    return {
+      isPathAnimationStarted: false
+    }
+  },
+  methods: {
+    triggerAnimation () {
+      this.isPathAnimationStarted = true
+      setTimeout(() => { this.isPathAnimationStarted = false }, 1500)
+    }
+  },
   components: {
+    wSmartContractSvg,
     wIcoStatus,
     wPathAnimation,
     wPeopleAnimation
@@ -54,7 +68,7 @@ export default {
       top: 5em;
     }
 
-    #people-svg { // woonkly animated people
+    #people-svg, #smartcontract-svg { // woonkly animated people
       position: absolute;
       width: 100%;
       left: 0;
@@ -138,7 +152,7 @@ export default {
         transform: translateY(-50%) scale(1.4);
       }
 
-      #people-svg { // Animated people
+      #people-svg, #smartcontract-svg { // Animated people
         position: absolute;
         display: block;
         margin-top: 50%;
