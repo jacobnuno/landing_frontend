@@ -167,6 +167,12 @@ export default Vue.extend({
         100%{ box-shadow: 9px 16px 63px 16px #cdf7c2; }
     }
 
+    @keyframes miniGlowEffect {
+        0%  { box-shadow: 9px 16px 63px 6px #cdf7c2; }
+        50% { box-shadow: 9px 16px 63px 10px #cdf7c2; }
+        100%{ box-shadow: 9px 16px 63px 6px #cdf7c2; }
+    }
+
     .roadmap-line{
         width: 260px;
         min-height: 2px;
@@ -299,11 +305,19 @@ export default Vue.extend({
         }
 
         .is-aligned-to-left{
+            span::after{
+                margin-left: 7px;
+                animation: 3s miniGlowEffect infinite;
+            }
             .roadmap-circle{
                 margin-left: -35px;
             }
         }
         .is-aligned-to-right{
+            span::after{
+                margin-left: -38px;
+                animation: 3s miniGlowEffect infinite;
+            }
             .roadmap-circle{
                 margin-right: -30px;
             }
