@@ -9,7 +9,7 @@
       <w-path-animation @animationEnded="triggerAnimation"/>
       <w-people-animation :class="[{'animate':isPathAnimationStarted}]"/>
       <!-- <img id="main-image" src="/img/sections/woonkly-illustration-2.svg" alt="Woonkly Main Illustration"> -->
-      <img class="circle" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Circle">
+      <img class="circle rellax glowing-circle" data-rellax-speed="1" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Circle">
     </div>
     <div class="column is-12-mobile is-half-tablet titles section">
       <h1 class="title">Gana dinero por ver, compartir e interactuar con contenido digital</h1>
@@ -160,7 +160,8 @@ export default {
       }
 
       .circle {
-        top: 40%;
+        top: 50%;
+        left: -50vw;
       }
 
     }
