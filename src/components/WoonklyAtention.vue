@@ -1,6 +1,6 @@
 <template>
   <section id="woonkly-atention" class="section">
-    <img id="woonkly-moon" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Moon">
+    <img id="woonkly-moon" class="rellax glowing-circle" data-rellax-speed="-0.5" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Moon">
     <img id="triangle" src="/img/icons/transparent-triangle.svg" alt="Woonkly triangle">
     <div class="columns">
       <div class="column is-12-mobile is-half-tablet atention">
@@ -59,6 +59,10 @@
 
 @media screen and (min-width: 769px) {
   #woonkly-atention {
+
+    #woonkly-moon {
+      left: -5em;
+    }
 
     .columns {
       & > .atention {
