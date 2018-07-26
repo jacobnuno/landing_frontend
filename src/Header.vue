@@ -3,7 +3,7 @@
   <nav :class="['navbar']" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="/img/logo.svg" alt="Woonkly Logo">
+        <w-logo height="50px" width="auto"/>
       </a>
 
       <a @click="isMenuOpen = true" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -57,6 +57,7 @@
 
 <script>
 import { throttle } from 'lodash'
+import wLogo from '@/components/svg-components/LogoSVG'
 import wButton from '@/components/shared/WoonklyButton'
 // TODO: Create language selector
 import wLanguageSelector from '@/components/shared/WoonklyLanguageSelector'
@@ -84,6 +85,7 @@ export default {
     window.addEventListener('scroll', this.pageScroll)
   },
   components: {
+    wLogo,
     wButton,
     wLanguageSelector
   }
