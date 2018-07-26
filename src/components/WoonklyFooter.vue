@@ -49,6 +49,11 @@ export default {
     display: inline;
     color: #00d2ff;
     margin: .8em;
+    transition: transform 600ms ease-out;
+
+    &:hover, &:active, &:focus {
+      animation: slightly-scale 1s ease-out;
+    }
   }
 
   .w-div {
@@ -65,5 +70,14 @@ export default {
       font-size: 2em;
     }
   }
+}
+
+@keyframes slightly-scale {
+  0% { transform: rotate(0) scale(1) }
+  50% {
+    transition-timing-function: step-start;
+    transform: rotate(230deg) scale(1.3);
+  }
+  100% { transform: rotate(360deg) scale(1) }
 }
 </style>
