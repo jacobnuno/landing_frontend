@@ -38,7 +38,7 @@
 
 @media screen and (min-width: 1070px) {
 	#woonkly-benefits{
-		padding-bottom: 10em;
+		padding-bottom: 13em;
 	}
 }
 </style>
