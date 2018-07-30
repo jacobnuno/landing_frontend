@@ -134,6 +134,7 @@ export default {
       justify-content: space-between;
 
       .time-digit {
+        position: relative;
         text-align: center;
         line-height: 2.3em;
         border-radius: 50%;
@@ -144,6 +145,17 @@ export default {
         position: relative;
         text-shadow: 0px 0px 16px #08c2ee;
         animation: flashing-counter 2s ease infinite alternate;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -6px;
+          left: -6px;
+          right: -6px;
+          bottom: -6px;
+          border: 1px solid var(--woonkly-light-blue-quarter-opacity);
+          border-radius: 50%;
+        }
 
         &:nth-of-type(1) {
           animation-delay: 500ms;
