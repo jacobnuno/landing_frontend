@@ -66,6 +66,7 @@ export default {
     top: 2em;
     right: 13em;
     width: 14em;
+    z-index: -1;
   }
 
   #gradient-circle-right {
@@ -73,6 +74,7 @@ export default {
     bottom: 1em;
     transform: translateX(90%);
     width: 7em;
+    z-index: -1;
   }
 
   #plugandplay {
