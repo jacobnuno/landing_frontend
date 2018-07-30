@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 320.872 308.04">
+  <defs>
+    <style>
+      .circle {
+        stroke: #00d3ff;
+        fill: none;
+
+        animation: bigger 1s ease infinite alternate;
+     }
+
+     @keyframes bigger {
+       from { transform: scale(1) }
+       to { transform: scale(1.07) }
+     }
+    </style>
+  </defs>
+  <g>
+    <g class="circle">
+      <path transform="translate(209.225)" d="m44.406 22.203a22.203 22.203 0 0 1 -22.203 22.203 22.203 22.203 0 0 1 -22.203 -22.203 22.203 22.203 0 0 1 22.203 -22.203 22.203 22.203 0 0 1 22.203 22.203z" />
+    </g>
+
+    <g class="circle">
+      <path d="m41.958 168.375a20.979 20.979 0 0 1 -20.979 20.979 20.979 20.979 0 0 1 -20.979 -20.979 20.979 20.979 0 0 1 20.979 -20.979 20.979 20.979 0 0 1 20.979 20.979z" />
+    </g>
+
+    <g class="circle">
+      <path d="m320.873 206.849a20.979 20.979 0 0 1 -20.979 20.979 20.979 20.979 0 0 1 -20.979 -20.979 20.979 20.979 0 0 1 20.979 -20.979 20.979 20.979 0 0 1 20.979 20.979z" />
+    </g>
+
+    <g class="circle">
+      <path transform="translate(134.061,268.343)" d="m39.698 19.848a19.849 19.848 0 0 1 -19.849 19.848 19.849 19.848 0 0 1 -19.849 -19.848 19.849 19.848 0 0 1 19.849 -19.848 19.849 19.848 0 0 1 19.849 19.848z" />
+    </g>
+
+    <g class="circle">
+      <path transform="translate(63.375,21.353)" d="m32.03 16.015a16.015 16.015 0 0 1 -16.015 16.015 16.015 16.015 0 0 1 -16.015 -16.015 16.015 16.015 0 0 1 16.015 -16.015 16.015 16.015 0 0 1 16.015 16.015z" />
+    </g>
+  </g>
+
+  <script type="text/javascript">
+    <![CDATA[
+      let circles = document.querySelectorAll('.circle')
+      let circleDelays = ['250ms', '300ms', '500ms', '600ms', '750ms', '900ms', '1s', '2500ms']
+
+      for (let i = 0; i < circles.length; i++) {
+        let { height, width } = circles[i].getBoundingClientRect()
+        console.log(`${height/2}px, ${width/2}px`)
+
+        circles[i].style.animationDelay = circleDelays[Math.floor(Math.random() * circleDelays.length)]
+
+        circles[i].style.transformOrigin = `${height/2}px ${width/2}px 0px`
+      }
+    ]]>
+  </script>
+</svg>
