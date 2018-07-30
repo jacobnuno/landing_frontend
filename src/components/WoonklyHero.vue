@@ -4,11 +4,8 @@
   <div class="columns is-mobile is-multiline">
     <div class="column is-12-mobile is-half-tablet wrapper">
       <div id="wavy-background"></div>
-      <img id="main-image" src="/img/sections/woonkly-illustration-final2.svg" alt="Woonkly Main Illustration">
-      <w-smart-contract-svg/>
-      <w-path-animation @animationEnded="triggerAnimation"/>
-      <w-people-animation :class="[{'animate':isPathAnimationStarted}]"/>
-      <!-- <img id="main-image" src="/img/sections/woonkly-illustration-2.svg" alt="Woonkly Main Illustration"> -->
+      <img id="main-image" src="/img/sections/woonkly-illustration-final3.svg" alt="Woonkly Main Illustration">
+      <object id="woonkly-animation" :data="require('@/assets/svg/woonkly-animation.svg')" type="image/svg+xml"></object>
       <img class="circle rellax glowing-circle" data-rellax-speed="1" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Circle">
     </div>
     <div class="column is-12-mobile is-half-tablet titles section">
@@ -21,9 +18,6 @@
 </template>
 
 <script>
-import wSmartContractSvg from '@/components/shared/WoonklySmartContractSVG'
-import wPeopleAnimation from '@/components/shared/WoonklyPeople'
-import wPathAnimation from '@/components/shared/WoonklyMainAnimation'
 import wIcoStatus from '@/components/WoonklyIcoStatus'
 
 export default {
@@ -32,17 +26,14 @@ export default {
       isPathAnimationStarted: false
     }
   },
+  components: {
+    wIcoStatus
+  },
   methods: {
     triggerAnimation () {
       this.isPathAnimationStarted = true
       setTimeout(() => { this.isPathAnimationStarted = false }, 1500)
     }
-  },
-  components: {
-    wSmartContractSvg,
-    wIcoStatus,
-    wPathAnimation,
-    wPeopleAnimation
   }
 }
 </script>
@@ -68,7 +59,7 @@ export default {
       top: 5em;
     }
 
-    #people-svg, #smartcontract-svg { // woonkly animated people
+    #woonkly-animation { // woonkly animated people
       position: absolute;
       width: 100%;
       left: 0;
@@ -110,6 +101,8 @@ export default {
     z-index: 10;
     background: var(--woonkly-gradient-to-bottom);
     .subtitle { color: white }
+
+    & > h1 + h2 { margin-top: 1em }
   }
 }
 
@@ -152,7 +145,7 @@ export default {
         transform: translateY(-50%) scale(1.4);
       }
 
-      #people-svg, #smartcontract-svg { // Animated people
+      #woonkly-animation { // Animated people
         position: absolute;
         display: block;
         margin-top: 50%;
