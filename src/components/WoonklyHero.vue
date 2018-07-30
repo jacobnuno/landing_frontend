@@ -1,5 +1,5 @@
 <template>
-<section id="woonkly-description" class="hero">
+<section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.25 } }" id="woonkly-description" class="hero">
   <div id="wavy-background-desktop"></div>
   <div class="columns is-mobile is-multiline">
     <div class="column is-12-mobile is-half-tablet wrapper">
@@ -33,6 +33,11 @@ export default {
     triggerAnimation () {
       this.isPathAnimationStarted = true
       setTimeout(() => { this.isPathAnimationStarted = false }, 1500)
+    },
+    visibilityChanged (isVisible, entry) {
+      if (isVisible) {
+        this.$emit('currentSectionChanged', 'WoonklyHero')
+      }
     }
   }
 }
@@ -71,13 +76,12 @@ export default {
       position: absolute;
       z-index: 1;
       top: 52px;
-      left: 0;
+      left: -1em;
       right: 0;
       bottom: 0;
       background-image: url(/img/wavy/main-wavy.svg);
       background-repeat: no-repeat;
-      background-size: 100% 85%;
-      background-position: center bottom;
+      background-size: cover;
     }
 
     #main-image {

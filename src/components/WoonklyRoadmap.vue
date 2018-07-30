@@ -1,5 +1,5 @@
 <template>
-    <section id="woonkly-roadmap" class="section">
+    <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.25 } }" id="woonkly-roadmap" class="section">
         <div class="container">
             <!-- progress-bar decoration svg  -->
             <img id="progress-bar" src="/img/sections/roadmap/progress.svg" alt="Roadmap">
@@ -75,6 +75,11 @@ export default Vue.extend({
         }
     },
     methods: {
+        visibilityChanged (isVisible, entry) {
+            if (isVisible) {
+            this.$emit('currentSectionChanged', 'WoonklyRoadmap')
+            }
+        },
         // return the actual date
         taskIsDone(date) {
             return new Date().getTime() > date.getTime()

@@ -1,18 +1,22 @@
 <template>
   <main id="woonkly">
-    <w-header/>
-    <router-view/>
+    <w-header :current-section="currentSection"/>
+    <router-view @userEnteredSection="currentSection = $event"/>
   </main>
 </template>
 
 <script>
 // Parallax library
 import Rellax from 'rellax'
-
 import wHeader from '@/Header'
 
 export default {
   name: 'App',
+  data () {
+    return {
+      currentSection: 'WoonklyHero'
+    }
+  },
   components: {
     wHeader
   },
