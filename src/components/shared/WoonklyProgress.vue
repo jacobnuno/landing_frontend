@@ -49,13 +49,13 @@ export default {
         content: "";
         display: inline-block;
         position: absolute;
-        right: 3px;
+        right: 10px;
         top: 0;
         bottom: 0;
         width: 1em;
         border-radius: 1em;
         animation: light-glow 900ms ease-in-out infinite alternate;
-        background: linear-gradient(to right, rgba(0,0,0,0) 0%, var(--woonkly-light-blue) 25%);
+        background: none;
       }
     }
   }
