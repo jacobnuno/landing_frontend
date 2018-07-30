@@ -144,8 +144,8 @@ export default {
     background: var(--woonkly-dark-blue);
     top: 0;
     bottom: 0;
-    right: 0;
     left: 2em;
+    width: calc(100vw - 2em);
 
     transition: transform 500ms linear;
     transform: translateX(100%);
