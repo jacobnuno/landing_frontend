@@ -52,11 +52,6 @@ export default {
     wRoadmap,
     wDisToken,
     wAllies
-
-
-  },
-  mounted () {
-    console.log('this shit is mounted')
   }
 }
 </script>
