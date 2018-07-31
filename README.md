@@ -5,7 +5,7 @@
 This is the awesome Woonkly's landing page.
 We created this project because we want to let developers from all the globe to use it or modify it, according to their different preferences.
 
-## Technoligies you will need.
+## Technologies you will need.
 * [Vue.js](https://vuejs.org/) -  An open-source JavaScript framework for building user interfaces.
 * [Vue CLI](https://github.com/vuejs/vue-cli) - Vue's developer tool.
 * [vue-router](https://router.vuejs.org/) - Vue Router is the official router for Vue.js.
