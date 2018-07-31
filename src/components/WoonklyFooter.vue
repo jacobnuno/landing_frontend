@@ -1,17 +1,23 @@
 <template>
   <footer id="woonkly-footer" class="">
     <div>
-        <a href="#">
+        <a href="https://www.facebook.com/woonkly/" target="_blank">
           <fai :icon="['fab', 'facebook-f']" class="icons" />
         </a>
-        <a href="#">
+        <a href="https://twitter.com/WoonklyTV" target="_blank">
           <fai :icon="['fab', 'twitter']" class="icons" />
         </a>
-        <a href="#">
+        <a href="https://www.youtube.com/c/MrSantos" target="_blank">
           <fai :icon="['fab', 'youtube']" class="icons" />
         </a>
-        <a href="#">
+        <a href="https://t.me/joinchat/HIxsXg7y5_EDCgXmkT3yRA" target="_blank">
           <fai :icon="['fab', 'telegram-plane']" class="icons" />
+        </a>
+        <a href="https://github.com/Woonkly" target="_blank">
+          <fai :icon="['fab', 'github']" class="icons" />
+        </a>
+        <a>
+          <fai :icon="['fab', 'medium-m']" class="icons" />
         </a>
     </div>
     <div class="w-div">
@@ -25,14 +31,8 @@
 
 <script>
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFacebookF } from '@fortawesome/fontawesome-free-brands'
-import { faTelegramPlane } from '@fortawesome/fontawesome-free-brands'
-import { faTwitter } from '@fortawesome/fontawesome-free-brands'
-import { faYoutube } from '@fortawesome/fontawesome-free-brands'
-library.add(faTelegramPlane)
-library.add(faFacebookF)
-library.add(faTwitter)
-library.add(faYoutube)
+import { faFacebookF, faTelegramPlane, faTwitter, faYoutube, faGithub, faMediumM } from '@fortawesome/fontawesome-free-brands'
+library.add(faFacebookF, faTelegramPlane, faTwitter, faYoutube, faGithub, faMediumM)
 
 export default {
 }
