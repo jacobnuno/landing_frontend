@@ -1,15 +1,12 @@
 <template>
-  <section id="woonkly-benefits" class="section">
-    <div class="columns is-mobile is-centered">
+  <section id="woonkly-benefits">
+		<div class="section">
+			<div class="columns is-mobile is-centered">
 
       <div class="column is-12">
         <h3 class="title is-12">Los beneficios principales para cada grupo son</h3>
       </div>
-
       <!-- TODO: Poner los cuadros de los beneficios aqui -->
-
-    	
-
     </div>
 
     <aside>
@@ -28,15 +25,31 @@
     		</li>
     	</ul>
     </aside>
+		</div>
   </section>
 </template>
 
 <style lang="scss">
-	#woonkly-benefits{
-		h3{
-			color: black;
-		}
+#woonkly-benefits{
+	padding-bottom: 6em;
+
+	& > .section {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
 	}
+
+	h3 {
+    margin-bottom: 3em;
+		color: black;
+	}
+}
+
+@media screen and (min-width: 1070px) {
+	#woonkly-benefits{
+		padding-bottom: 13em;
+	}
+}
 </style>
 
 <script>
