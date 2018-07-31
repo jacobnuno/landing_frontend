@@ -62,6 +62,17 @@ export default {
     position: absolute;
     left: 0;
     top: 100%;
+
+    li {
+      padding: 0.5em 0.8em;
+      background: var(--woonkly-black-blue);
+      transition: color 200ms ease, background 200ms ease;
+      &:hover, &:focus, &:active {
+        color: white;
+        background: var(--woonkly-dark-blue);
+      }
+    }
+
     &.opened {
       display: inline;
     }

@@ -2,31 +2,31 @@
 <div class="woonkly-benefit">
   <div class="squares">
 
-
   	<div class="square back-square"></div>
   	<div class=" square front-square">
-  			
+
   		<div class="square-text">
   			{{text}}
   			<ul class="icons-sqr">
   				<li v-for="icon in icons">
   					<img :src="icon">
-    				
+
   				</li>
   			</ul>
   		</div>
 
   		<div class="img-square">
   			<img v-if="img"  :src="img">
-  			
+
   		</div>
-  		
-  		
+
+
   	</div>
-  	
+
   </div>
 </div>
 </template>
+
 <style lang="scss">
 	.woonkly-benefit{
 		margin: 0;
@@ -72,13 +72,13 @@
 		display: table;
 		border: .4px solid grey;
 		animation: shadowmove 3s infinite;
-		
+
 		/*box-shadow: 0px 1px 40px 1px #00D3FF, 0px 1px 5px 0px #02004A;*/
 
 		.img-square{
 			display:table-cell;
-			
-			
+
+
 			img{
 				margin-top: 1rem;
 				min-width: 3rem;
@@ -92,7 +92,7 @@
 		color: black;
 		display:table-cell;
 		width:75%;
-    	vertical-align:middle; 
+    	vertical-align:middle;
     	text-align:center;
     	padding:1em;
     	font-weight: bold;
@@ -119,16 +119,16 @@
 		}
 		}
 
-		
-		
+
+
 	}
-	
+
 
 	@keyframes shadowmove {
     50% {box-shadow: 0px 1px 40px 1px #00D3FF;}
 	}
 
-	
+
 </style>
 
 
@@ -137,8 +137,8 @@
         name: 'SingleBenefit',
         props:{text: {type: String,required: true},icons: {type: Array,required: false}, img: { type: String, required: false}},
         methods: {
-            
+
         }
-        
+
     }
 </script>

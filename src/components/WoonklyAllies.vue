@@ -5,7 +5,7 @@
       <span class="is-size-1-desktop is-size-5-mobile">ALIADOS TECNOLÓGICOS</span>
       <div class="black-line"></div>
       <!-- static circle decoration svg  -->
-      <img src="/img/icons/gradient-circle1.svg" id="gradient-circle-left">
+      <img class="rellax" data-rellax-speed="-0.1" src="/img/icons/gradient-circle1.svg" id="gradient-circle-left">
       <!-- static images  -->
       <figure>
         <img id ="plugandplay" src="/img/icons/plugandplay.png">
@@ -31,7 +31,7 @@
         </figure>
       </div>
       <!-- static circle decoration svg  -->
-      <img src="/img/icons/gradient-circle1.svg" id="gradient-circle-right">
+      <img class="rellax" data-rellax-speed="0.4" src="/img/icons/gradient-circle1.svg" id="gradient-circle-right">
     </div>
   </section>
 </template>
@@ -66,6 +66,7 @@ export default {
     top: 2em;
     right: 13em;
     width: 14em;
+    z-index: -1;
   }
 
   #gradient-circle-right {
@@ -73,6 +74,7 @@ export default {
     bottom: 1em;
     transform: translateX(90%);
     width: 7em;
+    z-index: -1;
   }
 
   #plugandplay {
@@ -121,14 +123,14 @@ export default {
     }
     #gradient-circle-left {
       top: -27%;
-      left: -32%;
+      left: -36em;
       width: 60em;
     }
 
     #gradient-circle-right {
       bottom: -2%;
       width: 20em;
-      left: 65%;
+      right: -10em;
     }
   }
 }

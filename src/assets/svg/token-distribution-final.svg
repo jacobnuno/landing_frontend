@@ -1,5 +1,4 @@
-<template lang="html">
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="214.58 4404.5 528.37 517.26">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="214.58 4404.5 528.37 517.26">
     <defs>
         <filter id="b" height="132.08" width="132.08" y="4567.6" x="418.2" filterUnits="userSpaceOnUse">
             <feOffset input="SourceAlpha" dy="3" />
@@ -124,6 +123,112 @@
         <linearGradient id="s" y2="20.74" xlink:href="#linear-gradient" gradientUnits="userSpaceOnUse" x2="10.37" y1="3.111" x1="23.332" />
         <linearGradient id="r" y2="33.906" xlink:href="#linear-gradient" gradientUnits="userSpaceOnUse" x2="16.953" y1="5.0859" x1="38.144" />
     </defs>
+    <style>
+    #animated-ellipses > g > path {
+      animation: scaling 2s ease-out infinite alternate;
+    }
+
+    @keyframes scaling {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.5);
+      }
+    }
+
+    ellipse {
+       /* animation: ellipse-changing 4s ease-in infinite alternate;
+       transform-origin: 10% 10%; */
+     }
+     @keyframes ellipse-changing {
+       0% {
+         transform: scale(1);
+       }
+       50% { transform: scale(1.3); }
+       100% { transform: scale(1); }
+     }
+     .cls-1 {
+       fill: rgba(49,118,164,0.08);
+       stroke: rgba(0,211,255,0.05);
+     }
+     .cls-2, .cls-3, .cls-7 {
+       fill: rgba(49,118,164,0.16);
+     }
+     .cls-3 {
+       opacity: 0.48;
+     }
+     .cls-4 {
+       fill: rgba(49,118,164,0.19);
+       stroke: #00d3ff;
+     }
+     .cls-5 {
+       fill: url(#linear-gradient);
+     }
+     .cls-6 {
+       fill: #fff;
+     }
+     .cls-7 {
+       opacity: 0.4;
+     }
+     .cls-10, .cls-8 {
+       fill: none;
+     }
+     .cls-8 {
+       stroke: #01c8f5;
+     }
+     .cls-9 {
+       stroke: none;
+     }
+     .cls-11 {
+       filter: url(#c);
+     }
+     .cls-12 {
+       filter: url(#j);
+     }
+     .cls-13 {
+       filter: url(#d);
+     }
+     .cls-14 {
+       filter: url(#k);
+     }
+     .cls-15 {
+       filter: url(#e);
+     }
+     .cls-16 {
+       filter: url(#l);
+     }
+     .cls-17 {
+       filter: url(#f);
+     }
+     .cls-18 {
+       filter: url(#m);
+     }
+     .cls-19 {
+       filter: url(#g);
+     }
+     .cls-20 {
+       filter: url(#n);
+     }
+     .cls-21 {
+       filter: url(#h);
+     }
+     .cls-22 {
+       filter: url(#o);
+     }
+     .cls-23 {
+       filter: url(#i);
+     }
+     .cls-24 {
+       filter: url(#p);
+     }
+     .cls-25 {
+       filter: url(#q);
+     }
+     .cls-26 {
+       filter: url(#b);
+     }
+    </style>
     <ellipse opacity=".4" rx="18.394" data-name="Ellipse 10" ry="18.393" cy="4695.7" cx="368.15" class="cls-7" />
     <ellipse opacity=".4" class="cls-7" rx="31.371" ry="31.37" data-name="Ellipse 10" cy="4773.1" cx="476.42" />
     <circle opacity=".4" data-name="Ellipse 10" class="cls-7" cy="4733.8" cx="583.41" r="24.678" />
@@ -289,13 +394,8 @@
             <tspan font-size="10.667px" line-height="3.77952766px" y="4850.0088" x="446.98749" font-family="'Futura Hv BT'" fill="#ffffff">e inversores)</tspan>
         </text>
     </g>
-</svg>
-</template>
-
-<script>
-export default {
-  methods: {
-    calculateCenter () {
+    <script type="text/javascript"><![CDATA[
+      "use strict";
       var paths = document.querySelectorAll('#animated-ellipses path[id*="ellipse"]');
       var animationDelays = ['0', '300ms', '500ms', '1s', '1500ms', '2s',]
 
@@ -307,118 +407,5 @@ export default {
         paths[i].style.transformOrigin = height / 2 + "px " + width / 2 + "px";
         paths[i].style.animationDelay = animationDelays[Math.floor(Math.random() * animationDelays.length)]
       }
-    }
-  },
-  mounted () {
-    this.calculateCenter()
-  }
-}
-</script>
-
-<style lang="css">
-
-#animated-ellipses > g > path {
-  animation: scaling 2s ease-out infinite alternate;
-}
-
-@keyframes scaling {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.5);
-  }
-}
-
-ellipse {
-   /* animation: ellipse-changing 4s ease-in infinite alternate;
-   transform-origin: 10% 10%; */
- }
- @keyframes ellipse-changing {
-   0% {
-     transform: scale(1);
-   }
-   50% { transform: scale(1.3); }
-   100% { transform: scale(1); }
- }
- .cls-1 {
-   fill: rgba(49,118,164,0.08);
-   stroke: rgba(0,211,255,0.05);
- }
- .cls-2, .cls-3, .cls-7 {
-   fill: rgba(49,118,164,0.16);
- }
- .cls-3 {
-   opacity: 0.48;
- }
- .cls-4 {
-   fill: rgba(49,118,164,0.19);
-   stroke: #00d3ff;
- }
- .cls-5 {
-   fill: url(#linear-gradient);
- }
- .cls-6 {
-   fill: #fff;
- }
- .cls-7 {
-   opacity: 0.4;
- }
- .cls-10, .cls-8 {
-   fill: none;
- }
- .cls-8 {
-   stroke: #01c8f5;
- }
- .cls-9 {
-   stroke: none;
- }
- .cls-11 {
-   filter: url(#c);
- }
- .cls-12 {
-   filter: url(#j);
- }
- .cls-13 {
-   filter: url(#d);
- }
- .cls-14 {
-   filter: url(#k);
- }
- .cls-15 {
-   filter: url(#e);
- }
- .cls-16 {
-   filter: url(#l);
- }
- .cls-17 {
-   filter: url(#f);
- }
- .cls-18 {
-   filter: url(#m);
- }
- .cls-19 {
-   filter: url(#g);
- }
- .cls-20 {
-   filter: url(#n);
- }
- .cls-21 {
-   filter: url(#h);
- }
- .cls-22 {
-   filter: url(#o);
- }
- .cls-23 {
-   filter: url(#i);
- }
- .cls-24 {
-   filter: url(#p);
- }
- .cls-25 {
-   filter: url(#q);
- }
- .cls-26 {
-   filter: url(#b);
- }
-</style>
+    ]]></script>
+</svg>

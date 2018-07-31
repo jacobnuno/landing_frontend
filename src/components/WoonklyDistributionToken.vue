@@ -1,6 +1,6 @@
 <template>
 
-  <section id="woonkly-dis-token" class="section">
+  <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.25 } }" id="woonkly-dis-token" class="section">
     <div class="columns is-mobile is-multiline">
 
       <div class="column is-12-mobile is-6-tablet">
@@ -33,7 +33,13 @@
 import useFunds from '@/components/svg-components/UseFunds'
 import distributionToken from '@/components/svg-components/DistributionToken'
 export default {
-// export components to use in the current component
+  methods: {
+    visibilityChanged (isVisible, entry) {
+      if (isVisible) {
+        this.$emit('currentSectionChanged', 'WoonklyDistributionToken')
+      }
+    }
+  },
   components: {
     useFunds,
     distributionToken

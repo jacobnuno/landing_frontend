@@ -36,18 +36,37 @@ export default {
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: white;
       text-align: center;
+      transition: opacity 500ms ease;
     }
     &::-moz-placeholder { /* Firefox 19+ */
       color: white;
       text-align: center;
+      transition: opacity 500ms ease;
     }
     &:-ms-input-placeholder { /* IE 10+ */
       color: white;
       text-align: center;
+      transition: opacity 500ms ease;
     }
     &:-moz-placeholder { /* Firefox 18- */
       color: white;
       text-align: center;
+      transition: opacity 500ms ease;
+    }
+
+    &:focus, &:active {
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        opacity: 0;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        opacity: 0;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        opacity: 0;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        opacity: 0;
+      }
     }
   }
 </style>

@@ -1,18 +1,22 @@
 <template>
   <main id="woonkly">
-    <w-header/>
-    <router-view/>
+    <w-header :current-section="currentSection"/>
+    <router-view @userEnteredSection="currentSection = $event"/>
   </main>
 </template>
 
 <script>
 // Parallax library
 import Rellax from 'rellax'
-
 import wHeader from '@/Header'
 
 export default {
   name: 'App',
+  data () {
+    return {
+      currentSection: 'WoonklyHero'
+    }
+  },
   components: {
     wHeader
   },
@@ -24,12 +28,12 @@ export default {
 
 
 <style lang="scss">
-#woonkly {
-  font-family: 'Futura', arial, sans-serif;
+#woonkly, body, button, input, select, textarea {
+  font-family: 'Futura', arial, sans-serif !important;
   font-weight: normal;
 
   .title {
-    font-family: 'Futura', arial, sans-serif;
+    font-family: 'Futura', arial, sans-serif !important;
     font-weight: bold;
   }
 }

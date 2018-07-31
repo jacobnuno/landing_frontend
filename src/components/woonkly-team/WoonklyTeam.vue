@@ -1,5 +1,5 @@
 <template>
-  <section id="woonkly-team" class="section">
+  <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.1 } }" id="woonkly-team" class="section">
     <img id="woonkly-light" src="/img/icons/woonkly-light.png" alt="Woonkly Light">
     <h3 class="title is-3 has-text-centered has-text-white is-uppercase">Un equipo experto</h3>
     <p class="is-size-5 has-text-centered">Crear una gran idea, un excelente producto y una potente criptomoneda solo puede realizarse con un equipo de los mejores expertos en cada área.</p>
@@ -175,6 +175,13 @@ export default {
           img: 'davidbattaglia.jpg'
         }
       ]
+    }
+  },
+  methods: {
+    visibilityChanged (isVisible, entry) {
+      if (isVisible) {
+        this.$emit('currentSectionChanged', 'WoonklyTeam')
+      }
     }
   },
   components: {

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320.872 308.04">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #00d3ff;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      #strikes > g {
+        animation: bigger 500ms ease 1s infinite alternate-reverse;
+      }
+
+      @keyframes bigger {
+        from { transform: scale(1) }
+        to { transform: scale(1.07) }
+      }
+    </style>
+  </defs>
+  <g id="strikes" data-name="Contornos_Uso de fondos" transform="translate(-3946.51 -4601.915)">
+    <g id="Ellipse_11" data-name="Ellipse 11" class="cls-1" transform="translate(4155.735 4601.915)">
+      <ellipse class="cls-2" cx="22.203" cy="22.203" rx="22.203" ry="22.203"/>
+      <ellipse class="cls-3" cx="22.203" cy="22.203" rx="21.703" ry="21.703"/>
+    </g>
+    <g id="Ellipse_11-2" data-name="Ellipse 11" class="cls-1" transform="translate(3946.51 4749.311)">
+      <ellipse class="cls-2" cx="20.979" cy="20.979" rx="20.979" ry="20.979"/>
+      <ellipse class="cls-3" cx="20.979" cy="20.979" rx="20.479" ry="20.479"/>
+    </g>
+    <g id="Ellipse_11-3" data-name="Ellipse 11" class="cls-1" transform="translate(4225.425 4787.785)">
+      <ellipse class="cls-2" cx="20.979" cy="20.979" rx="20.979" ry="20.979"/>
+      <ellipse class="cls-3" cx="20.979" cy="20.979" rx="20.479" ry="20.479"/>
+    </g>
+    <g id="Ellipse_11-4" data-name="Ellipse 11" class="cls-1" transform="translate(4080.571 4870.258)">
+      <ellipse class="cls-2" cx="19.849" cy="19.848" rx="19.849" ry="19.848"/>
+      <ellipse class="cls-3" cx="19.849" cy="19.848" rx="19.349" ry="19.348"/>
+    </g>
+    <g id="Ellipse_11-5" data-name="Ellipse 11" class="cls-1" transform="translate(4009.885 4623.268)">
+      <ellipse class="cls-2" cx="16.015" cy="16.015" rx="16.015" ry="16.015"/>
+      <ellipse class="cls-3" cx="16.015" cy="16.015" rx="15.515" ry="15.515"/>
+    </g>
+  </g>
+  <script type="text/javascript">
+  <![CDATA[
+    console.log('corriendo! xd')
+  ]]>
+  </script>
+</svg>

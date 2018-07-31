@@ -3,10 +3,10 @@
   <nav :class="['navbar']" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="/img/logo.svg" alt="Woonkly Logo">
+        <w-logo height="50px" width="auto" :infinite-invisible="isMenuOpen"/>
       </a>
 
-      <a @click="isMenuOpen = true" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <a @click="isMenuOpen = true" role="button" :class="['navbar-burger', {'hidden':isMenuOpen}]" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -31,21 +31,21 @@
           <w-button>Faucet Beta</w-button>
         </div>
         <nav class="column is-12-mobile is-8-tablet navigation">
-          <ul>
-            <li class="selected">
-              <a href="" target="_blank">Proyecto</a>
+          <ul @click.stop="isMenuOpen = false">
+            <li :class="{'selected':currentSection == 'WoonklyHero'}">
+              <a href="" v-scroll-to="{ el: '#woonkly-description' }">Proyecto</a>
             </li>
-            <li>
-              <a href="" target="_blank">Tokens</a>
+            <li :class="{'selected':currentSection == 'WoonklyDistributionToken'}">
+              <a href="" v-scroll-to="{ el: '#woonkly-dis-token' }">Tokens</a>
             </li>
-            <li>
-              <a href="" target="_blank">Objetivos</a>
+            <li :class="{'selected':currentSection == 'WoonklyRoadmap'}">
+              <a href="" v-scroll-to="{ el: '#woonkly-roadmap' }">Objetivos</a>
             </li>
-            <li>
-              <a href="" target="_blank">Equipo</a>
+            <li :class="{'selected':currentSection == 'WoonklyTeam'}">
+              <a href="" v-scroll-to="{ el: '#woonkly-team' }">Equipo</a>
             </li>
-            <li>
-              <a href="" target="_blank">FAQs</a>
+            <li :class="{'selected':currentSection == 'WoonklyFaq'}">
+              <a href="" v-scroll-to="{ el: '#woonkly-faq' }">FAQs</a>
             </li>
           </ul>
         </nav>
@@ -57,6 +57,7 @@
 
 <script>
 import { throttle } from 'lodash'
+import wLogo from '@/components/svg-components/LogoSVG'
 import wButton from '@/components/shared/WoonklyButton'
 // TODO: Create language selector
 import wLanguageSelector from '@/components/shared/WoonklyLanguageSelector'
@@ -69,6 +70,7 @@ export default {
       isScrolledDown: false,
     }
   },
+  props: ['currentSection'],
   methods: {
     pageScroll: throttle(function () {
       let currentScroll = window.scrollY
@@ -84,6 +86,7 @@ export default {
     window.addEventListener('scroll', this.pageScroll)
   },
   components: {
+    wLogo,
     wButton,
     wLanguageSelector
   }
@@ -102,6 +105,10 @@ export default {
 
   &.scrolled {
     background: var(--woonkly-black-blue);
+  }
+
+  .hidden {
+    display: none !important;
   }
 
   .w-close-button {
@@ -142,8 +149,8 @@ export default {
     background: var(--woonkly-dark-blue);
     top: 0;
     bottom: 0;
-    right: 0;
     left: 2em;
+    width: calc(100vw - 2em);
 
     transition: transform 500ms linear;
     transform: translateX(100%);

@@ -197,21 +197,24 @@
 </script>
 
 <style lang="css">
-#normak {
-  animation: hide 400ms ease 8s forwards;
+#conffeti { opacity: 0 }
+#raised { opacity: 0 }
+
+.animate #normak {
+  animation: hide 400ms ease 0s forwards;
 }
-#raised {
+.animate #raised {
   opacity: 0;
-  animation: show 400ms ease 8s forwards,
-             bounce 2s ease 8s infinite;
+  animation: show 400ms ease 0s forwards, bounce 1.5s ease 0s 3;
 }
-#mujer1, #mujer2, #mujer3 {
-  animation: bounce 2s ease 8s infinite;
+.animate #mujer1, .animate #mujer2, .animate #mujer3 {
+  animation: bounce 1.5s ease 0s 3;
 }
-#conffeti {
+.animate #conffeti {
   opacity: 0;
-  animation: conffeti 4s ease 8s infinite;
+  animation: conffeti 1.5s ease 0s 3;
 }
+
 @keyframes conffeti {
   0% {
     opacity: 0;

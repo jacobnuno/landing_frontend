@@ -1,5 +1,5 @@
 <template>
-  <section id="woonkly-faq">
+  <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.25 } }" id="woonkly-faq">
     <w-divider/>
     <div class="section">
       <div>
@@ -68,6 +68,13 @@ export default {
     wGradientButton,
     wCollabsible,
     wDivider
+  },
+  methods: {
+    visibilityChanged (isVisible, entry) {
+      if (isVisible) {
+        this.$emit('currentSectionChanged', 'WoonklyFaq')
+      }
+    }
   }
 }
 </script>
