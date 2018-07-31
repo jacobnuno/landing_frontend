@@ -30,7 +30,7 @@
           <w-button>Comprar</w-button>
           <w-button>Faucet Beta</w-button>
         </div>
-        <nav class="column is-12-mobile is-8-tablet navigation">
+        <nav class="column is-12-mobile is-5-tablet navigation">
           <ul @click.stop="isMenuOpen = false">
             <li :class="{'selected':currentSection == 'WoonklyHero'}">
               <a href="" v-scroll-to="{ el: '#woonkly-description' }">Proyecto</a>
@@ -49,6 +49,26 @@
             </li>
           </ul>
         </nav>
+        <div class="column is-hidden-mobile is-3-tablet social-media">
+            <a href="https://www.facebook.com/woonkly/" target="_blank">
+              <fai :icon="['fab', 'facebook-f']" class="icons" />
+            </a>
+            <a href="https://twitter.com/WoonklyTV" target="_blank">
+              <fai :icon="['fab', 'twitter']" class="icons" />
+            </a>
+            <a href="https://www.youtube.com/c/MrSantos" target="_blank">
+              <fai :icon="['fab', 'youtube']" class="icons" />
+            </a>
+            <a href="https://t.me/joinchat/HIxsXg7y5_EDCgXmkT3yRA" target="_blank">
+              <fai :icon="['fab', 'telegram-plane']" class="icons" />
+            </a>
+            <a href="https://github.com/Woonkly" target="_blank">
+              <fai :icon="['fab', 'github']" class="icons" />
+            </a>
+            <a>
+              <fai :icon="['fab', 'medium-m']" class="icons" />
+            </a>
+        </div>
       </div>
     </aside>
   </nav>
@@ -221,6 +241,22 @@ export default {
           align-items: center;
         }
 
+        .social-media {
+          order: 4;
+          display: flex;
+          justify-content: space-between;
+          .icons {
+            display: inline-block;
+            font-size: 1.5em;
+            color: var(--woonkly-light-blue);
+            transition: transform 600ms ease-out;
+
+            &:hover, &:active, &:focus {
+              animation: slightly-scale 1s ease-out;
+            }
+          }
+        }
+
         .profile {
           display: none;
         }
@@ -232,6 +268,7 @@ export default {
         .buttons {
           order: 3;
           margin: 0;
+          justify-content: center;
 
           .woonkly-button {
             margin: 0;
