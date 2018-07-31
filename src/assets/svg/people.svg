@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg73936" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" y="0px" x="0px" viewBox="0 0 1650 1080">
+<style type="text/css">
+.people {
+  animation: bounce 2s linear 8s infinite;
+}
+
+#persona1 {
+  animation-delay: 10.7s;
+}
+
+#persona2{
+  animation-delay: 11.3s;
+}
+
+#persona3 {
+  animation-delay: 8s;
+}
+
+#persona4 {
+  animation-delay: 11.8s;
+}
+
+#persona5 {
+  animation-delay: 9s;
+}
+
+#persona6 {
+  animation-delay: 12s;
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+</style>
+
+<g id="persona4" class="people" >
+
+</g>
+
+</svg>

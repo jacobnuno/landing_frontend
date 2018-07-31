@@ -10,10 +10,9 @@
 
     <div class="column is-12 progress is-marginless">
       <w-progress :value="90" />
-      <!-- <progress class="progress is-large" value="60" max="100">60%</progress> -->
     </div>
 
-    <div class="column is-12 has-text-left wonks-sold">
+    <div class="column is-12 has-text-centered wonks-sold">
       <span class="w-light-blue is-size-7">{{wnkSold}} WNKS</span>
     </div>
 
@@ -24,7 +23,12 @@
       <w-button>Whitepaper Woonkly</w-button>
     </div>
 
-    <div class="column is-12">
+    <div class="column is-12 counter-wrapper">
+      <div class="spark-container">
+        <img class="rellax" data-rellax-speed="2" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
+        <img class="rellax" data-rellax-speed="4" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
+        <img class="rellax" data-rellax-speed="2" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
+      </div>
       <div class="counter">
         <span class="time-digit">{{time.days}}</span>
         <span class="colon">:</span>
@@ -75,7 +79,7 @@ export default {
 #woonkly-ico-status {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
-  // background: #06062c;
+  // background: #06062c
 
   .phase {
     strong {
@@ -92,43 +96,84 @@ export default {
     padding-left: 2em;
   }
 
-  .counter {
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    color: #00a0ca;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
+  .counter-wrapper {
+    position: relative;
 
-    .time-digit {
-      text-align: center;
-      line-height: 2.3em;
-      border-radius: 50%;
-      border: 2px #08c2ee solid;
-      display: inline-block;
-      height: 2.5em;
-      width: 2.5em;
-      position: relative;
-      text-shadow: 0px 0px 16px #08c2ee;
-      animation: flashing-counter 2s ease infinite alternate;
+    .spark-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      display: flex;
+      justify-content: space-evenly;
+      transform: translateY(-0.7em);
+      z-index: -1;
 
-      &:nth-of-type(1) {
-        animation-delay: 500ms;
-      }
-      &:nth-of-type(3) {
-        animation-delay: 1000ms;
-      }
-      &:nth-of-type(5) {
-        animation-delay: 1500ms;
-      }
-      &:nth-of-type(7) {
-        animation-delay: 2000ms;
+      img {
+        &:nth-of-type(1) {
+          width: 10px;
+        }
+        &:nth-of-type(2) {
+          width: 8px;
+        }
+        &:nth-of-type(3) {
+          width: 6px;
+        }
       }
     }
 
-    .colon {
-      line-height: 2em;
+    .counter {
+      margin-top: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      color: #00a0ca;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      .time-digit {
+        position: relative;
+        text-align: center;
+        line-height: 2.3em;
+        border-radius: 50%;
+        border: 2px #08c2ee solid;
+        display: inline-block;
+        height: 2.5em;
+        width: 2.5em;
+        position: relative;
+        text-shadow: 0px 0px 16px #08c2ee;
+        animation: flashing-counter 2s ease infinite alternate;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -6px;
+          left: -6px;
+          right: -6px;
+          bottom: -6px;
+          border: 1px solid var(--woonkly-light-blue-quarter-opacity);
+          border-radius: 50%;
+        }
+
+        &:nth-of-type(1) {
+          animation-delay: 500ms;
+        }
+        &:nth-of-type(3) {
+          animation-delay: 1000ms;
+        }
+        &:nth-of-type(5) {
+          animation-delay: 1500ms;
+        }
+        &:nth-of-type(7) {
+          animation-delay: 2000ms;
+        }
+      }
+
+      .colon {
+        line-height: 2em;
+      }
     }
   }
 }

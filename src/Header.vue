@@ -1,70 +1,66 @@
 <template>
-<header id="woonkly-header">
-  <nav :class="['navbar', {'scrolled':isScrolledDown}]" role="navigation" aria-label="main navigation">
+<header id="woonkly-header" :class="[{'scrolled':isScrolledDown}]">
+  <nav :class="['navbar']" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="/img/logo.svg" alt="Woonkly Logo" width="112" height="28">
+        <w-logo height="50px" width="auto" :infinite-invisible="isMenuOpen"/>
       </a>
 
-      <a @click="isMenuOpen = true" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <a @click="isMenuOpen = true" role="button" :class="['navbar-burger', {'hidden':isMenuOpen}]" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
 
     </div>
+    <aside id="woonkly-menu" :class="['container', {'open':isMenuOpen}]">
+
+      <button class="w-close-button" @click="isMenuOpen = false">&times;</button>
+
+      <div class="columns is-multiline">
+        <div class="column profile">
+          <figure class="image is-96x96">
+            <img src="/img/defaults/profile.jpg" alt="Profile Picture">
+          </figure>
+        </div>
+        <div class="column is-12-mobile is-1-tablet language">
+          <w-language-selector/>
+        </div>
+        <div class="column is-12-mobile is-3-tablet buttons">
+          <w-button>Comprar</w-button>
+          <w-button>Faucet Beta</w-button>
+        </div>
+        <nav class="column is-12-mobile is-8-tablet navigation">
+          <ul @click.stop="isMenuOpen = false">
+            <li :class="{'selected':currentSection == 'WoonklyHero'}">
+              <a href="" v-scroll-to="{ el: '#woonkly-description' }">Proyecto</a>
+            </li>
+            <li :class="{'selected':currentSection == 'WoonklyDistributionToken'}">
+              <a href="" v-scroll-to="{ el: '#woonkly-dis-token' }">Tokens</a>
+            </li>
+            <li :class="{'selected':currentSection == 'WoonklyRoadmap'}">
+              <a href="" v-scroll-to="{ el: '#woonkly-roadmap' }">Objetivos</a>
+            </li>
+            <li :class="{'selected':currentSection == 'WoonklyTeam'}">
+              <a href="" v-scroll-to="{ el: '#woonkly-team' }">Equipo</a>
+            </li>
+            <li :class="{'selected':currentSection == 'WoonklyFaq'}">
+              <a href="" v-scroll-to="{ el: '#woonkly-faq' }">FAQs</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
   </nav>
-  <aside id="woonkly-menu" :class="['container', {'open':isMenuOpen}]">
-
-    <button class="w-close-button" @click="isMenuOpen = false">&times;</button>
-
-    <div class="columns is-multiline">
-      <div class="column profile">
-        <figure class="image is-96x96">
-          <img src="/img/defaults/profile.jpg" alt="Profile Picture">
-        </figure>
-      </div>
-      <div class="column language">
-        <span>Next...</span>
-        <!-- TODO: Actual language selector -->
-      </div>
-      <div class="column buttons">
-        <w-button>Comprar</w-button>
-        <w-button>Faucet Beta</w-button>
-      </div>
-      <nav class="column navigation">
-        <ul>
-          <li class="selected">
-            <a href="" target="_blank">Proyecto</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Tokens</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Objetivos</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Equipo</a>
-          </li>
-          <li>
-            <a href="" target="_blank">FAQs</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Confiugraicon</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Cerrar sesión</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </aside>
 </header>
 </template>
 
 <script>
 import { throttle } from 'lodash'
+import wLogo from '@/components/svg-components/LogoSVG'
 import wButton from '@/components/shared/WoonklyButton'
+// TODO: Create language selector
+import wLanguageSelector from '@/components/shared/WoonklyLanguageSelector'
 
 export default {
   name: 'WoonklyHeader',
@@ -74,6 +70,7 @@ export default {
       isScrolledDown: false,
     }
   },
+  props: ['currentSection'],
   methods: {
     pageScroll: throttle(function () {
       let currentScroll = window.scrollY
@@ -89,7 +86,9 @@ export default {
     window.addEventListener('scroll', this.pageScroll)
   },
   components: {
-    wButton
+    wLogo,
+    wButton,
+    wLanguageSelector
   }
 }
 </script>
@@ -101,6 +100,16 @@ export default {
   left: 0;
   right: 0;
   top: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background-color 400ms ease-in-out;
+
+  &.scrolled {
+    background: var(--woonkly-black-blue);
+  }
+
+  .hidden {
+    display: none !important;
+  }
 
   .w-close-button {
     background: none;
@@ -119,14 +128,16 @@ export default {
   }
 
   .navbar {
-    background: rgba(0, 0, 0, 0);
-    transition: background-color 400ms ease-in-out;
-    
-    &.scrolled {
-      background: var(--woonkly-black-blue);
+    background: none;
+
+    .navbar-item {
+      img {
+        max-height: unset;
+        height: 2.5em;
+      }
     }
   }
-  
+
   .navbar-burger {
     color: white;
   }
@@ -138,8 +149,8 @@ export default {
     background: var(--woonkly-dark-blue);
     top: 0;
     bottom: 0;
-    right: 0;
     left: 2em;
+    width: calc(100vw - 2em);
 
     transition: transform 500ms linear;
     transform: translateX(100%);
@@ -173,6 +184,69 @@ export default {
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #woonkly-header {
+
+    nav.navbar {
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+
+    .w-close-button {
+      display: none;
+    }
+
+    .navbar-burger {
+      display: none;
+    }
+
+    #woonkly-menu {
+      position: unset;
+      padding: 0;
+      background: none;
+      top: unset;
+      bottom: unset;
+      right: unset;
+      left: unset;
+      transform: none !important;
+
+      div.columns {
+        width: 100%;
+
+        .column {
+          display: flex;
+          align-items: center;
+        }
+
+        .profile {
+          display: none;
+        }
+
+        .language {
+          order: 2;
+        }
+
+        .buttons {
+          order: 3;
+          margin: 0;
+
+          .woonkly-button {
+            margin: 0;
+          }
+        }
+
+        .navigation {
+          order: 1;
+          li {
+            display: inline;
+          }
+        }
+      }
+    } // End of woonkly menu styles
+
   }
 }
 </style>

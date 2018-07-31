@@ -1,5 +1,5 @@
 <template>
-    <section id="woonkly-roadmap" class="section">
+    <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.25 } }" id="woonkly-roadmap" class="section">
         <div class="container">
             <!-- progress-bar decoration svg  -->
             <img id="progress-bar" src="/img/sections/roadmap/progress.svg" alt="Roadmap">
@@ -22,7 +22,8 @@
                     <div :key="index" class="columns is-mobile">
                         <div class="column is-half is-aligned-to-right" :class="{small: i%2 === 0}">
                             <!-- roadmap's left column graphics creation -->
-                            <img class="roadmap-circle" :src="getCircleImg(roadmap[i*2].date)" alt="Done circle">
+                            
+                            <span><img class="roadmap-circle" :src="getCircleImg(roadmap[i*2].date)" alt="Done circle"></span>
                             <img class="roadmap-line" :src="getLineImg(roadmap[i*2].date)" alt="Done line">
                             <div class="data-container">
                                 <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
@@ -36,7 +37,7 @@
                         <!-- roadmap's right column graphics creation -->
                         <div v-if="roadmap[i * 2 + 1]" class="column is-half is-aligned-to-left" :class="{small: i%2 === 0}">
                             <img class="roadmap-line" :src="getLineImg(roadmap[i*2+1].date)" alt="Done line">
-                            <img class="roadmap-circle" :src="getCircleImg(roadmap[i*2+1].date)" alt="Done circle">
+                            <span><img class="roadmap-circle" :src="getCircleImg(roadmap[i*2+1].date)" alt="Done circle"></span>
                             <div class="data-container">
                                 <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
                                     {{ roadmap[i * 2 + 1].title }}
@@ -75,6 +76,11 @@ export default Vue.extend({
         }
     },
     methods: {
+        visibilityChanged (isVisible, entry) {
+            if (isVisible) {
+            this.$emit('currentSectionChanged', 'WoonklyRoadmap')
+            }
+        },
         // return the actual date
         taskIsDone(date) {
             return new Date().getTime() > date.getTime()
@@ -140,6 +146,36 @@ export default Vue.extend({
         .data-container{
             margin-left: auto;
         }
+    }
+
+    .is-aligned-to-right > span::after {
+        content: "";
+        border-radius: 38px;
+        margin-left: -52px;
+        z-index: -2;
+        position: absolute;
+        animation: 2.3s glowEffect infinite;
+    }
+
+    .is-aligned-to-left > span::after {
+        content: "";
+        border-radius: 38px;
+        margin-left: 21px;
+        z-index: -2;
+        position: absolute;
+        animation: 3s glowEffect infinite;
+    }
+
+    @keyframes glowEffect {
+        0%  { box-shadow: 9px 16px 63px 16px #cdf7c2; }
+        50% { box-shadow: 9px 16px 63px 20px #cdf7c2; }
+        100%{ box-shadow: 9px 16px 63px 16px #cdf7c2; }
+    }
+
+    @keyframes miniGlowEffect {
+        0%  { box-shadow: 9px 16px 63px 6px #cdf7c2; }
+        50% { box-shadow: 9px 16px 63px 10px #cdf7c2; }
+        100%{ box-shadow: 9px 16px 63px 6px #cdf7c2; }
     }
 
     .roadmap-line{
@@ -274,16 +310,23 @@ export default Vue.extend({
         }
 
         .is-aligned-to-left{
+            span::after{
+                margin-left: 7px;
+                animation: 3s miniGlowEffect infinite;
+            }
             .roadmap-circle{
                 margin-left: -35px;
             }
         }
         .is-aligned-to-right{
+            span::after{
+                margin-left: -38px;
+                animation: 3s miniGlowEffect infinite;
+            }
             .roadmap-circle{
                 margin-right: -30px;
             }
         }
-
         .small{
             .roadmap-line{
                 width: 55px;

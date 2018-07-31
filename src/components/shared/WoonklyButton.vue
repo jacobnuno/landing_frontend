@@ -11,8 +11,8 @@
   border: none;
   background: none;
   color: var(--woonkly-light-blue);
-  padding: 0.5em;
-  border: 1px var(--woonkly-light-blue-opacity) solid;
+  padding: 0.3em;
+  border: 1px var(--woonkly-light-blue-quarter-opacity) solid;
   cursor: pointer;
   border-radius: 3em;
 

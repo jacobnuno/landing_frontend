@@ -1,12 +1,13 @@
 <template>
-  <section id="woonkly-team" class="section">
+  <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.1 } }" id="woonkly-team" class="section">
+    <img id="woonkly-light" src="/img/icons/woonkly-light.png" alt="Woonkly Light">
     <h3 class="title is-3 has-text-centered has-text-white is-uppercase">Un equipo experto</h3>
     <p class="is-size-5 has-text-centered">Crear una gran idea, un excelente producto y una potente criptomoneda solo puede realizarse con un equipo de los mejores expertos en cada área.</p>
-    <div class="columns is-mobile is-multiline">
+    <div class="columns is-mobile is-multiline team">
       <w-team-member v-for="(m, index) in team" v-bind:key="index" :member="m" class="column is-half-mobile is-one-quarter-tablet"/>
     </div>
     <h3 class="title is-3 has-text-centered has-text-white is-uppercase">Inversores y Advisors</h3>
-    <div class="columns is-mobile is-multiline">
+    <div class="columns is-mobile is-multiline advisors">
       <w-team-member v-for="a in advisors" :key="a.name" :member="a" class="column is-half-mobile is-one-third-tablet"/>
     </div>
   </section>
@@ -176,6 +177,13 @@ export default {
       ]
     }
   },
+  methods: {
+    visibilityChanged (isVisible, entry) {
+      if (isVisible) {
+        this.$emit('currentSectionChanged', 'WoonklyTeam')
+      }
+    }
+  },
   components: {
     wTeamMember
   }
@@ -186,14 +194,55 @@ export default {
 <style lang="scss">
 #woonkly-team {
   background: var(--woonkly-black-blue);
+  padding-bottom: 5em;
+  position: relative;
+
+  #woonkly-light {
+    position: absolute;
+    z-index: 1;
+    width: 4em;
+    top: 38%;
+    right: 2em;
+  }
+
+  & > h3.title:first-of-type {
+    margin-bottom: 2.5em;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: calc(100% + 1em);
+      left: 50%;
+      transform: translateX(-50%);
+      height: 0.75em;
+      width: 2px;
+      background: var(--woonkly-light-blue);
+    }
+
+  }
+
+  .team, .advisors {
+    justify-content: space-evenly;
+  }
 }
 
 @media screen and (min-width: 769px) {
   #woonkly-team {
+    padding-bottom: 12em;
+
+    .team {
+      max-width:  1000px;
+    }
+
+    .advisors {
+      max-width: 650px;
+    }
+
     & > .columns {
       margin-left: auto;
       margin-right: auto;
-      max-width: 800px;
     }
   }
 }

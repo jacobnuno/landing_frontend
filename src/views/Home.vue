@@ -1,16 +1,16 @@
 <template>
 <section id="woonkly-home">
-  <w-description/>
+  <w-description @currentSectionChanged="changeCurrentSection"/>
   <w-atention/>
   <w-what-is/>
   <w-tv/>
   <w-Benefits/>
-  <w-team/>
   <w-ac-token/>
-  <w-dis-token/>
+  <w-dis-token @currentSectionChanged="changeCurrentSection"/>
+  <w-roadmap @currentSectionChanged="changeCurrentSection"/>
+  <w-team @currentSectionChanged="changeCurrentSection"/>
   <w-allies/>
-  <w-roadmap/>
-  <w-faq/>
+  <w-faq @currentSectionChanged="changeCurrentSection"/>
   <w-question/>
   <w-footer/>
 </section>
@@ -52,11 +52,11 @@ export default {
     wRoadmap,
     wDisToken,
     wAllies
-
-
   },
-  mounted () {
-    console.log('this shit is mounted')
+  methods: {
+    changeCurrentSection ($event) {
+      this.$emit('userEnteredSection', $event)
+    }
   }
 }
 </script>
