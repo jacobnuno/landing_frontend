@@ -51,8 +51,12 @@ export default {
   color: var(--woonkly-black-blue);
   text-align: center;
   position: relative;
-  padding-bottom: 3em;
+  padding-bottom: 7em;
   // overflow: hidden;
+
+  & > .section {
+    padding-bottom: 8em;
+  }
 
   .black-line {
     height: 3em;
