@@ -1,9 +1,9 @@
 <template lang="html">
   <div @click="addClickListener" class="is-inline woonkly-language-selector">
     <input type="hidden" name="selected-language" :value="selectedLanguage">
-    <span v-if="selectedLanguage">{{selectedLanguage.label}}</span>
+    <span class="selected-language" v-if="selectedLanguage"><img class="flag-icon" :src="`/img/icons/flags/${selectedLanguage.img}`" :alt="selectedLanguage.label"></span>
     <ul :class="['options', {'opened':isListVisible}]">
-      <li v-for="lang in languages" :key="lang.label" @click="selectedLanguage = lang">{{lang.label}}</li>
+      <li v-for="lang in languages" :key="lang.label" @click="selectedLanguage = lang"><img class="flag-icon" :src="`/img/icons/flags/${lang.img}`" :alt="lang.label"></li>
     </ul>
   </div>
 </template>
@@ -18,19 +18,11 @@ export default {
       languages: [
         {
           label: 'Español',
-          img: 'spanish.jpg'
+          img: 'spain.svg'
         },
         {
           label: 'English',
-          img: 'english.jpg'
-        },
-        {
-          label: 'French',
-          img: 'French.jgp'
-        },
-        {
-          label: 'Japanese',
-          img: 'japansese.jpg'
+          img: 'uk.svg'
         }
       ]
     }
@@ -57,6 +49,27 @@ export default {
   cursor: pointer;
   position: relative;
   color: var(--woonkly-light-blue);
+
+  .selected-language {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 100px solid red;
+    }
+  }
+
+  .flag-icon {
+    max-height: 32px;
+    max-width: 32px;
+    border-radius: 50%;
+  }
+
   .options {
     display: none;
     position: absolute;
