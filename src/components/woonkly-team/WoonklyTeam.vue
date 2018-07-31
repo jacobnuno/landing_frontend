@@ -48,10 +48,86 @@ export default {
         },
         {
           name: 'Oscar Cardenas',
-          position: 'CTO & Gerente de Blockchain',
+          position: 'Director de Blockchain',
           img: 'oscarcardenas.jpeg',
           links: {
-            linkedin: 'https://www.linkedin.com/in/cardedeveloper/'
+            linkedin: 'https://www.linkedin.com/in/cardedeveloper/',
+            twitter: 'https://twitter.com/CardeDeveloper'
+          }
+        },
+        {
+          name: 'Sara Santos',
+          position: 'Directora de Marketing',
+          img: 'sarasantos.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/sarasc9/'
+          }
+        },
+        {
+          name: 'Carlos Pavia',
+          position: 'Director desarrollo web',
+          img: 'carlospavia.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/carlos-pavia-7517bb51/'
+          }
+        },
+        {
+          name: 'Jonathan Álvarez',
+          position: 'Director Financiero',
+          img: 'jonathanalvarez.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/jonathan-alvarez-592816bb/'
+          }
+        },
+        {
+          name: 'Shuberth Chi',
+          position: 'Director tecnológico',
+          img: 'shuberthchi.png',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/shuberth-chi-balam/'
+          }
+        },
+        {
+          name: 'Gustavo Rueda',
+          position: 'Desarrollador Web',
+          img: 'woonkzalo.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/gustavo-adolfo-rueda-enr%C3%ADquez-5873b114a/'
+          }
+        },
+        {
+          name: 'Jacob Nuño',
+          position: 'Desarrollador Web Multiplataforma',
+          img: 'jacob.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/jacob-nu%C3%B1o-g%C3%B3mez-15a287158/'
+          }
+        },
+        {
+          name: 'Kevin Quino',
+          position: 'Diseñador UX & UI',
+          img: 'kevin.jpg'
+        },
+        {
+          name: 'Juan Sandoval',
+          position: 'Desarrollador',
+          img: 'manuel.jpg'
+        },
+        {
+          name: 'Jorge Villaseñor',
+          position: 'Desarrollador Web',
+          img: 'coke.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/jacob-nu%C3%B1o-g%C3%B3mez-15a287158/'
+          }
+        },
+        {
+          name: 'Francisco Gonzalez',
+          position: 'Desarrollador Sr. Frontend',
+          img: 'ilich.jpg',
+          links: {
+            twitter: 'https://twitter.com/ilichh1',
+            linkedin: 'https://www.linkedin.com/in/ilichh1/'
           }
         },
         {
@@ -87,35 +163,11 @@ export default {
           }
         },
         {
-          name: 'Sara Santos',
-          position: 'Directora de Marketing',
-          img: 'sarasantos.jpg',
+          name: 'Woonkzalo',
+          position: 'Lead Support / Pet / Influencer',
+          img: 'gustavo.jpg',
           links: {
-            linkedin: 'https://www.linkedin.com/in/sarasc9/'
-          }
-        },
-        {
-          name: 'Carlos Pavia',
-          position: 'Director desarrollo web',
-          img: 'carlospavia.jpg',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/carlos-pavia-7517bb51/'
-          }
-        },
-        {
-          name: 'Jonathan Álvarez',
-          position: 'Director Financiero',
-          img: 'jonathanalvarez.jpg',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/jonathan-alvarez-592816bb/'
-          }
-        },
-        {
-          name: 'Shuberth Chi',
-          position: 'Director tecnológico',
-          img: 'shuberthchi.png',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/shuberth-chi-balam/'
+            twitter: 'https://twitter.com/woonkzalo'
           }
         }
       ],
