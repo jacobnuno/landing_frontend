@@ -160,6 +160,14 @@ export default {
 
   .navbar-burger {
     color: white;
+    @media screen and (min-width: 1088px) and (max-width: 1104px) {
+      cursor: pointer;
+      display: block;
+      height: 3.25rem;
+      position: relative;
+      width: 3.25rem;
+      margin-left: auto;
+    }
   }
 
   #woonkly-menu {
@@ -172,6 +180,10 @@ export default {
     left: 2em;
     width: calc(100vw - 2em);
 
+    @media screen and (min-width: 1088px) and (max-width: 1104px) {
+      left: 100%;
+    }
+
     transition: transform 500ms linear;
     transform: translateX(100%);
 
@@ -183,6 +195,10 @@ export default {
       .woonkly-button {
         margin: 0 0.7em;
       }
+    }
+
+    .social-media { 
+      display: none;
     }
 
     .navigation {
@@ -207,7 +223,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1104px) {
   #woonkly-header {
 
     nav.navbar {
@@ -263,12 +279,21 @@ export default {
 
         .language {
           order: 2;
+          .woonkly-language-selector {
+            @media (mex-width: 1280px) {
+              margin-left: 2em;
+            }
+          }
         }
 
         .buttons {
           order: 3;
           margin: 0;
-          justify-content: center;
+          justify-content: right;
+
+          @media (mex-width: 1280px) {
+            justify-content: center;
+          }
 
           .woonkly-button {
             margin: 0;
