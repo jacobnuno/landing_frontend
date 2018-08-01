@@ -8,7 +8,7 @@
             <feComposite operator="in" result="result1" in2="blur" />
             <feComposite in2="result1" in="SourceGraphic" />
         </filter>
-        <linearGradient id="linear-gradient" x2=".5" y1=".15" x1="1.125" y2="1">
+        <linearGradient id="linear-gradient-distribution" x2=".5" y1=".15" x1="1.125" y2="1">
             <stop stop-color="#02004a" offset="0" />
             <stop stop-color="#00d3ff" offset="1" />
         </linearGradient>
@@ -117,12 +117,12 @@
             <feComposite operator="in" result="result1" in2="blur-16" />
             <feComposite in2="result1" in="SourceGraphic" />
         </filter>
-        <linearGradient id="v" y2="70.376" xlink:href="#linear-gradient" gradientUnits="userSpaceOnUse" x2="35.188" y1="10.556" x1="79.173" />
-        <linearGradient id="u" y2="18.036" xlink:href="#linear-gradient" gradientUnits="userSpaceOnUse" x2="9.018" y1="2.7054" x1="20.29" />
-        <linearGradient id="a" y2="27.826" xlink:href="#linear-gradient" gradientUnits="userSpaceOnUse" x2="13.913" y1="4.1739" x1="31.304" />
-        <linearGradient id="t" y2="35.374" xlink:href="#linear-gradient" gradientUnits="userSpaceOnUse" x2="17.687" y1="5.3061" x1="39.796" />
-        <linearGradient id="s" y2="20.74" xlink:href="#linear-gradient" gradientUnits="userSpaceOnUse" x2="10.37" y1="3.111" x1="23.332" />
-        <linearGradient id="r" y2="33.906" xlink:href="#linear-gradient" gradientUnits="userSpaceOnUse" x2="16.953" y1="5.0859" x1="38.144" />
+        <linearGradient id="v" y2="70.376" xlink:href="#linear-gradient-distribution" gradientUnits="userSpaceOnUse" x2="35.188" y1="10.556" x1="79.173" />
+        <linearGradient id="u" y2="18.036" xlink:href="#linear-gradient-distribution" gradientUnits="userSpaceOnUse" x2="9.018" y1="2.7054" x1="20.29" />
+        <linearGradient id="a" y2="27.826" xlink:href="#linear-gradient-distribution" gradientUnits="userSpaceOnUse" x2="13.913" y1="4.1739" x1="31.304" />
+        <linearGradient id="t" y2="35.374" xlink:href="#linear-gradient-distribution" gradientUnits="userSpaceOnUse" x2="17.687" y1="5.3061" x1="39.796" />
+        <linearGradient id="s" y2="20.74" xlink:href="#linear-gradient-distribution" gradientUnits="userSpaceOnUse" x2="10.37" y1="3.111" x1="23.332" />
+        <linearGradient id="r" y2="33.906" xlink:href="#linear-gradient-distribution" gradientUnits="userSpaceOnUse" x2="16.953" y1="5.0859" x1="38.144" />
     </defs>
     <ellipse opacity=".4" rx="18.394" data-name="Ellipse 10" ry="18.393" cy="4695.7" cx="368.15" class="cls-7" />
     <ellipse opacity=".4" class="cls-7" rx="31.371" ry="31.37" data-name="Ellipse 10" cy="4773.1" cx="476.42" />
@@ -316,31 +316,6 @@ export default {
 </script>
 
 <style lang="css">
-
-#animated-ellipses > g > path {
-  animation: scaling 2s ease-out infinite alternate;
-}
-
-@keyframes scaling {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.5);
-  }
-}
-
-ellipse {
-   /* animation: ellipse-changing 4s ease-in infinite alternate;
-   transform-origin: 10% 10%; */
- }
- @keyframes ellipse-changing {
-   0% {
-     transform: scale(1);
-   }
-   50% { transform: scale(1.3); }
-   100% { transform: scale(1); }
- }
  .cls-1 {
    fill: rgba(49,118,164,0.08);
    stroke: rgba(0,211,255,0.05);
@@ -356,7 +331,7 @@ ellipse {
    stroke: #00d3ff;
  }
  .cls-5 {
-   fill: url(#linear-gradient);
+   fill: url(#linear-gradient-distribution);
  }
  .cls-6 {
    fill: #fff;
