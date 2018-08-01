@@ -68,17 +68,19 @@ export default {
   #gradient-circle-left {
     position: absolute;
     top: 2em;
-    right: 13em;
     width: 14em;
     z-index: -1;
+    left: -7em;
   }
 
   #gradient-circle-right {
     position: absolute;
     bottom: 1em;
+    -webkit-transform: translateX(90%);
     transform: translateX(90%);
     width: 7em;
     z-index: -1;
+    right: -1em;
   }
 
   #plugandplay {
