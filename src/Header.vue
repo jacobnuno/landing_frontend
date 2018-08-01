@@ -87,7 +87,7 @@ export default {
   data () {
     return {
       isMenuOpen: false,
-      isScrolledDown: false,
+      isScrolledDown: false
     }
   },
   props: ['currentSection'],
