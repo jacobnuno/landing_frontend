@@ -106,7 +106,10 @@ export default {
         {
           name: 'Kevin Quino',
           position: 'Diseñador UX & UI',
-          img: 'kevin.jpg'
+          img: 'kevin.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/kevin-salgado-quino-447a09140/'
+          }
         },
         {
           name: 'Juan Sandoval',
