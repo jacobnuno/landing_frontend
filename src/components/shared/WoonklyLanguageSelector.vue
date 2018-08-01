@@ -1,14 +1,15 @@
 <template lang="html">
   <div @click="addClickListener" class="is-inline woonkly-language-selector">
-    <input type="hidden" name="selected-language" :value="selectedLanguage">
-    <span class="selected-language" v-if="selectedLanguage"><img class="flag-icon" :src="`/img/icons/flags/${selectedLanguage.img}`" :alt="selectedLanguage.label"></span>
+    <span :class="['selected-language', {'opened':isListVisible}]" v-if="selectedLanguage"><img class="flag-icon" :src="`/img/icons/flags/${selectedLanguage.img}`" :alt="selectedLanguage.label"></span>
     <ul :class="['options', {'opened':isListVisible}]">
-      <li v-for="lang in languages" :key="lang.label" @click="selectedLanguage = lang"><img class="flag-icon" :src="`/img/icons/flags/${lang.img}`" :alt="lang.label"></li>
+      <li v-for="lang in languages" :key="lang.label" @click="changeLanguage(lang)"><img class="flag-icon" :src="`/img/icons/flags/${lang.img}`" :alt="lang.label"></li>
     </ul>
   </div>
 </template>
 
 <script>
+import { loadLanguageAsync } from '@/lang'
+
 export default {
   name: 'WoonklylanguageSelector',
   data () {
@@ -18,22 +19,27 @@ export default {
       languages: [
         {
           label: 'Español',
-          img: 'spain.svg'
+          img: 'spain.svg',
+          locale: 'es_MX'
         },
         {
           label: 'English',
-          img: 'uk.svg'
+          img: 'uk.svg',
+          locale: 'en_UK'
         }
       ]
     }
   },
   methods: {
+    changeLanguage (lang) {
+      this.selectedLanguage = lang
+      loadLanguageAsync(lang.locale)
+    },
     addClickListener () {
       this.isListVisible = true
       setTimeout(() => { document.body.addEventListener('click', this.test) }, 500)
     },
     test (e) {
-      console.log('click on body')
       this.isListVisible = false
       document.body.removeEventListener('click', this.test)
     }
@@ -56,11 +62,21 @@ export default {
     &::after {
       content: "";
       position: absolute;
+      display: inline-block;
+      top: 0.1em;
+      left: 2.3em;
       width: 0;
       height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-top: 100px solid red;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid var(--woonkly-light-blue);
+      transition: transform 600ms ease;
+    }
+
+    &.opened {
+      &::after {
+        transform: rotate(180deg);
+      }
     }
   }
 
