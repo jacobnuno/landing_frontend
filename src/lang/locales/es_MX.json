@@ -77,6 +77,41 @@
           "title": "Inversión mínima",
           "content": "0.01 ETH"
       }
+    ],
+    "teamMembers": {
+        "santos": { "position": "Presidente & CEO" },
+        "mateiAntohi": { "position": "Co-Fundador" },
+        "davidLeonardo": { "position": "Dir. de Operaciones" },
+        "oscarCardenas": { "position": "Director de Blockchain" },
+        "saraSantos": { "position": "Directora de Marketing" },
+        "carlosPavia": { "position": "Dir. de Desarollo Web" },
+        "jonathanAlvarez": { "position": "Director Financiero" },
+        "shuberthChi": { "position": "Director tecnológico" },
+        "gustavoRueda": { "position": "Desarrollador Web" },
+        "jacobNuno": { "position": "Desarrollador Web Multiplataforma" },
+        "kevinQuino": { "position": "Diseñador UX & UI" },
+        "juanSandoval": { "position": "Desarrollador" },
+        "jorgeVillasenor": { "position": "Desarrollador Web" },
+        "ilichArredondo": { "position": "Desarrollador Sr. Frontend" },
+        "derekJones": { "position": "Financial Blockchain Manager" },
+        "ghaliElKasri": { "position": "Arquitecto de Blockchain" },
+        "ghitaElKasri": { "position": "Blockchain financial arquitect" },
+        "hassanLahlou": { "position": "Director Matemático de Blockchain" },
+        "woonkzalo": { "position": "Lead Support / Pet / Influencer" }
+    },
+    "teamAdvisors": {
+        "rodrigoDeLaPena": { "position": "Inversor" },
+        "luisRiveroll": { "position": "Inversor" },
+        "paulDSouza": { "position": "Silicon Valley Advisor" },
+        "alvaroSantos": { "position": "Advisor" },
+        "jorgeEspinosa": { "position": "Youtube Blockchain Influencer" },
+        "javierGarcia": { "position": "Plug & Play Advisor" },
+        "danielMuvdi": { "position": "Advisor" },
+        "mendySrugo": { "position": "Advisor & Investor" },
+        "davidBattaglia": { "position": "Advisor" }
+    },
+    "roadMap": [
+        
     ]
   }
 }
