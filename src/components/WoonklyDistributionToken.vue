@@ -9,7 +9,7 @@
         <distribution-token></distribution-token>
       </div>
 
-      <div class="column is-12-mobile is-6-tablet">
+      <div class="column is-12-mobile is-6-tablet use-funds">
         <h3 class="title is-4-mobile is-1-desktop has-text-centered">Uso de fondos</h3>
         <!-- start svg UseFunds -->
         <use-funds></use-funds>
@@ -53,6 +53,15 @@ export default {
   position: relative;
   .blue-line {
     display: none;
+  }
+
+  .use-funds {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    h3.title {
+      margin-bottom: 3em;
+    }
   }
 }
 // changes the css properties if the size of the screen is equal or bigger than a tablet
