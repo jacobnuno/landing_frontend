@@ -22,6 +22,7 @@
     "moment": "^2.22.2",
     "rellax": "^1.6.2",
     "vue": "^2.5.16",
+    "vue-i18n": "^8.0.0",
     "vue-observe-visibility": "^0.4.1",
     "vue-router": "^3.0.1",
     "vue-scrollto": "^2.11.0",

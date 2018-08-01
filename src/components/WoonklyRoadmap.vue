@@ -22,7 +22,7 @@
                     <div :key="index" class="columns is-mobile">
                         <div class="column is-half is-aligned-to-right" :class="{small: i%2 === 0}">
                             <!-- roadmap's left column graphics creation -->
-                            
+
                             <span><img class="roadmap-circle" :src="getCircleImg(roadmap[i*2].date)" alt="Done circle"></span>
                             <img class="roadmap-line" :src="getLineImg(roadmap[i*2].date)" alt="Done line">
                             <div class="data-container">

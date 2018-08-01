@@ -1,0 +1,82 @@
+{
+  "message": {
+    "earnMoney": "Gana dinero por ver, compartir e interactuar con contenido digital",
+    "connectingCreators": "Conectando creadores de contenido, anunciantes y personas de la mejor forma posible.",
+    "icoPhaseBonus": "Fase <span class=\"w-light-blue\">{phase}</span> ({bonus}% Bonus)",
+    "buyWithBonus": "Compra WNK con {bonus}% bonus",
+    "whitepaperWoonkly": "Whitepaper Woonkly",
+    "attentionValue": "La atención de las personas tiene un valor medible",
+    "contentCreators": "Creadores de contenido y anunciantes tienen algo en común. Quieren llegar a su público objetivo y pagarán por hacerlo, pero esta vez, a los usuarios que los ven.",
+    "woonklyWhatIs": "¿Qué es Woonkly?",
+    "woonklyIsTheFirstPlatform": "Woonkly es la primera plataforma que paga a las personas por ver y compartir contenido digital (vídeo, imagen y texto) de diferentes plataformas.",
+    "signUpInWoonkly": "El registro en woonkly es gratuito tanto para creadores de contenido como para usuarios. Los creadores de contenido pueden enlazar en woonkly sus vídeos, imágenes o posts de diferentes plataformas de manera gratuita para con ello conseguir más exposición o si lo prefieren pueden pagarle a su público objetivo usando nuestra criptomoneda “woonk” para conseguir miles e incluso millones de visualizaciones o interactuaciones en cuestión de horas, minutos o incluso segundos.",
+    "discoverWoonklyTv": "Descubre Woonkly TV 1.0",
+    "contentCreatorsAnyPlatform": "Los creadores de contenido de cualquier plataforma centralizada (Youtube, imeo…) o descentralizada (Viuli…) y los anunciantes de todo el mundo tienen al fin una herramienta para alcanzar a su público objetivo de manera casi instantánea y por un costo varias veces inferior a cualquier otro método publicitario y los usuarios tienen al fin una herramienta que les permite ganar dinero por su tiempo, su atención y su interacción con vídeos que les interesen.",
+    "woonklyTvBriefs": [
+      "Woonkly nace de la idea de que compartir es la base del éxito. Nuestra filosofía consiste en que todos ganen.",
+      "Piénsalo. A nivel internacional la inversión publicitaria anual supera los 600 mil millones de dólares, o 600 billones. Imagina que parte de ese dinero se fuera directamente a las personas que ven esa publicidad. ¿No sería más justo? ¿Más lógico?.",
+      "Eso es Woonkly. La conexión entre el capital que invierten las empresas o artistas en publicidad y las personas que ven los vídeos de dichas empresas o artistas. Conectamos el capital de los"
+    ],
+    "principalBenefits": "Los beneficios principales para cada grupo son",
+    "benefits": [
+      "Gana dinero por ver vídeos",
+      "Gana dinero por compartir contenido digital",
+      "Gana dinero por interactuar con Vídeos, imágenes y post",
+      "Participa en loterías diarias gratuitas de criptomonedas"
+    ],
+    "acquireTokens": "Adquirir Tokens",
+    "withTheObjectiveOf": "Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido , hemos creado nuestra criptomoneda, llamada “woonk”. Los creadores de contenido y anunciantes pueden comprar woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial de nuestra criptomoneda:",
+    "acquireTokensFirstList": [
+      {
+          "title": "1 Mayo-1 Junio:",
+          "content": "Venta privada para suscriptores de Mr. Santos en Youtube (50%Bonus)"
+      },
+      {
+          "title": "1 Junio-1 Julio:",
+          "content": "Venta privada para suscriptores de otros canales de Youtube (40% Bonus)"
+      },
+      {
+          "title": "1 Julio- 1 Septiembre:",
+          "content": "Venta privada (Capitales de Emiratos Árabes, Hong Kong y Europa) (30% Bonus)"
+      },
+      {
+          "title": "1 Septiembre-1 Octubre:",
+          "content": "ICO Fase 1 (20% Bonus)"
+      },
+      {
+          "title": "1 Octubre- 1 Noviembre:",
+          "content": "ICO Fase 2 (10% Bonus)"
+      },
+      {
+          "title": "1 Noviembre- 31 Diciembre:",
+          "content": "ICO Fase 3 (0% Bonus)"
+      }
+    ],
+    "acquireTokenSecondList": [
+      {
+          "title": "Inicio",
+          "content": "1 Mayo 2018"
+      },
+      {
+          "title": "Número de Woonks a la venta",
+          "content": "3,000,000,000 (30%)"
+      },
+      {
+          "title": "Final de la ICO",
+          "content": "31 Diciembre 2018"
+      },
+      {
+          "title": "Tasa de cambio",
+          "content": "1 ETH = 50,000 Woonks"
+      },
+      {
+          "title": "Métodos de inversión aceptados",
+          "content": "ETH (BTC, LTC, DASH próximamente)"
+      },
+      {
+          "title": "Inversión mínima",
+          "content": "0.01 ETH"
+      }
+    ]
+  }
+}
