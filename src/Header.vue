@@ -27,25 +27,25 @@
           <w-language-selector/>
         </div>
         <div class="column is-12-mobile is-3-tablet buttons">
-          <w-button>Comprar</w-button>
-          <w-button>Faucet Beta</w-button>
+          <w-button>{{ $t('message.menu.buttonBuy') }}</w-button>
+          <w-button>{{ $t('message.menu.buttonFaucet') }}</w-button>
         </div>
         <nav class="column is-12-mobile is-5-tablet navigation">
           <ul>
             <li :class="{'selected':currentSection == 'WoonklyHero'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-description', onDone: closeMenu }">Proyecto</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-description', onDone: closeMenu }">{{ $t('message.menu.project') }}</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyDistributionToken'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-dis-token', onDone: closeMenu }">Tokens</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-dis-token', onDone: closeMenu }">{{ $t('message.menu.tokens') }}</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyRoadmap'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-roadmap', onDone: closeMenu }">Objetivos</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-roadmap', onDone: closeMenu }">{{ $t('message.menu.objectives') }}</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyTeam'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-team', onDone: closeMenu }">Equipo</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-team', onDone: closeMenu }">{{ $t('message.menu.team') }}</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyFaq'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-faq', onDone: closeMenu }">FAQs</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-faq', onDone: closeMenu }">{{ $t('message.menu.faqs') }}</a>
             </li>
           </ul>
         </nav>
@@ -153,6 +153,10 @@ export default {
   .navbar {
     background: none;
 
+    @media screen and (max-width: 1103px) {
+      display: block;
+    }
+
     .navbar-item {
       img {
         max-height: unset;
@@ -163,13 +167,8 @@ export default {
 
   .navbar-burger {
     color: white;
-    @media screen and (min-width: 1088px) and (max-width: 1104px) {
-      cursor: pointer;
+    @media screen and (max-width: 1104px) {
       display: block;
-      height: 3.25rem;
-      position: relative;
-      width: 3.25rem;
-      margin-left: auto;
     }
   }
 
@@ -211,7 +210,7 @@ export default {
       li {
         height: 2.7em;
         line-height: 2.7em;
-        padding-left: 2em;
+        padding-left: 1.5em;
         a {
           color: var(--woonkly-light-blue);
         }
@@ -283,9 +282,7 @@ export default {
         .language {
           order: 2;
           .woonkly-language-selector {
-            @media (mex-width: 1280px) {
-              margin-left: 2em;
-            }
+            margin-left: 2em;
           }
         }
 
