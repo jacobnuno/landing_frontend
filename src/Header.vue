@@ -31,21 +31,21 @@
           <w-button>Faucet Beta</w-button>
         </div>
         <nav class="column is-12-mobile is-5-tablet navigation">
-          <ul @click.stop="isMenuOpen = false">
+          <ul>
             <li :class="{'selected':currentSection == 'WoonklyHero'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-description' }">Proyecto</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-description', onDone: closeMenu }">Proyecto</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyDistributionToken'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-dis-token' }">Tokens</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-dis-token', onDone: closeMenu }">Tokens</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyRoadmap'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-roadmap' }">Objetivos</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-roadmap', onDone: closeMenu }">Objetivos</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyTeam'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-team' }">Equipo</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-team', onDone: closeMenu }">Equipo</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyFaq'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-faq' }">FAQs</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-faq', onDone: closeMenu }">FAQs</a>
             </li>
           </ul>
         </nav>
@@ -100,7 +100,10 @@ export default {
       } else {
         this.isScrolledDown = false
       }
-    }, 1000)
+    }, 1000),
+    closeMenu () {
+      setTimeout(() => { this.isMenuOpen = false }, 100)
+    }
   },
   mounted () {
     window.addEventListener('scroll', this.pageScroll)
@@ -197,7 +200,7 @@ export default {
       }
     }
 
-    .social-media { 
+    .social-media {
       display: none;
     }
 
