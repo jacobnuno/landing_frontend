@@ -1,12 +1,12 @@
 <template>
   <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.1 } }" id="woonkly-team" class="section">
     <img id="woonkly-light" src="/img/icons/woonkly-light.png" alt="Woonkly Light">
-    <h3 class="title is-3 has-text-centered has-text-white is-uppercase">Un equipo experto</h3>
-    <p class="is-size-5 has-text-centered">Crear una gran idea, un excelente producto y una potente criptomoneda solo puede realizarse con un equipo de los mejores expertos en cada área.</p>
+    <h3 class="title is-3 has-text-centered has-text-white is-uppercase">{{$t('message.aExpertTeam')}}</h3>
+    <p class="is-size-5 has-text-centered">{{$t('message.createABetterIdea')}}</p>
     <div class="columns is-mobile is-multiline team">
       <w-team-member v-for="(m, index) in team" v-bind:key="index" :member="m" class="column is-half-mobile is-one-quarter-tablet"/>
     </div>
-    <h3 class="title is-3 has-text-centered has-text-white is-uppercase">Inversores y Advisors</h3>
+    <h3 class="title is-3 has-text-centered has-text-white is-uppercase">{{$t('message.investorsAndAdvisors')}}</h3>
     <div class="columns is-mobile is-multiline advisors">
       <w-team-member v-for="a in advisors" :key="a.name" :member="a" class="column is-half-mobile is-one-third-tablet"/>
     </div>
@@ -142,6 +142,16 @@ export default {
           }
         },
         {
+          name: 'Woonkzalo',
+          position: this.$t('message.teamMembers.woonkzalo.position'),
+          img: 'gustavo.jpg',
+          links: {
+            twitter: 'https://twitter.com/woonkzalo'
+          }
+        }
+      ],
+      advisors: [
+        {
           name: 'Ghali El Kasri',
           position: this.$t('message.teamMembers.ghaliElKasri.position'),
           img: 'ghalielkasri.jpeg',
@@ -166,18 +176,8 @@ export default {
           }
         },
         {
-          name: 'Woonkzalo',
-          position: this.$t('message.teamMembers.woonkzalo.position'),
-          img: 'gustavo.jpg',
-          links: {
-            twitter: 'https://twitter.com/woonkzalo'
-          }
-        }
-      ],
-      advisors: [
-        {
           name: 'Rodrigo de la Peña',
-          position: this.$t('message.teamAdvisors.rodigoDeLaPena.position'),
+          position: this.$t('message.teamAdvisors.rodrigoDeLaPena.position'),
           img: 'rodrigodelapena.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/rodrigo-de-la-pe%C3%B1a-30a4b522/'
