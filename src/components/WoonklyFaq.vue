@@ -3,57 +3,34 @@
     <w-divider/>
     <div class="section">
       <div>
-        <span class="w-span is-uppercase">{{$t('questions')}}</span>
+        <span class="w-span is-uppercase">{{$t('message.questions')}}</span>
       </div>
 
-      <div class="title is-size-1-desktop is-size-5-mobile is-uppercase">Preguntas Frecuentes</div>
+      <div class="title is-size-1-desktop is-size-5-mobile is-uppercase">{{$t('message.frequentlyAskedQuestions')}}</div>
 
       <div class="line"></div>
 
       <div class="columns is-mobile is-multiline">
-        <div class="column is-12-mobile is-half-tablet is-half-desktop is-offset-3-tablet is-offset-3-desktop is-small is-size-5-desktop">
-          Si tienes dudas aquí te las intentaremos resolver, y si no encuentras la solución a tu pregunta siempre puedes contactarnos a contacto@woonkly.com
-        </div>
+        <div class="column is-12-mobile is-half-tablet is-half-desktop is-offset-3-tablet is-offset-3-desktop is-size-5">{{$t('message.ifYouHaveDoubts')}}</div>
       </div>
 
-      <w-gradient-button class="green-blue has-text-uppercase" back-text="USU">
-        Usuarios
+      <w-gradient-button @click.native="selectedQuestions = 'userQuestions'" class="green-blue has-text-uppercase" back-text="USU">
+        {{$t('message.users')}}
       </w-gradient-button>
 
-      <w-gradient-button class="pink-orange has-text-uppercase" back-text="ANU">
-        Anunciantes
+      <w-gradient-button @click.native="selectedQuestions = 'advertiserQuestions'" class="pink-orange has-text-uppercase" back-text="ANU">
+        {{$t('message.advertisers')}}
       </w-gradient-button>
 
-      <w-gradient-button class="blue-purple has-text-uppercase" back-text="PRE">
-        Pre-Ico & ico
+      <w-gradient-button @click.native="selectedQuestions = 'icoQuestions'" class="blue-purple has-text-uppercase" back-text="PRE">
+        {{$t('message.preIcoAndIco')}}
       </w-gradient-button>
 
-      <w-collabsible collapsible-id="singUp">
-        <template slot="label">
-          ¿Comó puedo registrarme en Woonkly?
-        </template>
-        <template slot="content">
-          Some text
-        </template>
+      <w-collabsible v-for="(q, index) in selectedArrayOfQuestions" :collapsible-id="`faqs-${index}`">
+        <template slot="label">{{q.question}}</template>
+        <template slot="content">{{q.answer}}</template>
       </w-collabsible>
 
-      <w-collabsible collapsible-id="cost">
-        <template slot="label">
-          ¿Tendrá algún costo acceder a Woonkly?
-        </template>
-        <template slot="content">
-          Second text
-        </template>
-      </w-collabsible>
-
-      <w-collabsible collapsible-id="questions">
-        <template slot="label">
-          ¿Qué hago si tengo preguntas?
-        </template>
-        <template slot="content">
-          Puedes contactarnos en cualquier momento por redes sociales o por correo a contacto@woonkly.com
-        </template>
-      </w-collabsible>
     </div>
   </section>
 </template>
@@ -69,7 +46,36 @@ export default {
     wCollabsible,
     wDivider
   },
+  data () {
+    return {
+        selectedQuestions: 'userQuestions'
+    }
+  },
+  computed: {
+    selectedArrayOfQuestions () {
+      return this[this.selectedQuestions]
+    },
+    userQuestions () {
+      return this.getQuestionsFromTranslation('users', 3)
+    },
+    advertiserQuestions () {
+      return this.getQuestionsFromTranslation('advertisers', 4)
+    },
+    icoQuestions () {
+      return this.getQuestionsFromTranslation('ico', 4)
+    }
+  },
   methods: {
+    getQuestionsFromTranslation ( questionPath, noQuestions ) {
+      let questionsArray = []
+      for(let i = 0; i < noQuestions; i ++) {
+        questionsArray.push({
+          question: this.$t(`message.faq.${questionPath}[${i}].question`),
+          answer: this.$t(`message.faq.${questionPath}[${i}].answer`),
+        })
+      }
+      return questionsArray
+    },
     visibilityChanged (isVisible, entry) {
       if (isVisible) {
         this.$emit('currentSectionChanged', 'WoonklyFaq')
