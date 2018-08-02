@@ -3,7 +3,7 @@
     <w-divider/>
     <div class="section">
       <div>
-        <span class="w-span">PREGUNTAS</span>
+        <span class="w-span is-uppercase">{{$t('questions')}}</span>
       </div>
 
       <div class="title is-size-1-desktop is-size-5-mobile is-uppercase">Preguntas Frecuentes</div>
