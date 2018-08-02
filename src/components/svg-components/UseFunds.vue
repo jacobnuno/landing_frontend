@@ -6,9 +6,8 @@
      xmlns:svg="http://www.w3.org/2000/svg"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 0 516.00001 409.99999"
+     viewBox="0 0 516 410"
      version="1.1"
-     id="svg1454"
      width="516"
      height="410"
      style="enable-background:new"
@@ -160,135 +159,29 @@
        data-name="Path 132"
        class="cls-1"
        d="M 226.63338,67.602946 A 119.48037,118.85912 0 1 1 107.15301,186.46207 119.48037,118.85912 0 0 1 226.63338,67.602946 Z" />
-    <text
-       transform="scale(1.00261,0.99739681)"
-       y="18.332682"
-       x="82.748772"
-       id="_5_Legal_y_fiscal"
-       data-name="5% (Legal y fiscal"
-       class="cls-3"
-       style="font-weight:300;font-size:21.0019989px;font-family:sans-serif;display:inline;fill:#02cdf9;stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-style:normal;font-stretch:normal;font-variant:normal;">
-      <tspan
-         style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-         x="82.748772"
-         y="18.332682"
-         id="tspan1334">5%</tspan>
-      <tspan
-         class="cls-4"
-         id="tspan1338"
-         style="font-weight:300;font-size:12.00114155px;font-family:sans-serif;stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-style:normal;font-stretch:normal;font-variant:normal;">
-        <tspan
-           style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-family:sans-serif;font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal;"
-           x="82.748772"
-           y="35.334305"
-           id="tspan1336"><tspan
-     id="tspan1262"
-     style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">(Lega</tspan>
-  l y fiscal</tspan>
-      </tspan>
+    <text transform="scale(1.00261,0.99739681)" y="18.332682" x="82.748772">
+      <tspan x="82.748772" y="18.332682" class="svg-text blue title">5%</tspan>
+      <tspan x="82.748772" y="40" class="svg-text blue sub">{{$t('message.fundsUseTexts.fiscalAndLegal')}}</tspan>
     </text>
-    <text
-       transform="scale(1.00261,0.99739681)"
+    <text transform="scale(1.00261,0.99739681)"
        y="15.587421"
-       x="307.72217"
-       id="_40_Marketing_"
-       data-name="40% (Marketing)"
-       class="cls-5"
-       style="font-weight:300;font-size:21.0019989px;font-family:sans-serif;display:inline;fill:#ffffff;stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-style:normal;font-stretch:normal;font-variant:normal;">
-      <tspan
-         style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-         x="307.72217"
-         y="15.587421"
-         id="tspan1341">40%</tspan>
-      <tspan
-         class="cls-4"
-         id="tspan1345"
-         style="font-weight:300;font-size:12.00114155px;font-family:sans-serif;stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-style:normal;font-stretch:normal;font-variant:normal;">
-        <tspan
-           style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-family:sans-serif;font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal;"
-           x="307.72217"
-           y="32.589039"
-           id="tspan1343">(Marketing)</tspan>
-      </tspan>
+       x="307.72217">
+      <tspan x="307.72217" y="22" class="svg-text title white is-bold">40%</tspan>
+      <tspan x="307.72217" y="37" class="svg-text sub white">{{$t('message.fundsUseTexts.marketing')}}</tspan>
     </text>
-    <text
-       transform="scale(1.00261,0.99739681)"
-       y="265.90323"
-       x="411.80908"
-       id="_10_Desarrollo_Apps_"
-       data-name="10% (Desarrollo Apps)"
-       class="cls-3"
-       style="font-weight:300;font-size:21.0019989px;font-family:sans-serif;display:inline;fill:#02cdf9;stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-style:normal;font-stretch:normal;font-variant:normal;">
-      <tspan
-         style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-         x="411.80908"
-         y="265.90323"
-         id="tspan1348">10%</tspan>
-      <tspan
-         class="cls-4"
-         id="tspan1352"
-         style="font-weight:300;font-size:12.00114155px;font-family:sans-serif;stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-style:normal;font-stretch:normal;font-variant:normal;">
-        <tspan
-           style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-family:sans-serif;font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal;"
-           x="411.80908"
-           y="282.90485"
-           id="tspan1350">(Desarrollo Apps)</tspan>
-      </tspan>
+    <text transform="scale(1.00261,0.99739681)">
+      <tspan x="380" y="265.90323" class="svg-text blue title">10%</tspan>
+      <tspan x="365" y="290" class="svg-text blue sub">{{$t('message.fundsUseTexts.appDevelopment')}}</tspan>
     </text>
-    <text
-       transform="scale(1.00261,0.99739681)"
-       y="392.4863"
-       x="197.96674"
-       id="_15_Desarrollo_Web_"
-       data-name="15% (Desarrollo Web)"
-       class="cls-5"
-       style="font-weight:300;font-size:21.0019989px;font-family:sans-serif;display:inline;fill:#ffffff;stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-style:normal;font-stretch:normal;font-variant:normal;">
-      <tspan
-         style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-         x="197.96674"
-         y="392.4863"
-         id="tspan1355">15%</tspan>
-      <tspan
-         class="cls-4"
-         id="tspan1359"
-         style="font-weight:300;font-size:12.00114155px;font-family:sans-serif;stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-style:normal;font-stretch:normal;font-variant:normal;">
-        <tspan
-           style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-family:sans-serif;font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal;"
-           x="197.96674"
-           y="409.48792"
-           id="tspan1357">(Desarrollo Web)</tspan>
-      </tspan>
+    <text transform="scale(1.00261,0.99739681)" y="392.4863" x="197.96674">
+      <tspan x="197.96674" y="375" class="svg-text white title">15%</tspan>
+      <tspan x="197.96674" y="395" class="svg-text white sub">{{$t('message.fundsUseTexts.webDevelopment')}}</tspan>
     </text>
-    <text
-       transform="scale(1.00261,0.99739681)"
-       y="223.65321"
-       x="-0.66216713"
-       id="_30_Tecnologí_de_tokens_"
-       data-name="30% (Tecnologí de tokens)"
-       class="cls-5"
-       style="font-weight:300;font-size:21.0019989px;font-family:sans-serif;display:inline;fill:#ffffff;stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-style:normal;font-stretch:normal;font-variant:normal;">
-      <tspan
-         style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-family:sans-serif;font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal;"
-         x="-0.66216713"
-         y="223.65321"
-         id="tspan1362"><tspan
-     id="tspan1266"
-     style="-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">30</tspan>
-  %</tspan>
-      <tspan
-         class="cls-4"
-         id="tspan1368"
-         style="font-weight:300;font-size:12.00114155px;font-family:sans-serif;stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-style:normal;font-stretch:normal;font-variant:normal;">
-        <tspan
-           style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-family:sans-serif;font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal;"
-           x="-0.66216713"
-           y="240.65483"
-           id="tspan1364">(Tecnologí</tspan>
-        <tspan
-           style="stroke-width:1.00009513;-inkscape-font-specification:'sans-serif Light';font-family:sans-serif;font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal;"
-           x="-0.66216713"
-           y="255.65625"
-           id="tspan1366">de tokens)</tspan>
+    <text transform="scale(1.00261,0.99739681)" y="223.65321" x="-0.66216713">
+      <tspan x="-0.66216713" y="223.65321" class="svg-text white title">30%</tspan>
+      <tspan class="svg-text white sub">
+        <tspan x="-0.66216713" y="250" class="svg-text white sub">{{ $t('message.fundsUseTexts.tokenTechnology').substr(0,11) }}</tspan>
+        <tspan x="-0.66216713" y="270" class="svg-text white sub">{{ $t('message.fundsUseTexts.tokenTechnology').substr(11) }}</tspan>
       </tspan>
     </text>
     <g
@@ -536,6 +429,7 @@
 
 <style lang="scss">
 .use-funds-svg {
+
   .cls-1, .cls-2 {
     fill: rgba(49,118,164,0.16);
   }

@@ -237,57 +237,32 @@
           <path id="ellipse1619" d="m51.124 25.562c0.963 19.747-24.245 33.038-39.995 21.097-16.852-10.356-13.582-38.662 5.17-44.922 16.051-6.807 35.362 6.3606 34.825 23.825z" />
       </g>
     </g>
-    <g font-size="40px" letter-spacing="0px" word-spacing="0px" font-family="sans-serif" fill="#00d3ff">
-        <text xml:space="preserve" y="4453.8892" x="362.83569" line-height="1.25">
-            <tspan font-size="24px" y="4453.8892" x="362.83569" font-family="'Futura Hv BT'" fill="#00d3ff">6.5%</tspan>
-        </text>
-        <text xml:space="preserve" y="4465.5542" x="361.12021" line-height="1.25">
-            <tspan font-size="10.667px" y="4465.5542" x="361.12021" font-family="'Futura Hv BT'" fill="#00d3ff">(Equipo y advisor)</tspan>
-        </text>
-        <text xml:space="preserve" y="4767.1411" x="616.15497" line-height="1.25">
-            <tspan font-size="24px" y="4767.1411" x="616.15497" font-family="'Futura Hv BT'" fill="#00d3ff">1.5%</tspan>
-        </text>
-        <text xml:space="preserve" y="4778.8062" x="619.92902" line-height="1.25">
-            <tspan font-size="10.667px" y="4778.8062" x="619.92902" font-family="'Futura Hv BT'" fill="#00d3ff">(Bountys)</tspan>
-        </text>
-        <text xml:space="preserve" y="4710.6558" x="299.93811" line-height="1.25">
-            <tspan font-size="24px" y="4710.6558" x="299.93811" font-family="'Futura Hv BT'" fill="#00d3ff">1%</tspan>
-        </text>
-        <text xml:space="preserve" y="4722.3208" x="298.22263" line-height="1.25">
-            <tspan font-size="10.667px" y="4722.3208" x="298.22263" font-family="'Futura Hv BT'" fill="#00d3ff">(Youtubers)</tspan>
-        </text>
+    <g>
+      <text>
+        <tspan y="4453.8892" x="362.83569" class="svg-text blue title">6.5%</tspan>
+        <tspan y="4472" x="360" class="svg-text blue sub">{{ $t('message.distributionTokensTests.teamAndAdvisors') }}</tspan>
+        <tspan y="4767.1411" x="616.15497" class="svg-text blue title">1.5%</tspan>
+        <tspan y="4785" x="615" class="svg-text blue sub">{{ $t('message.distributionTokensTests.bountys') }}</tspan>
+        <tspan font-size="24px" y="4713" x="299.93811" class="svg-text blue title">1%</tspan>
+        <tspan y="4733" x="298.22263" class="svg-text blue sub">{{ $t('message.distributionTokensTests.youtubers') }}</tspan>
+      </text>
     </g>
-    <g font-size="40px" letter-spacing="0px" word-spacing="0px" font-family="sans-serif" fill="#fff">
-        <text xml:space="preserve" y="4574.1875" x="253.39432" line-height="1.25">
-            <tspan font-size="24px" y="4574.1875" x="253.39432" font-family="'Futura Hv BT'" fill="#ffffff">15%</tspan>
-        </text>
-        <text xml:space="preserve" y="4585.8525" x="251.67883" line-height="1.25">
-            <tspan font-size="10.667px" line-height="3.77952766px" y="4585.8525" x="251.67883" font-family="'Futura Hv BT'" fill="#ffffff">(Desarrollo </tspan>
-        </text>
-        <text xml:space="preserve" y="4598.0342" x="254.05722" line-height="1.25">
-            <tspan font-size="10.667px" line-height="3.77952766px" y="4598.0342" x="254.05722" font-family="'Futura Hv BT'" fill="#ffffff">Marketing)</tspan>
-        </text>
-        <text xml:space="preserve" y="4470.1963" x="558.00452" line-height="1.25">
-            <tspan font-size="24px" y="4470.1963" x="558.00452" font-family="'Futura Hv BT'" fill="#ffffff">30%</tspan>
-        </text>
-        <text xml:space="preserve" y="4482.5474" x="557.3183" line-height="1.25">
-            <tspan font-size="10.667px" y="4482.5474" x="557.3183" font-family="'Futura Hv BT'" fill="#ffffff">(Reserva)</tspan>
-        </text>
-        <text xml:space="preserve" y="4613.6602" x="662.39435" line-height="1.25">
-            <tspan font-size="24px" y="4613.6602" x="662.39435" font-family="'Futura Hv BT'" fill="#ffffff">30%</tspan>
-        </text>
-        <text xml:space="preserve" y="4625.3252" x="664.45288" line-height="1.25">
-            <tspan font-size="10.667px" y="4625.3252" x="664.45288" font-family="'Futura Hv BT'" fill="#ffffff">(Venta)</tspan>
-        </text>
-        <text xml:space="preserve" y="4825.8188" x="447.6835" line-height="1.25">
-            <tspan font-size="24px" y="4825.8188" x="447.6835" font-family="'Futura Hv BT'" fill="#ffffff">16%</tspan>
-        </text>
-        <text xml:space="preserve" y="4838.1699" x="446.99728" line-height="1.25">
-            <tspan font-size="10.667px" y="4838.1699" x="446.99728" font-family="'Futura Hv BT'" fill="#ffffff">(Fundadores</tspan>
-        </text>
-        <text xml:space="preserve" y="4850.0088" x="446.98749" line-height="1.25">
-            <tspan font-size="10.667px" line-height="3.77952766px" y="4850.0088" x="446.98749" font-family="'Futura Hv BT'" fill="#ffffff">e inversores)</tspan>
-        </text>
+    <g>
+      <text>
+        <tspan class="svg-text white title" y="4574.1875" x="253.39432">15%</tspan>
+        <tspan class="svg-text white sub" y="4595" x="240">{{ $t('message.distributionTokensTests.marketingAndDevelopment').substr(0, 11) }}</tspan>
+        <tspan class="svg-text white sub" y="4614" x="245">{{ $t('message.distributionTokensTests.marketingAndDevelopment').substr(12) }}</tspan>
+
+        <tspan class="svg-text white title" y="4470.1963" x="558.00452">30%</tspan>
+        <tspan class="svg-text white sub" y="4489" x="557.3183">{{ $t('message.distributionTokensTests.reserve') }}</tspan>
+
+        <tspan class="svg-text white title" y="4613.6602" x="662.39435">30%</tspan>
+        <tspan class="svg-text white sub" y="4633" x="664.45288">{{ $t('message.distributionTokensTests.sell') }}</tspan>
+
+        <tspan class="svg-text white title" y="4825.8188" x="447.6835">16%</tspan>
+        <tspan class="svg-text white sub" y="4848" x="446.99728">{{ $t('message.distributionTokensTests.foundersAndInversors').substr(0, 11) }}</tspan>
+        <tspan class="svg-text white sub" y="4863" x="446.98749">{{ $t('message.distributionTokensTests.foundersAndInversors').substr(11) }}</tspan>
+      </text>
     </g>
 </svg>
 </template>
@@ -315,7 +290,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
  .cls-1 {
    fill: rgba(49,118,164,0.08);
    stroke: rgba(0,211,255,0.05);
