@@ -2,7 +2,7 @@
   <section id="woonkly-allies">
     <w-divider/>
     <div class="section">
-      <span class="is-size-1-desktop is-size-5-mobile">ALIADOS TECNOLÓGICOS</span>
+      <span class="is-size-1-desktop is-size-5-mobile is-uppercase">{{$t('message.techAllies')}}</span>
       <div class="black-line"></div>
       <!-- static circle decoration svg  -->
       <img class="rellax" data-rellax-speed="-0.1" src="/img/icons/gradient-circle1.svg" id="gradient-circle-left">
@@ -13,7 +13,7 @@
       <figure>
         <img id="unitedcoin" src="/img/icons/unitedcoin.png">
       </figure>
-      <span class="is-size-1-desktop is-size-5-mobile has-text-centered">VISTO EN</span>
+      <span class="is-size-1-desktop is-size-5-mobile has-text-centered is-uppercase">{{$t('message.seenOn')}}</span>
       <div class="black-line"></div>
       <!-- static images  -->
       <div class="seen-on">
