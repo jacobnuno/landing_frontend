@@ -21,9 +21,7 @@
         </a>
     </div>
     <div class="w-div">
-      <p class="is-size-7-mobile is-size-5-tablet">
-        Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Políticas de privacidad |
-      </p>
+      <p class="is-size-7-mobile is-size-5-tablet">{{ $t('message.copyRight') }}</p>
     </div>
   </footer>
 
