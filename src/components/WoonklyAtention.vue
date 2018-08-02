@@ -37,8 +37,14 @@ export default {
       flex-direction: column;
       justify-content: center;
     }
+
+    .title {
+      position: relative;
+      z-index: 10;
+    }
   }
   #woonkly-moon {
+    z-index: 1;
     width: 7em;
     position: absolute;
     left: -22%;
