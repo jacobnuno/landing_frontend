@@ -1,57 +1,57 @@
 <template>
-    <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.25 } }" id="woonkly-roadmap" class="section">
-        <div class="container">
-            <!-- progress-bar decoration svg  -->
-            <img id="progress-bar" src="/img/sections/roadmap/progress.svg" alt="Roadmap">
-            <div class="title is-uppercase is-size-1-desktop is-size-5-mobile has-text-centered">Logros y objetivos</div>
+  <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.25 } }" id="woonkly-roadmap" class="section">
+    <div class="container">
+      <!-- progress-bar decoration svg  -->
+      <img id="progress-bar" src="/img/sections/roadmap/progress.svg" alt="Roadmap">
+      <div class="title is-uppercase is-size-1-desktop is-size-5-mobile has-text-centered">Logros y objetivos</div>
 
-            <!-- background circles decoration svg  -->
-            <img class="background-circle" id="bg-c1" src="/img/icons/gradient-circle1.svg" alt="circle">
-            <img class="background-circle" id="bg-c2" src="/img/icons/gradient-circle1.svg" alt="circle">
-            <img class="background-circle" id="bg-c3" src="/img/icons/gradient-circle1.svg" alt="circle">
-            <img class="background-circle" id="bg-c4" src="/img/icons/gradient-circle1.svg" alt="circle">
-            <img class="background-circle" id="bg-c5" src="/img/icons/gradient-circle1.svg" alt="circle">
-            <img class="background-circle" id="bg-c6" src="/img/icons/gradient-circle1.svg" alt="circle">
-            <img id="bg-line-1" src="/img/icons/ilustracion.svg">
+      <!-- background circles decoration svg  -->
+      <img class="background-circle" id="bg-c1" src="/img/icons/gradient-circle1.svg" alt="circle">
+      <img class="background-circle" id="bg-c2" src="/img/icons/gradient-circle1.svg" alt="circle">
+      <img class="background-circle" id="bg-c3" src="/img/icons/gradient-circle1.svg" alt="circle">
+      <img class="background-circle" id="bg-c4" src="/img/icons/gradient-circle1.svg" alt="circle">
+      <img class="background-circle" id="bg-c5" src="/img/icons/gradient-circle1.svg" alt="circle">
+      <img class="background-circle" id="bg-c6" src="/img/icons/gradient-circle1.svg" alt="circle">
+      <img id="bg-line-1" src="/img/icons/ilustracion.svg">
 
-            <!-- Roadmap begins -->
-            <div id="roadmap">
-                <!-- iteration of the object roadmap -->
-                <!-- "i" is for iterate the object roadmap and "index" is for iterate the object by columns-->
-                <template v-for="(index, i) in (1, Math.ceil(roadmap.length/2))">
-                    <div :key="index" class="columns is-mobile">
-                        <div class="column is-half is-aligned-to-right" :class="{small: i%2 === 0}">
-                            <!-- roadmap's left column graphics creation -->
+      <!-- Roadmap begins -->
+      <div id="roadmap">
+        <!-- iteration of the object roadmap -->
+        <!-- "i" is for iterate the object roadmap and "index" is for iterate the object by columns-->
+        <template v-for="(index, i) in (1, Math.ceil(roadmap.length/2))">
+          <div :key="index" class="columns is-mobile">
+            <div class="column is-half is-aligned-to-right" :class="{small: i%2 === 0}">
+                <!-- roadmap's left column graphics creation -->
 
-                            <span><img class="roadmap-circle" :src="getCircleImg(roadmap[i*2].date)" alt="Done circle"></span>
-                            <img class="roadmap-line" :src="getLineImg(roadmap[i*2].date)" alt="Done line">
-                            <div class="data-container">
-                                <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
-                                    {{ roadmap[i * 2].title }}
-                                </h3>
-                                <p class="roadmap-description is-size-7-mobile">
-                                    {{ roadmap[i * 2].description }}
-                                </p>
-                            </div>
-                        </div>
-                        <!-- roadmap's right column graphics creation -->
-                        <div v-if="roadmap[i * 2 + 1]" class="column is-half is-aligned-to-left" :class="{small: i%2 === 0}">
-                            <img class="roadmap-line" :src="getLineImg(roadmap[i*2+1].date)" alt="Done line">
-                            <span><img class="roadmap-circle" :src="getCircleImg(roadmap[i*2+1].date)" alt="Done circle"></span>
-                            <div class="data-container">
-                                <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
-                                    {{ roadmap[i * 2 + 1].title }}
-                                </h3>
-                                <p class="roadmap-description is-size-7-mobile">
-                                    {{ roadmap[i * 2 + 1].description }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </template>
+                <span><img class="roadmap-circle" :src="getCircleImg(roadmap[i*2].date)" alt="Done circle"></span>
+                <img class="roadmap-line" :src="getLineImg(roadmap[i*2].date)" alt="Done line">
+                <div class="data-container">
+                    <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
+                        {{ roadmap[i * 2].title }}
+                    </h3>
+                    <p class="roadmap-description is-size-7-mobile">
+                        {{ roadmap[i * 2].description }}
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+            <!-- roadmap's right column graphics creation -->
+            <div v-if="roadmap[i * 2 + 1]" class="column is-half is-aligned-to-left" :class="{small: i%2 === 0}">
+                <img class="roadmap-line" :src="getLineImg(roadmap[i*2+1].date)" alt="Done line">
+                <span><img class="roadmap-circle" :src="getCircleImg(roadmap[i*2+1].date)" alt="Done circle"></span>
+                <div class="data-container">
+                    <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
+                        {{ roadmap[i * 2 + 1].title }}
+                    </h3>
+                    <p class="roadmap-description is-size-7-mobile">
+                        {{ roadmap[i * 2 + 1].description }}
+                    </p>
+                </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -61,17 +61,17 @@ export default Vue.extend({
     data() {
         return {
             roadmap: [
-                { title: "Enero 2017", description: "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD.", date: new Date(2017, 0, 1) },
-                { title: "Junio 2017", description: "Creación primer MVP", date: new Date(2017, 4, 1) },
-                { title: "Enero 2018", description: "Ganador aceleración mejor Startup Plug and Play Silicon Valley LATAM 2018.", date: new Date(2018, 0, 1) },
-                { title: "Febrero 2018", description: "Aceleración en Tecnológico de Monterrey de Guadalajara.", date: new Date(2018, 1, 1) },
-                { title: "Marzo 2018", description: "Preparación de ICO.", date: new Date(2018, 2, 1) },
-                { title: "Abril 2018", description: "Creación de plataforma ICO, Token ERC20 y Smart contracts.", date: new Date(2018, 3, 1) },
-                { title: "Mayo 2018", description: "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0.", date: new Date(2018, 4, 1) },
-                { title: "Julio 2018", description: "Comienza la venta privada a inversores y fondos de inversión de capital riesgo (VCs).", date: new Date(2018, 6, 1) },
-                { title: "Septiembre 2018", description: "Preparación de ICO.", date: new Date(2018, 8, 1) },
-                { title: "Enero 2019", description: "Finaliza la ICO y el \"woonk\" es listado en exchanges.", date: new Date(2019, 0, 1) },
-                { title: "Marzo 2019", description: "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0.", date: new Date(2019, 2, 1) },
+                { title: this.$t('message.roadMapMilestones[0].title'), description: this.$t('message.roadMapMilestones[0].description'), date: new Date(2017, 0, 1) },
+                { title: this.$t('message.roadMapMilestones[1].title'), description: this.$t('message.roadMapMilestones[1].description'), date: new Date(2017, 4, 1) },
+                { title: this.$t('message.roadMapMilestones[2].title'), description: this.$t('message.roadMapMilestones[2].description'), date: new Date(2018, 0, 1) },
+                { title: this.$t('message.roadMapMilestones[3].title'), description: this.$t('message.roadMapMilestones[3].description'), date: new Date(2018, 1, 1) },
+                { title: this.$t('message.roadMapMilestones[4].title'), description: this.$t('message.roadMapMilestones[4].description'), date: new Date(2018, 2, 1) },
+                { title: this.$t('message.roadMapMilestones[5].title'), description: this.$t('message.roadMapMilestones[5].description'), date: new Date(2018, 3, 1) },
+                { title: this.$t('message.roadMapMilestones[6].title'), description: this.$t('message.roadMapMilestones[6].description'), date: new Date(2018, 4, 1) },
+                { title: this.$t('message.roadMapMilestones[7].title'), description: this.$t('message.roadMapMilestones[7].description'), date: new Date(2018, 6, 1) },
+                { title: this.$t('message.roadMapMilestones[8].title'), description: this.$t('message.roadMapMilestones[8].description'), date: new Date(2018, 8, 1) },
+                { title: this.$t('message.roadMapMilestones[9].title'), description: this.$t('message.roadMapMilestones[9].description'), date: new Date(2019, 0, 1) },
+                { title: this.$t('message.roadMapMilestones[10].title'), description: this.$t('message.roadMapMilestones[10].description'), date: new Date(2019, 2, 1) },
             ]
         }
     },
