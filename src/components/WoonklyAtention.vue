@@ -10,13 +10,22 @@
         </div>
       </div>
       <div class="column is-12-mobile is-half-tablet">
-        <figure class="image">
-          <img src="/img/sections/woonkly-mockup-1.png">
-        </figure>
+        <w-video-frame/>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import wVideoFrame from '@/components/shared/WoonklyVideoFrame'
+
+export default {
+  name: 'WoonklyAtention',
+  components: {
+    wVideoFrame
+  }
+}
+</script>
 
 <style lang="scss">
 #woonkly-atention {
@@ -42,7 +51,6 @@
   }
 
   background: #07062c;
-  padding-left: 3em;
 
   a.view-video {
     display: flex;
