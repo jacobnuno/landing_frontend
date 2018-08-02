@@ -4,15 +4,15 @@
     <div class="columns is-mobile is-multiline">
 
       <div class="column is-12-mobile is-6-tablet">
-        <h3 class="title is-6-mobile is-1-desktop has-text-centered">Distribución de tokens</h3>
+        <h3 class="title is-6-mobile is-1-desktop has-text-centered">{{ $t('message.tokenDistribution') }}</h3>
         <!-- start svg DistributionToken -->
         <distribution-token></distribution-token>
       </div>
 
       <div class="column is-12-mobile is-6-tablet use-funds">
-        <h3 class="title is-4-mobile is-1-desktop has-text-centered">Uso de fondos</h3>
+        <h3 class="title is-4-mobile is-1-desktop has-text-centered">{{ $t('message.useOfFunds') }}</h3>
         <!-- start svg UseFunds -->
-        <use-funds></use-funds>
+        <use-funds id="use-funds-svg"/>
       </div>
 
     </div>
@@ -60,7 +60,16 @@ export default {
     display: flex;
     align-items: center;
     h3.title {
-      margin-bottom: 3em;
+      margin-bottom: 1em;
+    }
+  }
+
+  #use-funds-svg {
+    max-width: 100%;
+    margin-top: -4em;
+    margin-bottom: -6em;
+    @media screen and (min-width: 410px) {
+      margin-top: 0;
     }
   }
 }
@@ -70,6 +79,16 @@ export default {
     .blue-line {
       display: inline;
     }
+
+    .use-funds {
+      h3.title {
+        margin-bottom: 30px;
+        @media screen and (min-width: 890px) {
+          margin-bottom: 65px;
+        }
+      }
+    }
+
     #blue-line-left {
       position: absolute;
       left: 3em;
