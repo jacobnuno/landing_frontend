@@ -21,7 +21,9 @@ export default {
     wHeader
   },
   mounted () {
-    var rellaxVar = new Rellax()
+    if (window.matchMedia('screen and (min-width: 769px)').matches) {
+      var rellaxVar = new Rellax()
+    }
   }
 }
 </script>
