@@ -1,5 +1,14 @@
 {
   "message": {
+    "menu": {
+      "project": "Proyecto",
+      "tokens": "Tokens",
+      "objectives": "Objetivos",
+      "team": "Equipo",
+      "faqs": "FAQs",
+      "buttonBuy": "Comprar",
+      "buttonFaucet": "Faucet Beta"
+    },
     "earnMoney": "Gana dinero por ver, compartir e interactuar con contenido digital",
     "connectingCreators": "Conectando creadores de contenido, anunciantes y personas de la mejor forma posible.",
     "icoPhaseBonus": "Fase <span class=\"w-light-blue\">{phase}</span> ({bonus}% Bonus)",
@@ -151,6 +160,8 @@
         "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0."
       }
     ],
+    "tokenDistribution": "Distribución de tokens",
+    "useOfFunds": "Uso de fondos",
     "questions": "Preguntas",
     "techAllies": "Aliados tecnológicos",
     "seenOn": "Visto en",
@@ -210,6 +221,32 @@
             "answer": "1 Mayo-15 Mayo: Venta privada para suscriptores de Mr. Santos en Youtube (50% Bonus) 15 Mayo-1 Julio: Venta privada para suscriptores de otros canales de Youtube (40% Bonus) 1 Julio- 1 Septiembre: Venta privada (Capitales de Emiratos Árabes, Rusia ) (30% Bonus) 1 Septiembre-1 Octubre: ICO Fase 1 (20% Bonus) 1 Octubre- 1 Noviembre: ICO Fase 2 (10% Bonus) Noviembre- 31 Diciembre: ICO Fase 3 (0% Bonus)."
           }
         ]
-    }
+    },
+    "fundsUseTexts": {
+      "fiscalAndLegal": "(Legal y fiscal)",
+      "marketing": "(Marketing)",
+      "tokenTechnology": "(Tecnología de tokens)",
+      "appDevelopment": "(Desarollo de Apps)",
+      "webDevelopment": "(Desarrollo Web)"
+    },
+    "distributionTokensTests": {
+      "teamAndAdvisors": "(Equipo y advisors)",
+      "bountys": "(Bountys)",
+      "youtubers": "(Youtubers)",
+      "marketingAndDevelopment": "(Desarrollo Marketing)",
+      "reserve": "(Reserva)",
+      "sell": "(Venta)",
+      "foundersAndInversors": "(Fundadores e Inversores)"
+    },
+    "doubts": "Dudas",
+    "ifYouWantMoreInfo": "Si quieres más información estamos a tu disposición para resolverte las dudas que puedan sugerirte.",
+    "joinTelegramGroup": "Únete al grupo de Telegram",
+    "contactNow": "Contactar ahora",
+    "contactFormPlaceHolders": {
+      "yourName": "Tu Nombre",
+      "yourEmail": "Tu Email",
+      "yourMessage": "Tu Mensaje"
+    },
+    "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Políticas de privacidad |"
   }
 }
