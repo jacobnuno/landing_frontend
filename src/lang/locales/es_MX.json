@@ -114,19 +114,102 @@
         "davidBattaglia": { "position": "Advisor" }
     },
     "roadMapMilestones": [
-      { "title": "Enero 2017", "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD." },
-      { "title": "Junio 2017", "description": "Creación primer MVP." },
-      { "title": "Enero 2018", "description": "Ganador aceleración mejor Startup Plug and Play Silicon Valley LATAM 2018." },
-      { "title": "Febrero 2018", "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD." },
-      { "title": "Marzo 2018", "description": "Aceleración en Tecnológico de Monterrey de Guadalajara." },
-      { "title": "Marzo 2018", "description": "Preparación de ICO." },
-      { "title": "Abril 2018", "description": "Creación de plataforma ICO, Token ERC20 y Smart contracts." },
-      { "title": "Mayo 2018", "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0." },
-      { "title": "Julio 2018", "description": "Comienza la venta privada a inversores y fondos de inversión de capital riesgo (VCs)." },
-      { "title": "Septiembre 2018", "description": "Preparación de ICO." },
-      { "title": "Enero 2019", "description": "Finaliza la ICO y el \"woonk\" es listado en exchanges." },
-      { "title": "Marzo 2019", "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0." }
+      { "title": "Enero 2017",
+        "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD."
+      },
+      { "title": "Junio 2017",
+        "description": "Creación primer MVP."
+      },
+      { "title": "Enero 2018",
+        "description": "Ganador aceleración mejor Startup Plug and Play Silicon Valley LATAM 2018."
+      },
+      { "title": "Febrero 2018",
+        "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD."
+      },
+      { "title": "Marzo 2018",
+        "description": "Aceleración en Tecnológico de Monterrey de Guadalajara."
+      },
+      { "title": "Marzo 2018",
+        "description": "Preparación de ICO."
+      },
+      { "title": "Abril 2018",
+        "description": "Creación de plataforma ICO, Token ERC20 y Smart contracts."
+      },
+      { "title": "Mayo 2018",
+        "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0."
+      },
+      { "title": "Julio 2018",
+        "description": "Comienza la venta privada a inversores y fondos de inversión de capital riesgo (VCs)."
+      },
+      { "title": "Septiembre 2018",
+        "description": "Preparación de ICO."
+      },
+      { "title": "Enero 2019",
+        "description": "Finaliza la ICO y el \"woonk\" es listado en exchanges."
+      },
+      { "title": "Marzo 2019",
+        "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0."
+      }
     ],
-    "questions": "Preguntas"
+    "questions": "Preguntas",
+    "techAllies": "Aliados tecnológicos",
+    "seenOn": "Visto en",
+    "frequentlyAskedQuestions": "Preguntas frecuentes",
+    "ifYouHaveDoubts": "Si tienes dudas aquí te las intentaremos resolver, y si no encuentras la solución a tu pregunta siempre puedes contactarnos a contacto@woonkly.com",
+    "users": "Usuarios",
+    "advertisers": "Anunciantes",
+    "preIcoAndIco": "Pre-Ico & ICO",
+    "faq": {
+        "users": [
+          {
+            "question": "¿Cómo puedo registrarme en woonkly?",
+            "answer": "Woonkly tendrá una sección para el registro de usuarios y otra para anunciantes y creadores de contenido. Podrás registrarte gratuitamente en la sección probar Beta."
+          },
+          {
+            "question": "¿Tendrá algún costo acceder a woonkly?",
+            "answer": "No. Woonkly es 100% gratuita para los usuarios."
+          },
+          {
+            "question": "¿Que hago si tengo más preguntas?",
+            "answer": "Puedes contactarnos en cualquier momento por redes sociales o por correo a contacto@woonkly.com."
+          }
+        ],
+        "advertisers": [
+          {
+            "question": "¿Cómo me hago anunciante?",
+            "answer": "Desde el día 1 de lanzamiento de la plataforma podrás registrarte como creador de contenido o anunciante. Sólo tienes que hacer click en el link probar Beta."
+          },
+          {
+            "question": "¿Cómo puedo viralizar aun más mi video?",
+            "answer": "Viralizar tu video consiste en vincular tu cuenta o vídeo de Youtube, Vimeo, Viuli... con Woonkly y comprar woonks para repartirlos con las personas que te ven!. Además Puedes contratar el \"Super woonk\". Con él, cada vez que un usuario \"lo cace\" repercutirá sobre seguidores y likes en sus redes sociales. Si un millón de usuarios están viendo su vídeo, ¡Significaría un millón de visitas o likes en tu canal!"
+          },
+          {
+            "question": "¿Cómo sé que han visto mi vídeo?",
+            "answer": "Woonkly tiene un sistema de publicidad medible. Su algoritmo del woonk, permite saber cuánta gente está pendiente del vídeo y evade boots y otros sistemas."
+          },
+          {
+            "question": "¿Por qué debo subir mi contenido/anuncios a woonkly?",
+            "answer": "Woonkly RECOMPENSA a tu audiencia por ver tu contenido. Es una herramienta 10 veces más accesible de publicidad, que además de darte usuarios felices, te generará estadísticas y aumento de followers en tus redes sociales."
+          }
+        ],
+        "ico": [
+          {
+            "question": "¿Qué métodos de pago se aceptan?",
+            "answer": "Podrás comprar tokens de woonkly con Ethereum de momento, posteriormente integraremos, Litecoin o Bitcoin."
+          },
+          {
+            "question": "¿Cuál es el monto mínimo de inversión?",
+            "answer": "La inversión mínima es de 0.01ETH"
+          },
+          {
+            "question": "¿Cuanto comienza y termina la ICO?",
+            "answer": "Las Pre-ICO comienza el 1 de Mayo del 2018 y la ICO termina el 31 de Diciembre del 2018."
+          },
+          {
+            "question": "¿Qué bonus tienen las distintas fases de inversión?",
+            "answer": "1 Mayo-15 Mayo: Venta privada para suscriptores de Mr. Santos en Youtube (50% Bonus) 15 Mayo-1 Julio: Venta privada para suscriptores de otros canales de Youtube (40% Bonus) 1 Julio- 1 Septiembre: Venta privada (Capitales de Emiratos Árabes, Rusia ) (30% Bonus) 1 Septiembre-1 Octubre: ICO Fase 1 (20% Bonus) 1 Octubre- 1 Noviembre: ICO Fase 2 (10% Bonus) Noviembre- 31 Diciembre: ICO Fase 3 (0% Bonus)."
+          }
+        ]
+    }
   }
 }
