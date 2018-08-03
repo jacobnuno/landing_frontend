@@ -18,8 +18,8 @@
         <span class="is-size-7-mobile is-size-5-tablet woonkly-span">info@woonkly.com</span>
       </div>
       <div class="column is-6-mobile is-one-third-desktop">
-        <fai :icon="['fab', 'telegram-plane']" class="icons" />
-        <a href="https://t.me/joinchat/Hu8281CBxcNDycg10WZKLw">
+        <a href="https://t.me/joinchat/Hu8281CBxcNDycg10WZKLw" target="_blank">
+          <fai :icon="['fab', 'telegram-plane']" class="icons" />
           <span class="is-size-7-mobile is-size-5-tablet woonkly-span">{{ $t('message.joinTelegramGroup') }}</span>
         </a>
       </div>
@@ -27,7 +27,7 @@
 
     <w-input :w-placeholder="$t('message.contactFormPlaceHolders.yourName')"></w-input>
     <w-input :w-placeholder="$t('message.contactFormPlaceHolders.yourEmail')"></w-input>
-    <w-input :w-placeholder="$t('message.contactFormPlaceHolders.yourMessage')"></w-input>
+    <w-input is-textarea :w-placeholder="$t('message.contactFormPlaceHolders.yourMessage')"></w-input>
     <button type="button" class="w-button has-text-uppercase">{{ $t('message.contactNow') }}</button>
     <img src="/img/icons/gradient-circle1.svg" id="gradient-circle1">
 
