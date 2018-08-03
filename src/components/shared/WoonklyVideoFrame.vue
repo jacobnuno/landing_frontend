@@ -75,6 +75,7 @@ export default {
 <style lang="scss">
 #woonkly-video-with-frame {
   position: relative;
+  z-index: 100;
   #woonkly-video-container {
     position: absolute;
     left: 3.2%;
