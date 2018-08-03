@@ -1,6 +1,6 @@
 <template lang="html">
-  <div @click="addClickListener" class="is-inline woonkly-language-selector">
-    <span :class="['selected-language', {'opened':isListVisible}]" v-if="selectedLanguage"><img class="flag-icon" :src="`/img/icons/flags/${selectedLanguage.img}`" :alt="selectedLanguage.label"></span>
+  <div v-click-outside="closeOptions" class="is-inline woonkly-language-selector">
+    <span @click.stop="isListVisible = !isListVisible" :class="['selected-language', {'opened':isListVisible}]" v-if="selectedLanguage"><img class="selected-flag" :src="`/img/icons/flags/${selectedLanguage.img}`" :alt="selectedLanguage.label"></span>
     <ul :class="['options', {'opened':isListVisible}]">
       <li v-for="lang in languages" :key="lang.label" @click="changeLanguage(lang)"><img class="flag-icon" :src="`/img/icons/flags/${lang.img}`" :alt="lang.label"></li>
     </ul>
@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import vClickOutside from 'v-click-outside'
 import { loadLanguageAsync } from '@/lang'
 
 export default {
@@ -32,21 +33,22 @@ export default {
   },
   methods: {
     changeLanguage (lang) {
+      this.isListVisible = false
       this.selectedLanguage = lang
       loadLanguageAsync(lang.locale)
     },
-    addClickListener () {
-      this.isListVisible = true
-      setTimeout(() => { document.body.addEventListener('click', this.test) }, 500)
-    },
-    test (e) {
-      this.isListVisible = false
-      document.body.removeEventListener('click', this.test)
+    closeOptions () {
+      if (this.isListVisible) {
+        this.isListVisible = false
+      }
     }
   },
   mounted () {
     this.selectedLanguage = this.languages[0]
-  }
+  },
+  directives: {
+    clickOutside: vClickOutside.directive
+  },
 }
 </script>
 
@@ -63,8 +65,8 @@ export default {
       content: "";
       position: absolute;
       display: inline-block;
-      top: 0.1em;
-      left: 2.3em;
+      top: -4px;
+      left: 26px;
       width: 0;
       height: 0;
       border-left: 10px solid transparent;
@@ -78,6 +80,12 @@ export default {
         transform: rotate(180deg);
       }
     }
+  }
+
+  .selected-flag {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
   }
 
   .flag-icon {
