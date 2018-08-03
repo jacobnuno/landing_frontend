@@ -7,7 +7,7 @@
     <div class="line"></div>
 
     <div class="columns is-mobile">
-      <p class="is-size-7-mobile is-size-4-tablet space column is-12-mobile is-6-desktop is-offset-3-desktop">
+      <p class="is-size-5-mobile is-size-4-tablet space column is-12-mobile is-6-desktop is-offset-3-desktop">
           {{ $t('message.ifYouWantMoreInfo') }}
       </p>
     </div>
@@ -72,7 +72,7 @@ export default {
     }
 
     .woonkly-container {
-      font-size: smaller;
+      // font-size: smaller;
       line-height: 1;
 
       .icons {
