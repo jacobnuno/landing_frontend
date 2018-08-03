@@ -27,11 +27,13 @@
     position: absolute;
     width: 22em;
     left: -20%;
+    z-index: 10;
   }
 
   #woonk-infinity2 {
     position: absolute;
     bottom: 8em;
+    z-index: 10;
   }
 
   background: #0a0830;
