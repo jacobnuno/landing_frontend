@@ -21,6 +21,7 @@ export default {
     padding: .5em;
     display: inline-block;
     position: relative;
+    cursor: pointer;
     width: 10em;
 
     .text-background {

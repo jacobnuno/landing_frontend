@@ -3,9 +3,7 @@
   <div class="columns is-mobile is-multiline">
 
     <div class="column is-12 has-text-centered phase">
-      <strong>
-        Fase <span class="w-light-blue">2</span> (40% Bonus)
-      </strong>
+      <strong v-html="$t('message.icoPhaseBonus', {phase, bonus} )"></strong>
     </div>
 
     <div class="column is-12 progress is-marginless">
@@ -17,10 +15,10 @@
     </div>
 
     <div class="column has-text-centered">
-      <w-button>Compra WNK con 30% bonus</w-button>
+      <w-button>{{$t('message.buyWithBonus', {bonus} )}}</w-button>
     </div>
     <div class="column has-text-centered">
-      <w-button>Whitepaper Woonkly</w-button>
+      <w-button>{{$t('message.whitepaperWoonkly')}}</w-button>
     </div>
 
     <div class="column is-12 counter-wrapper">
@@ -53,7 +51,9 @@ export default {
   data () {
     return {
       time: {},
-      wnkSold: '9827376'
+      wnkSold: '9827376',
+      phase: 2,
+      bonus: 40
     }
   },
   methods: {

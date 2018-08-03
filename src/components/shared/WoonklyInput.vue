@@ -1,7 +1,8 @@
 <template>
   <div class="columns is-mobile">
     <div class="woonkly-input column is-12-mobile is-6-desktop is-offset-3-desktop">
-      <input type="text" class="w-input is-size-6-mobile is-size-4-tablet" :placeholder="wPlaceholder">
+      <input v-if="!isTextarea" type="text" class="w-input is-size-6-mobile is-size-4-tablet" :placeholder="wPlaceholder">
+      <textarea v-else class="w-input is-size-6-mobile is-size-4-tablet" :placeholder="wPlaceholder" rows="8" cols="80"></textarea>
     </div>
   </div>
 </template>
@@ -14,7 +15,10 @@ export default {
     }
   },
   props: {
-    wPlaceholder: String
+    wPlaceholder: String,
+    isTextarea: {
+      default: false
+    }
   }
 }
 </script>

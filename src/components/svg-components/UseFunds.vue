@@ -1,482 +1,550 @@
 <template lang="html">
-  <svg version="1.1" viewBox="0 0 522.74 509.88" xmlns="http://www.w3.org/2000/svg">
-   <defs>
-    <filter id="Ellipse_59" x="203.63" y="160.17" width="132.08" height="132.08" filterUnits="userSpaceOnUse">
-     <feOffset dy="3" input="SourceAlpha"/>
-     <feGaussianBlur result="blur" stdDeviation="3"/>
-     <feFlood flood-opacity=".941"/>
-     <feComposite in2="blur" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <linearGradient id="linear-gradient" x1="1.125" x2=".5" y1=".15" y2="1">
-     <stop stop-color="#02004a" offset="0"/>
-     <stop stop-color="#00d3ff" offset="1"/>
-    </linearGradient>
-    <filter id="Ellipse_62" x="119.48" y="103.02" width="286.38" height="286.38" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-2" stdDeviation="36"/>
-     <feFlood flood-color="#00b1ff"/>
-     <feComposite in2="blur-2" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_57" x="209.64" y="0" width="245.45" height="245.45" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-3" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-3" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_58" x="221.26" y="11.626" width="222.2" height="222.2" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-4" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-4" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_57-2" x="0" y="146.98" width="243.83" height="243.83" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-5" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-5" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_58-2" x="10.984" y="157.97" width="221.86" height="221.86" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-6" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-6" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_57-3" x="278.92" y="185.46" width="243.83" height="243.83" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-7" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-7" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_58-3" x="289.9" y="196.44" width="221.86" height="221.86" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-8" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-8" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_57-4" x="133.68" y="267.55" width="242.33" height="242.33" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-9" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-9" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_58-4" x="144.07" y="277.94" width="221.54" height="221.54" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-10" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-10" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_57-5" x="61.703" y="19.269" width="237.24" height="237.24" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-11" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-11" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_58-5" x="70.089" y="27.654" width="220.47" height="220.47" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-12" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-12" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_59-2" x="203.63" y="160.17" width="132.08" height="132.08" filterUnits="userSpaceOnUse">
-     <feOffset dy="3" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-13" stdDeviation="3"/>
-     <feFlood flood-opacity=".941"/>
-     <feComposite in2="blur-13" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_62-2" x="119.48" y="103.02" width="286.38" height="286.38" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-14" stdDeviation="36"/>
-     <feFlood flood-color="#00b1ff"/>
-     <feComposite in2="blur-14" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_57-6" x="209.64" y="0" width="245.45" height="245.45" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-15" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-15" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_58-6" x="221.26" y="11.626" width="222.2" height="222.2" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-16" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-16" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_57-7" x="0" y="146.98" width="243.83" height="243.83" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-17" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-17" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_58-7" x="10.984" y="157.97" width="221.86" height="221.86" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-18" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-18" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_57-8" x="278.92" y="185.46" width="243.83" height="243.83" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-19" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-19" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_58-8" x="289.9" y="196.44" width="221.86" height="221.86" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-20" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-20" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_57-9" x="133.68" y="267.55" width="242.33" height="242.33" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-21" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-21" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_58-9" x="144.07" y="277.94" width="221.54" height="221.54" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-22" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-22" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_57-10" x="61.703" y="19.269" width="237.24" height="237.24" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-23" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-23" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-    <filter id="Ellipse_58-10" x="70.089" y="27.654" width="220.47" height="220.47" filterUnits="userSpaceOnUse">
-     <feOffset dx="-7" dy="23" input="SourceAlpha"/>
-     <feGaussianBlur result="blur-24" stdDeviation="36"/>
-     <feFlood flood-color="#00dcff" flood-opacity=".42"/>
-     <feComposite in2="blur-24" operator="in" result="result1"/>
-     <feComposite in="SourceGraphic" in2="result1"/>
-    </filter>
-   </defs>
-   <g id="Grafica_2_Tokens" transform="translate(-961.58 -4309.4)" data-name="Grafica 2 Tokens">
-    <path class="cls-1" transform="translate(1090.4 4391.8)" d="M140.83,0A140.83,140.83,0,1,1,0,140.83,140.83,140.83,0,0,1,140.83,0Z" data-name="Path 131"/>
-    <g class="cls-34" transform="translate(961.58 4309.4)">
-     <g class="cls-2" transform="translate(212.63 166.17)" data-name="Ellipse 59">
-      <ellipse class="cls-9" cx="57.038" cy="57.038" rx="57.038" ry="57.038"/>
-      <ellipse class="cls-10" cx="57.038" cy="57.038" rx="56.538" ry="56.538"/>
-     </g>
+  <svg
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 516 410"
+     version="1.1"
+     width="516"
+     height="410"
+     style="enable-background:new"
+     class="use-funds-svg">
+    <metadata
+       id="metadata1458">
+      <rdf:RDF>
+        <cc:Work
+           rdf:about="">
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type
+             rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+          <dc:title></dc:title>
+        </cc:Work>
+      </rdf:RDF>
+    </metadata>
+    <defs
+       id="defs1326">
+      <linearGradient
+         id="linear-gradient"
+         x1="1.125"
+         y1="0.15000001"
+         x2="0.5"
+         y2="1"
+         gradientUnits="objectBoundingBox">
+        <stop
+           offset="0"
+           stop-color="#02004a"
+           id="stop1178" />
+        <stop
+           offset="1"
+           stop-color="#00d3ff"
+           id="stop1180" />
+      </linearGradient>
+      <linearGradient
+         xlink:href="#linear-gradient"
+         id="linearGradient7049"
+         x1="231.03748"
+         y1="218.69107"
+         x2="301.68372"
+         y2="218.69107"
+         gradientUnits="userSpaceOnUse"
+         gradientTransform="matrix(1.0027054,0,0,0.99749173,-40.448841,-31.682475)" />
+      <linearGradient
+         xlink:href="#linear-gradient"
+         id="linearGradient7571"
+         x1="423.99112"
+         y1="271.28418"
+         x2="397.07159"
+         y2="302.61655"
+         gradientUnits="userSpaceOnUse"
+         gradientTransform="matrix(0.98434595,0,0,0.93463152,-10.100407,27.726549)" />
+      <linearGradient
+         xlink:href="#linear-gradient"
+         id="linearGradient7639"
+         gradientUnits="userSpaceOnUse"
+         gradientTransform="matrix(0.98434595,0,0,0.93463152,-10.100407,27.726549)"
+         x1="423.99112"
+         y1="271.28418"
+         x2="397.07159"
+         y2="302.61655" />
+      <linearGradient
+         xlink:href="#linear-gradient"
+         id="linearGradient7655"
+         gradientUnits="userSpaceOnUse"
+         gradientTransform="matrix(0.98434595,0,0,0.93463152,-10.100407,27.726549)"
+         x1="423.99112"
+         y1="271.28418"
+         x2="397.07159"
+         y2="302.61655" />
+      <linearGradient
+         xlink:href="#linear-gradient"
+         id="linearGradient7671"
+         gradientUnits="userSpaceOnUse"
+         gradientTransform="matrix(0.98434595,0,0,0.93463152,-10.100407,27.726549)"
+         x1="423.99112"
+         y1="271.28418"
+         x2="397.07159"
+         y2="302.61655" />
+      <linearGradient
+         xlink:href="#linear-gradient"
+         id="linearGradient7687"
+         gradientUnits="userSpaceOnUse"
+         gradientTransform="matrix(0.98434595,0,0,0.93463152,-10.100407,27.726549)"
+         x1="423.99112"
+         y1="271.28418"
+         x2="397.07159"
+         y2="302.61655" />
+    </defs>
+    <g
+       id="layer6"
+       style="display:inline"
+       transform="translate(0,-99.877014)" />
+    <g
+       id="layer1"
+       style="display:inline"
+       transform="translate(0,-99.877014)" />
+    <g
+       id="layer2"
+       style="display:inline"
+       transform="translate(0,-99.877014)" />
+    <g
+       id="layer8"
+       style="display:inline"
+       transform="translate(0,-99.877014)" />
+    <g
+       id="layer4"
+       style="display:inline"
+       transform="translate(0,-99.877014)" />
+    <path
+       style="display:inline;opacity:0.16000001;fill:#3176a4;fill-opacity:1;stroke:none;stroke-width:1.00009513;stroke-opacity:1"
+       id="Path_131-2"
+       data-name="Path 131"
+       class="cls-1"
+       d="M 226.63237,45.985305 A 141.211,140.47676 0 1 1 85.421372,186.46207 141.211,140.47676 0 0 1 226.63237,45.985305 Z" />
+    <path
+       style="display:inline;opacity:0.16000001;fill:#3176a4;fill-opacity:1;stroke:none;stroke-width:1.00009513;stroke-opacity:1"
+       id="Path_132-2"
+       data-name="Path 132"
+       class="cls-1"
+       d="M 226.63338,67.602946 A 119.48037,118.85912 0 1 1 107.15301,186.46207 119.48037,118.85912 0 0 1 226.63338,67.602946 Z" />
+    <ellipse
+       ry="85.35537"
+       rx="85.801498"
+       id="Ellipse_60-2"
+       data-name="Ellipse 60"
+       class="cls-2"
+       cx="226.63338"
+       cy="186.46207"
+       style="display:inline;opacity:0.16000001;fill:#3176a4;fill-opacity:1;stroke:none;stroke-width:1.00009513;stroke-opacity:1" />
+    <path
+       style="display:inline;opacity:0.16000001;fill:#3176a4;fill-opacity:1;stroke:none;stroke-width:1.00009513;stroke-opacity:1"
+       id="Path_131"
+       data-name="Path 131"
+       class="cls-1"
+       d="M 226.63237,45.985305 A 141.211,140.47676 0 1 1 85.421372,186.46207 141.211,140.47676 0 0 1 226.63237,45.985305 Z" />
+    <ellipse
+       ry="85.35537"
+       rx="85.801498"
+       id="Ellipse_60"
+       data-name="Ellipse 60"
+       class="cls-2"
+       cx="226.63338"
+       cy="186.46207"
+       style="display:inline;opacity:0.16000001;fill:#3176a4;fill-opacity:1;stroke:none;stroke-width:1.00009513;stroke-opacity:1" />
+    <path
+       style="display:inline;opacity:1;fill:#3176a4;fill-opacity:0.0627451;stroke:none;stroke-width:1.00009513;stroke-opacity:1"
+       id="Path_132"
+       data-name="Path 132"
+       class="cls-1"
+       d="M 226.63338,67.602946 A 119.48037,118.85912 0 1 1 107.15301,186.46207 119.48037,118.85912 0 0 1 226.63338,67.602946 Z" />
+    <text transform="scale(1.00261,0.99739681)" y="18.332682" x="82.748772">
+      <tspan x="82.748772" y="18.332682" class="svg-text blue title">5%</tspan>
+      <tspan x="82.748772" y="40" class="svg-text blue sub">{{$t('message.fundsUseTexts.fiscalAndLegal')}}</tspan>
+    </text>
+    <text transform="scale(1.00261,0.99739681)"
+       y="15.587421"
+       x="307.72217">
+      <tspan x="307.72217" y="22" class="svg-text title white is-bold">40%</tspan>
+      <tspan x="307.72217" y="37" class="svg-text sub white">{{$t('message.fundsUseTexts.marketing')}}</tspan>
+    </text>
+    <text transform="scale(1.00261,0.99739681)">
+      <tspan x="380" y="265.90323" class="svg-text blue title">10%</tspan>
+      <tspan x="365" y="290" class="svg-text blue sub">{{$t('message.fundsUseTexts.appDevelopment')}}</tspan>
+    </text>
+    <text transform="scale(1.00261,0.99739681)" y="392.4863" x="197.96674">
+      <tspan x="197.96674" y="375" class="svg-text white title">15%</tspan>
+      <tspan x="197.96674" y="395" class="svg-text white sub">{{$t('message.fundsUseTexts.webDevelopment')}}</tspan>
+    </text>
+    <text transform="scale(1.00261,0.99739681)" y="223.65321" x="-0.66216713">
+      <tspan x="-0.66216713" y="223.65321" class="svg-text white title">30%</tspan>
+      <tspan class="svg-text white sub">
+        <tspan x="-0.66216713" y="250" class="svg-text white sub">{{ $t('message.fundsUseTexts.tokenTechnology').substr(0,11) }}</tspan>
+        <tspan x="-0.66216713" y="270" class="svg-text white sub">{{ $t('message.fundsUseTexts.tokenTechnology').substr(11) }}</tspan>
+      </tspan>
+    </text>
+    <g
+       transform="matrix(0.67320859,0,0,0.66970818,94.83458,55.136267)"
+       id="g7577"
+       style="display:inline">
+      <circle
+         style="opacity:1;fill:url(#linearGradient7571);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95916671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path7555"
+         cy="295.99084"
+         cx="394.15494"
+         r="20" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37456918;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path7573"
+         cx="394.15494"
+         cy="295.99084"
+         r="4" />
     </g>
-    <ellipse class="cls-3" transform="translate(1145.7 4447)" cx="85.57" cy="85.57" rx="85.57" ry="85.57" data-name="Ellipse 60"/>
-    <path class="cls-1" transform="translate(1112.1 4413.4)" d="M119.158,0A119.158,119.158,0,1,1,0,119.158,119.158,119.158,0,0,1,119.158,0Z" data-name="Path 132"/>
-    <g class="cls-4" transform="translate(1184.2 4485.5)" data-name="Ellipse 61">
-     <ellipse class="cls-9" cx="47.07" cy="47.07" rx="47.07" ry="47.07"/>
-     <ellipse class="cls-10" cx="47.07" cy="47.07" rx="46.57" ry="46.57"/>
+    <g
+       transform="matrix(0.68068444,0,0,0.65417265,-49.31431,129.94717)"
+       id="g7577-2-5"
+       style="display:inline">
+      <circle
+         style="opacity:1;fill:url(#linearGradient7639);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95916671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path7555-0-9"
+         cy="295.99084"
+         cx="394.15494"
+         r="20" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37456918;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path7573-2-2"
+         cx="394.15494"
+         cy="295.99084"
+         r="4" />
     </g>
-    <g class="cls-33" transform="translate(961.58 4309.4)">
-     <ellipse class="cls-5" transform="translate(234.48 188.02)" cx="35.188" cy="35.188" rx="35.188" ry="35.188" data-name="Ellipse 62"/>
+    <g
+       transform="matrix(0.73178746,0,0,0.72798245,-201.07354,-7.3978008)"
+       id="g7577-2-9"
+       style="display:inline">
+      <circle
+         style="opacity:1;fill:url(#linearGradient7655);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95916671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path7555-0-7"
+         cy="295.99084"
+         cx="394.15494"
+         r="20" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37456918;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path7573-2-3"
+         cx="394.15494"
+         cy="295.99084"
+         r="4" />
     </g>
-    <path class="cls-6" transform="translate(1207.7 4518.4)" d="M42.34,2.525A11.733,11.733,0,0,0,29,1.746c-.9.5-3.859,1.92-7.119,10.058C17.444,8.6,13.724,6.785,7.605,7.925c-9.439,2-7.6,9.3-7.079,10.978,1,3.739,5.859,10.478,11.878,9.978a13.144,13.144,0,0,0,11.118-8.259,17.785,17.785,0,0,0-5.2-3.419c-2.7,3.359-4.359,4.1-6.019,4.7-2.66.86-6.259.3-6.2-3.939.16-4.019,7.9-3.239,11.738-1.44a27.475,27.475,0,0,1,5.8,3.339c1.14.76,2.34,1.46,2.34,1.46,7.079,4.059,16.177,1.58,19.277-2.46C49.3,13.8,46.639,6.025,42.34,2.525ZM38.681,14.983c-1.7,1.46-5.979,3.14-10.878-1a8.425,8.425,0,0,1,7.5-5C40.36,9.264,41.2,12.944,38.681,14.983Z" data-name="Path 133"/>
-    <g transform="translate(1274.8 4383)" data-name="Group 70">
-     <g class="cls-4" transform="translate(3.915 3.915)" data-name="Ellipse 11">
-      <ellipse class="cls-9" cx="22.203" cy="22.203" rx="22.203" ry="22.203"/>
-      <ellipse class="cls-10" cx="22.203" cy="22.203" rx="21.703" ry="21.703"/>
-     </g>
-     <ellipse class="cls-7" transform="translate(0)" cx="26.119" cy="26.119" rx="26.119" ry="26.119" data-name="Ellipse 10"/>
-     <g class="cls-32" transform="translate(-313.24 -73.61)">
-      <ellipse class="cls-5" transform="translate(324.64 85)" cx="14.726" cy="14.726" rx="14.726" ry="14.726" data-name="Ellipse 57"/>
-     </g>
-     <g class="cls-31" transform="translate(-313.24 -73.61)">
-      <circle class="cls-6" transform="translate(336.26 96.63)" cx="3.1" cy="3.1" r="3.1" data-name="Ellipse 58"/>
-     </g>
+    <g
+       transform="matrix(0.54294242,0,0,0.54011934,-71.04725,-81.065522)"
+       id="g7577-2-2"
+       style="display:inline">
+      <circle
+         style="opacity:1;fill:url(#linearGradient7671);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95916671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path7555-0-93"
+         cy="295.99084"
+         cx="394.15494"
+         r="20" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37456918;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path7573-2-1"
+         cx="394.15494"
+         cy="295.99084"
+         r="4" />
     </g>
-    <g transform="translate(1065.8 4530.6)" data-name="Group 73">
-     <g class="cls-4" transform="translate(3.699 3.699)" data-name="Ellipse 11">
-      <ellipse class="cls-9" cx="20.979" cy="20.979" rx="20.979" ry="20.979"/>
-      <ellipse class="cls-10" cx="20.979" cy="20.979" rx="20.479" ry="20.479"/>
-     </g>
-     <ellipse class="cls-7" cx="24.678" cy="24.678" rx="24.678" ry="24.678" data-name="Ellipse 10"/>
-     <g class="cls-30" transform="translate(-104.24 -221.22)">
-      <ellipse class="cls-5" transform="translate(115 231.98)" cx="13.913" cy="13.913" rx="13.913" ry="13.913" data-name="Ellipse 57"/>
-     </g>
-     <g class="cls-29" transform="translate(-104.24 -221.22)">
-      <ellipse class="cls-6" transform="translate(125.98 242.97)" cx="2.929" cy="2.929" rx="2.929" ry="2.929" data-name="Ellipse 58"/>
-     </g>
+    <g
+       transform="matrix(0.68844059,0,0,0.68486097,27.327838,-138.01318)"
+       id="g7577-2-7"
+       style="display:inline">
+      <circle
+         style="opacity:1;fill:url(#linearGradient7687);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95916671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path7555-0-8"
+         cy="295.99084"
+         cx="394.15494"
+         r="20" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37456918;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path7573-2-4"
+         cx="394.15494"
+         cy="295.99084"
+         r="4" />
     </g>
-    <g transform="translate(1344.7 4569.1)" data-name="Group 67">
-     <g class="cls-4" transform="translate(3.699 3.699)" data-name="Ellipse 11">
-      <ellipse class="cls-9" cx="20.979" cy="20.979" rx="20.979" ry="20.979"/>
-      <ellipse class="cls-10" cx="20.979" cy="20.979" rx="20.479" ry="20.479"/>
-     </g>
-     <ellipse class="cls-7" cx="24.678" cy="24.678" rx="24.678" ry="24.678" data-name="Ellipse 10"/>
-     <g class="cls-28" transform="translate(-383.15 -259.69)">
-      <ellipse class="cls-5" transform="translate(393.92 270.46)" cx="13.913" cy="13.913" rx="13.913" ry="13.913" data-name="Ellipse 57"/>
-     </g>
-     <g class="cls-27" transform="translate(-383.15 -259.69)">
-      <ellipse class="cls-6" transform="translate(404.9 281.44)" cx="2.929" cy="2.929" rx="2.929" ry="2.929" data-name="Ellipse 58"/>
-     </g>
+    <g
+       id="Ellipse_11"
+       data-name="Ellipse 11"
+       class="cls-1"
+       transform="matrix(0.73423344,0,0,0.73041571,282.37792,48.481984)"
+       style="display:inline;fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <circle
+         r="22.202999"
+         class="cls-2"
+         cx="22.202999"
+         cy="22.202999"
+         id="ellipse5680"
+         style="opacity:0.47999998;fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="21.702999"
+         class="cls-3"
+         cx="22.202999"
+         cy="22.202999"
+         id="ellipse5682"
+         style="font-weight:800;font-size:21px;font-family:FuturaBT-Heavy, 'Futura Hv BT';fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
-    <g transform="translate(1200.1 4651.8)" data-name="Group 69">
-     <g class="cls-4" transform="translate(3.5 3.5)" data-name="Ellipse 11">
-      <ellipse class="cls-9" cx="19.849" cy="19.848" rx="19.849" ry="19.848"/>
-      <ellipse class="cls-10" cx="19.849" cy="19.848" rx="19.349" ry="19.348"/>
-     </g>
-     <ellipse class="cls-7" cx="23.349" cy="23.348" rx="23.349" ry="23.348" data-name="Ellipse 10"/>
-     <g class="cls-26" transform="translate(-238.5 -342.36)">
-      <ellipse class="cls-5" transform="translate(248.68 352.55)" cx="13.164" cy="13.164" rx="13.164" ry="13.164" data-name="Ellipse 57"/>
-     </g>
-     <g class="cls-25" transform="translate(-238.5 -342.36)">
-      <ellipse class="cls-6" transform="translate(259.07 362.94)" cx="2.771" cy="2.771" rx="2.771" ry="2.771" data-name="Ellipse 58"/>
-     </g>
+    <g
+       id="Ellipse_11-2"
+       data-name="Ellipse 11"
+       class="cls-1"
+       transform="matrix(0.82077458,0,0,0.81650688,70.145065,190.94883)"
+       style="display:inline;fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <circle
+         r="20.979"
+         class="cls-2"
+         cx="20.979"
+         cy="20.979"
+         id="ellipse5685"
+         style="opacity:0.47999998;fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="20.479"
+         class="cls-3"
+         cx="20.979"
+         cy="20.979"
+         id="ellipse5687"
+         style="font-weight:800;font-size:21px;font-family:FuturaBT-Heavy, 'Futura Hv BT';fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
-    <g transform="translate(1130.1 4405.4)" data-name="Group 72">
-     <g class="cls-4" transform="translate(2.824 2.824)" data-name="Ellipse 11">
-      <ellipse class="cls-9" cx="16.015" cy="16.015" rx="16.015" ry="16.015"/>
-      <ellipse class="cls-10" cx="16.015" cy="16.015" rx="15.515" ry="15.515"/>
-     </g>
-     <ellipse class="cls-7" cx="18.839" cy="18.839" rx="18.839" ry="18.839" data-name="Ellipse 10"/>
-     <g class="cls-24" transform="translate(-168.49 -96.05)">
-      <ellipse class="cls-5" transform="translate(176.7 104.27)" cx="10.621" cy="10.621" rx="10.621" ry="10.621" data-name="Ellipse 57"/>
-     </g>
-     <g class="cls-23" transform="translate(-168.49 -96.05)">
-      <ellipse class="cls-6" transform="translate(185.09 112.65)" cx="2.236" cy="2.236" rx="2.236" ry="2.236" data-name="Ellipse 58"/>
-     </g>
+    <g
+       id="Ellipse_11-3"
+       data-name="Ellipse 11"
+       class="cls-1"
+       transform="matrix(0.78626186,0,0,0.78217361,343.68808,236.95454)"
+       style="display:inline;fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <circle
+         r="20.979"
+         class="cls-2"
+         cx="20.979"
+         cy="20.979"
+         id="ellipse5690"
+         style="opacity:0.47999998;fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="20.479"
+         class="cls-3"
+         cx="20.979"
+         cy="20.979"
+         id="ellipse5692"
+         style="font-weight:800;font-size:21px;font-family:FuturaBT-Heavy, 'Futura Hv BT';fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
-    <line class="cls-8" transform="translate(1121.5 4541.5)" x2="60" y1="8" data-name="Line 20"/>
-    <line class="cls-8" transform="translate(1160.5 4439.5)" x2="36" y2="47" data-name="Line 16"/>
-    <line class="cls-8" transform="translate(1224.8 4589.5)" x1=".69" y2="54.528" data-name="Line 17"/>
-    <line class="cls-8" transform="translate(1260.4 4435.4)" x1="27.99" y2="50.382" data-name="Line 19"/>
-    <line class="cls-8" transform="translate(1278.5 4557.5)" x1="63" y1="32" data-name="Line 14"/>
-    <path class="cls-1" transform="translate(1090.4 4391.8)" d="M140.83,0A140.83,140.83,0,1,1,0,140.83,140.83,140.83,0,0,1,140.83,0Z" data-name="Path 131"/>
-    <g class="cls-22" transform="translate(961.58 4309.4)">
-     <g class="cls-2" transform="translate(212.63 166.17)" data-name="Ellipse 59">
-      <ellipse class="cls-9" cx="57.038" cy="57.038" rx="57.038" ry="57.038"/>
-      <ellipse class="cls-10" cx="57.038" cy="57.038" rx="56.538" ry="56.538"/>
-     </g>
+    <g
+       id="Ellipse_11-4"
+       data-name="Ellipse 11"
+       class="cls-1"
+       transform="matrix(0.81351651,0,0,0.80928655,202.83333,307.51356)"
+       style="display:inline;fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <ellipse
+         class="cls-2"
+         cx="19.849001"
+         cy="19.848"
+         rx="19.849001"
+         ry="19.848"
+         id="ellipse5695"
+         style="opacity:0.47999998;fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         class="cls-3"
+         cx="19.849001"
+         cy="19.848"
+         rx="19.349001"
+         ry="19.348"
+         id="ellipse5697"
+         style="font-weight:800;font-size:21px;font-family:FuturaBT-Heavy, 'Futura Hv BT';fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
-    <ellipse class="cls-3" transform="translate(1145.7 4447)" cx="85.57" cy="85.57" rx="85.57" ry="85.57" data-name="Ellipse 60"/>
-    <path class="cls-1" transform="translate(1112.1 4413.4)" d="M119.158,0A119.158,119.158,0,1,1,0,119.158,119.158,119.158,0,0,1,119.158,0Z" data-name="Path 132"/>
-    <g class="cls-4" transform="translate(1184.2 4485.5)" data-name="Ellipse 61">
-     <ellipse class="cls-9" cx="47.07" cy="47.07" rx="47.07" ry="47.07"/>
-     <ellipse class="cls-10" cx="47.07" cy="47.07" rx="46.57" ry="46.57"/>
+    <g
+       id="Ellipse_11-5"
+       data-name="Ellipse 11"
+       class="cls-1"
+       transform="matrix(0.81780106,0,0,0.81354882,129.8591,65.77587)"
+       style="display:inline;fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <circle
+         r="16.014999"
+         class="cls-2"
+         cx="16.014999"
+         cy="16.014999"
+         id="ellipse5700"
+         style="opacity:0.47999998;fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="15.515"
+         class="cls-3"
+         cx="16.014999"
+         cy="16.014999"
+         id="ellipse5702"
+         style="font-weight:800;font-size:21px;font-family:FuturaBT-Heavy, 'Futura Hv BT';fill:none;stroke:#02cdf9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
-    <g class="cls-21" transform="translate(961.58 4309.4)">
-     <ellipse class="cls-5" transform="translate(234.48 188.02)" cx="35.188" cy="35.188" rx="35.188" ry="35.188" data-name="Ellipse 62"/>
+    <ellipse
+       ry="59.412766"
+       rx="59.723305"
+       cy="186.46207"
+       cx="226.63338"
+       id="path7691"
+       style="opacity:1;fill:#3176a4;fill-opacity:0.42696629;fill-rule:nonzero;stroke:none;stroke-width:1.00009513;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <g
+       id="Ellipse_61-2"
+       data-name="Ellipse 61"
+       class="cls-7"
+       transform="matrix(1.0027054,0,0,0.99749173,179.43503,139.50813)"
+       style="fill:#3176a0;fill-opacity:0.89411765;stroke:#00d3ff">
+      <circle
+         class="cls-12"
+         cx="47.07"
+         cy="47.07"
+         id="ellipse1439"
+         r="47.07"
+         style="fill:#3176a0;fill-opacity:0.89411765;stroke:none" />
+      <circle
+         class="cls-13"
+         cx="47.07"
+         cy="47.07"
+         id="ellipse1441"
+         r="46.57"
+         style="fill:#3176a0;fill-opacity:0.89411765" />
     </g>
-    <path class="cls-6" transform="translate(1207.7 4518.4)" d="M42.34,2.525A11.733,11.733,0,0,0,29,1.746c-.9.5-3.859,1.92-7.119,10.058C17.444,8.6,13.724,6.785,7.605,7.925c-9.439,2-7.6,9.3-7.079,10.978,1,3.739,5.859,10.478,11.878,9.978a13.144,13.144,0,0,0,11.118-8.259,17.785,17.785,0,0,0-5.2-3.419c-2.7,3.359-4.359,4.1-6.019,4.7-2.66.86-6.259.3-6.2-3.939.16-4.019,7.9-3.239,11.738-1.44a27.475,27.475,0,0,1,5.8,3.339c1.14.76,2.34,1.46,2.34,1.46,7.079,4.059,16.177,1.58,19.277-2.46C49.3,13.8,46.639,6.025,42.34,2.525ZM38.681,14.983c-1.7,1.46-5.979,3.14-10.878-1a8.425,8.425,0,0,1,7.5-5C40.36,9.264,41.2,12.944,38.681,14.983Z" data-name="Path 133"/>
-    <g transform="translate(1274.8 4383)" data-name="Group 70">
-     <g class="cls-4" transform="translate(3.915 3.915)" data-name="Ellipse 11">
-      <ellipse class="cls-9" cx="22.203" cy="22.203" rx="22.203" ry="22.203"/>
-      <ellipse class="cls-10" cx="22.203" cy="22.203" rx="21.703" ry="21.703"/>
-     </g>
-     <ellipse class="cls-7" transform="translate(0)" cx="26.119" cy="26.119" rx="26.119" ry="26.119" data-name="Ellipse 10"/>
-     <g class="cls-20" transform="translate(-313.24 -73.61)">
-      <ellipse class="cls-5" transform="translate(324.64 85)" cx="14.726" cy="14.726" rx="14.726" ry="14.726" data-name="Ellipse 57"/>
-     </g>
-     <g class="cls-19" transform="translate(-313.24 -73.61)">
-      <circle class="cls-6" transform="translate(336.26 96.63)" cx="3.1" cy="3.1" r="3.1" data-name="Ellipse 58"/>
-     </g>
-    </g>
-    <g transform="translate(1065.8 4530.6)" data-name="Group 73">
-     <g class="cls-4" transform="translate(3.699 3.699)" data-name="Ellipse 11">
-      <ellipse class="cls-9" cx="20.979" cy="20.979" rx="20.979" ry="20.979"/>
-      <ellipse class="cls-10" cx="20.979" cy="20.979" rx="20.479" ry="20.479"/>
-     </g>
-     <ellipse class="cls-7" cx="24.678" cy="24.678" rx="24.678" ry="24.678" data-name="Ellipse 10"/>
-     <g class="cls-18" transform="translate(-104.24 -221.22)">
-      <ellipse class="cls-5" transform="translate(115 231.98)" cx="13.913" cy="13.913" rx="13.913" ry="13.913" data-name="Ellipse 57"/>
-     </g>
-     <g class="cls-17" transform="translate(-104.24 -221.22)">
-      <ellipse class="cls-6" transform="translate(125.98 242.97)" cx="2.929" cy="2.929" rx="2.929" ry="2.929" data-name="Ellipse 58"/>
-     </g>
-    </g>
-    <g transform="translate(1344.7 4569.1)" data-name="Group 67">
-     <g class="cls-4" transform="translate(3.699 3.699)" data-name="Ellipse 11">
-      <ellipse class="cls-9" cx="20.979" cy="20.979" rx="20.979" ry="20.979"/>
-      <ellipse class="cls-10" cx="20.979" cy="20.979" rx="20.479" ry="20.479"/>
-     </g>
-     <ellipse class="cls-7" cx="24.678" cy="24.678" rx="24.678" ry="24.678" data-name="Ellipse 10"/>
-     <g class="cls-16" transform="translate(-383.15 -259.69)">
-      <ellipse class="cls-5" transform="translate(393.92 270.46)" cx="13.913" cy="13.913" rx="13.913" ry="13.913" data-name="Ellipse 57"/>
-     </g>
-     <g class="cls-15" transform="translate(-383.15 -259.69)">
-      <ellipse class="cls-6" transform="translate(404.9 281.44)" cx="2.929" cy="2.929" rx="2.929" ry="2.929" data-name="Ellipse 58"/>
-     </g>
-    </g>
-    <g transform="translate(1200.1 4651.8)" data-name="Group 69">
-     <g class="cls-4" transform="translate(3.5 3.5)" data-name="Ellipse 11">
-      <ellipse class="cls-9" cx="19.849" cy="19.848" rx="19.849" ry="19.848"/>
-      <ellipse class="cls-10" cx="19.849" cy="19.848" rx="19.349" ry="19.348"/>
-     </g>
-     <ellipse class="cls-7" cx="23.349" cy="23.348" rx="23.349" ry="23.348" data-name="Ellipse 10"/>
-     <g class="cls-14" transform="translate(-238.5 -342.36)">
-      <ellipse class="cls-5" transform="translate(248.68 352.55)" cx="13.164" cy="13.164" rx="13.164" ry="13.164" data-name="Ellipse 57"/>
-     </g>
-     <g class="cls-13" transform="translate(-238.5 -342.36)">
-      <ellipse class="cls-6" transform="translate(259.07 362.94)" cx="2.771" cy="2.771" rx="2.771" ry="2.771" data-name="Ellipse 58"/>
-     </g>
-    </g>
-    <g transform="translate(1130.1 4405.4)" data-name="Group 72">
-     <g class="cls-4" transform="translate(2.824 2.824)" data-name="Ellipse 11">
-      <ellipse class="cls-9" cx="16.015" cy="16.015" rx="16.015" ry="16.015"/>
-      <ellipse class="cls-10" cx="16.015" cy="16.015" rx="15.515" ry="15.515"/>
-     </g>
-     <ellipse class="cls-7" cx="18.839" cy="18.839" rx="18.839" ry="18.839" data-name="Ellipse 10"/>
-     <g class="cls-12" transform="translate(-168.49 -96.05)">
-      <ellipse class="cls-5" transform="translate(176.7 104.27)" cx="10.621" cy="10.621" rx="10.621" ry="10.621" data-name="Ellipse 57"/>
-     </g>
-     <g class="cls-11" transform="translate(-168.49 -96.05)">
-      <ellipse class="cls-6" transform="translate(185.09 112.65)" cx="2.236" cy="2.236" rx="2.236" ry="2.236" data-name="Ellipse 58"/>
-     </g>
-    </g>
-    <line class="cls-8" transform="translate(1121.5 4541.5)" x2="60" y1="8" data-name="Line 20"/>
-    <line class="cls-8" transform="translate(1160.5 4439.5)" x2="36" y2="47" data-name="Line 16"/>
-    <line class="cls-8" transform="translate(1224.8 4589.5)" x1=".69" y2="54.528" data-name="Line 17"/>
-    <line class="cls-8" transform="translate(1260.4 4435.4)" x1="27.99" y2="50.382" data-name="Line 19"/>
-    <line class="cls-8" transform="translate(1278.5 4557.5)" x1="63" y1="32" data-name="Line 14"/>
-   </g>
-   <g font-family="sans-serif" font-size="40px" letter-spacing="0px" word-spacing="0px">
-    <text x="124.47401" y="74.746208" fill="#00c6f4" style="line-height:1.25" xml:space="preserve"><tspan x="124.47401" y="74.746208" fill="#00d3ff" font-family="'Futura Hv BT'" font-size="24px">5%</tspan></text>
-    <text x="122.75853" y="86.411247" fill="#000000" style="line-height:1.25" xml:space="preserve"><tspan x="122.75853" y="86.411247" fill="#00d3ff" font-family="'Futura Hv BT'" font-size="10.667px">(Legal y fiscal)</tspan></text>
-    <text x="428.66678" y="317.34378" fill="#00c6f4" style="line-height:1.25" xml:space="preserve"><tspan x="428.66678" y="317.34378" fill="#00d3ff" font-family="'Futura Hv BT'" font-size="24px">10%</tspan></text>
-    <text x="429" y="329.00882" fill="#000000" style="line-height:1.25" xml:space="preserve"><tspan x="429" y="329.00882" fill="#00d3ff" font-family="'Futura Hv BT'" font-size="10.667px">(Desarrollo Apps)</tspan></text>
-   </g>
-   <g fill="#ffffff" font-family="sans-serif" font-size="40px" letter-spacing="0px" word-spacing="0px">
-    <text x="51.635071" y="250.93246" style="line-height:1.25" xml:space="preserve"><tspan x="51.635071" y="250.93246" fill="#ffffff" font-family="'Futura Hv BT'" font-size="24px">30%</tspan></text>
-    <text x="40.73748" y="264.758" style="line-height:1.25" xml:space="preserve"><tspan x="40.73748" y="264.758" fill="#ffffff" font-family="'Futura Hv BT'" font-size="10.667px">(Tecnología</tspan></text>
-    <text x="361.39285" y="59.886642" style="line-height:1.25" xml:space="preserve"><tspan x="361.39285" y="59.886642" fill="#ffffff" font-family="'Futura Hv BT'" font-size="24px">40%</tspan></text>
-    <text x="356.38565" y="71.157471" style="line-height:1.25" xml:space="preserve"><tspan x="356.38565" y="71.157471" fill="#ffffff" font-family="'Futura Hv BT'" font-size="10.667px">(Marketing)</tspan></text>
-    <text x="232.22615" y="417.72833" style="line-height:1.25" xml:space="preserve"><tspan x="232.22615" y="417.72833" fill="#ffffff" font-family="'Futura Hv BT'" font-size="24px">15%</tspan></text>
-    <text x="231.53993" y="430.07941" style="line-height:1.25" xml:space="preserve"><tspan x="231.53993" y="430.07941" fill="#ffffff" font-family="'Futura Hv BT'" font-size="10.667px">(Desarrollo Web)</tspan></text>
-    <text x="44.835529" y="276.65796" style="line-height:1.25" xml:space="preserve"><tspan x="44.835529" y="276.65796" fill="#ffffff" font-family="'Futura Hv BT'" font-size="10.667px">de tokens)</tspan></text>
-   </g>
+    <ellipse
+       ry="33.294044"
+       rx="35.418674"
+       cy="186.46007"
+       cx="226.63237"
+       id="path7028"
+       style="opacity:1;fill:url(#linearGradient7049);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.25095403;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="Path_133-2"
+       data-name="Path 133"
+       class="cls-9"
+       d="m 245.43912,174.76947 a 11.764742,11.70357 0 0 0 -13.37609,-0.77705 c -0.90244,0.49875 -3.86944,1.91519 -7.13826,10.03277 -4.44901,-3.19596 -8.17907,-5.00641 -14.31463,-3.86927 -9.46453,1.99499 -7.62056,9.27668 -7.09815,10.95047 1.00271,3.72962 5.87485,10.45172 11.91014,9.95297 a 13.17956,13.111031 0 0 0 11.14808,-8.23828 17.833116,17.74039 0 0 0 -5.21407,-3.41043 c -2.70731,3.35058 -4.3708,4.08972 -6.03529,4.68821 -2.66719,0.85785 -6.27593,0.29925 -6.21677,-3.92912 0.16043,-4.00892 7.92137,-3.23087 11.76976,-1.43639 a 27.549331,27.406085 0 0 1 5.81569,3.33063 c 1.14308,0.75809 2.34633,1.45634 2.34633,1.45634 7.09815,4.04882 16.22076,1.57603 19.32915,-2.45383 4.05294,-5.0503 1.38474,-12.8058 -2.92589,-16.29702 z m -3.6689,12.42675 c -1.7046,1.45634 -5.99518,3.13212 -10.90743,-0.99749 a 8.447793,8.4038678 0 0 1 7.52029,-4.98746 c 5.07068,0.28029 5.91295,3.95106 3.38714,5.98495 z"
+       style="fill:#ffffff;stroke-width:1.00009513" />
+       <g fill="#01c8f5">
+                 <path style="color-rendering:auto;text-decoration-color:#000000;color:#000000;font-variant-numeric:normal;shape-rendering:auto;font-variant-ligatures:normal;text-decoration-line:none;font-variant-position:normal;mix-blend-mode:normal;solid-color:#000000;font-feature-settings:normal;shape-padding:0;font-variant-alternates:normal;text-indent:0;dominant-baseline:auto;font-variant-caps:normal;image-rendering:auto;white-space:normal;text-decoration-style:solid;text-orientation:mixed;isolation:auto;enable-background:accumulate;text-transform:none" d="m176.69336 194.84375-60.16211 7.98047 0.13281 0.99023 60.16211-7.97851z"/>
+                 <path style="color-rendering:auto;text-decoration-color:#000000;color:#000000;font-variant-numeric:normal;shape-rendering:auto;font-variant-ligatures:normal;text-decoration-line:none;font-variant-position:normal;mix-blend-mode:normal;solid-color:#000000;font-feature-settings:normal;shape-padding:0;font-variant-alternates:normal;text-indent:0;dominant-baseline:auto;font-variant-caps:normal;image-rendering:auto;white-space:normal;text-decoration-style:solid;text-orientation:mixed;isolation:auto;enable-background:accumulate;text-transform:none" d="m156.09961 93.291016-0.79297 0.609375 36.09766 46.882809 0.79297-0.61132z"/>
+                 <path style="color-rendering:auto;text-decoration-color:#000000;color:#000000;font-variant-numeric:normal;shape-rendering:auto;font-variant-ligatures:normal;text-decoration-line:none;font-variant-position:normal;mix-blend-mode:normal;solid-color:#000000;font-feature-settings:normal;shape-padding:0;font-variant-alternates:normal;text-indent:0;dominant-baseline:auto;font-variant-caps:normal;image-rendering:auto;white-space:normal;text-decoration-style:solid;text-orientation:mixed;isolation:auto;enable-background:accumulate;text-transform:none" d="m220.37695 243.17383-0.6914 54.39062 1 0.0137 0.6914-54.39062z"/>
+                 <path style="color-rendering:auto;text-decoration-color:#000000;color:#000000;font-variant-numeric:normal;shape-rendering:auto;font-variant-ligatures:normal;text-decoration-line:none;font-variant-position:normal;mix-blend-mode:normal;solid-color:#000000;font-feature-settings:normal;shape-padding:0;font-variant-alternates:normal;text-indent:0;dominant-baseline:auto;font-variant-caps:normal;image-rendering:auto;white-space:normal;text-decoration-style:solid;text-orientation:mixed;isolation:auto;enable-background:accumulate;text-transform:none" d="m283.53125 89.296875-28.06641 50.253905 0.87305 0.48828 28.06641-50.255857z"/>
+                 <path style="color-rendering:auto;text-decoration-color:#000000;color:#000000;font-variant-numeric:normal;shape-rendering:auto;font-variant-ligatures:normal;text-decoration-line:none;font-variant-position:normal;mix-blend-mode:normal;solid-color:#000000;font-feature-settings:normal;shape-padding:0;font-variant-alternates:normal;text-indent:0;dominant-baseline:auto;font-variant-caps:normal;image-rendering:auto;white-space:normal;text-decoration-style:solid;text-orientation:mixed;isolation:auto;enable-background:accumulate;text-transform:none" d="m274.24805 210.85352-0.45117 0.89257 63.16992 31.91993 0.45117-0.89258z"/>
+       </g>
   </svg>
-
 </template>
 
-<script>
-export default {
-}
-</script>
+<style lang="scss">
+.use-funds-svg {
 
-<style lang="css">
-    .cls-1, .cls-3, .cls-7 {
-      fill: rgba(49,118,164,0.16);
-    }
-    .cls-2 {
-      fill: rgba(49,118,164,0.08);
-      stroke: rgba(0,211,255,0.05);
-    }
-    .cls-3 {
-      opacity: 0.48;
-    }
-    .cls-4 {
-      fill: rgba(49,118,164,0.19);
-      stroke: #00d3ff;
-    }
-    .cls-5 {
-      fill: url(#linear-gradient);
-    }
-    .cls-6 {
-      fill: #fff;
-    }
-    .cls-7 {
-      opacity: 0.4;
-    }
-    .cls-10, .cls-8 {
-      fill: none;
-    }
-    .cls-8 {
-      stroke: #01c8f5;
-    }
-    .cls-9 {
-      stroke: none;
-    }
-    .cls-11 {
-      filter: url(#Ellipse_58-10);
-    }
-    .cls-12 {
-      filter: url(#Ellipse_57-10);
-    }
-    .cls-13 {
-      filter: url(#Ellipse_58-9);
-    }
-    .cls-14 {
-      filter: url(#Ellipse_57-9);
-    }
-    .cls-15 {
-      filter: url(#Ellipse_58-8);
-    }
-    .cls-16 {
-      filter: url(#Ellipse_57-8);
-    }
-    .cls-17 {
-      filter: url(#Ellipse_58-7);
-    }
-    .cls-18 {
-      filter: url(#Ellipse_57-7);
-    }
-    .cls-19 {
-      filter: url(#Ellipse_58-6);
-    }
-    .cls-20 {
-      filter: url(#Ellipse_57-6);
-    }
-    .cls-21 {
-      filter: url(#Ellipse_62-2);
-    }
-    .cls-22 {
-      filter: url(#Ellipse_59-2);
-    }
-    .cls-23 {
-      filter: url(#Ellipse_58-5);
-    }
-    .cls-24 {
-      filter: url(#Ellipse_57-5);
-    }
-    .cls-25 {
-      filter: url(#Ellipse_58-4);
-    }
-    .cls-26 {
-      filter: url(#Ellipse_57-4);
-    }
-    .cls-27 {
-      filter: url(#Ellipse_58-3);
-    }
-    .cls-28 {
-      filter: url(#Ellipse_57-3);
-    }
-    .cls-29 {
-      filter: url(#Ellipse_58-2);
-    }
-    .cls-30 {
-      filter: url(#Ellipse_57-2);
-    }
-    .cls-31 {
-      filter: url(#Ellipse_58);
-    }
-    .cls-32 {
-      filter: url(#Ellipse_57);
-    }
-    .cls-33 {
-      filter: url(#Ellipse_62);
-    }
-    .cls-34 {
-      filter: url(#Ellipse_59);
-    }
+  .cls-1, .cls-2 {
+    fill: rgba(49,118,164,0.16);
+  }
+
+  .cls-2 {
+    opacity: 0.48;
+  }
+
+  .cls-3 {
+    fill: #02cdf9;
+  }
+
+  .cls-3, .cls-5 {
+    font-size: 21px;
+    font-family: FuturaBT-Heavy, Futura Hv BT;
+    font-weight: 800;
+  }
+
+  .cls-4 {
+    font-size: 12px;
+    font-family: FuturaBT-Book, Futura Bk BT;
+    font-weight: 400;
+  }
+
+  .cls-5, .cls-9 {
+    fill: #fff;
+  }
+
+  .cls-6 {
+    fill: rgba(49,118,164,0.08);
+    stroke: rgba(0,211,255,0.05);
+  }
+
+  .cls-10, .cls-7 {
+    fill: rgba(49,118,164,0.19);
+  }
+
+  .cls-7 {
+    stroke: #00d3ff;
+  }
+
+  .cls-8 {
+    fill: url(#linear-gradient);
+  }
+
+  .cls-11, .cls-13 {
+    fill: none;
+  }
+
+  .cls-11 {
+    stroke: #01c8f5;
+  }
+
+  .cls-12, .cls-14 {
+    stroke: none;
+  }
+
+  .cls-14 {
+    fill: #00d3ff;
+  }
+
+  .cls-15 {
+    filter: url(#Ellipse_62-2);
+  }
+
+  .cls-16 {
+    filter: url(#Ellipse_59-2);
+  }
+
+  .cls-17 {
+    filter: url(#Ellipse_58-5);
+  }
+
+  .cls-18 {
+    filter: url(#Ellipse_57-5);
+  }
+
+  .cls-19 {
+    filter: url(#Ellipse_58-4);
+  }
+
+  .cls-20 {
+    filter: url(#Ellipse_57-4);
+  }
+
+  .cls-21 {
+    filter: url(#Ellipse_58-3);
+  }
+
+  .cls-22 {
+    filter: url(#Ellipse_57-3);
+  }
+
+  .cls-23 {
+    filter: url(#Ellipse_58-2);
+  }
+
+  .cls-24 {
+    filter: url(#Ellipse_57-2);
+  }
+
+  .cls-25 {
+    filter: url(#Ellipse_58);
+  }
+
+  .cls-26 {
+    filter: url(#Ellipse_57);
+  }
+
+  .cls-27 {
+    filter: url(#Ellipse_62);
+  }
+
+  .cls-28 {
+    filter: url(#Ellipse_59);
+  }
+}
 </style>
