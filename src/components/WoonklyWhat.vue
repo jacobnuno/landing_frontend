@@ -23,6 +23,13 @@
 #woonkly-what-is {
   position: relative;
 
+  .what-is-woonkly {
+    figure {
+      position: relative;
+      z-index: 100;
+    }
+  }
+
   #woonk-infinity {
     position: absolute;
     width: 22em;
