@@ -51,8 +51,14 @@ export default {
   color: var(--woonkly-black-blue);
   text-align: center;
   position: relative;
-  padding-bottom: 7em;
+  padding-bottom: 0;
   // overflow: hidden;
+
+  .seen-on {
+    figure {
+      margin-top: 1.8em;
+    }
+  }
 
   & > .section {
     padding-bottom: 8em;
@@ -112,6 +118,7 @@ export default {
     .seen-on {
       display: flex;
       justify-content: space-between;
+
       & > * {
         flex: 1;
         display: flex;
