@@ -228,6 +228,11 @@ export default {
           name: 'David Battaglia',
           position: this.$t('message.teamAdvisors.davidBattaglia.position'),
           img: 'davidbattaglia.jpg'
+        },
+        {
+          name: 'Roberto Medrano',
+          position: this.$t('message.teamAdvisors.robertoMedrano.position'),
+          img: 'robertomedrano.png'
         }
       ]
     }
