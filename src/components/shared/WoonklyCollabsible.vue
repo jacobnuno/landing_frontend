@@ -41,7 +41,7 @@ export default {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    font-size: .7em;
+    font-size: 1em;
     text-align: center;
     padding: 1rem;
     color: white;
@@ -75,7 +75,7 @@ export default {
   }
 
   .w-p {
-    font-size: .625rem;
+    font-size: 1.2rem;
   }
 
   .collapsible-content .content-inner {
