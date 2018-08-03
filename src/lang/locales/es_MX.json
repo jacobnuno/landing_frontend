@@ -104,7 +104,7 @@
         "kevinQuino": { "position": "Diseñador UX & UI" },
         "juanSandoval": { "position": "Desarrollador" },
         "jorgeVillasenor": { "position": "Desarrollador Web" },
-        "ilichArredondo": { "position": "Desarrollador Sr. Frontend" },
+        "ilichArredondo": { "position": "Desarrollador Frontend" },
         "derekJones": { "position": "Financial Blockchain Manager" },
         "ghaliElKasri": { "position": "Arquitecto de Blockchain" },
         "ghitaElKasri": { "position": "Blockchain financial arquitect" },
@@ -120,7 +120,8 @@
         "javierGarcia": { "position": "Plug & Play Advisor" },
         "danielMuvdi": { "position": "Advisor" },
         "mendySrugo": { "position": "Advisor & Investor" },
-        "davidBattaglia": { "position": "Advisor" }
+        "davidBattaglia": { "position": "Advisor" },
+        "robertoMedrano": { "position": "Advisor" }
     },
     "roadMapMilestones": [
       { "title": "Enero 2017",
