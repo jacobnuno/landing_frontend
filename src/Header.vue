@@ -304,6 +304,10 @@ export default {
           order: 1;
           li {
             display: inline;
+
+            &.selected {
+              background: none;
+            }
           }
         }
       }
