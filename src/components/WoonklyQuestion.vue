@@ -29,7 +29,7 @@
     <w-input :w-placeholder="$t('message.contactFormPlaceHolders.yourEmail')"></w-input>
     <w-input is-textarea :w-placeholder="$t('message.contactFormPlaceHolders.yourMessage')"></w-input>
     <button type="button" class="w-button has-text-uppercase">{{ $t('message.contactNow') }}</button>
-    <img src="/img/icons/gradient-circle1.svg" id="gradient-circle1">
+    <img src="/img/icons/gradient-circle1.svg" id="gradient-circle1" alt="Woonkly blue circle">
 
   </section>
 </template>

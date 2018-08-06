@@ -17,9 +17,9 @@
 
     </div>
 
-    <img src="/img/icons/blue-line.svg" class="blue-line" id="blue-line-left">
-    <img src="/img/icons/blue-line.svg" class="blue-line" id="blue-line-middle">
-    <img src="/img/icons/blue-line.svg" class="blue-line" id="blue-line-right">
+    <img src="/img/icons/blue-line.svg" class="blue-line" id="blue-line-left" alt="Woonkly blue line">
+    <img src="/img/icons/blue-line.svg" class="blue-line" id="blue-line-middle" alt="Woonkly blue line">
+    <img src="/img/icons/blue-line.svg" class="blue-line" id="blue-line-right" alt="Woonkly blue line">
 
 
  </section>

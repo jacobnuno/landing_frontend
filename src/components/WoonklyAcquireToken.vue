@@ -2,7 +2,7 @@
 <section id="woonkly-ac-token">
   <w-divider/>
   <div class="section">
-    <img src="/img/icons/linea_luz.svg" id="blue-line-left">
+    <img src="/img/icons/linea_luz.svg" id="blue-line-left" alt="Woonkly blue line">
 
     <div class="is-size-4-mobile is-size-2-tablet has-text-centered is-uppercase">{{$t('message.acquireTokens')}}</div>
     <div class="columns">
@@ -12,7 +12,7 @@
         </p>
         <ul>
           <li v-for="index in 6" :key="index" class="list-tkn">
-            <img src="/img/icons/group.svg" class="bullet">
+            <img src="/img/icons/group.svg" class="bullet" alt="Woonkly bullet">
             <div>
               <div class="is-size-6-mobile is-size-4-tablet">{{ $t('message.acquireTokensFirstList['+(index-1)+'].title') }}</div>
               {{ $t('message.acquireTokensFirstList['+(index-1)+'].content') }}
@@ -23,7 +23,7 @@
       <div class="column is-12-mobile is-6-tablet is-offset-1-tablet w-div-right">
         <ul>
           <li v-for="index in 6" :key="index" class="list-tkn">
-            <img src="/img/icons/group.svg" class="bullet">
+            <img src="/img/icons/group.svg" class="bullet" alt="Woonkly bullet">
             <div>
               <div class="is-size-6-mobile is-size-4-tablet">{{ $t('message.acquireTokenSecondList['+(index-1)+'].title') }}</div>
               {{ $t('message.acquireTokenSecondList['+(index-1)+'].content') }}
@@ -34,8 +34,8 @@
       </div>
 
     </div>
-    <img src="/img/icons/linea_luz.svg" id="blue-line-right">
-    <img src="/img/icons/ilustracion.svg" id="blue-cube">
+    <img src="/img/icons/linea_luz.svg" id="blue-line-right" alt="Woonkly blue line">
+    <img src="/img/icons/ilustracion.svg" id="blue-cube" alt="Woonkly blue cube">
   </div>
 </section>
 </template>

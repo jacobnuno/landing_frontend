@@ -5,33 +5,33 @@
       <span class="is-size-1-desktop is-size-5-mobile is-uppercase">{{$t('message.techAllies')}}</span>
       <div class="black-line"></div>
       <!-- static circle decoration svg  -->
-      <img class="rellax" data-rellax-speed="-0.1" src="/img/icons/gradient-circle1.svg" id="gradient-circle-left">
+      <img class="rellax" data-rellax-speed="-0.1" src="/img/icons/gradient-circle1.svg" id="gradient-circle-left" alt="Woonkly blue circle">
       <!-- static images  -->
       <figure>
-        <img id ="plugandplay" src="/img/icons/plugandplay.png">
+        <img id ="plugandplay" src="/img/icons/plugandplay.png" alt="Plug and Play">
       </figure>
       <figure>
-        <img id="unitedcoin" src="/img/icons/unitedcoin.png">
+        <img id="unitedcoin" src="/img/icons/unitedcoin.png" alt="United Coin">
       </figure>
       <span class="is-size-1-desktop is-size-5-mobile has-text-centered is-uppercase">{{$t('message.seenOn')}}</span>
       <div class="black-line"></div>
       <!-- static images  -->
       <div class="seen-on">
         <figure>
-          <img id="forbes" src="/img/icons/forbes.png">
+          <img id="forbes" src="/img/icons/forbes.png" alt="Forbes">
         </figure>
         <figure>
-            <img id="cointelegraph" src="/img/icons/cointelegraph.png">
+            <img id="cointelegraph" src="/img/icons/cointelegraph.png" alt="The Coin Telegraph">
         </figure>
         <figure>
-          <img id="wbf" src="/img/icons/wbf.png">
+          <img id="wbf" src="/img/icons/wbf.png" alt="World Blockchain Forum">
         </figure>
         <figure>
-          <img id="bef-logo" src="/img/icons/bef.svg">
+          <img id="bef-logo" src="/img/icons/bef.svg" alt="Blockchain Economic Forum">
         </figure>
       </div>
       <!-- static circle decoration svg  -->
-      <img class="rellax" data-rellax-speed="0.4" src="/img/icons/gradient-circle1.svg" id="gradient-circle-right">
+      <img class="rellax" data-rellax-speed="0.4" src="/img/icons/gradient-circle1.svg" id="gradient-circle-right" alt="Woonkly blue circle">
     </div>
   </section>
 </template>
