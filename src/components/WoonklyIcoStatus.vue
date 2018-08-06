@@ -52,8 +52,8 @@ export default {
     return {
       time: {},
       wnkSold: '9827376',
-      phase: 2,
-      bonus: 40
+      phase: 3,
+      bonus: 30
     }
   },
   methods: {
@@ -106,21 +106,21 @@ export default {
       right: 0;
       bottom: 0;
       display: flex;
-      display: flex;
       justify-content: space-evenly;
       transform: translateY(-0.7em);
       z-index: -1;
 
       img {
-        &:nth-of-type(1) {
-          width: 10px;
-        }
-        &:nth-of-type(2) {
-          width: 8px;
-        }
-        &:nth-of-type(3) {
-          width: 6px;
-        }
+        width: 32px;
+        // &:nth-of-type(1) {
+        //   width: 10px;
+        // }
+        // &:nth-of-type(2) {
+        //   width: 8px;
+        // }
+        // &:nth-of-type(3) {
+        //   width: 6px;
+        // }
       }
     }
 
