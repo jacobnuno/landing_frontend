@@ -14,9 +14,11 @@
         <img id="line2" class="glowing-line rellax" data-rellax-speed="0.4" src="/img/icons/glowing-line.svg" alt="Line">
         <img id="line3" class="glowing-line rellax" data-rellax-speed="0.5" src="/img/icons/glowing-line.svg" alt="Line">
         <p class="brief">{{$t('message.contentCreatorsAnyPlatform')}}</p>
-        <figure class="image">
-          <img src="/img/sections/woonkly_tv.jpg" alt="Woonkly Tv">
-        </figure>
+        <a href="https://woonkly.com/tv11/" target="_blank">
+          <figure class="image">
+            <img src="/img/sections/woonkly_tv.jpg" alt="Woonkly Tv">
+          </figure>
+        </a>
         <p class="brief">{{$t('message.woonklyTvBriefs[0]')}}</p>
         <p class="brief">{{$t('message.woonklyTvBriefs[1]')}}</p>
         <p class="brief">{{$t('message.woonklyTvBriefs[2]')}}</p>
