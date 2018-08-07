@@ -46,7 +46,7 @@ export default {
         player = new YT.Player('woonkly-video-container', {
           width,
           height,
-          videoId: '2GIoPWmm3zI',
+          videoId: 'X7MUGidMIgw',
           events: {
             'onReady': function (event) {
               event.target.mute()
