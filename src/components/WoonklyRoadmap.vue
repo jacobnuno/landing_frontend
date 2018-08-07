@@ -61,17 +61,18 @@ export default Vue.extend({
     data() {
         return {
             roadmap: [
-                { title: this.$t('message.roadMapMilestones[0].title'), description: this.$t('message.roadMapMilestones[0].description'), date: new Date(2017, 0, 1) },
-                { title: this.$t('message.roadMapMilestones[1].title'), description: this.$t('message.roadMapMilestones[1].description'), date: new Date(2017, 4, 1) },
-                { title: this.$t('message.roadMapMilestones[2].title'), description: this.$t('message.roadMapMilestones[2].description'), date: new Date(2018, 0, 1) },
-                { title: this.$t('message.roadMapMilestones[3].title'), description: this.$t('message.roadMapMilestones[3].description'), date: new Date(2018, 1, 1) },
-                { title: this.$t('message.roadMapMilestones[4].title'), description: this.$t('message.roadMapMilestones[4].description'), date: new Date(2018, 2, 1) },
-                { title: this.$t('message.roadMapMilestones[5].title'), description: this.$t('message.roadMapMilestones[5].description'), date: new Date(2018, 3, 1) },
-                { title: this.$t('message.roadMapMilestones[6].title'), description: this.$t('message.roadMapMilestones[6].description'), date: new Date(2018, 4, 1) },
-                { title: this.$t('message.roadMapMilestones[7].title'), description: this.$t('message.roadMapMilestones[7].description'), date: new Date(2018, 6, 1) },
-                { title: this.$t('message.roadMapMilestones[8].title'), description: this.$t('message.roadMapMilestones[8].description'), date: new Date(2018, 8, 1) },
-                { title: this.$t('message.roadMapMilestones[9].title'), description: this.$t('message.roadMapMilestones[9].description'), date: new Date(2019, 0, 1) },
-                { title: this.$t('message.roadMapMilestones[10].title'), description: this.$t('message.roadMapMilestones[10].description'), date: new Date(2019, 2, 1) },
+              // months start at 0
+              { title: this.$t('message.roadMapMilestones[0].title'), description: this.$t('message.roadMapMilestones[0].description'), date: new Date(2017, 0, 1) },
+              { title: this.$t('message.roadMapMilestones[1].title'), description: this.$t('message.roadMapMilestones[1].description'), date: new Date(2017, 5, 1) },
+              { title: this.$t('message.roadMapMilestones[2].title'), description: this.$t('message.roadMapMilestones[2].description'), date: new Date(2018, 0, 1) },
+              { title: this.$t('message.roadMapMilestones[3].title'), description: this.$t('message.roadMapMilestones[3].description'), date: new Date(2018, 1, 1) },
+              { title: this.$t('message.roadMapMilestones[4].title'), description: this.$t('message.roadMapMilestones[4].description'), date: new Date(2018, 2, 1) },
+              { title: this.$t('message.roadMapMilestones[5].title'), description: this.$t('message.roadMapMilestones[5].description'), date: new Date(2018, 2, 1) },
+              { title: this.$t('message.roadMapMilestones[6].title'), description: this.$t('message.roadMapMilestones[6].description'), date: new Date(2018, 3, 1) },
+              { title: this.$t('message.roadMapMilestones[7].title'), description: this.$t('message.roadMapMilestones[7].description'), date: new Date(2018, 4, 1) },
+              { title: this.$t('message.roadMapMilestones[8].title'), description: this.$t('message.roadMapMilestones[8].description'), date: new Date(2018, 6, 1) },
+              { title: this.$t('message.roadMapMilestones[9].title'), description: this.$t('message.roadMapMilestones[9].description'), date: new Date(2018, 8, 1) },
+              { title: this.$t('message.roadMapMilestones[10].title'), description: this.$t('message.roadMapMilestones[10].description'), date: new Date(2019, 0, 1) },
             ]
         }
     },
