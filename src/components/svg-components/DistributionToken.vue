@@ -1,6 +1,14 @@
 <template lang="html">
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="214.58 4404.5 528.37 517.26">
     <defs>
+      <filter id="dropshadow" height="130%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+        <feOffset dx="0" dy="0" result="offsetblur"/>
+        <feMerge>
+          <feMergeNode/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
         <filter id="b" height="132.08" width="132.08" y="4567.6" x="418.2" filterUnits="userSpaceOnUse">
             <feOffset input="SourceAlpha" dy="3" />
             <feGaussianBlur stdDeviation="3" result="blur" />
@@ -191,7 +199,7 @@
     <g filter="url(#e)" class="cls-15">
         <circle transform="translate(365.97,4693.6)" data-name="Ellipse 58" class="cls-6" cy="2.183" cx="2.183" r="2.183" fill="#fff" />
     </g>
-    <circle opacity=".3" class="cls-9" cy="4503.5" cx="421.06" r="20.979" fill="#00d3ff" />
+    <circle opacity=".3" class="cls-9" cy="4503.5" cx="421.06" r="20.979" filter="url(#dropshadow)" fill="#00d3ff" />
     <g filter="url(#k)" class="cls-14">
         <circle transform="translate(407.15,4489.5)" data-name="Ellipse 57" class="cls-5" cy="13.913" cx="13.913" r="13.913" fill="url(#a)" />
     </g>
