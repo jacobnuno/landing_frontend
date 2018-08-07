@@ -27,28 +27,48 @@
           <w-language-selector/>
         </div>
         <div class="column is-12-mobile is-3-tablet buttons">
-          <w-button>Comprar</w-button>
-          <w-button>Faucet Beta</w-button>
+          <w-button>{{ $t('message.menu.buttonBuy') }}</w-button>
+          <w-button>{{ $t('message.menu.buttonFaucet') }}</w-button>
         </div>
-        <nav class="column is-12-mobile is-8-tablet navigation">
-          <ul @click.stop="isMenuOpen = false">
+        <nav class="column is-12-mobile is-5-tablet navigation">
+          <ul>
             <li :class="{'selected':currentSection == 'WoonklyHero'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-description' }">Proyecto</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-description', onDone: closeMenu }">{{ $t('message.menu.project') }}</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyDistributionToken'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-dis-token' }">Tokens</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-dis-token', onDone: closeMenu }">{{ $t('message.menu.tokens') }}</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyRoadmap'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-roadmap' }">Objetivos</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-roadmap', onDone: closeMenu }">{{ $t('message.menu.objectives') }}</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyTeam'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-team' }">Equipo</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-team', onDone: closeMenu }">{{ $t('message.menu.team') }}</a>
             </li>
             <li :class="{'selected':currentSection == 'WoonklyFaq'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-faq' }">FAQs</a>
+              <a href="" v-scroll-to="{ el: '#woonkly-faq', onDone: closeMenu }">{{ $t('message.menu.faqs') }}</a>
             </li>
           </ul>
         </nav>
+        <div class="column is-hidden-mobile is-3-tablet social-media">
+            <a href="https://www.facebook.com/woonkly/" target="_blank">
+              <fai :icon="['fab', 'facebook-f']" class="icons" />
+            </a>
+            <a href="https://twitter.com/WoonklyTV" target="_blank">
+              <fai :icon="['fab', 'twitter']" class="icons" />
+            </a>
+            <a href="https://www.youtube.com/c/MrSantos" target="_blank">
+              <fai :icon="['fab', 'youtube']" class="icons" />
+            </a>
+            <a href="https://t.me/joinchat/HIxsXg7y5_EDCgXmkT3yRA" target="_blank">
+              <fai :icon="['fab', 'telegram-plane']" class="icons" />
+            </a>
+            <a href="https://github.com/Woonkly" target="_blank">
+              <fai :icon="['fab', 'github']" class="icons" />
+            </a>
+            <a>
+              <fai :icon="['fab', 'medium-m']" class="icons" />
+            </a>
+        </div>
       </div>
     </aside>
   </nav>
@@ -67,7 +87,7 @@ export default {
   data () {
     return {
       isMenuOpen: false,
-      isScrolledDown: false,
+      isScrolledDown: false
     }
   },
   props: ['currentSection'],
@@ -80,7 +100,10 @@ export default {
       } else {
         this.isScrolledDown = false
       }
-    }, 1000)
+    }, 1000),
+    closeMenu () {
+      setTimeout(() => { this.isMenuOpen = false }, 100)
+    }
   },
   mounted () {
     window.addEventListener('scroll', this.pageScroll)
@@ -130,6 +153,10 @@ export default {
   .navbar {
     background: none;
 
+    @media screen and (max-width: 1103px) {
+      display: block;
+    }
+
     .navbar-item {
       img {
         max-height: unset;
@@ -140,6 +167,9 @@ export default {
 
   .navbar-burger {
     color: white;
+    @media screen and (max-width: 1104px) {
+      display: block;
+    }
   }
 
   #woonkly-menu {
@@ -151,6 +181,10 @@ export default {
     bottom: 0;
     left: 2em;
     width: calc(100vw - 2em);
+
+    @media screen and (min-width: 1088px) and (max-width: 1104px) {
+      left: 100%;
+    }
 
     transition: transform 500ms linear;
     transform: translateX(100%);
@@ -165,6 +199,10 @@ export default {
       }
     }
 
+    .social-media {
+      display: none;
+    }
+
     .navigation {
       padding: 0;
 
@@ -172,7 +210,7 @@ export default {
       li {
         height: 2.7em;
         line-height: 2.7em;
-        padding-left: 2em;
+        padding-left: 1.5em;
         a {
           color: var(--woonkly-light-blue);
         }
@@ -187,7 +225,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1104px) {
   #woonkly-header {
 
     nav.navbar {
@@ -221,17 +259,41 @@ export default {
           align-items: center;
         }
 
+        .social-media {
+          order: 4;
+          display: flex;
+          justify-content: space-between;
+          .icons {
+            display: inline-block;
+            font-size: 1.5em;
+            color: var(--woonkly-light-blue);
+            transition: transform 600ms ease-out;
+
+            &:hover, &:active, &:focus {
+              animation: slightly-scale 1s ease-out;
+            }
+          }
+        }
+
         .profile {
           display: none;
         }
 
         .language {
           order: 2;
+          .woonkly-language-selector {
+            margin-left: 2em;
+          }
         }
 
         .buttons {
           order: 3;
           margin: 0;
+          justify-content: right;
+
+          @media (mex-width: 1280px) {
+            justify-content: center;
+          }
 
           .woonkly-button {
             margin: 0;
@@ -242,6 +304,10 @@ export default {
           order: 1;
           li {
             display: inline;
+
+            &.selected {
+              background: none;
+            }
           }
         }
       }

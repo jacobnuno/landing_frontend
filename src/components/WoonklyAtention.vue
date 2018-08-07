@@ -5,24 +5,27 @@
     <div class="columns">
       <div class="column is-12-mobile is-half-tablet atention">
         <div class="wrapper">
-          <h3 class="title is-3">La atención de las personas tiene un valor medible</h3>
-          <p>
-            Creadores de contenido y anunciantes tienen algo en común. Quieren llegar a su público objetivo y pagarán por hacerlo, pero esta vez, a los usuarios que los ven.
-          </p>
-          <a href="" target="_blank" class="view-video">
-            <img src="/img/icons/circle_play.svg" alt="Play Video" width="60px">
-            <span>Ver video</span>
-          </a>
+          <h3 class="title is-3">{{$t('message.attentionValue')}}</h3>
+          <p>{{$t('message.contentCreators')}}</p>
         </div>
       </div>
       <div class="column is-12-mobile is-half-tablet">
-        <figure class="image">
-          <img src="/img/sections/woonkly-mockup-1.png">
-        </figure>
+        <w-video-frame/>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import wVideoFrame from '@/components/shared/WoonklyVideoFrame'
+
+export default {
+  name: 'WoonklyAtention',
+  components: {
+    wVideoFrame
+  }
+}
+</script>
 
 <style lang="scss">
 #woonkly-atention {
@@ -34,8 +37,14 @@
       flex-direction: column;
       justify-content: center;
     }
+
+    .title {
+      position: relative;
+      z-index: 10;
+    }
   }
   #woonkly-moon {
+    z-index: 1;
     width: 7em;
     position: absolute;
     left: -22%;
@@ -48,7 +57,6 @@
   }
 
   background: #07062c;
-  padding-left: 3em;
 
   a.view-video {
     display: flex;

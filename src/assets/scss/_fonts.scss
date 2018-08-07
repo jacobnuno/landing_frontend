@@ -34,3 +34,25 @@
   font-weight: 900;
   font-style: normal;
 }
+
+// Font styles for SVGs
+
+.svg-text {
+  font-family: 'Futura';
+
+  &.title {
+    font-size: 25px;
+  }
+
+  &.sub {
+    font-size: 16px;
+  }
+
+  &.blue {
+    fill: var(--woonkly-light-blue);
+  }
+
+  &.white {
+    fill: white;
+  }
+}

@@ -2,36 +2,36 @@
   <section id="woonkly-allies">
     <w-divider/>
     <div class="section">
-      <span class="is-size-1-desktop is-size-5-mobile">ALIADOS TECNOLÓGICOS</span>
+      <span class="is-size-1-desktop is-size-5-mobile is-uppercase">{{$t('message.techAllies')}}</span>
       <div class="black-line"></div>
       <!-- static circle decoration svg  -->
-      <img class="rellax" data-rellax-speed="-0.1" src="/img/icons/gradient-circle1.svg" id="gradient-circle-left">
+      <img class="rellax" data-rellax-speed="-0.1" src="/img/icons/gradient-circle1.svg" id="gradient-circle-left" alt="Woonkly blue circle">
       <!-- static images  -->
       <figure>
-        <img id ="plugandplay" src="/img/icons/plugandplay.png">
+        <img id ="plugandplay" src="/img/icons/plugandplay.png" alt="Plug and Play">
       </figure>
       <figure>
-        <img id="unitedcoin" src="/img/icons/unitedcoin.png">
+        <img id="unitedcoin" src="/img/icons/unitedcoin.png" alt="United Coin">
       </figure>
-      <span class="is-size-1-desktop is-size-5-mobile has-text-centered">VISTO EN</span>
+      <span class="is-size-1-desktop is-size-5-mobile has-text-centered is-uppercase">{{$t('message.seenOn')}}</span>
       <div class="black-line"></div>
       <!-- static images  -->
       <div class="seen-on">
         <figure>
-          <img id="forbes" src="/img/icons/forbes.png">
+          <img id="forbes" src="/img/icons/forbes.png" alt="Forbes">
         </figure>
         <figure>
-            <img id="cointelegraph" src="/img/icons/cointelegraph.png">
+            <img id="cointelegraph" src="/img/icons/cointelegraph.png" alt="The Coin Telegraph">
         </figure>
         <figure>
-          <img id="wbf" src="/img/icons/wbf.png">
+          <img id="wbf" src="/img/icons/wbf.png" alt="World Blockchain Forum">
         </figure>
         <figure>
-          <img id="bef-logo" src="/img/icons/bef.svg">
+          <img id="bef-logo" src="/img/icons/bef.svg" alt="Blockchain Economic Forum">
         </figure>
       </div>
       <!-- static circle decoration svg  -->
-      <img class="rellax" data-rellax-speed="0.4" src="/img/icons/gradient-circle1.svg" id="gradient-circle-right">
+      <img class="rellax" data-rellax-speed="0.4" src="/img/icons/gradient-circle1.svg" id="gradient-circle-right" alt="Woonkly blue circle">
     </div>
   </section>
 </template>
@@ -51,8 +51,18 @@ export default {
   color: var(--woonkly-black-blue);
   text-align: center;
   position: relative;
-  padding-bottom: 3em;
+  padding-bottom: 0;
   // overflow: hidden;
+
+  .seen-on {
+    figure {
+      margin-top: 1.8em;
+    }
+  }
+
+  & > .section {
+    padding-bottom: 8em;
+  }
 
   .black-line {
     height: 3em;
@@ -64,17 +74,19 @@ export default {
   #gradient-circle-left {
     position: absolute;
     top: 2em;
-    right: 13em;
     width: 14em;
     z-index: -1;
+    left: -7em;
   }
 
   #gradient-circle-right {
     position: absolute;
     bottom: 1em;
+    -webkit-transform: translateX(90%);
     transform: translateX(90%);
     width: 7em;
     z-index: -1;
+    right: -1em;
   }
 
   #plugandplay {
@@ -106,6 +118,7 @@ export default {
     .seen-on {
       display: flex;
       justify-content: space-between;
+
       & > * {
         flex: 1;
         display: flex;

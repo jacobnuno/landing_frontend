@@ -1,12 +1,12 @@
 <template>
   <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.1 } }" id="woonkly-team" class="section">
     <img id="woonkly-light" src="/img/icons/woonkly-light.png" alt="Woonkly Light">
-    <h3 class="title is-3 has-text-centered has-text-white is-uppercase">Un equipo experto</h3>
-    <p class="is-size-5 has-text-centered">Crear una gran idea, un excelente producto y una potente criptomoneda solo puede realizarse con un equipo de los mejores expertos en cada área.</p>
+    <h3 class="title is-3 has-text-centered has-text-white is-uppercase">{{$t('message.aExpertTeam')}}</h3>
+    <p class="is-size-5 has-text-centered">{{$t('message.createABetterIdea')}}</p>
     <div class="columns is-mobile is-multiline team">
       <w-team-member v-for="(m, index) in team" v-bind:key="index" :member="m" class="column is-half-mobile is-one-quarter-tablet"/>
     </div>
-    <h3 class="title is-3 has-text-centered has-text-white is-uppercase">Inversores y Advisors</h3>
+    <h3 class="title is-3 has-text-centered has-text-white is-uppercase">{{$t('message.investorsAndAdvisors')}}</h3>
     <div class="columns is-mobile is-multiline advisors">
       <w-team-member v-for="a in advisors" :key="a.name" :member="a" class="column is-half-mobile is-one-third-tablet"/>
     </div>
@@ -22,7 +22,7 @@ export default {
       team: [
         {
           name: 'Mr. Santos',
-          position: 'Presidente & CEO',
+          position: this.$t('message.teamMembers.santos.position'),
           img: 'mrsantos.jpg',
           links: {
             twitter: 'https://twitter.com/mrsantosyoutube',
@@ -32,7 +32,7 @@ export default {
         },
         {
           name: 'Matei Antohi',
-          position: 'Co-Fundador',
+          position: this.$t('message.teamMembers.mateiAntohi.position'),
           img: 'mateantohi.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/matei-antohi-18950865/'
@@ -40,7 +40,7 @@ export default {
         },
         {
           name: 'David Leonardo',
-          position: 'Dir. Operaciones',
+          position: this.$t('message.teamMembers.davidLeonardo.position'),
           img: 'davidleonardo.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/davidleonardoc/'
@@ -48,47 +48,16 @@ export default {
         },
         {
           name: 'Oscar Cardenas',
-          position: 'CTO & Gerente de Blockchain',
+          position: this.$t('message.teamMembers.oscarCardenas.position'),
           img: 'oscarcardenas.jpeg',
           links: {
-            linkedin: 'https://www.linkedin.com/in/cardedeveloper/'
-          }
-        },
-        {
-          name: 'Derek Jones',
-          position: 'Financial Blockchain Manager',
-          img: 'derekjones.jpeg',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/unitedcoin/'
-          }
-        },
-        {
-          name: 'Ghali El Kasri',
-          position: 'Arquitecto de Blockchain',
-          img: 'ghalielkasri.jpeg',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/mohamed-el-ghali-el-kasri-61471114a/'
-          }
-        },
-        {
-          name: 'Ghita El Kasri',
-          position: 'Blockchain financial arquitect',
-          img: 'ghitaelkasri.jpeg',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/ghita-el-kasri-81a6b185/'
-          }
-        },
-        {
-          name: 'Hassan Lahlou',
-          position: 'Director Matemático de Blockchain',
-          img: 'hassanlahlou.jpeg',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/hassanlahlou/'
+            linkedin: 'https://www.linkedin.com/in/cardedeveloper/',
+            twitter: 'https://twitter.com/CardeDeveloper'
           }
         },
         {
           name: 'Sara Santos',
-          position: 'Directora de Marketing',
+          position: this.$t('message.teamMembers.saraSantos.position'),
           img: 'sarasantos.jpg',
           links: {
             linkedin: 'https://www.linkedin.com/in/sarasc9/'
@@ -96,7 +65,7 @@ export default {
         },
         {
           name: 'Carlos Pavia',
-          position: 'Director desarrollo web',
+          position: this.$t('message.teamMembers.carlosPavia.position'),
           img: 'carlospavia.jpg',
           links: {
             linkedin: 'https://www.linkedin.com/in/carlos-pavia-7517bb51/'
@@ -104,7 +73,7 @@ export default {
         },
         {
           name: 'Jonathan Álvarez',
-          position: 'Director Financiero',
+          position: this.$t('message.teamMembers.jonathanAlvarez.position'),
           img: 'jonathanalvarez.jpg',
           links: {
             linkedin: 'https://www.linkedin.com/in/jonathan-alvarez-592816bb/'
@@ -112,17 +81,103 @@ export default {
         },
         {
           name: 'Shuberth Chi',
-          position: 'Director tecnológico',
+          position: this.$t('message.teamMembers.shuberthChi.position'),
           img: 'shuberthchi.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/shuberth-chi-balam/'
+          }
+        },
+        {
+          name: 'Gustavo Rueda',
+          position: this.$t('message.teamMembers.gustavoRueda.position'),
+          img: 'woonkzalo.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/gustavo-adolfo-rueda-enr%C3%ADquez-5873b114a/'
+          }
+        },
+        {
+          name: 'Jacob Nuño',
+          position: this.$t('message.teamMembers.jacobNuno.position'),
+          img: 'jacob.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/jacob-nu%C3%B1o-g%C3%B3mez-15a287158/'
+          }
+        },
+        {
+          name: 'Kevin Quino',
+          position: this.$t('message.teamMembers.kevinQuino.position'),
+          img: 'kevin.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/kevin-salgado-quino-447a09140/'
+          }
+        },
+        {
+          name: 'Juan Sandoval',
+          position: this.$t('message.teamMembers.juanSandoval.position'),
+          img: 'manuel.jpg'
+        },
+        {
+          name: 'Jorge Villaseñor',
+          position: this.$t('message.teamMembers.jorgeVillasenor.position'),
+          img: 'coke.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/jacob-nu%C3%B1o-g%C3%B3mez-15a287158/'
+          }
+        },
+        {
+          name: 'Ilich Arredondo',
+          position: this.$t('message.teamMembers.ilichArredondo.position'),
+          img: 'ilich.jpg',
+          links: {
+            twitter: 'https://twitter.com/ilichh1',
+            linkedin: 'https://www.linkedin.com/in/ilichh1/'
+          }
+        },
+        {
+          name: 'Derek Jones',
+          position: this.$t('message.teamMembers.derekJones.position'),
+          img: 'derekjones.jpeg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/unitedcoin/'
+          }
+        },
+        {
+          name: 'Woonkzalo',
+          position: this.$t('message.teamMembers.woonkzalo.position'),
+          img: 'gustavo.jpg',
+          links: {
+            twitter: 'https://twitter.com/woonkzalo'
           }
         }
       ],
       advisors: [
         {
+          name: 'Ghali El Kasri',
+          position: this.$t('message.teamMembers.ghaliElKasri.position'),
+          img: 'ghalielkasri.jpeg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/mohamed-el-ghali-el-kasri-61471114a/'
+          }
+        },
+        {
+          name: 'Ghita El Kasri',
+          position: this.$t('message.teamMembers.ghitaElKasri.position'),
+          img: 'ghitaelkasri.jpeg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/ghita-el-kasri-81a6b185/'
+          }
+        },
+        {
+          name: 'Hassan Lahlou',
+          position: this.$t('message.teamMembers.hassanLahlou.position'),
+          img: 'hassanlahlou.jpeg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/hassanlahlou/'
+          }
+        },
+        {
           name: 'Rodrigo de la Peña',
-          position: 'Inversor',
+          position: this.$t('message.teamAdvisors.rodrigoDeLaPena.position'),
           img: 'rodrigodelapena.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/rodrigo-de-la-pe%C3%B1a-30a4b522/'
@@ -130,17 +185,17 @@ export default {
         },
         {
           name: 'Luis Riveroll',
-          position: 'Inversor',
+          position: this.$t('message.teamAdvisors.luisRiveroll.position'),
           img: 'luisriveroll.jpg'
         },
         {
           name: 'Paul D´Souza',
-          position: 'Silicon Valley Advisor',
+          position: this.$t('message.teamAdvisors.paulDSouza.position'),
           img: 'pauldsouza.png'
         },
         {
           name: 'Álvaro Santos',
-          position: 'Advisor',
+          position: this.$t('message.teamAdvisors.alvaroSantos.position'),
           img: 'alvarosantos.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/%C3%A1lvaro-santos-g%C3%B3mez-9a456435/'
@@ -148,12 +203,12 @@ export default {
         },
         {
           name: 'Jorge Espinosa (Criptón)',
-          position: 'Youtube Blockchain Influencer',
+          position: this.$t('message.teamAdvisors.jorgeEspinosa.position'),
           img: 'jorgeespinosa.jpg'
         },
         {
           name: 'Javier García',
-          position: 'Plug & Play Advisor',
+          position: this.$t('message.teamAdvisors.javierGarcia.position'),
           img: 'javergarcia.jpg',
           links: {
             linkedin: 'https://www.linkedin.com/in/javier-garc%C3%ADa-9921a7141/'
@@ -161,18 +216,23 @@ export default {
         },
         {
           name: 'Daniel Muvdi',
-          position: 'Advisor',
+          position: this.$t('message.teamAdvisors.danielMuvdi.position'),
           img: 'danielmuvdi.jpg'
         },
         {
           name: 'Mendy Srugo',
-          position: 'Advisor & Investor',
+          position: this.$t('message.teamAdvisors.mendySrugo.position'),
           img: 'mendysrugo.jpg'
         },
         {
           name: 'David Battaglia',
-          position: 'Advisor',
+          position: this.$t('message.teamAdvisors.davidBattaglia.position'),
           img: 'davidbattaglia.jpg'
+        },
+        {
+          name: 'Roberto Medrano',
+          position: this.$t('message.teamAdvisors.robertoMedrano.position'),
+          img: 'robertomedrano.png'
         }
       ]
     }

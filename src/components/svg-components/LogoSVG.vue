@@ -12,8 +12,8 @@
           <stop stop-color="#02004a" offset="0" />
           <stop stop-color="#00d3ff" offset="1" />
 
-          <animate begin="0;gradientAnimation4.end+150ms" from="33.633" attributeName="x2" to="-100" dur="5s" fill="freeze" />
-          <animate begin="gradientAnimation3.end+50ms" from="-100" attributeName="x2" to="33.633" dur="5s" fill="freeze" />
+          <animate id="woonklyTvGradientAnimation1" begin="0;woonklyTvGradientAnimation2.end+150ms" from="33.633" attributeName="x2" to="-100" dur="5s" fill="freeze" />
+          <animate id="woonklyTvGradientAnimation2" begin="woonklyTvGradientAnimation1.end+50ms" from="-100" attributeName="x2" to="33.633" dur="5s" fill="freeze" />
         </linearGradient>
       </defs>
       <g fill="#fff">
@@ -29,15 +29,15 @@
   </svg>
   <svg id="logo-infinite" :class="{'is-invisible':infiniteInvisible}" xmlns="http://www.w3.org/2000/svg" height="50px" width="auto" version="1.1" viewBox="193 71.754 160 40">
     <defs>
-      <linearGradient id="a" y1="50.634" x1="118.43" x2="-100" y2="42.983" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.3739 0 0 .72787 136.3 61.754)">
+      <linearGradient id="logo-infinite-gradient" y1="50.634" x1="118.43" x2="-100" y2="42.983" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.3739 0 0 .72787 136.3 61.754)">
         <stop stop-color="#00d3ff" offset="0" />
         <stop stop-color="#02004a" offset="1" />
 
-        <animate begin="0;gradientAnimation4.end+150ms" from="33.633" attributeName="x2" to="-100" dur="5s" fill="freeze" />
-        <animate begin="gradientAnimation3.end+50ms" from="-100" attributeName="x2" to="33.633" dur="5s" fill="freeze" />
+        <animate id="logo-gradient-animation1" begin="0;logo-gradient-animation2.end+150ms" from="33.633" attributeName="x2" to="-100" dur="5s" fill="freeze" />
+        <animate id="logo-gradient-animation2" begin="logo-gradient-animation1.end+50ms" from="-100" attributeName="x2" to="33.633" dur="5s" fill="freeze" />
       </linearGradient>
     </defs>
-    <path fill="url(#a)" d="m284.314 96.2114a11.7261 11.4369 0 0 1 -6.37401 -2.12394s3.1342-4.09288 7.17164-4.50786c3.50636-0.362984 5.47178 1.08797 5.63271 2.27993 0.10662 1.19196-1.27541 4.14488-6.42732 4.35188m-15.5644 3.10891c-5.15292 1.60596-7.33056-0.776981-7.70272-1.91695-0.37217-1.13996 0.37216-2.95292 4.24967-3.98988 3.82219-1.03598 8.44906 1.81296 8.44906 1.81296a10.9264 10.657 0 0 1 -4.99299 4.09288m16.355-15.0766c-8.44906 0.10399-10.2525 8.03077-10.2525 8.03077-2.97528-2.79792-5.89624-4.24887-10.1459-3.83389-4.24968 0.414979-7.64439 4.19688-7.86165 7.1498-0.26554 2.90093 2.65643 8.44476 9.4026 8.44476s9.56151-6.8908 9.56151-6.8908a11.6929 11.4046 0 0 0 9.13706 3.93788c7.5961-0.155 9.77375-5.07784 10.1459-7.51278 0.37216-2.90093-1.54095-9.48172-9.98699-9.32574" />
+    <path fill="url(#logo-infinite-gradient)" d="m284.314 96.2114a11.7261 11.4369 0 0 1 -6.37401 -2.12394s3.1342-4.09288 7.17164-4.50786c3.50636-0.362984 5.47178 1.08797 5.63271 2.27993 0.10662 1.19196-1.27541 4.14488-6.42732 4.35188m-15.5644 3.10891c-5.15292 1.60596-7.33056-0.776981-7.70272-1.91695-0.37217-1.13996 0.37216-2.95292 4.24967-3.98988 3.82219-1.03598 8.44906 1.81296 8.44906 1.81296a10.9264 10.657 0 0 1 -4.99299 4.09288m16.355-15.0766c-8.44906 0.10399-10.2525 8.03077-10.2525 8.03077-2.97528-2.79792-5.89624-4.24887-10.1459-3.83389-4.24968 0.414979-7.64439 4.19688-7.86165 7.1498-0.26554 2.90093 2.65643 8.44476 9.4026 8.44476s9.56151-6.8908 9.56151-6.8908a11.6929 11.4046 0 0 0 9.13706 3.93788c7.5961-0.155 9.77375-5.07784 10.1459-7.51278 0.37216-2.90093-1.54095-9.48172-9.98699-9.32574" />
   </svg>
   </div>
 </template>

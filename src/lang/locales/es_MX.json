@@ -1,0 +1,253 @@
+{
+  "message": {
+    "menu": {
+      "project": "Proyecto",
+      "tokens": "Tokens",
+      "objectives": "Objetivos",
+      "team": "Equipo",
+      "faqs": "FAQs",
+      "buttonBuy": "Comprar",
+      "buttonFaucet": "Faucet Beta"
+    },
+    "earnMoney": "Gana dinero por ver, compartir e interactuar con contenido digital",
+    "connectingCreators": "Conectando creadores de contenido, anunciantes y personas de la mejor forma posible.",
+    "icoPhaseBonus": "Fase <span class=\"w-light-blue\">{phase}</span> ({bonus}% Bonus)",
+    "buyWithBonus": "Compra WNK con {bonus}% bonus",
+    "whitepaperWoonkly": "Whitepaper Woonkly",
+    "attentionValue": "La atención de las personas tiene un valor medible",
+    "contentCreators": "Creadores de contenido y anunciantes tienen algo en común. Quieren llegar a su público objetivo y pagarán por hacerlo, pero esta vez, a los usuarios que los ven.",
+    "woonklyWhatIs": "¿Qué es Woonkly?",
+    "woonklyIsTheFirstPlatform": "Woonkly es la primera plataforma que paga a las personas por ver y compartir contenido digital (vídeo, imagen y texto) de diferentes plataformas.",
+    "signUpInWoonkly": "El registro en woonkly es gratuito tanto para creadores de contenido como para usuarios. Los creadores de contenido pueden enlazar en woonkly sus vídeos, imágenes o posts de diferentes plataformas de manera gratuita para con ello conseguir más exposición o si lo prefieren pueden pagarle a su público objetivo usando nuestra criptomoneda “woonk” para conseguir miles e incluso millones de visualizaciones o interactuaciones en cuestión de horas, minutos o incluso segundos.",
+    "discoverWoonklyTv": "Descubre Woonkly TV 1.0",
+    "contentCreatorsAnyPlatform": "Los creadores de contenido de cualquier plataforma centralizada (Youtube, imeo…) o descentralizada (Viuli…) y los anunciantes de todo el mundo tienen al fin una herramienta para alcanzar a su público objetivo de manera casi instantánea y por un costo varias veces inferior a cualquier otro método publicitario y los usuarios tienen al fin una herramienta que les permite ganar dinero por su tiempo, su atención y su interacción con vídeos que les interesen.",
+    "woonklyTvBriefs": [
+      "Woonkly nace de la idea de que compartir es la base del éxito. Nuestra filosofía consiste en que todos ganen.",
+      "Piénsalo. A nivel internacional la inversión publicitaria anual supera los 600 mil millones de dólares, o 600 billones. Imagina que parte de ese dinero se fuera directamente a las personas que ven esa publicidad. ¿No sería más justo? ¿Más lógico?.",
+      "Eso es Woonkly. La conexión entre el capital que invierten las empresas o artistas en publicidad y las personas que ven los vídeos de dichas empresas o artistas. Conectamos el capital de los"
+    ],
+    "principalBenefits": "Los beneficios principales para cada grupo son",
+    "benefits": [
+      "Gana dinero por ver vídeos",
+      "Gana dinero por compartir contenido digital",
+      "Gana dinero por interactuar con Vídeos, imágenes y post",
+      "Participa en loterías diarias gratuitas de criptomonedas"
+    ],
+    "acquireTokens": "Adquirir Tokens",
+    "withTheObjectiveOf": "Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido , hemos creado nuestra criptomoneda, llamada “woonk”. Los creadores de contenido y anunciantes pueden comprar woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial de nuestra criptomoneda:",
+    "acquireTokensFirstList": [
+      {
+          "title": "1 Mayo-1 Junio:",
+          "content": "Venta privada para suscriptores de Mr. Santos en Youtube (50%Bonus)"
+      },
+      {
+          "title": "1 Junio-1 Julio:",
+          "content": "Venta privada para suscriptores de otros canales de Youtube (40% Bonus)"
+      },
+      {
+          "title": "1 Julio- 1 Septiembre:",
+          "content": "Venta privada (Capitales de Emiratos Árabes, Hong Kong y Europa) (30% Bonus)"
+      },
+      {
+          "title": "1 Septiembre-1 Octubre:",
+          "content": "ICO Fase 1 (20% Bonus)"
+      },
+      {
+          "title": "1 Octubre- 1 Noviembre:",
+          "content": "ICO Fase 2 (10% Bonus)"
+      },
+      {
+          "title": "1 Noviembre- 31 Diciembre:",
+          "content": "ICO Fase 3 (0% Bonus)"
+      }
+    ],
+    "acquireTokenSecondList": [
+      {
+          "title": "Inicio",
+          "content": "1 Mayo 2018"
+      },
+      {
+          "title": "Número de Woonks a la venta",
+          "content": "3,000,000,000 (30%)"
+      },
+      {
+          "title": "Final de la ICO",
+          "content": "31 Diciembre 2018"
+      },
+      {
+          "title": "Tasa de cambio",
+          "content": "1 ETH = 50,000 Woonks"
+      },
+      {
+          "title": "Métodos de inversión aceptados",
+          "content": "ETH (BTC, LTC, DASH próximamente)"
+      },
+      {
+          "title": "Inversión mínima",
+          "content": "0.01 ETH"
+      }
+    ],
+    "aExpertTeam": "Un equipo experto",
+    "createABetterIdea": "Crear una gran idea, un excelente producto y una potente criptomoneda solo puede realizarse con un equipo de los mejores expertos en cada área.",
+    "investorsAndAdvisors": "Inversores y Advisors",
+    "teamMembers": {
+        "santos": { "position": "Presidente & CEO" },
+        "mateiAntohi": { "position": "Co-Fundador" },
+        "davidLeonardo": { "position": "Dir. de Operaciones" },
+        "oscarCardenas": { "position": "Director de Blockchain" },
+        "saraSantos": { "position": "Directora de Marketing" },
+        "carlosPavia": { "position": "Dir. de Desarollo Web" },
+        "jonathanAlvarez": { "position": "Director Financiero" },
+        "shuberthChi": { "position": "Director tecnológico" },
+        "gustavoRueda": { "position": "Desarrollador Web" },
+        "jacobNuno": { "position": "Desarrollador Web Multiplataforma" },
+        "kevinQuino": { "position": "Diseñador UX & UI" },
+        "juanSandoval": { "position": "Desarrollador" },
+        "jorgeVillasenor": { "position": "Desarrollador Web" },
+        "ilichArredondo": { "position": "Desarrollador Frontend" },
+        "derekJones": { "position": "Financial Blockchain Manager" },
+        "ghaliElKasri": { "position": "Arquitecto de Blockchain" },
+        "ghitaElKasri": { "position": "Blockchain financial arquitect" },
+        "hassanLahlou": { "position": "Director Matemático de Blockchain" },
+        "woonkzalo": { "position": "Lead Support / Pet / Influencer" }
+    },
+    "teamAdvisors": {
+        "rodrigoDeLaPena": { "position": "Inversor" },
+        "luisRiveroll": { "position": "Inversor" },
+        "paulDSouza": { "position": "Silicon Valley Advisor" },
+        "alvaroSantos": { "position": "Advisor" },
+        "jorgeEspinosa": { "position": "Youtube Blockchain Influencer" },
+        "javierGarcia": { "position": "Plug & Play Advisor" },
+        "danielMuvdi": { "position": "Advisor" },
+        "mendySrugo": { "position": "Advisor & Investor" },
+        "davidBattaglia": { "position": "Advisor" },
+        "robertoMedrano": { "position": "Advisor" }
+    },
+    "roadMapMilestones": [
+      { "title": "Enero 2017",
+        "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD."
+      },
+      { "title": "Junio 2017",
+        "description": "Creación primer MVP."
+      },
+      { "title": "Enero 2018",
+        "description": "Ganador aceleración mejor Startup Plug and Play Silicon Valley LATAM 2018."
+      },
+      { "title": "Febrero 2018",
+        "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD."
+      },
+      { "title": "Marzo 2018",
+        "description": "Aceleración en Tecnológico de Monterrey de Guadalajara."
+      },
+      { "title": "Marzo 2018",
+        "description": "Preparación de ICO."
+      },
+      { "title": "Abril 2018",
+        "description": "Creación de plataforma ICO, Token ERC20 y Smart contracts."
+      },
+      { "title": "Mayo 2018",
+        "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0."
+      },
+      { "title": "Julio 2018",
+        "description": "Comienza la venta privada a inversores y fondos de inversión de capital riesgo (VCs)."
+      },
+      { "title": "Septiembre 2018",
+        "description": "Preparación de ICO."
+      },
+      { "title": "Enero 2019",
+        "description": "Finaliza la ICO y el \"woonk\" es listado en exchanges."
+      },
+      { "title": "Marzo 2019",
+        "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0."
+      }
+    ],
+    "tokenDistribution": "Distribución de tokens",
+    "useOfFunds": "Uso de fondos",
+    "questions": "Preguntas",
+    "techAllies": "Aliados tecnológicos",
+    "seenOn": "Visto en",
+    "frequentlyAskedQuestions": "Preguntas frecuentes",
+    "ifYouHaveDoubts": "Si tienes dudas aquí te las intentaremos resolver, y si no encuentras la solución a tu pregunta siempre puedes contactarnos a contacto@woonkly.com",
+    "users": "Usuarios",
+    "advertisers": "Anunciantes",
+    "preIcoAndIco": "Pre-Ico & ICO",
+    "faq": {
+        "users": [
+          {
+            "question": "¿Cómo puedo registrarme en woonkly?",
+            "answer": "Woonkly tendrá una sección para el registro de usuarios y otra para anunciantes y creadores de contenido. Podrás registrarte gratuitamente en la sección probar Beta."
+          },
+          {
+            "question": "¿Tendrá algún costo acceder a woonkly?",
+            "answer": "No. Woonkly es 100% gratuita para los usuarios."
+          },
+          {
+            "question": "¿Que hago si tengo más preguntas?",
+            "answer": "Puedes contactarnos en cualquier momento por redes sociales o por correo a contacto@woonkly.com."
+          }
+        ],
+        "advertisers": [
+          {
+            "question": "¿Cómo me hago anunciante?",
+            "answer": "Desde el día 1 de lanzamiento de la plataforma podrás registrarte como creador de contenido o anunciante. Sólo tienes que hacer click en el link probar Beta."
+          },
+          {
+            "question": "¿Cómo puedo viralizar aun más mi video?",
+            "answer": "Viralizar tu video consiste en vincular tu cuenta o vídeo de Youtube, Vimeo, Viuli... con Woonkly y comprar woonks para repartirlos con las personas que te ven!. Además Puedes contratar el \"Super woonk\". Con él, cada vez que un usuario \"lo cace\" repercutirá sobre seguidores y likes en sus redes sociales. Si un millón de usuarios están viendo su vídeo, ¡Significaría un millón de visitas o likes en tu canal!"
+          },
+          {
+            "question": "¿Cómo sé que han visto mi vídeo?",
+            "answer": "Woonkly tiene un sistema de publicidad medible. Su algoritmo del woonk, permite saber cuánta gente está pendiente del vídeo y evade boots y otros sistemas."
+          },
+          {
+            "question": "¿Por qué debo subir mi contenido/anuncios a woonkly?",
+            "answer": "Woonkly RECOMPENSA a tu audiencia por ver tu contenido. Es una herramienta 10 veces más accesible de publicidad, que además de darte usuarios felices, te generará estadísticas y aumento de followers en tus redes sociales."
+          }
+        ],
+        "ico": [
+          {
+            "question": "¿Qué métodos de pago se aceptan?",
+            "answer": "Podrás comprar tokens de woonkly con Ethereum de momento, posteriormente integraremos, Litecoin o Bitcoin."
+          },
+          {
+            "question": "¿Cuál es el monto mínimo de inversión?",
+            "answer": "La inversión mínima es de 0.01ETH"
+          },
+          {
+            "question": "¿Cuanto comienza y termina la ICO?",
+            "answer": "Las Pre-ICO comienza el 1 de Mayo del 2018 y la ICO termina el 31 de Diciembre del 2018."
+          },
+          {
+            "question": "¿Qué bonus tienen las distintas fases de inversión?",
+            "answer": "1 Mayo-15 Mayo: Venta privada para suscriptores de Mr. Santos en Youtube (50% Bonus) 15 Mayo-1 Julio: Venta privada para suscriptores de otros canales de Youtube (40% Bonus) 1 Julio- 1 Septiembre: Venta privada (Capitales de Emiratos Árabes, Rusia ) (30% Bonus) 1 Septiembre-1 Octubre: ICO Fase 1 (20% Bonus) 1 Octubre- 1 Noviembre: ICO Fase 2 (10% Bonus) Noviembre- 31 Diciembre: ICO Fase 3 (0% Bonus)."
+          }
+        ]
+    },
+    "fundsUseTexts": {
+      "fiscalAndLegal": "(Legal y fiscal)",
+      "marketing": "(Marketing)",
+      "tokenTechnology": "(Tecnología de tokens)",
+      "appDevelopment": "(Desarollo de Apps)",
+      "webDevelopment": "(Desarrollo Web)"
+    },
+    "distributionTokensTests": {
+      "teamAndAdvisors": "(Equipo y advisors)",
+      "bountys": "(Bountys)",
+      "youtubers": "(Youtubers)",
+      "marketingAndDevelopment": "(Desarrollo Marketing)",
+      "reserve": "(Reserva)",
+      "sell": "(Venta)",
+      "foundersAndInversors": "(Fundadores e Inversores)"
+    },
+    "doubts": "Dudas",
+    "ifYouWantMoreInfo": "Si quieres más información estamos a tu disposición para resolverte las dudas que puedan sugerirte.",
+    "joinTelegramGroup": "Únete al grupo de Telegram",
+    "contactNow": "Contactar ahora",
+    "contactFormPlaceHolders": {
+      "yourName": "Tu Nombre",
+      "yourEmail": "Tu Email",
+      "yourMessage": "Tu Mensaje"
+    },
+    "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Políticas de privacidad |"
+  }
+}

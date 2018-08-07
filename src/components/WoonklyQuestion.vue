@@ -1,14 +1,14 @@
 <template>
   <section id="woonkly-question" class="section">
-    <span class="w-span">DUDAS</span>
+    <span class="w-span is-uppercase">{{ $t('message.doubts') }}</span>
 
-    <div class="title is-size-1-desktop is-size-5-mobile is-uppercase">DUDAS</div>
+    <div class="title is-size-1-desktop is-size-5-mobile is-uppercase">{{ $t('message.doubts') }}</div>
 
     <div class="line"></div>
 
     <div class="columns is-mobile">
-      <p class="is-size-7-mobile is-size-4-tablet space column is-12-mobile is-6-desktop is-offset-3-desktop">
-          Si quieres más información estamos a tu disposición para resolverte las dudas que puedan sugerirte.
+      <p class="is-size-5-mobile is-size-4-tablet space column is-12-mobile is-6-desktop is-offset-3-desktop">
+          {{ $t('message.ifYouWantMoreInfo') }}
       </p>
     </div>
 
@@ -18,18 +18,18 @@
         <span class="is-size-7-mobile is-size-5-tablet woonkly-span">info@woonkly.com</span>
       </div>
       <div class="column is-6-mobile is-one-third-desktop">
-        <fai :icon="['fab', 'telegram-plane']" class="icons" />
-        <a href="https://t.me/joinchat/Hu8281CBxcNDycg10WZKLw">
-          <span class="is-size-7-mobile is-size-5-tablet woonkly-span">Únete al grupo de Telegram</span>
+        <a href="https://t.me/joinchat/Hu8281CBxcNDycg10WZKLw" target="_blank">
+          <fai :icon="['fab', 'telegram-plane']" class="icons" />
+          <span class="is-size-7-mobile is-size-5-tablet woonkly-span">{{ $t('message.joinTelegramGroup') }}</span>
         </a>
       </div>
     </div>
 
-    <w-input w-placeholder="Tu Nombre"></w-input>
-    <w-input w-placeholder="Tu Email"></w-input>
-    <w-input w-placeholder="Tu Mensaje"></w-input>
-    <button type="button" class="w-button has-text-uppercase">Contactar ahora</button>
-    <img src="/img/icons/gradient-circle1.svg" id="gradient-circle1">
+    <w-input :w-placeholder="$t('message.contactFormPlaceHolders.yourName')"></w-input>
+    <w-input :w-placeholder="$t('message.contactFormPlaceHolders.yourEmail')"></w-input>
+    <w-input is-textarea :w-placeholder="$t('message.contactFormPlaceHolders.yourMessage')"></w-input>
+    <button type="button" class="w-button has-text-uppercase">{{ $t('message.contactNow') }}</button>
+    <img src="/img/icons/gradient-circle1.svg" id="gradient-circle1" alt="Woonkly blue circle">
 
   </section>
 </template>
@@ -72,7 +72,7 @@ export default {
     }
 
     .woonkly-container {
-      font-size: smaller;
+      // font-size: smaller;
       line-height: 1;
 
       .icons {
