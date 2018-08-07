@@ -23,7 +23,7 @@
       <div class="column is-12-mobile is-6-tablet is-offset-1-tablet w-div-right">
         <ul>
           <li v-for="index in 6" :key="index" class="list-tkn">
-            <img src="/img/icons/group.svg" class="bullet" alt="Woonkly bullet">
+            <img src="/img/icons/infinite-bullet.svg" class="bullet" alt="Woonkly bullet">
             <div>
               <div class="is-size-6-mobile is-size-4-tablet">{{ $t('message.acquireTokenSecondList['+(index-1)+'].title') }}</div>
               {{ $t('message.acquireTokenSecondList['+(index-1)+'].content') }}
@@ -87,10 +87,13 @@ export default {
 
   .list-tkn {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin: 1em;
     text-align: left;
     position: relative;
+    .bullet {
+      margin-right: 0.7em;
+    }
   }
 
   .w-p {
