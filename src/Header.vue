@@ -127,7 +127,7 @@ export default {
   transition: background-color 400ms ease-in-out;
 
   &.scrolled {
-    background: var(--woonkly-black-blue);
+    background: var(--woonkly-header);
   }
 
   .hidden {

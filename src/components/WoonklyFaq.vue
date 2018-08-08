@@ -11,7 +11,7 @@
       <div class="line"></div>
 
       <div class="columns is-mobile is-multiline">
-        <div class="column is-12-mobile is-half-tablet is-half-desktop is-offset-3-tablet is-offset-3-desktop is-size-5">{{$t('message.ifYouHaveDoubts')}}</div>
+        <div class="column is-12-mobile is-half-tablet is-half-desktop is-offset-3-tablet is-offset-3-desktop is-size-4">{{$t('message.ifYouHaveDoubts')}}</div>
       </div>
 
       <w-gradient-button @click.native="selectedQuestions = 'userQuestions'" class="green-blue has-text-uppercase" back-text="USU">
