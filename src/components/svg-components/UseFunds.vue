@@ -241,41 +241,47 @@
              style="stroke-width:1">{{ $t('message.fundsUseTexts.tokenTechnology').substr(11) }}</tspan>
         </tspan>
       </text>
-      <ellipse
-         cx="610.82593"
-         cy="4717.0835"
-         rx="14.854334"
-         ry="14.777098"
-         style="opacity:1;fill:url(#linearGradient5909);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.64403832;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path7555" />
-      <ellipse
-         cx="462.98987"
-         cy="4795.915"
-         rx="15.019289"
-         ry="14.434306"
-         style="opacity:1;fill:url(#linearGradient5911);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.64004892;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path7555-0-9" />
-      <ellipse
-         ry="16.062918"
-         rx="16.146875"
-         style="opacity:1;fill:url(#linearGradient5907);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.70007896;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path7555-0-7"
-         cy="4668.4922"
-         cx="317.78384" />
-      <ellipse
-         cx="379.11575"
-         cy="4525.8711"
-         rx="11.980014"
-         ry="11.917723"
-         style="opacity:1;fill:url(#linearGradient5905);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.51941663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path7555-0-93" />
+      <ellipse cx="610.82593" cy="4717.0835" rx="13" ry="13" style="opacity:1;fill:url(#linearGradient5909);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.64403832;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+        <animate attributeName="ry" begin="0s;distributionEllipseAnimation2.end" fill="freeze" dur="1s" from="13" to="19" calcMode="linear"/>
+        <animate attributeName="ry" begin="distributionEllipseAnimation1.end+0s" fill="freeze" dur="1500ms" from="19" to="13" calcMode="linear"/>
+
+        <animate attributeName="rx" begin="0s;distributionEllipseAnimation2.end" fill="freeze" dur="1s" from="13" to="19" calcMode="linear"/>
+        <animate attributeName="rx" begin="distributionEllipseAnimation1.end+0s" fill="freeze" dur="1500ms" from="19" to="13" calcMode="linear"/>
+      </ellipse>
+      <ellipse cx="462.98987" cy="4795.915" rx="14" ry="14" style="opacity:1;fill:url(#linearGradient5911);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.64004892;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+        <animate attributeName="ry" begin="0s;distributionEllipseAnimation2.end" fill="freeze" dur="1s" from="14" to="21" calcMode="linear"/>
+        <animate attributeName="ry" begin="distributionEllipseAnimation1.end+0s" fill="freeze" dur="1500ms" from="21" to="14" calcMode="linear"/>
+
+        <animate attributeName="rx" begin="0s;distributionEllipseAnimation2.end" fill="freeze" dur="1s" from="14" to="21" calcMode="linear"/>
+        <animate attributeName="rx" begin="distributionEllipseAnimation1.end+0s" fill="freeze" dur="1500ms" from="21" to="14" calcMode="linear"/>
+      </ellipse>
+      <ellipse ry="16" rx="16" style="opacity:1;fill:url(#linearGradient5907);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.70007896;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cy="4668.4922" cx="317.78384">
+        <animate attributeName="ry" begin="0s;distributionEllipseAnimation2.end" fill="freeze" dur="1s" from="16" to="22" calcMode="linear"/>
+        <animate attributeName="ry" begin="distributionEllipseAnimation1.end+0s" fill="freeze" dur="1500ms" from="22" to="16" calcMode="linear"/>
+
+        <animate attributeName="rx" begin="0s;distributionEllipseAnimation2.end" fill="freeze" dur="1s" from="16" to="22" calcMode="linear"/>
+        <animate attributeName="rx" begin="distributionEllipseAnimation1.end+0s" fill="freeze" dur="1500ms" from="22" to="16" calcMode="linear"/>
+      </ellipse>
+      <ellipse cx="379.11575" cy="4525.8711" rx="11" ry="11" style="opacity:1;fill:url(#linearGradient5905);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.51941663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+        <animate id="distributionEllipseAnimation1" attributeName="ry" begin="0s;distributionEllipseAnimation2.end" fill="freeze" dur="1s" from="11" to="18" calcMode="linear"/>
+        <animate id="distributionEllipseAnimation2" attributeName="ry" begin="distributionEllipseAnimation1.end+0s" fill="freeze" dur="1500ms" from="18" to="11" calcMode="linear"/>
+
+        <animate attributeName="rx" begin="0s;distributionEllipseAnimation2.end" fill="freeze" dur="1s" from="11" to="18" calcMode="linear"/>
+        <animate attributeName="rx" begin="distributionEllipseAnimation1.end+0s" fill="freeze" dur="1500ms" from="18" to="11" calcMode="linear"/>
+      </ellipse>
       <ellipse
          cx="550.91803"
          cy="4510.3096"
-         rx="15.190428"
-         ry="15.111444"
-         style="opacity:1;fill:url(#linearGradient5903);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65861028;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path7555-0-8" />
+         rx="15"
+         ry="15"
+         style="opacity:1;fill:url(#linearGradient5903);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65861028;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+
+        <animate attributeName="ry" begin="0s;distributionEllipseAnimation2.end" fill="freeze" dur="1s" from="15" to="22" calcMode="linear"/>
+        <animate attributeName="ry" begin="distributionEllipseAnimation1.end+0s" fill="freeze" dur="1500ms" from="22" to="15" calcMode="linear"/>
+
+        <animate attributeName="rx" begin="0s;distributionEllipseAnimation2.end" fill="freeze" dur="1s" from="15" to="22" calcMode="linear"/>
+        <animate attributeName="rx" begin="distributionEllipseAnimation1.end+0s" fill="freeze" dur="1500ms" from="22" to="15" calcMode="linear"/>
+      </ellipse>
       <g
          style="display:inline;fill:none;stroke:#02cdf9;stroke-width:0.90641367;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          transform="matrix(0.81004231,0,0,0.8058304,532.93266,4492.4176)"
