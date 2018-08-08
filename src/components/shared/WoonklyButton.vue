@@ -36,13 +36,12 @@ export default {
   &:focus, &:hover {
     text-decoration: none;
   }
-
+  
   .inner-border {
     border-radius: inherit;
     padding: 8.5px;
     display: block;
     border: 1.2px var(--woonkly-light-blue) solid;
-    font-size: 1.19em;
   }
 }
 </style>
