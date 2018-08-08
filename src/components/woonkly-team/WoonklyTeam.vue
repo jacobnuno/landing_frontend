@@ -132,17 +132,14 @@ export default {
             twitter: 'https://twitter.com/ilichh1',
             linkedin: 'https://www.linkedin.com/in/ilichh1/'
           }
-        },
-        {
-          name: 'Woonkzalo',
-          position: this.$t('message.teamMembers.woonkzalo.position'),
-          img: 'gustavo.png',
-          links: {
-            twitter: 'https://twitter.com/woonkzalo'
-          }
         }
       ],
       advisors: [
+        {
+          name: 'Roberto Medrano',
+          position: this.$t('message.teamAdvisors.robertoMedrano.position'),
+          img: 'robertomedrano.png'
+        },
         {
           name: 'Derek Jones',
           position: this.$t('message.teamMembers.derekJones.position'),
@@ -228,11 +225,6 @@ export default {
           name: 'David Battaglia',
           position: this.$t('message.teamAdvisors.davidBattaglia.position'),
           img: 'davidbattaglia.png'
-        },
-        {
-          name: 'Roberto Medrano',
-          position: this.$t('message.teamAdvisors.robertoMedrano.position'),
-          img: 'robertomedrano.png'
         }
       ]
     }

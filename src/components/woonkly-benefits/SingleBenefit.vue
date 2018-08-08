@@ -96,7 +96,7 @@
     	text-align:center;
     	padding:1em;
     	font-weight: bold;
-    	font-size: .8rem;
+    	font-size: .95em;
     	.icons-sqr{
     		padding: 0px;
     		margin: 0;
