@@ -2,16 +2,13 @@
 <section id="woonkly-ico-status" class="section">
   <div class="columns is-mobile is-multiline">
 
-    <div class="column is-12 has-text-centered phase">
+    <div class="column is-12 has-text-centered phase is-size-4-tablet">
       <strong v-html="$t('message.icoPhaseBonus', {phase, bonus} )"></strong>
+      <span class="w-light-blue is-size-4-tablet">{{wnkSold}} WNKS</span>
     </div>
 
     <div class="column is-12 progress is-marginless">
       <w-progress :value="90" />
-    </div>
-
-    <div class="column is-12 has-text-centered wonks-sold">
-      <span class="w-light-blue is-size-7">{{wnkSold}} WNKS</span>
     </div>
 
     <div class="column has-text-centered">
@@ -52,8 +49,8 @@ export default {
     return {
       time: {},
       wnkSold: '9827376',
-      phase: 2,
-      bonus: 40
+      phase: 3,
+      bonus: 30
     }
   },
   methods: {
@@ -79,7 +76,6 @@ export default {
 #woonkly-ico-status {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
-  // background: #06062c
 
   .phase {
     strong {
@@ -101,26 +97,25 @@ export default {
 
     .spark-container {
       position: absolute;
-      top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
-      display: flex;
+      bottom: -14em;
       display: flex;
       justify-content: space-evenly;
       transform: translateY(-0.7em);
       z-index: -1;
 
       img {
-        &:nth-of-type(1) {
-          width: 10px;
-        }
-        &:nth-of-type(2) {
-          width: 8px;
-        }
-        &:nth-of-type(3) {
-          width: 6px;
-        }
+        width: 32px;
+        // &:nth-of-type(1) {
+        //   width: 10px;
+        // }
+        // &:nth-of-type(2) {
+        //   width: 8px;
+        // }
+        // &:nth-of-type(3) {
+        //   width: 6px;
+        // }
       }
     }
 
@@ -158,16 +153,16 @@ export default {
         }
 
         &:nth-of-type(1) {
-          animation-delay: 500ms;
+          animation-delay: 200ms;
         }
         &:nth-of-type(3) {
-          animation-delay: 1000ms;
+          animation-delay: 400ms;
         }
         &:nth-of-type(5) {
-          animation-delay: 1500ms;
+          animation-delay: 600ms;
         }
         &:nth-of-type(7) {
-          animation-delay: 2000ms;
+          animation-delay: 800ms;
         }
       }
 
@@ -180,7 +175,7 @@ export default {
 
 @keyframes flashing-counter {
   0%, 100% {
-    box-shadow: 0px 0px 25px 4px #08c2ee;
+    box-shadow: 0px 0px 85px 4px #08c2ee;
   }
   50%, 60% {
     box-shadow: 0px 0px 15px 4px #08c2ee;

@@ -23,7 +23,7 @@ export default {
         {
           name: 'Mr. Santos',
           position: this.$t('message.teamMembers.santos.position'),
-          img: 'mrsantos.jpg',
+          img: 'mrsantos.png',
           links: {
             twitter: 'https://twitter.com/mrsantosyoutube',
             youtube: 'https://www.youtube.com/channel/UCo3hRG_jF6lAVzOUh_UM5Sg',
@@ -49,7 +49,7 @@ export default {
         {
           name: 'Oscar Cardenas',
           position: this.$t('message.teamMembers.oscarCardenas.position'),
-          img: 'oscarcardenas.jpeg',
+          img: 'oscarcardenas.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/cardedeveloper/',
             twitter: 'https://twitter.com/CardeDeveloper'
@@ -58,7 +58,7 @@ export default {
         {
           name: 'Sara Santos',
           position: this.$t('message.teamMembers.saraSantos.position'),
-          img: 'sarasantos.jpg',
+          img: 'sarasantos.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/sarasc9/'
           }
@@ -66,7 +66,7 @@ export default {
         {
           name: 'Carlos Pavia',
           position: this.$t('message.teamMembers.carlosPavia.position'),
-          img: 'carlospavia.jpg',
+          img: 'carlospavia.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/carlos-pavia-7517bb51/'
           }
@@ -74,7 +74,7 @@ export default {
         {
           name: 'Jonathan Álvarez',
           position: this.$t('message.teamMembers.jonathanAlvarez.position'),
-          img: 'jonathanalvarez.jpg',
+          img: 'jonathanalvarez.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/jonathan-alvarez-592816bb/'
           }
@@ -90,7 +90,7 @@ export default {
         {
           name: 'Gustavo Rueda',
           position: this.$t('message.teamMembers.gustavoRueda.position'),
-          img: 'woonkzalo.jpg',
+          img: 'woonkzalo.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/gustavo-adolfo-rueda-enr%C3%ADquez-5873b114a/'
           }
@@ -98,7 +98,7 @@ export default {
         {
           name: 'Jacob Nuño',
           position: this.$t('message.teamMembers.jacobNuno.position'),
-          img: 'jacob.jpg',
+          img: 'jacob.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/jacob-nu%C3%B1o-g%C3%B3mez-15a287158/'
           }
@@ -106,7 +106,7 @@ export default {
         {
           name: 'Kevin Quino',
           position: this.$t('message.teamMembers.kevinQuino.position'),
-          img: 'kevin.jpg',
+          img: 'kevin.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/kevin-salgado-quino-447a09140/'
           }
@@ -114,12 +114,12 @@ export default {
         {
           name: 'Juan Sandoval',
           position: this.$t('message.teamMembers.juanSandoval.position'),
-          img: 'manuel.jpg'
+          img: 'manuel.png'
         },
         {
           name: 'Jorge Villaseñor',
           position: this.$t('message.teamMembers.jorgeVillasenor.position'),
-          img: 'coke.jpg',
+          img: 'coke.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/jacob-nu%C3%B1o-g%C3%B3mez-15a287158/'
           }
@@ -127,34 +127,31 @@ export default {
         {
           name: 'Ilich Arredondo',
           position: this.$t('message.teamMembers.ilichArredondo.position'),
-          img: 'ilich.jpg',
+          img: 'ilich.png',
           links: {
             twitter: 'https://twitter.com/ilichh1',
             linkedin: 'https://www.linkedin.com/in/ilichh1/'
-          }
-        },
-        {
-          name: 'Derek Jones',
-          position: this.$t('message.teamMembers.derekJones.position'),
-          img: 'derekjones.jpeg',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/unitedcoin/'
-          }
-        },
-        {
-          name: 'Woonkzalo',
-          position: this.$t('message.teamMembers.woonkzalo.position'),
-          img: 'gustavo.jpg',
-          links: {
-            twitter: 'https://twitter.com/woonkzalo'
           }
         }
       ],
       advisors: [
         {
+          name: 'Roberto Medrano',
+          position: this.$t('message.teamAdvisors.robertoMedrano.position'),
+          img: 'robertomedrano.png'
+        },
+        {
+          name: 'Derek Jones',
+          position: this.$t('message.teamMembers.derekJones.position'),
+          img: 'derekjones.png',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/unitedcoin/'
+          }
+        },
+        {
           name: 'Ghali El Kasri',
           position: this.$t('message.teamMembers.ghaliElKasri.position'),
-          img: 'ghalielkasri.jpeg',
+          img: 'ghalielkasri.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/mohamed-el-ghali-el-kasri-61471114a/'
           }
@@ -162,7 +159,7 @@ export default {
         {
           name: 'Ghita El Kasri',
           position: this.$t('message.teamMembers.ghitaElKasri.position'),
-          img: 'ghitaelkasri.jpeg',
+          img: 'ghitaelkasri.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/ghita-el-kasri-81a6b185/'
           }
@@ -170,7 +167,7 @@ export default {
         {
           name: 'Hassan Lahlou',
           position: this.$t('message.teamMembers.hassanLahlou.position'),
-          img: 'hassanlahlou.jpeg',
+          img: 'hassanlahlou.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/hassanlahlou/'
           }
@@ -186,7 +183,7 @@ export default {
         {
           name: 'Luis Riveroll',
           position: this.$t('message.teamAdvisors.luisRiveroll.position'),
-          img: 'luisriveroll.jpg'
+          img: 'luisriveroll.png'
         },
         {
           name: 'Paul D´Souza',
@@ -204,12 +201,12 @@ export default {
         {
           name: 'Jorge Espinosa (Criptón)',
           position: this.$t('message.teamAdvisors.jorgeEspinosa.position'),
-          img: 'jorgeespinosa.jpg'
+          img: 'jorgeespinosa.png'
         },
         {
           name: 'Javier García',
           position: this.$t('message.teamAdvisors.javierGarcia.position'),
-          img: 'javergarcia.jpg',
+          img: 'javergarcia.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/javier-garc%C3%ADa-9921a7141/'
           }
@@ -217,22 +214,17 @@ export default {
         {
           name: 'Daniel Muvdi',
           position: this.$t('message.teamAdvisors.danielMuvdi.position'),
-          img: 'danielmuvdi.jpg'
+          img: 'danielmuvdi.png'
         },
         {
           name: 'Mendy Srugo',
           position: this.$t('message.teamAdvisors.mendySrugo.position'),
-          img: 'mendysrugo.jpg'
+          img: 'mendysrugo.png'
         },
         {
           name: 'David Battaglia',
           position: this.$t('message.teamAdvisors.davidBattaglia.position'),
-          img: 'davidbattaglia.jpg'
-        },
-        {
-          name: 'Roberto Medrano',
-          position: this.$t('message.teamAdvisors.robertoMedrano.position'),
-          img: 'robertomedrano.png'
+          img: 'davidbattaglia.png'
         }
       ]
     }

@@ -27,8 +27,8 @@
           <w-language-selector/>
         </div>
         <div class="column is-12-mobile is-3-tablet buttons">
-          <w-button>{{ $t('message.menu.buttonBuy') }}</w-button>
-          <w-button>{{ $t('message.menu.buttonFaucet') }}</w-button>
+          <w-button :href="'https://woonkly.com/privateico/login/'" >{{ $t('message.menu.buttonBuy') }}</w-button>
+          <w-button :href="'https://woonkly.com/tv11/'">{{ $t('message.menu.buttonFaucet') }}</w-button>
         </div>
         <nav class="column is-12-mobile is-5-tablet navigation">
           <ul>
@@ -133,7 +133,7 @@ export default {
   transition: background-color 400ms ease-in-out;
 
   &.scrolled {
-    background: var(--woonkly-black-blue);
+    background: var(--woonkly-header);
   }
 
   .hidden {
@@ -296,10 +296,8 @@ export default {
           order: 2;
           margin: 0;
           justify-content: right;
-
-          @media (mex-width: 1280px) {
-            justify-content: center;
-          }
+          text-align: right;
+          padding-left: 1.5em;
 
           .woonkly-button {
             margin: 0;

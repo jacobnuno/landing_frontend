@@ -13,11 +13,14 @@
         </figure>
       </div>
       <div class="column is-12-mobile is-half-tablet">
-        <h3 class="title is-3">{{$t('message.woonklyWhatIs')}}</h3>
+        <h3 class="title is-2">
+          {{$t('message.woonklyWhatIs')}}
+          <span class="color-blue">Woonkly</span>?
+        </h3>
 
-        <p class="is-small">{{$t('message.woonklyIsTheFirstPlatform')}}</p>
+        <p class="is-size-6-tablet">{{$t('message.woonklyIsTheFirstPlatform')}}</p>
 
-        <p class="extended-brief">{{$t('message.signUpInWoonkly')}}</p>
+        <p class="is-size-5-tablet extended-brief has-text-justified">{{$t('message.signUpInWoonkly')}}</p>
       </div>
     </div>
   </section>
@@ -59,6 +62,10 @@
       }
     }
 
+  }
+
+  .color-blue {
+    color: var(--woonkly-light-blue);
   }
 
   #woonk-infinity {
