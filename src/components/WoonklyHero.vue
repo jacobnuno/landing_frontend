@@ -126,7 +126,7 @@ export default {
       bottom: 0;
       background-image: url(/img/wavy/main-wavy-desktop.svg);
       background-repeat: no-repeat;
-      background-position: 100% 100%;
+      background-position: 165%;
       background-size: 80% 100%;
     }
 
