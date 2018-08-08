@@ -6,7 +6,7 @@
       <div id="wavy-background"></div>
       <img id="main-image" src="/img/sections/woonkly-illustration-final3.svg" alt="Woonkly Main Illustration">
       <object id="woonkly-animation" :data="require('@/assets/svg/woonkly-animation.svg')" type="image/svg+xml"></object>
-      <img class="circle rellax glowing-circle" data-rellax-speed="1" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Circle">
+      <!-- <img class="circle rellax glowing-circle" data-rellax-speed="1" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Circle"> -->
     </div>
     <div class="column is-12-mobile is-half-tablet titles section">
       <h1 class="title is-size-1-tablet">{{$t('message.earnMoney')}}</h1>
@@ -126,7 +126,7 @@ export default {
       bottom: 0;
       background-image: url(/img/wavy/main-wavy-desktop.svg);
       background-repeat: no-repeat;
-      background-position: 100% 100%;
+      background-position: 165%;
       background-size: 80% 100%;
     }
 
