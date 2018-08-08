@@ -5,8 +5,8 @@
     <div class="columns">
       <div class="column is-12-mobile is-half-tablet atention">
         <div class="wrapper">
-          <h3 class="title is-2">{{$t('message.attentionValue')}}</h3>
-          <p class="is-size-5-tablet">{{$t('message.contentCreators')}}</p>
+          <h3 class="title is-3">{{$t('message.attentionValue')}}</h3>
+          <p>{{$t('message.contentCreators')}}</p>
         </div>
       </div>
       <div class="column is-12-mobile is-half-tablet">

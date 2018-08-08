@@ -11,12 +11,12 @@
     },
     "earnMoney": "Gana dinero por ver, compartir e interactuar con contenido digital",
     "connectingCreators": "Conectando creadores de contenido, anunciantes y personas de la mejor forma posible.",
-    "icoPhaseBonus": "Fase <span class=\"w-light-blue\">{phase}</span> ({bonus}% Bonus) : ",
+    "icoPhaseBonus": "Fase <span class=\"w-light-blue\">{phase}</span> ({bonus}% Bonus)",
     "buyWithBonus": "Compra WNK con {bonus}% bonus",
     "whitepaperWoonkly": "Whitepaper Woonkly",
     "attentionValue": "La atención de las personas tiene un valor medible",
     "contentCreators": "Creadores de contenido y anunciantes tienen algo en común. Quieren llegar a su público objetivo y pagarán por hacerlo, pero esta vez, a los usuarios que los ven.",
-    "woonklyWhatIs": "¿Qué es ",
+    "woonklyWhatIs": "¿Qué es Woonkly?",
     "woonklyIsTheFirstPlatform": "Woonkly es la primera plataforma que paga a las personas por ver y compartir contenido digital (vídeo, imagen y texto) de diferentes plataformas.",
     "signUpInWoonkly": "El registro en woonkly es gratuito tanto para creadores de contenido como para usuarios. Los creadores de contenido pueden enlazar en woonkly sus vídeos, imágenes o posts de diferentes plataformas de manera gratuita para con ello conseguir más exposición o si lo prefieren pueden pagarle a su público objetivo usando nuestra criptomoneda “woonk” para conseguir miles e incluso millones de visualizaciones o interactuaciones en cuestión de horas, minutos o incluso segundos.",
     "discoverWoonklyTv": "Descubre Woonkly TV 1.0",
@@ -64,7 +64,7 @@
     "acquireTokenSecondList": [
       {
           "title": "Inicio",
-          "content": "1 Septiembre 2018"
+          "content": "1 Mayo 2018"
       },
       {
           "title": "Número de Woonks a la venta",

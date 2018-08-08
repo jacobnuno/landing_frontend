@@ -5,8 +5,8 @@
         <img class="is-rounded" :src="`/img/team/${member.img}`" :alt="`${member.name} ${member.position}`">
       </div>
       <figcaption class="has-text-centered">
-        <span class="w-name is-size-4">{{member.name}}</span>
-        <span class="w-positon is-size-6 has-text-weight-light">{{member.position}}</span>
+        <span class="w-name is-size-5">{{member.name}}</span>
+        <span class="w-positon is-size-7 has-text-weight-light">{{member.position}}</span>
       </figcaption>
     </figure>
     <div v-if="member.links" class="icons is-flex">
@@ -87,7 +87,7 @@ export default {
     figcaption {
       margin-top: 1.4em;
       line-height: 1;
-
+      
       .w-name, .w-position {
         display: block;
       }
