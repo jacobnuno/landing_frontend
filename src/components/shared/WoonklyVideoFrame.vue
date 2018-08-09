@@ -70,6 +70,9 @@ export default {
 #woonkly-video-with-frame {
   position: relative;
   z-index: 100;
+  max-width: 600px;
+  margin: 0 auto;
+
   #woonkly-video-container {
     position: absolute;
     left: 3.2%;

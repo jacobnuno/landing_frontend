@@ -50,6 +50,11 @@ export default {
   background-image: var(--woonkly-radial-gradient-1);
   position: relative;
 
+  & > .columns.is-mobile.is-multiline {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
   .wrapper {
     position: relative;
     max-width: 500px;
