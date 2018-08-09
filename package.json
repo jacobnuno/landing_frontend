@@ -17,6 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.1.0",
     "@fortawesome/vue-fontawesome": "^0.1.0",
     "bulma": "^0.7.1",
+    "bulma-carousel": "^3.0.0",
     "flag-icon-css": "^3.0.0",
     "hamburgers": "^0.9.3",
     "moment": "^2.22.2",
