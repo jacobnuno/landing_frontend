@@ -88,13 +88,26 @@
   }
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 769px) {
   #woonkly-what-is {
     .what-is-woonkly {
       .image {
         max-width: 300px;
         margin-left: auto;
         margin-right: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 930px) {
+  #woonkly-what-is {
+    padding-bottom: 11em;
+    & > .columns {
+      max-width: 1300px;
+      margin: 0 auto;
+      .what-is-woonkly + div {
+        margin-top: -5.5em;
       }
     }
   }

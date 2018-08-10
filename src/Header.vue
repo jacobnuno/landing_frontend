@@ -235,7 +235,7 @@ export default {
   #woonkly-header {
 
     nav.navbar {
-      max-width: 1250px;
+      max-width: 1300px;
       margin: 0 auto;
     }
 

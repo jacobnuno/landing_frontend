@@ -1,10 +1,10 @@
 <template>
   <section id="woonkly-tv" ref="section">
   <w-divider/>
-  <w-cash-animate id="billetes-1" :class="{'animate':animateCash}"/>
-  <w-cash-animate id="billetes-2" :class="{'animate':animateCash}"/>
   <div class="section">
     <div class="columns is-mobile is-multiline">
+      <w-cash-animate id="billetes-1" :class="{'animate':animateCash}"/>
+      <w-cash-animate id="billetes-2" :class="{'animate':animateCash}"/>
       <div class="column is-12">
         <h3 class="title is-2 has-text-centered">{{$t('message.discoverWoonklyTv')}}</h3>
       </div>
@@ -76,6 +76,14 @@ export default {
 #woonkly-tv {
   position: relative;
 
+  .section {
+    & > .columns.is-mobile.is-multiline {
+      position: relative;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+  }
+
   .main-content-wrapper {
     position: relative;
     .glowing-line {
@@ -132,7 +140,7 @@ export default {
 @media screen and (min-width: 769px) {
   #woonkly-tv {
     .main-content-wrapper {
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       .image {
         float: left;
