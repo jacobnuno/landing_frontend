@@ -104,7 +104,7 @@
         "kevinQuino": { "position": "Diseñador UX & UI" },
         "juanSandoval": { "position": "Desarrollador" },
         "jorgeVillasenor": { "position": "Desarrollador Web" },
-        "ilichArredondo": { "position": "Desarrollador Frontend" },
+        "ilichArredondo": { "position": "Frontend Lead" },
         "derekJones": { "position": "Financial Blockchain Manager" },
         "ghaliElKasri": { "position": "Arquitecto de Blockchain" },
         "ghitaElKasri": { "position": "Blockchain financial arquitect" },
@@ -249,6 +249,7 @@
       "yourMessage": "Tu Mensaje"
     },
     "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Políticas de privacidad |",
+
     "carousel": {
       "amsterdam": {
         "title": "Woonkly en Amsterdam",
@@ -258,6 +259,7 @@
         "title": "Woonkly en Blockchain Economic Forum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
       }
-    }
+    },
+    "woonklyTelegramLink": "https://t.me/woonklyes"
   }
 }

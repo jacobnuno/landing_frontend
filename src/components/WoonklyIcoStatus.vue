@@ -99,23 +99,20 @@ export default {
       position: absolute;
       left: 0;
       right: 0;
-      bottom: -14em;
+      bottom: -10em;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       transform: translateY(-0.7em);
       z-index: -1;
 
       img {
-        width: 32px;
-        // &:nth-of-type(1) {
-        //   width: 10px;
-        // }
-        // &:nth-of-type(2) {
-        //   width: 8px;
-        // }
-        // &:nth-of-type(3) {
-        //   width: 6px;
-        // }
+        width: 3px;
+        &:first-of-type {
+          margin-left: 3em;
+        }
+        &:last-of-type {
+          margin-right: 3em;
+        }
       }
     }
 
@@ -168,6 +165,36 @@ export default {
 
       .colon {
         line-height: 2em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #woonkly-ico-status {
+
+    .counter-wrapper {
+
+      .spark-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -14em;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-0.7em);
+        z-index: -1;
+
+        img {
+          width: 7px;
+          &:first-of-type {
+            margin-left: 3em;
+          }
+          &:last-of-type {
+            margin-right: 3em;
+          }
+        }
+
       }
     }
   }

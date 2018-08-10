@@ -59,11 +59,17 @@
             <a href="https://www.youtube.com/c/MrSantos" target="_blank">
               <fai :icon="['fab', 'youtube']" class="icons" />
             </a>
-            <a href="https://t.me/joinchat/HIxsXg7y5_EDCgXmkT3yRA" target="_blank">
+            <a :href="$t('message.woonklyTelegramLink')" target="_blank">
               <fai :icon="['fab', 'telegram-plane']" class="icons" />
             </a>
             <a href="https://github.com/Woonkly" target="_blank">
               <fai :icon="['fab', 'github']" class="icons" />
+            </a>
+            <a>
+              <fai :icon="['fab', 'bitcoin']" class="icons" />
+            </a>
+            <a>
+              <fai :icon="['fab', 'reddit']" class="icons" />
             </a>
             <a>
               <fai :icon="['fab', 'medium-m']" class="icons" />
@@ -229,7 +235,7 @@ export default {
   #woonkly-header {
 
     nav.navbar {
-      max-width: 1250px;
+      max-width: 1300px;
       margin: 0 auto;
     }
 
@@ -260,7 +266,7 @@ export default {
         }
 
         .social-media {
-          order: 4;
+          order: 3;
           display: flex;
           justify-content: space-between;
           .icons {
@@ -280,14 +286,14 @@ export default {
         }
 
         .language {
-          order: 2;
+          order: 4;
           .woonkly-language-selector {
-            margin-left: 2em;
+            margin-left: 0.5em;
           }
         }
 
         .buttons {
-          order: 3;
+          order: 2;
           margin: 0;
           justify-content: right;
           text-align: right;
