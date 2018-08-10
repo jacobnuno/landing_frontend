@@ -128,4 +128,26 @@ export default {
   }
 }
 
+@media screen and (min-width: 1490px) {
+  #woonkly-ac-token {
+
+    #blue-cube {
+      transform: translate(250%, -105%);
+      width: 30em;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1820px) {
+  #woonkly-ac-token {
+
+    #blue-cube {
+      transform: translate(280%, -105%);
+      width: 30em;
+    }
+
+  }
+}
+
 </style>
