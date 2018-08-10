@@ -21,7 +21,7 @@
     <div class="column is-12 counter-wrapper">
       <div class="spark-container">
         <img class="rellax" data-rellax-speed="2" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
-        <img class="rellax" data-rellax-speed="4" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
+        <img class="rellax" data-rellax-speed="1" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
         <img class="rellax" data-rellax-speed="2" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
       </div>
       <div class="counter">
@@ -102,16 +102,17 @@ export default {
       bottom: -10em;
       display: flex;
       justify-content: space-between;
-      transform: translateY(-0.7em);
+      transform: translateY(-5em);
       z-index: -1;
 
       img {
-        width: 3px;
+        width: 2px;
         &:first-of-type {
-          margin-left: 3em;
+          margin-left: 2.5em;
         }
         &:last-of-type {
-          margin-right: 3em;
+          margin-top: 1em;
+          margin-right: 2.5em;
         }
       }
     }
@@ -186,12 +187,11 @@ export default {
         z-index: -1;
 
         img {
-          width: 7px;
           &:first-of-type {
-            margin-left: 3em;
+            margin-left: -4em;
           }
           &:last-of-type {
-            margin-right: 3em;
+            margin-right: -4em;
           }
         }
 
