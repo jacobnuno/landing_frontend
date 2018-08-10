@@ -26,9 +26,10 @@
         <div class="column is-12-mobile is-1-tablet language">
           <w-language-selector/>
         </div>
-        <div class="column is-12-mobile is-3-tablet buttons">
+        <div class="column is-12-mobile is-4-tablet buttons">
           <w-button :href="'https://woonkly.com/privateico/login/'" >{{ $t('message.menu.buttonBuy') }}</w-button>
           <w-button :href="'https://woonkly.com/tv11/'">{{ $t('message.menu.buttonFaucet') }}</w-button>
+          <w-button :href="'https://woonkly.com/tv11/'">{{ $t('message.menu.buttonLogin') }}</w-button>
         </div>
         <nav class="column is-12-mobile is-5-tablet navigation">
           <ul>
@@ -49,32 +50,6 @@
             </li>
           </ul>
         </nav>
-        <div class="column is-hidden-mobile is-3-tablet social-media">
-            <a href="https://www.facebook.com/woonkly/" target="_blank">
-              <fai :icon="['fab', 'facebook-f']" class="icons" />
-            </a>
-            <a href="https://twitter.com/WoonklyTV" target="_blank">
-              <fai :icon="['fab', 'twitter']" class="icons" />
-            </a>
-            <a href="https://www.youtube.com/c/MrSantos" target="_blank">
-              <fai :icon="['fab', 'youtube']" class="icons" />
-            </a>
-            <a :href="$t('message.woonklyTelegramLink')" target="_blank">
-              <fai :icon="['fab', 'telegram-plane']" class="icons" />
-            </a>
-            <a href="https://github.com/Woonkly" target="_blank">
-              <fai :icon="['fab', 'github']" class="icons" />
-            </a>
-            <a>
-              <fai :icon="['fab', 'bitcoin']" class="icons" />
-            </a>
-            <a>
-              <fai :icon="['fab', 'reddit']" class="icons" />
-            </a>
-            <a>
-              <fai :icon="['fab', 'medium-m']" class="icons" />
-            </a>
-        </div>
       </div>
     </aside>
   </nav>
@@ -268,8 +243,12 @@ export default {
         .social-media {
           order: 3;
           display: flex;
-          //flex-direction: column;
+          flex-direction: column;
           justify-content: space-between;
+          border: .80px var(--woonkly-light-blue-quarter-opacity) solid;
+          border-radius: 3em;
+          padding: 0.25em;
+          width: 2.5em;
           .icons {
             display: inline-block;
             font-size: 1.5em;
@@ -289,7 +268,7 @@ export default {
         .language {
           order: 4;
           .woonkly-language-selector {
-            margin-left: 0.5em;
+            margin-left: 2em;
           }
         }
 
@@ -298,10 +277,9 @@ export default {
           margin: 0;
           justify-content: right;
           text-align: right;
-          padding-left: 1.5em;
 
           .woonkly-button {
-            margin: 0;
+            margin-right: 2em;
           }
         }
 

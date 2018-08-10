@@ -32,7 +32,6 @@ export default {
   cursor: pointer;
   border-radius: 3em;
   font-size: 12.5px;
-
   &:focus, &:hover {
     text-decoration: none;
   }
