@@ -268,6 +268,7 @@ export default {
         .social-media {
           order: 3;
           display: flex;
+          //flex-direction: column;
           justify-content: space-between;
           .icons {
             display: inline-block;
