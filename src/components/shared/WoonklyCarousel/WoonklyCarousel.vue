@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="columns is-mobile carousel">
     <div class="column is-10-tablet is-offset-1-tablet">
-      <div class="carousel carousel-animated carousel-animate-slide" data-size="3">
+      <div class="carousel carousel-animated carousel-animate-slide" data-size="4">
         <div class="description">
           <h3 class="title is-2 has-text-weight-normal has-text-center">{{$t(`message.carousel.${activedOption}.title`)}}</h3>
           <span class="has-text-left">{{$t(`message.carousel.${activedOption}.description`)}}</span>
@@ -79,7 +79,11 @@ export default {
 
   .carousel-container {
     height: 25em;
-    left: -448px !important;
+    //left: -448px !important;
+  }
+
+  .carousel-item {
+    width: 30px !important;
   }
 
   .carousel-nav-right, .carousel-nav-left {
