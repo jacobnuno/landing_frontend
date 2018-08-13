@@ -1,86 +1,86 @@
 <template>
-<header id="woonkly-header" :class="[{'scrolled':isScrolledDown}]">
-  <nav :class="['navbar']" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <w-logo height="50px" width="auto" :infinite-invisible="isMenuOpen"/>
-      </a>
+  <header id="woonkly-header" :class="[{'scrolled':isScrolledDown}]">
+    <nav :class="['navbar']" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <w-logo height="50px" width="auto" :infinite-invisible="isMenuOpen" />
+        </a>
 
-      <a @click="isMenuOpen = true" role="button" :class="['navbar-burger', {'hidden':isMenuOpen}]" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+        <a @click="isMenuOpen = true" role="button" :class="['navbar-burger', {'hidden':isMenuOpen}]" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
 
-    </div>
-    <aside id="woonkly-menu" :class="['container', {'open':isMenuOpen}]">
-
-      <button class="w-close-button" @click="isMenuOpen = false">&times;</button>
-
-      <div class="columns is-multiline">
-        <div class="column profile">
-          <figure class="image is-96x96">
-            <img src="/img/defaults/profile.jpg" alt="Profile Picture">
-          </figure>
-        </div>
-        <div class="column is-12-mobile is-1-tablet is-offset-1 language">
-          <w-language-selector/>
-        </div>
-        <div class="column is-5 is-12-mobile is-4-tablet buttons">
-          <w-button :buttonClass="'woonkly-button-opacity-to-light'" :href="'https://woonkly.com/privateico/login/'" >{{ $t('message.menu.buttonBuy') }}</w-button>
-          <w-button :href="'https://woonkly.com/tv11/'">{{ $t('message.menu.buttonFaucet') }}</w-button>
-          <w-button :href="'https://woonkly.com/tv11/'">{{ $t('message.menu.buttonLogin') }}</w-button>
-        </div>
-        
-        <nav class="column is-12-mobile is-5-tablet navigation">
-          <ul>
-            <li :class="{'selected':currentSection == 'WoonklyHero'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-description', onDone: closeMenu }">{{ $t('message.menu.project') }}</a>
-            </li>
-            <li :class="{'selected':currentSection == 'WoonklyDistributionToken'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-dis-token', onDone: closeMenu }">{{ $t('message.menu.tokens') }}</a>
-            </li>
-            <li :class="{'selected':currentSection == 'WoonklyRoadmap'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-roadmap', onDone: closeMenu }">{{ $t('message.menu.objectives') }}</a>
-            </li>
-            <li :class="{'selected':currentSection == 'WoonklyTeam'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-team', onDone: closeMenu }">{{ $t('message.menu.team') }}</a>
-            </li>
-            <li :class="{'selected':currentSection == 'WoonklyFaq'}">
-              <a href="" v-scroll-to="{ el: '#woonkly-faq', onDone: closeMenu }">{{ $t('message.menu.faqs') }}</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </aside>
-  </nav>
-  <div class="column is-3-tablet social-media">
-          <a href="https://www.facebook.com/woonkly/" target="_blank">
-              <fai :icon="['fab', 'facebook-f']" class="icons" />
-          </a>
-          <a href="https://twitter.com/WoonklyTV" target="_blank">
-              <fai :icon="['fab', 'twitter']" class="icons" />
-          </a>
-          <a href="https://www.youtube.com/c/MrSantos" target="_blank">
-              <fai :icon="['fab', 'youtube']" class="icons" />
-          </a>
-          <a :href="$t('message.woonklyTelegramLink')" target="_blank">
-              <fai :icon="['fab', 'telegram-plane']" class="icons" />
-          </a>
-          <a href="https://github.com/Woonkly" target="_blank">
-              <fai :icon="['fab', 'github']" class="icons" />
-          </a>
-          <a>
-              <fai :icon="['fab', 'bitcoin']" class="icons" />
-          </a>
-          <a>
-              <fai :icon="['fab', 'reddit']" class="icons" />
-          </a>
-          <a>
-              <fai :icon="['fab', 'medium-m']" class="icons" />
-          </a>
+      <aside id="woonkly-menu" :class="['container', {'open':isMenuOpen}]">
+
+        <button class="w-close-button" @click="isMenuOpen = false">&times;</button>
+
+        <div class="columns is-multiline">
+          <div class="column profile">
+            <figure class="image is-96x96">
+              <img src="/img/defaults/profile.jpg" alt="Profile Picture">
+            </figure>
+          </div>
+          <div class="column is-12-mobile is-1-tablet is-offset-1 language">
+            <w-language-selector/>
+          </div>
+          <div class="column is-5 is-12-mobile is-4-tablet buttons">
+            <w-button :buttonClass="'woonkly-button-opacity-to-light'" :href="'https://woonkly.com/privateico/login/'">{{ $t('message.menu.buttonBuy') }}</w-button>
+            <w-button :href="'https://woonkly.com/tv11/'">{{ $t('message.menu.buttonFaucet') }}</w-button>
+            <w-button :href="'https://woonkly.com/tv11/'">{{ $t('message.menu.buttonLogin') }}</w-button>
+          </div>
+
+          <nav class="column is-12-mobile is-5-tablet navigation">
+            <ul>
+              <li :class="{'selected':currentSection == 'WoonklyHero'}">
+                <a href="" v-scroll-to="{ el: '#woonkly-description', onDone: closeMenu }">{{ $t('message.menu.project') }}</a>
+              </li>
+              <li :class="{'selected':currentSection == 'WoonklyDistributionToken'}">
+                <a href="" v-scroll-to="{ el: '#woonkly-dis-token', onDone: closeMenu }">{{ $t('message.menu.tokens') }}</a>
+              </li>
+              <li :class="{'selected':currentSection == 'WoonklyRoadmap'}">
+                <a href="" v-scroll-to="{ el: '#woonkly-roadmap', onDone: closeMenu }">{{ $t('message.menu.objectives') }}</a>
+              </li>
+              <li :class="{'selected':currentSection == 'WoonklyTeam'}">
+                <a href="" v-scroll-to="{ el: '#woonkly-team', onDone: closeMenu }">{{ $t('message.menu.team') }}</a>
+              </li>
+              <li :class="{'selected':currentSection == 'WoonklyFaq'}">
+                <a href="" v-scroll-to="{ el: '#woonkly-faq', onDone: closeMenu }">{{ $t('message.menu.faqs') }}</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-</header>
+      </aside>
+    </nav>
+    <div class="column is-3-tablet social-media">
+      <a href="https://www.facebook.com/woonkly/" target="_blank">
+        <fai :icon="['fab', 'facebook-f']" class="icons" />
+      </a>
+      <a href="https://twitter.com/WoonklyTV" target="_blank">
+        <fai :icon="['fab', 'twitter']" class="icons" />
+      </a>
+      <a href="https://www.youtube.com/c/MrSantos" target="_blank">
+        <fai :icon="['fab', 'youtube']" class="icons" />
+      </a>
+      <a :href="$t('message.woonklyTelegramLink')" target="_blank">
+        <fai :icon="['fab', 'telegram-plane']" class="icons" />
+      </a>
+      <a href="https://github.com/Woonkly" target="_blank">
+        <fai :icon="['fab', 'github']" class="icons" />
+      </a>
+      <a>
+        <fai :icon="['fab', 'bitcoin']" class="icons" />
+      </a>
+      <a>
+        <fai :icon="['fab', 'reddit']" class="icons" />
+      </a>
+      <a>
+        <fai :icon="['fab', 'medium-m']" class="icons" />
+      </a>
+    </div>
+  </header>
 </template>
 
 <script>
@@ -193,8 +193,8 @@ export default {
     padding: 0.25em;
     width: 2.5em;
     position: fixed;
-    right: 5%;
-    top: 10%;
+    right: 3%;
+    top: 30%;
     .icons {
       display: inline-block;
       font-size: 1.5em;
@@ -211,7 +211,7 @@ export default {
     @media screen and (max-width: 1104px) {
       flex-direction: row;
       right: 0;
-      top: 7%;
+      top: 8%;
       width: 100%;
       div.column {
         display: flex;
@@ -312,7 +312,7 @@ export default {
           order: 3;
           .woonkly-language-selector {
             position: fixed;
-            right: 7%;
+            right: 5%;
           }
         }
 
