@@ -210,9 +210,23 @@ export default {
 
     @media screen and (max-width: 1104px) {
       flex-direction: row;
-      right: 0;
-      top: 8%;
-      width: 100%;
+      right: 10%;
+      top: 70px;
+      width: 80%;
+      padding: 0.05em;
+      .icons {
+        display: inline-block;
+        font-size: 1em;
+        color: var(--woonkly-light-blue);
+        transition: transform 600ms ease-out;
+
+        &:hover,
+        &:active,
+        &:focus {
+          animation: slightly-scale 1s ease-out;
+        }
+      }
+
       div.column {
         display: flex;
         align-items: center;
