@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="224.3 3968.3 31.4 31.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(49,118,164,0.19);
+        stroke: #00d3ff;
+      }
+
+      .cls-2 {
+        fill: rgba(49,118,164,0.03);
+        stroke: rgba(0,211,255,0.05);
+      }
+
+      .cls-3 {
+        fill: rgba(49,118,164,0.16);
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_50" data-name="Group 50" transform="translate(51.2 3396.2)">
+  <circle fill="#0080003e" cx="15.7" cy="15.7" r="15.7" transform="translate(173.1 572.1)"/>
+    <g stroke="green" fill="none" transform="translate(177.392 576.392)">
+      <circle class="cls-4" cx="11.408" cy="11.408" r="11.408"/>
+      <circle class="cls-5" cx="11.408" cy="11.408" r="10.908"/>
+    </g>
+    <g id="Ellipse_9" data-name="Ellipse 9" class="cls-2" transform="translate(174.976 573.976)">
+      <circle class="cls-4" cx="13.824" cy="13.824" r="13.824"/>
+      <circle class="cls-5" cx="13.824" cy="13.824" r="13.324"/>
+    </g>
+  </g>
+</svg>
