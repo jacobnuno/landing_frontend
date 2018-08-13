@@ -12,7 +12,7 @@
     </div>
 
     <div class="column has-text-centered">
-      <w-button>{{$t('message.buyWithBonus', {bonus} )}}</w-button>
+      <w-button :buttonClass="'woonkly-button-light-to-dark'">{{$t('message.buyWithBonus', {bonus} )}}</w-button>
     </div>
     <div class="column has-text-centered">
       <w-button>{{$t('message.whitepaperWoonkly')}}</w-button>
