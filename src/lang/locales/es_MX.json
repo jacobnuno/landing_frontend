@@ -37,28 +37,34 @@
     "withTheObjectiveOf": "Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido , hemos creado nuestra criptomoneda, llamada “woonk”. Los creadores de contenido y anunciantes pueden comprar woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial de nuestra criptomoneda:",
     "acquireTokensFirstList": [
       {
-          "title": "1 Mayo-1 Junio:",
-          "content": "Venta privada para suscriptores de Mr. Santos en Youtube (50%Bonus)"
+          "title": "1 Mayo - 1 Junio:",
+          "content": "Venta privada para suscriptores de Mr. Santos en Youtube (50%Bonus)",
+          "endTime": "1496275200"
       },
       {
-          "title": "1 Junio-1 Julio:",
-          "content": "Venta privada para suscriptores de otros canales de Youtube (40% Bonus)"
+          "title": "1 Junio - 1 Julio:",
+          "content": "Venta privada para suscriptores de otros canales de Youtube (40% Bonus)",
+          "endTime": "1498867200"
       },
       {
-          "title": "1 Julio- 1 Septiembre:",
-          "content": "Venta privada (Capitales de Emiratos Árabes, Hong Kong y Europa) (30% Bonus)"
+          "title": "1 Julio - 1 Septiembre:",
+          "content": "Venta privada (Capitales de Emiratos Árabes, Hong Kong y Europa) (30% Bonus)",
+          "endTime": "1504224000"
       },
       {
-          "title": "1 Septiembre-1 Octubre:",
-          "content": "ICO Fase 1 (20% Bonus)"
+          "title": "1 Septiembre - 1 Octubre:",
+          "content": "ICO Fase 1 (20% Bonus)",
+          "endTime": "1506816000"
       },
       {
-          "title": "1 Octubre- 1 Noviembre:",
-          "content": "ICO Fase 2 (10% Bonus)"
+          "title": "1 Octubre - 1 Noviembre:",
+          "content": "ICO Fase 2 (10% Bonus)",
+          "endTime": "1509494400"
       },
       {
-          "title": "1 Noviembre- 31 Diciembre:",
-          "content": "ICO Fase 3 (0% Bonus)"
+          "title": "1 Noviembre - 31 Diciembre:",
+          "content": "ICO Fase 3 (0% Bonus)",
+          "endTime": "1512086400"
       }
     ],
     "acquireTokenSecondList": [

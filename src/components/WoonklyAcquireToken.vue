@@ -13,6 +13,9 @@
         <ul>
           <li v-for="index in 6" :key="index" class="list-tkn">
             <img src="/img/icons/group.svg" class="bullet" alt="Woonkly bullet">
+            <p>
+              <span>{{toTimestamp($t('message.acquireTokensFirstList['+(index-1)+'].endTime'))}}</span>
+            </p>
             <div>
               <div class="is-size-6-mobile is-size-4-tablet">{{ $t('message.acquireTokensFirstList['+(index-1)+'].title') }}</div>
               {{ $t('message.acquireTokensFirstList['+(index-1)+'].content') }}
@@ -30,9 +33,7 @@
             </div>
           </li>
         </ul>
-
       </div>
-
     </div>
     <img src="/img/icons/linea_luz.svg" id="blue-line-right" alt="Woonkly blue line">
     <img src="/img/icons/ilustracion.svg" id="blue-cube" alt="Woonkly blue cube">
@@ -44,6 +45,13 @@
 import wDivider from '@/components/wavy-dividers/WoonklyWavy2'
 
 export default {
+  computed: {
+    toTimestamp () {
+      return (textTimestamp) => {
+        let currentTimestamp = (new Date().valueOf() / 1000)
+      }
+    }
+  },
   components: {
     wDivider
   }
