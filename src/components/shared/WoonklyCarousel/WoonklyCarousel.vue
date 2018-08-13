@@ -11,15 +11,21 @@
           <slot/>
         </div>
         <div class="carousel-navigation is-overlay">
-          <div class="carousel-nav-left">
+          <div class="carousel-nav-left" ref="buttonLeft">
             <fai :icon="['fas', 'chevron-down']" class="icons rotatedLeft" />
           </div>
-          <div class="carousel-nav-right">
+          <div class="carousel-nav-right" ref="buttonRight">
             <fai :icon="['fas', 'chevron-down']" class="icons rotatedRight" />
           </div>
         </div>
       </div>
     </div>
+
+    <div class="simulated-buttons">
+      <button type="button" name="button" @click="clickLeft">IZQUIERDA</button>
+      <button type="button" name="button" @click="clickRight">DERECHA</button>
+    </div>
+
   </div>
 
 </template>
@@ -37,6 +43,12 @@ export default {
     carouselSlide (item) {
       var data = item.node.getAttribute("data")
       this.activedOption = data
+    },
+    clickLeft () {
+      this.$refs.buttonLeft.click()
+    },
+    clickRight () {
+      this.$refs.buttonRight.click()
     }
   },
   mounted () {
@@ -54,6 +66,10 @@ export default {
 </script>
 
 <style lang="scss">
+.simulated-buttons {
+  position: relative;
+  z-index: 10000;
+}
 .carousel {
   margin-bottom: 9em;
 

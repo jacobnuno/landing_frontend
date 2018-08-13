@@ -1,7 +1,6 @@
 <template lang="html">
   <div class="woonkly-rating-element">
     <div class="star">
-      <!-- <span class="fas fa-star icon"></span> -->
       <fai :icon="['fas', 'fa-star']" class="icon" />
     </div>
     <span class="calification">5.0</span>
