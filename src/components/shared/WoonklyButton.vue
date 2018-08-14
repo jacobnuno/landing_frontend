@@ -59,6 +59,10 @@ export default {
     border: 1.2px var(--woonkly-light-blue) solid;
     font-size: 1.19em;
   }
+
+  @media screen and (max-width: 1104px) {
+    font-size: 10px;
+  }
 }
 .woonkly-button-opacity-to-light {
   border: none;
@@ -78,7 +82,10 @@ export default {
     padding: 8.5px;
     display: block;
     font-size: 1.19em;
-    //text-decoration: none;
+  }
+
+  @media screen and (max-width: 1104px) {
+    font-size: 10px;
   }
 }
 .woonkly-button-light-to-dark {
@@ -99,7 +106,10 @@ export default {
     padding: 8.5px;
     display: block;
     font-size: 1.19em;
-    //text-decoration: none;
+  }
+
+  @media screen and (max-width: 1104px) {
+    font-size: 10px;
   }
 }
 </style>
