@@ -1,10 +1,13 @@
 <template lang="html">
   <div class="columns is-mobile carousel">
     <div class="column is-8-tablet is-offset-2-tablet">
-      <div class="carousel carousel-animated carousel-animate-slide" data-size="4">
-        <div class="description" :class="hasDescriptionClass">
+      <div class="carousel carousel-animated carousel-animate-slide" :data-size="size">
+        <div class="description" v-if="typeCarousel == true">
           <h3 class="title is-2 has-text-weight-normal has-text-center">{{$t(`message.carousel.${activedOption}.title`)}}</h3>
           <span class="has-text-left">{{$t(`message.carousel.${activedOption}.description`)}}</span>
+        </div>
+        <div v-else>
+          <h3 class="title is-2 has-text-weight-normal has-text-center">{{$t(`message.ratingCarousel`)}}</h3>
         </div>
 
         <div class="carousel-container">
@@ -61,21 +64,14 @@ export default {
       carousels[1].on('carousel:slide:after', this.carouselSlide)
     }, 1000)
   },
-  // computed: {
-  //   hasDescriptionClass () {
-  //     console.log('has_description: ', has_description);
-  //     if(this.has_description == '1') {
-  //       return 'has_description'
-  //     }
-  //   }
-  // },
   data () {
     return {
       activedOption: 'amsterdam'
     }
   },
   props: [
-    'has_description'
+    'size',
+    'typeCarousel'
   ]
 }
 </script>
@@ -106,11 +102,11 @@ export default {
     }
   }
   .left {
-    top: 23.5em;
+    top: 15.1em;
     right: 83em;
   }
   .right {
-    top: 23.5em;
+    top: 15.1em;
   }
 }
 .carousel {
@@ -127,7 +123,6 @@ export default {
 
   .carousel-container {
     height: 25em;
-    //left: -448px !important;
   }
 
   .carousel-item {

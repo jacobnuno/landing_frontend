@@ -84,6 +84,7 @@ export default {
     position: relative;
     height: 1.5em;
     margin-bottom: 1em;
+    
     .colorBar {
       width: 100%;
       height: 1.5em;

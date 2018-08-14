@@ -39,7 +39,6 @@
 		min-width: 100px;
 		min-height: 100px;
     background: #00d2fd;
-		//box-shadow: 0px 1px 80px 0px #00D3FF, 0px 1px 18px 0px #02004A;
     box-shadow: -5px 23px 91px -17px rgba(0,211,255,1);
 		position: absolute;
 		left: -1em;
