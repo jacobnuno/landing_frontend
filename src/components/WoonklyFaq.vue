@@ -2,7 +2,7 @@
   <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.25 } }" id="woonkly-faq">
     <w-divider/>
     <div class="section">
-      <w-carousel>
+      <w-carousel :has_description="1">
         <div class="carousel-item is-active" data="amsterdam">
           <w-element-carousel :img-url="'https://hipertextual.com/files/2017/02/imagen_17117_social.jpg'">
           </w-element-carousel>
@@ -26,27 +26,21 @@
       </w-carousel>
 
       <!-- Rating Carousel -->
-      <w-carousel>
+      <w-carousel :has_description="0">
         <div class="carousel-item">
-          <w-rating-element></w-rating-element>
+          <w-rating-element :rating="4" :img-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png'">4.0</w-rating-element>
         </div>
         <div class="carousel-item">
-          <w-rating-element></w-rating-element>
+          <w-rating-element :rating="3" :img-url="'https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/pyr/55673ed52a98bb41703ed903/dia-star-wars.jpg'">3.0</w-rating-element>
         </div>
         <div class="carousel-item">
-          <w-rating-element></w-rating-element>
+          <w-rating-element :rating="5" :img-url="'https://hipertextual.com/files/2017/02/imagen_17117_social.jpg'">5.0</w-rating-element>
         </div>
         <div class="carousel-item">
-          <w-rating-element></w-rating-element>
+          <w-rating-element :rating="2" :img-url="'https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg'">2.0</w-rating-element>
         </div>
         <div class="carousel-item">
-          <w-rating-element></w-rating-element>
-        </div>
-        <div class="carousel-item">
-          <w-rating-element></w-rating-element>
-        </div>
-        <div class="carousel-item">
-          <w-rating-element></w-rating-element>
+          <w-rating-element :rating="1" :img-url="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsXtquyiv3k0oQtXPojvQ9lTP955aIRI91h_q4B5_zS_2LaGfRag'">1.0</w-rating-element>
         </div>
       </w-carousel>
       <div>

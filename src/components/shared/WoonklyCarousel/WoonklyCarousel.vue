@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="columns is-mobile carousel">
-    <div class="column is-10-tablet is-offset-1-tablet">
+    <div class="column is-8-tablet is-offset-2-tablet">
       <div class="carousel carousel-animated carousel-animate-slide" data-size="4">
-        <div class="description">
+        <div class="description" :class="hasDescriptionClass">
           <h3 class="title is-2 has-text-weight-normal has-text-center">{{$t(`message.carousel.${activedOption}.title`)}}</h3>
           <span class="has-text-left">{{$t(`message.carousel.${activedOption}.description`)}}</span>
         </div>
@@ -22,8 +22,12 @@
     </div>
 
     <div class="simulated-buttons">
-      <button type="button" name="button" @click="clickLeft">IZQUIERDA</button>
-      <button type="button" name="button" @click="clickRight">DERECHA</button>
+      <button type="button" class="navigationButton left" name="button" @click="clickLeft">
+        <fai :icon="['fas', 'chevron-down']" class="icons rotatedLeft" />
+      </button>
+      <button type="button" class="navigationButton right" name="button" @click="clickRight">
+        <fai :icon="['fas', 'chevron-down']" class="icons rotatedRight" />
+      </button>
     </div>
 
   </div>
@@ -57,40 +61,68 @@ export default {
       carousels[1].on('carousel:slide:after', this.carouselSlide)
     }, 1000)
   },
+  // computed: {
+  //   hasDescriptionClass () {
+  //     console.log('has_description: ', has_description);
+  //     if(this.has_description == '1') {
+  //       return 'has_description'
+  //     }
+  //   }
+  // },
   data () {
     return {
       activedOption: 'amsterdam'
     }
-  }
+  },
+  props: [
+    'has_description'
+  ]
 }
 </script>
 
 <style lang="scss">
 .simulated-buttons {
   position: relative;
-  z-index: 10000;
+  z-index: 1000;
+  .navigationButton {
+    position: relative;
+    border-radius: 50%;
+    height: 2.5em !important;
+    width: 2.5em !important;
+    background-color: var(--woonkly-light-blue) !important;
+    border: none;
+
+    .icons {
+      color: var(--woonkly-black-blue);
+      font-size: 1.7em;
+
+      &.rotatedLeft {
+        transform: rotate(-270deg);
+
+      }
+      &.rotatedRight {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  .left {
+    top: 23.5em;
+    right: 83em;
+  }
+  .right {
+    top: 23.5em;
+  }
 }
 .carousel {
   margin-bottom: 9em;
-
-  .icons {
-    color: var(--woonkly-black-blue);
-
-    &.rotatedLeft {
-      transform: rotate(-270deg);
-    }
-    &.rotatedRight {
-      transform: rotate(-90deg);
-    }
-  }
+  position: relative;
 
   .description {
     margin-bottom: 3em;
   }
 
   .carousel-nav-left, .carousel-nav-right {
-    background-color: var(--woonkly-light-blue) !important;
-    transform: translateY(100%);
+    visibility: hidden;
   }
 
   .carousel-container {
@@ -102,10 +134,5 @@ export default {
     width: 30px !important;
   }
 
-  .carousel-nav-right, .carousel-nav-left {
-    border-radius: 50%;
-    height: 1.5em !important;
-    width: 1.5em !important;
-  }
 }
 </style>
