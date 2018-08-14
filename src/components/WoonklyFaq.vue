@@ -7,10 +7,10 @@
           <w-element-carousel :img-url="'https://hipertextual.com/files/2017/02/imagen_17117_social.jpg'">
           </w-element-carousel>
         </div>
-        <div class="carousel-item" data="amsterdam">
+        <!-- <div class="carousel-item" data="amsterdam">
           <w-element-carousel :img-url="'http://www.comingsoon.net/assets/uploads/2018/01/rey-in-star-wars-the-last-jedi-5j.jpg'">
           </w-element-carousel>
-        </div>
+        </div> -->
         <div class="carousel-item" data="amsterdam">
           <w-element-carousel  :img-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png'">
           </w-element-carousel>
@@ -22,6 +22,31 @@
         <div class="carousel-item" data="bef">
           <w-element-carousel :img-url="'https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/pyr/55673ed52a98bb41703ed903/dia-star-wars.jpg'">
           </w-element-carousel>
+        </div>
+      </w-carousel>
+
+      <!-- Rating Carousel -->
+      <w-carousel>
+        <div class="carousel-item">
+          <w-rating-element></w-rating-element>
+        </div>
+        <div class="carousel-item">
+          <w-rating-element></w-rating-element>
+        </div>
+        <div class="carousel-item">
+          <w-rating-element></w-rating-element>
+        </div>
+        <div class="carousel-item">
+          <w-rating-element></w-rating-element>
+        </div>
+        <div class="carousel-item">
+          <w-rating-element></w-rating-element>
+        </div>
+        <div class="carousel-item">
+          <w-rating-element></w-rating-element>
+        </div>
+        <div class="carousel-item">
+          <w-rating-element></w-rating-element>
         </div>
       </w-carousel>
       <div>
@@ -63,6 +88,7 @@ import wCarousel from '@/components/shared/WoonklyCarousel/WoonklyCarousel'
 import wGradientButton from '@/components/shared/WoonklyGradientButton'
 import wCollabsible from '@/components/shared/WoonklyCollabsible'
 import wElementCarousel from '@/components/shared/WoonklyCarousel/SingleElement'
+import wRatingElement from '@/components/shared/WoonklyCarousel/WoonklyRatingElement'
 
 export default {
   components: {
@@ -70,7 +96,8 @@ export default {
     wCollabsible,
     wDivider,
     wCarousel,
-    wElementCarousel
+    wElementCarousel,
+    wRatingElement
   },
   data () {
     return {

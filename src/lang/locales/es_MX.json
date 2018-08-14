@@ -93,7 +93,6 @@
     "teamMembers": {
         "santos": { "position": "Presidente & CEO" },
         "mateiAntohi": { "position": "Co-Fundador" },
-        "davidLeonardo": { "position": "Dir. de Operaciones" },
         "oscarCardenas": { "position": "Director de Blockchain" },
         "saraSantos": { "position": "Directora de Marketing" },
         "carlosPavia": { "position": "Dir. de Desarollo Web" },
@@ -121,7 +120,8 @@
         "danielMuvdi": { "position": "Advisor" },
         "mendySrugo": { "position": "Advisor & Investor" },
         "davidBattaglia": { "position": "Advisor" },
-        "robertoMedrano": { "position": "Advisor" }
+        "robertoMedrano": { "position": "Advisor" },
+        "davidLeonardo": { "position": "Inversor" }
     },
     "roadMapMilestones": [
       { "title": "Enero 2017",
