@@ -12,7 +12,13 @@
         </p>
         <ul>
           <li v-for="index in 6" :key="index" class="list-tkn">
-            <img src="/img/icons/group.svg" class="bullet" alt="Woonkly bullet">
+            <img v-if="isDone($t('message.acquireTokensFirstList['+(index-1)+'].endTime'))" src="/img/icons/bullet-done.svg" class="bullet" alt="Woonkly bullet">
+            <object v-else-if="isInProgress()" data="/img/icons/bullet-in-progress.svg" type="image/svg+xml" class="bullet-in-progress">
+              <img src="/img/icons/group.svg" alt="Woonkly Bullet In Progress"/>
+            </object>
+            <img v-else src="/img/icons/group.svg" class="bullet" alt="Woonkly bullet">
+            <p>
+            </p>
             <div>
               <div class="is-size-6-mobile is-size-4-tablet">{{ $t('message.acquireTokensFirstList['+(index-1)+'].title') }}</div>
               {{ $t('message.acquireTokensFirstList['+(index-1)+'].content') }}
@@ -30,9 +36,7 @@
             </div>
           </li>
         </ul>
-
       </div>
-
     </div>
     <img src="/img/icons/linea_luz.svg" id="blue-line-right" alt="Woonkly blue line">
     <img src="/img/icons/ilustracion.svg" id="blue-cube" alt="Woonkly blue cube">
@@ -43,7 +47,23 @@
 <script>
 import wDivider from '@/components/wavy-dividers/WoonklyWavy2'
 
+let allDatesDone = 0
+
 export default {
+  methods: {
+    isDone (textTimestamp) {
+      textTimestamp = parseInt(textTimestamp)
+      let localDate = new Date()
+      let utcDate = Math.floor(localDate.valueOf() / 1000) - (localDate.getTimezoneOffset() * 60)
+      if (textTimestamp > utcDate) {
+        allDatesDone++
+      }
+      return textTimestamp < utcDate
+    },
+    isInProgress () {
+      return allDatesDone === 1
+    }
+  },
   components: {
     wDivider
   }
@@ -94,6 +114,13 @@ export default {
     .bullet {
       margin-right: 0.7em;
     }
+
+    .bullet-in-progress {
+      margin-right: 0.7em;
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+    }
   }
 
   .w-p {
@@ -125,6 +152,28 @@ export default {
       transform: translate(220%, -105%);
       width: 30em;
     }
+  }
+}
+
+@media screen and (min-width: 1490px) {
+  #woonkly-ac-token {
+
+    #blue-cube {
+      transform: translate(250%, -105%);
+      width: 30em;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1820px) {
+  #woonkly-ac-token {
+
+    #blue-cube {
+      transform: translate(280%, -105%);
+      width: 30em;
+    }
+
   }
 }
 
