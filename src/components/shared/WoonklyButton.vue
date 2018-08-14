@@ -17,18 +17,20 @@ export default {
     href: {
       default: null
     },
-    buttonClass: ''
+    buttonClass: ""
   },
   computed: {
     chooseClass: function() {
       switch (this.buttonClass) {
-        case 'woonkly-button-light-to-dark': {}
-        case 'woonkly-button-opacity-to-light': {}
-        case 'woonkly-button': {
+        case "woonkly-button-light-to-dark": {
+        }
+        case "woonkly-button-opacity-to-light": {
+        }
+        case "woonkly-button": {
           return this.buttonClass;
         }
         default: {
-          return 'woonkly-button';
+          return "woonkly-button";
         }
       }
     }
@@ -59,6 +61,10 @@ export default {
     border: 1.2px var(--woonkly-light-blue) solid;
     font-size: 1.19em;
   }
+
+  @media screen and (max-width: 1104px) {
+    font-size: 10px;
+  }
 }
 .woonkly-button-opacity-to-light {
   border: none;
@@ -79,6 +85,10 @@ export default {
     display: block;
     font-size: 1.19em;
     //text-decoration: none;
+  }
+
+  @media screen and (max-width: 1104px) {
+    font-size: 10px;
   }
 }
 .woonkly-button-light-to-dark {
