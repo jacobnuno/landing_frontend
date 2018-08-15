@@ -205,6 +205,7 @@ export default {
       &:active,
       &:focus {
         animation: slightly-scale 1s ease-out;
+        color: white;
       }
     }
 

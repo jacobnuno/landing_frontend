@@ -17,18 +17,20 @@ export default {
     href: {
       default: null
     },
-    buttonClass: ''
+    buttonClass: ""
   },
   computed: {
     chooseClass: function() {
       switch (this.buttonClass) {
-        case 'woonkly-button-light-to-dark': {}
-        case 'woonkly-button-opacity-to-light': {}
-        case 'woonkly-button': {
+        case "woonkly-button-light-to-dark": {
+        }
+        case "woonkly-button-opacity-to-light": {
+        }
+        case "woonkly-button": {
           return this.buttonClass;
         }
         default: {
-          return 'woonkly-button';
+          return "woonkly-button";
         }
       }
     }
@@ -47,10 +49,6 @@ export default {
   cursor: pointer;
   border-radius: 3em;
   font-size: 12.5px;
-  &:focus,
-  &:hover {
-    text-decoration: none;
-  }
 
   .inner-border {
     border-radius: inherit;
@@ -58,6 +56,18 @@ export default {
     display: block;
     border: 1.2px var(--woonkly-light-blue) solid;
     font-size: 1.19em;
+  }
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 85px 4px #08c2ee;
+    box-shadow: 0px 0px 40px 4px var(--woonkly-light-blue-quarter-opacity);
+    color: white !important;
+
+    .inner-border {
+      background: var(--woonkly-gradient-dark-opacity-to-light-right);
+    }
   }
 
   @media screen and (max-width: 1104px) {
@@ -84,6 +94,18 @@ export default {
     font-size: 1.19em;
   }
 
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 85px 4px #08c2ee;
+    box-shadow: 0px 0px 40px 4px var(--woonkly-light-blue-quarter-opacity);
+    color: white !important;
+
+    .inner-border {
+      background: var(--woonkly-light-blue);
+    }
+  }
+
   @media screen and (max-width: 1104px) {
     font-size: 10px;
   }
@@ -106,6 +128,16 @@ export default {
     padding: 8.5px;
     display: block;
     font-size: 1.19em;
+  }
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 85px 4px #08c2ee;
+    box-shadow: 0px 0px 40px 4px var(--woonkly-light-blue-quarter-opacity);
+    .inner-border {
+      background: var(--woonkly-light-blue);
+    }
   }
 
   @media screen and (max-width: 1104px) {
