@@ -3,23 +3,7 @@
     <w-divider/>
     <div class="section">
 
-      <w-carousel id="woonkly-around-the-world" class="w-new-carousel">
-        <li>
-          <w-element-carousel :img-url="'https://hipertextual.com/files/2017/02/imagen_17117_social.jpg'"/>
-        </li>
-        <li>
-          <w-element-carousel :img-url="'http://www.comingsoon.net/assets/uploads/2018/01/rey-in-star-wars-the-last-jedi-5j.jpg'"/>
-        </li>
-        <li>
-          <w-element-carousel  :img-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png'"/>
-        </li>
-        <li>
-          <w-element-carousel :img-url="'https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/08/Sphero-Star-wars-r2-d2-bb-9e-796x424.jpg'"/>
-        </li>
-        <li>
-          <w-element-carousel :img-url="'https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/pyr/55673ed52a98bb41703ed903/dia-star-wars.jpg'"/>
-        </li>
-      </w-carousel>
+      <w-around-the-world/>
 
       <w-carousel class="w-new-carousel">
         <li>
@@ -132,8 +116,8 @@ import wGradientButton from '@/components/shared/WoonklyGradientButton'
 import wCollabsible from '@/components/shared/WoonklyCollabsible'
 import wElementCarousel from '@/components/shared/WoonklyCarousel/SingleElement'
 import wRatingElement from '@/components/shared/WoonklyCarousel/WoonklyRatingElement'
-// Woonkly Tiny Carousel
 import wCarousel from '@/components/shared/WoonklyTinyCarousel'
+import wAroundTheWorld from '@/components/shared/WoonklyAroundTheWorld'
 
 export default {
   components: {
@@ -142,7 +126,8 @@ export default {
     wDivider,
     wCarousel,
     wElementCarousel,
-    wRatingElement
+    wRatingElement,
+    wAroundTheWorld
   },
   data () {
     return {
@@ -198,8 +183,9 @@ export default {
 
   #woonkly-around-the-world {
     .tns-item {
+      // max-width: 160px;
       padding: 0;
-    }    
+    }
   }
 
   & > div.title:nth-of-type(2) {

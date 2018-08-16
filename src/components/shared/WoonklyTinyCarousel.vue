@@ -12,6 +12,11 @@ import { tns } from 'tiny-slider/src/tiny-slider.js'
 
 export default {
   name: 'WoonklyTinySlider',
+  props: {
+    onIndexChanged: {
+      default: null
+    }
+  },
   methods: {
     initCarousel () {
       var slider = tns({
@@ -39,6 +44,10 @@ export default {
           }
         }
       })
+
+      if (this.onIndexChanged != null) {
+        slider.events.on('indexChanged', this.onIndexChanged)
+      }
     }
   },
   mounted () {
