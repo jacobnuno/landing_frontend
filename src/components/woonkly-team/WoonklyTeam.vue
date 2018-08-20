@@ -127,14 +127,6 @@ export default {
             twitter: 'https://twitter.com/ilichh1',
             linkedin: 'https://www.linkedin.com/in/ilichh1/'
           }
-        },
-        {
-          name: 'Woonkzalo',
-          position: this.$t('message.teamMembers.woonkzalo.position'),
-          img: 'gustavo.png',
-          links: {
-            twitter: 'https://twitter.com/woonkzalo'
-          }
         }
       ],
       advisors: [
