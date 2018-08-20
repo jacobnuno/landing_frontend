@@ -101,4 +101,46 @@ export default {
     //text-decoration: none;
   }
 }
+.woonkly-button-opacity-to-light {
+  border: none;
+  color: white !important;
+  padding: 0.25em;
+  border: 0.8px var(--woonkly-light-blue-quarter-opacity) solid;
+  cursor: pointer;
+  border-radius: 3em;
+  font-size: 12.5px;
+  text-decoration: none;
+  background: none;
+
+  .inner-border {
+    background: none;
+    background: var(--woonkly-gradient-opacity-to-light-right);
+    border-radius: inherit;
+    padding: 8.5px;
+    display: block;
+    font-size: 1.19em;
+    //text-decoration: none;
+  }
+}
+.woonkly-button-light-to-dark {
+  border: none;
+  color: white !important;
+  padding: 0.25em;
+  border: 0.8px var(--woonkly-light-blue-quarter-opacity) solid;
+  cursor: pointer;
+  border-radius: 3em;
+  font-size: 12.5px;
+  text-decoration: none;
+  background: none;
+
+  .inner-border {
+    background: none;
+    background: var(--woonkly-gradient-light-to-dark-right);
+    border-radius: inherit;
+    padding: 8.5px;
+    display: block;
+    font-size: 1.19em;
+    //text-decoration: none;
+  }
+}
 </style>
