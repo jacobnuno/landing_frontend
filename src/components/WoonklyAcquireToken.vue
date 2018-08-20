@@ -4,10 +4,10 @@
   <div class="section">
     <img src="/img/icons/linea_luz.svg" id="blue-line-left" alt="Woonkly blue line">
 
-    <div class="is-size-4-mobile is-size-1-tablet has-text-centered is-uppercase">{{$t('message.acquireTokens')}}</div>
+    <div class="is-size-4-mobile is-size-2-tablet has-text-centered is-uppercase">{{$t('message.acquireTokens')}}</div>
     <div class="columns">
       <div class="column is-12-mobile is-4-tablet is-offset-2-tablet">
-        <p class="is-size-7-mobile is-size-6-tablet is-3-tablet w-p has-text-justified">
+        <p class="has-text-left is-size-7-mobile is-size-6-tablet is-3-tablet w-p">
           {{$t('message.withTheObjectiveOf')}}
         </p>
         <ul>

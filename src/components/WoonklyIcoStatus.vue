@@ -2,13 +2,16 @@
 <section id="woonkly-ico-status" class="section">
   <div class="columns is-mobile is-multiline">
 
-    <div class="column is-12 has-text-centered phase is-size-4-tablet">
+    <div class="column is-12 has-text-centered phase">
       <strong v-html="$t('message.icoPhaseBonus', {phase, bonus} )"></strong>
-      <span class="w-light-blue is-size-4-tablet">{{wnkSold}} WNKS</span>
     </div>
 
     <div class="column is-12 progress is-marginless">
       <w-progress :value="90" />
+    </div>
+
+    <div class="column is-12 has-text-centered wonks-sold">
+      <span class="w-light-blue is-size-7">{{wnkSold}} WNKS</span>
     </div>
 
     <div class="column has-text-centered">
@@ -76,6 +79,7 @@ export default {
 #woonkly-ico-status {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
+  // background: #06062c
 
   .phase {
     strong {
@@ -97,6 +101,7 @@ export default {
 
     .spark-container {
       position: absolute;
+      top: 0;
       left: 0;
       right: 0;
       bottom: -10em;
@@ -151,16 +156,16 @@ export default {
         }
 
         &:nth-of-type(1) {
-          animation-delay: 200ms;
+          animation-delay: 500ms;
         }
         &:nth-of-type(3) {
-          animation-delay: 400ms;
+          animation-delay: 1000ms;
         }
         &:nth-of-type(5) {
-          animation-delay: 600ms;
+          animation-delay: 1500ms;
         }
         &:nth-of-type(7) {
-          animation-delay: 800ms;
+          animation-delay: 2000ms;
         }
       }
 
@@ -202,7 +207,7 @@ export default {
 
 @keyframes flashing-counter {
   0%, 100% {
-    box-shadow: 0px 0px 85px 4px #08c2ee;
+    box-shadow: 0px 0px 25px 4px #08c2ee;
   }
   50%, 60% {
     box-shadow: 0px 0px 15px 4px #08c2ee;

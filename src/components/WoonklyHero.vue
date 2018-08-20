@@ -9,8 +9,8 @@
       <!-- <img class="circle rellax glowing-circle" data-rellax-speed="1" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Circle"> -->
     </div>
     <div class="column is-12-mobile is-half-tablet titles section">
-      <h1 class="title is-size-1-tablet">{{$t('message.earnMoney')}}</h1>
-      <h2 class="subtitle has-text-weight-light is-size-4-tablet">{{$t('message.connectingCreators')}}</h2>
+      <h1 class="title">{{$t('message.earnMoney')}}</h1>
+      <h2 class="subtitle has-text-weight-light">{{$t('message.connectingCreators')}}</h2>
       <w-ico-status/>
     </div>
   </div>

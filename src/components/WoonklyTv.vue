@@ -6,7 +6,7 @@
       <w-cash-animate id="billetes-1" :class="{'animate':animateCash}"/>
       <w-cash-animate id="billetes-2" :class="{'animate':animateCash}"/>
       <div class="column is-12">
-        <h3 class="title is-2 has-text-centered">{{$t('message.discoverWoonklyTv')}}</h3>
+        <h3 class="title is-3 has-text-centered">{{$t('message.discoverWoonklyTv')}}</h3>
       </div>
 
       <div class="main-content-wrapper column is-12">

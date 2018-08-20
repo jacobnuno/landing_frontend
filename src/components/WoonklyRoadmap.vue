@@ -26,10 +26,10 @@
                 <span><img class="roadmap-circle" :src="getCircleImg(roadmap[i*2].date)" alt="Done circle"></span>
                 <img class="roadmap-line" :src="getLineImg(roadmap[i*2].date)" alt="Done line">
                 <div class="data-container">
-                    <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile is-size-4-tablet">
+                    <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
                         {{ roadmap[i * 2].title }}
                     </h3>
-                    <p class="roadmap-description is-size-7-mobile is-size-5-tablet">
+                    <p class="roadmap-description is-size-7-mobile">
                         {{ roadmap[i * 2].description }}
                     </p>
                 </div>
@@ -39,10 +39,10 @@
                 <img class="roadmap-line" :src="getLineImg(roadmap[i*2+1].date)" alt="Done line">
                 <span><img class="roadmap-circle" :src="getCircleImg(roadmap[i*2+1].date)" alt="Done circle"></span>
                 <div class="data-container">
-                    <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile is-size-4-tablet">
+                    <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
                         {{ roadmap[i * 2 + 1].title }}
                     </h3>
-                    <p class="roadmap-description is-size-7-mobile is-size-5-tablet">
+                    <p class="roadmap-description is-size-7-mobile">
                         {{ roadmap[i * 2 + 1].description }}
                     </p>
                 </div>
@@ -280,7 +280,7 @@ export default Vue.extend({
 
     .data-container{
         max-width: 165px;
-        padding: 25px 5px 25px 5px;
+        padding: 25px;
         font-weight: lighter;
     }
 
