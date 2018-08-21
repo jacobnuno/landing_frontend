@@ -9,32 +9,32 @@
       "buttonBuy": "Comprar",
       "buttonFaucet": "Faucet Beta"
     },
-    "earnMoney": "Gana dinero por ver, compartir e interactuar con contenido digital",
+    "earnMoney": "Gana criptomonedas por ver, compartir e interactuar con contenido digital",
     "connectingCreators": "Conectando creadores de contenido, anunciantes y personas de la mejor forma posible.",
     "icoPhaseBonus": "Fase <span class=\"w-light-blue\">{phase}</span> ({bonus}% Bonus)",
     "buyWithBonus": "Compra WNK con {bonus}% bonus",
     "whitepaperWoonkly": "Whitepaper Woonkly",
     "attentionValue": "La atención de las personas tiene un valor medible",
-    "contentCreators": "Creadores de contenido y anunciantes tienen algo en común. Quieren llegar a su público objetivo y pagarán por hacerlo, pero esta vez, a los usuarios que los ven.",
+    "contentCreators": "Creadores de contenido y anunciantes tienen algo en común. Quieren llegar a su público objetivo y pagarán por hacerlo, pero esta vez, en vez de a agencias y medios, a los usuarios que lo ven.",
     "woonklyWhatIs": "¿Qué es Woonkly?",
     "woonklyIsTheFirstPlatform": "Woonkly es la primera plataforma que paga a las personas por ver y compartir contenido digital (vídeo, imagen y texto) de diferentes plataformas.",
-    "signUpInWoonkly": "El registro en woonkly es gratuito tanto para creadores de contenido como para usuarios. Los creadores de contenido pueden enlazar en woonkly sus vídeos, imágenes o posts de diferentes plataformas de manera gratuita para con ello conseguir más exposición o si lo prefieren pueden pagarle a su público objetivo usando nuestra criptomoneda “woonk” para conseguir miles e incluso millones de visualizaciones o interactuaciones en cuestión de horas, minutos o incluso segundos.",
+    "signUpInWoonkly": "El registro en Woonkly es gratuito tanto para creadores de contenido como para usuarios. Los creadores de contenido pueden enlazar en Woonkly sus vídeos, imágenes o posts de diferentes plataformas de manera gratuita y de esta manera conseguir mayor exposición de los mismos. O si lo desean, pueden pagarle a directamente a su público objetivo usando nuestra criptomoneda “Woonk” y conseguir miles e incluso millones de visualizaciones o interactuaciones en cuestión de horas, minutos o incluso segundos.",
     "discoverWoonklyTv": "Descubre Woonkly TV 1.0",
-    "contentCreatorsAnyPlatform": "Los creadores de contenido de cualquier plataforma centralizada (Youtube, imeo…) o descentralizada (Viuli…) y los anunciantes de todo el mundo tienen al fin una herramienta para alcanzar a su público objetivo de manera casi instantánea y por un costo varias veces inferior a cualquier otro método publicitario y los usuarios tienen al fin una herramienta que les permite ganar dinero por su tiempo, su atención y su interacción con vídeos que les interesen.",
+    "contentCreatorsAnyPlatform": "Los creadores de contenido de cualquier plataforma centralizada (Youtube, Vimeo, etc.) o descentralizada (Como el caso de Viuly) y los anunciantes de todo el mundo, tienen al fin una herramienta para alcanzar a su público objetivo de manera casi instantánea y por un costo varias veces inferior a cualquier otro método publicitario. Por otro lado, los usuarios tienen al fin una herramienta que les permite ganar dinero (en criptomonedas) por su tiempo, su atención y su interacción con contenido publicitario que les interesen.",
     "woonklyTvBriefs": [
       "Woonkly nace de la idea de que compartir es la base del éxito. Nuestra filosofía consiste en que todos ganen.",
       "Piénsalo. A nivel internacional la inversión publicitaria anual supera los 600 mil millones de dólares, o 600 billones. Imagina que parte de ese dinero se fuera directamente a las personas que ven esa publicidad. ¿No sería más justo? ¿Más lógico?.",
-      "Eso es Woonkly. La conexión entre el capital que invierten las empresas o artistas en publicidad y las personas que ven los vídeos de dichas empresas o artistas. Conectamos el capital de los"
+      "Eso es Woonkly. La conexión entre el capital que invierten las empresas o artistas en publicidad y las personas que ven los vídeos de dichas empresas o artistas."
     ],
     "principalBenefits": "Los beneficios principales para cada grupo son",
     "benefits": [
-      "Gana dinero por ver vídeos",
-      "Gana dinero por compartir contenido digital",
-      "Gana dinero por interactuar con Vídeos, imágenes y post",
-      "Participa en loterías diarias gratuitas de criptomonedas"
+      "Gana criptomonedas por ver vídeos.",
+      "Gana criptomonedas por compartir contenido digital.",
+      "Gana criptomonedas por interactuar con Vídeos, imágenes y post.",
+      "Gana criptomonedas por estar conectado a la plataforma."
     ],
     "acquireTokens": "Adquirir Tokens",
-    "withTheObjectiveOf": "Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido , hemos creado nuestra criptomoneda, llamada “woonk”. Los creadores de contenido y anunciantes pueden comprar woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial de nuestra criptomoneda:",
+    "withTheObjectiveOf": "Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido digital , hemos creado nuestra criptomoneda, llamada “Woonk”. Los creadores de contenido y anunciantes pueden comprar Woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial de nuestra criptomoneda:",
     "acquireTokensFirstList": [
       {
           "title": "1 Mayo-1 Junio:",
@@ -63,8 +63,8 @@
     ],
     "acquireTokenSecondList": [
       {
-          "title": "Inicio",
-          "content": "1 Mayo 2018"
+          "title": "Inicio Oficial ICO",
+          "content": "1 Septiembre 2018"
       },
       {
           "title": "Número de Woonks a la venta",
