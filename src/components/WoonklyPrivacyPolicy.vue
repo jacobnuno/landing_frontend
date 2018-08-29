@@ -10,7 +10,7 @@
                 <h1>Aviso de privacidad</h1>
 
                 <p id="date-update">Fecha última actualización: 05 de julio de 2018</p>
-                <strong>INVERSIÓN SEMÁNTICA SAPI DE CV</strong> (en adelante “Woonkly”) en
+                <b>INVERSIÓN SEMÁNTICA SAPI DE CV</b> (en adelante “Woonkly”) en
                 cumplimiento con Ley Federal de Protección de Datos Personales en Posesión
                 de Particulares, pone a su disposición el presente Aviso de Privacidad para
                 informarle la forma en que recabamos, transferimos y utilizamos su información
@@ -214,10 +214,14 @@
         text-align: center;
     }
     h1{
-        text-align: center
+        text-align: center;
     }
     .text-privacy-policy{
-        margin-top: 4em;
+        padding:            4em 5em;
+        margin-top:         4em;
+        background-color:   var(--woonkly-black-blue);
+        color:              white;
+        text-align:         justify;
     }
     .content-wrapper {
         padding: 0 1em;

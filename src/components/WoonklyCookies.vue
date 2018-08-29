@@ -15,7 +15,7 @@
             <p>
                 <h1>Política de cookies</h1><br>
 
-                <strong>Descargo de responsabilidad de cookies (el cartelito pequeño)</strong><br><br>
+                <b>Descargo de responsabilidad de cookies (el cartelito pequeño)</b><br><br>
 
                 Woonkly utiliza cookies. Esto nos ayuda a proporcionarle una buena experiencia al navegar por nuestro sitio, así como a mejorarlo. Si continúa navegando, presta su consentimiento para usar nuestras cookies. Nuestra política de privacidad explica cómo cuidamos sus datos personales cuando visita nuestro sitio web y le informa sobre sus derechos de privacidad y cómo la ley lo protege. Para obtener más información, lea nuestra Política sobre cookies. Leer más...<br><br>
 
@@ -52,7 +52,11 @@
         text-align: center
     }
     .text-cookies{
+        padding:            4em 5em;
         margin-top: 4em;
+        background-color:   var(--woonkly-black-blue);
+        color:              white;
+        text-align:         justify;
     }
 
     .content-wrapper {
