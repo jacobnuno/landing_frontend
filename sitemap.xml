@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://dev.woonkly.com/#/</loc>
+        <priority>1.0</priority>
+        <changefreq>monthly</changefreq>
+        <lastmod>2018-08-17</lastmod>
+    </url>
+
+    <url>
+        <loc>http://dev.woonkly.com/#/privacy-policy</loc>
+        <priority>0.8</priority>
+        <changefreq>yearly</changefreq>
+        <lastmod>2018-08-28</lastmod>
+    </url>
+
+    <url>
+        <loc>http://dev.woonkly.com/#/about</loc>
+        <priority>0.8</priority>
+        <changefreq>yearly</changefreq>
+        <lastmod>2018-08-28</lastmod>
+    </url>
+
+    <url>
+        <loc>http://dev.woonkly.com/#/cookies</loc>
+        <priority>0.5</priority>
+        <changefreq>yearly</changefreq>
+        <lastmod>2018-08-28</lastmod>
+    </url>
+
+</urlset>
+
+
