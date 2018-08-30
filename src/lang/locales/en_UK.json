@@ -1,5 +1,6 @@
 {
   "message": {
+
     "menu": {
       "project": "Project",
       "tokens": "Tokens",
@@ -137,7 +138,7 @@
         "description": "Entry into the Startups incubator Fitec1 and investment of 75,000USD"
       },
       { "title": "March 2018",
-        "description": "Acceleration in Tecnológico de Monterrey Campus Guadalajara."
+        "description": "Acceleration in Tecnológico de Monterrey Campus Guadalajara."
       },
       { "title": "March 2018",
         "description": "ICO's preparation."
@@ -248,6 +249,7 @@
       "yourEmail": "Your email",
       "yourMessage": "Your message"
     },
-    "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Privacy Politics |"
+    "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Privacy Politics |",
+    "woonklyTelegramLink": "https://t.me/woonklyen"
   }
 }

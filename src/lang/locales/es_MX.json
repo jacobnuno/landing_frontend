@@ -7,7 +7,8 @@
       "team": "Equipo",
       "faqs": "FAQs",
       "buttonBuy": "Comprar",
-      "buttonFaucet": "Faucet Beta"
+      "buttonFaucet": "Faucet Beta",
+      "buttonLogin": "Entrar"
     },
     "earnMoney": "Gana criptomonedas por ver, compartir e interactuar con contenido digital",
     "connectingCreators": "Conectando creadores de contenido, anunciantes y personas de la mejor forma posible.",
@@ -37,28 +38,34 @@
     "withTheObjectiveOf": "Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido digital , hemos creado nuestra criptomoneda, llamada “Woonk”. Los creadores de contenido y anunciantes pueden comprar Woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial de nuestra criptomoneda:",
     "acquireTokensFirstList": [
       {
-          "title": "1 Mayo-1 Junio:",
-          "content": "Venta privada para suscriptores de Mr. Santos en Youtube (50%Bonus)"
+          "title": "1 Mayo - 1 Junio:",
+          "content": "Venta privada para suscriptores de Mr. Santos en Youtube (50%Bonus)",
+          "endTime": "1527811200"
       },
       {
-          "title": "1 Junio-1 Julio:",
-          "content": "Venta privada para suscriptores de otros canales de Youtube (40% Bonus)"
+          "title": "1 Junio - 1 Julio:",
+          "content": "Venta privada para suscriptores de otros canales de Youtube (40% Bonus)",
+          "endTime": "1530403200"
       },
       {
-          "title": "1 Julio- 1 Septiembre:",
-          "content": "Venta privada (Capitales de Emiratos Árabes, Hong Kong y Europa) (30% Bonus)"
+          "title": "1 Julio - 1 Septiembre:",
+          "content": "Venta privada (Capitales de Emiratos Árabes, Hong Kong y Europa) (30% Bonus)",
+          "endTime": "1535760000"
       },
       {
-          "title": "1 Septiembre-1 Octubre:",
-          "content": "ICO Fase 1 (20% Bonus)"
+          "title": "1 Septiembre - 1 Octubre:",
+          "content": "ICO Fase 1 (20% Bonus)",
+          "endTime": "1538352000"
       },
       {
-          "title": "1 Octubre- 1 Noviembre:",
-          "content": "ICO Fase 2 (10% Bonus)"
+          "title": "1 Octubre - 1 Noviembre:",
+          "content": "ICO Fase 2 (10% Bonus)",
+          "endTime": "1541030400"
       },
       {
-          "title": "1 Noviembre- 31 Diciembre:",
-          "content": "ICO Fase 3 (0% Bonus)"
+          "title": "1 Noviembre - 31 Diciembre:",
+          "content": "ICO Fase 3 (0% Bonus)",
+          "endTime": "1543622400"
       }
     ],
     "acquireTokenSecondList": [
@@ -93,7 +100,6 @@
     "teamMembers": {
         "santos": { "position": "Presidente & CEO" },
         "mateiAntohi": { "position": "Co-Fundador" },
-        "davidLeonardo": { "position": "Dir. de Operaciones" },
         "oscarCardenas": { "position": "Director de Blockchain" },
         "saraSantos": { "position": "Directora de Marketing" },
         "carlosPavia": { "position": "Dir. de Desarollo Web" },
@@ -104,7 +110,7 @@
         "kevinQuino": { "position": "Diseñador UX & UI" },
         "juanSandoval": { "position": "Desarrollador" },
         "jorgeVillasenor": { "position": "Desarrollador Web" },
-        "ilichArredondo": { "position": "Desarrollador Frontend" },
+        "ilichArredondo": { "position": "Frontend Lead" },
         "derekJones": { "position": "Financial Blockchain Manager" },
         "ghaliElKasri": { "position": "Arquitecto de Blockchain" },
         "ghitaElKasri": { "position": "Blockchain financial arquitect" },
@@ -121,7 +127,8 @@
         "danielMuvdi": { "position": "Advisor" },
         "mendySrugo": { "position": "Advisor & Investor" },
         "davidBattaglia": { "position": "Advisor" },
-        "robertoMedrano": { "position": "Advisor" }
+        "robertoMedrano": { "position": "Advisor" },
+        "davidLeonardo": { "position": "Inversor" }
     },
     "roadMapMilestones": [
       { "title": "Enero 2017",
@@ -248,6 +255,17 @@
       "yourEmail": "Tu Email",
       "yourMessage": "Tu Mensaje"
     },
-    "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Políticas de privacidad |"
+    "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Políticas de privacidad |",
+    "carousel": {
+      "amsterdam": {
+        "title": "Woonkly en Amsterdam",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+      },
+      "bef": {
+        "title": "Woonkly en Blockchain Economic Forum",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+      }
+    },
+    "woonklyTelegramLink": "https://t.me/woonklyes"
   }
 }

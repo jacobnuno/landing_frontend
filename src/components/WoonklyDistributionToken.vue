@@ -51,26 +51,14 @@ export default {
 #woonkly-dis-token {
   background: var(--woonkly-black-blue);
   position: relative;
+
+  & > .columns.is-mobile.is-multiline {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
   .blue-line {
     display: none;
-  }
-
-  .use-funds {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    h3.title {
-      margin-bottom: 1em;
-    }
-  }
-
-  #use-funds-svg {
-    max-width: 100%;
-    margin-top: -4em;
-    margin-bottom: -6em;
-    @media screen and (min-width: 410px) {
-      margin-top: 0;
-    }
   }
 }
 // changes the css properties if the size of the screen is equal or bigger than a tablet
@@ -78,15 +66,6 @@ export default {
   #woonkly-dis-token {
     .blue-line {
       display: inline;
-    }
-
-    .use-funds {
-      h3.title {
-        margin-bottom: 30px;
-        @media screen and (min-width: 890px) {
-          margin-bottom: 65px;
-        }
-      }
     }
 
     #blue-line-left {

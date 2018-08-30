@@ -46,14 +46,8 @@ export default {
         player = new YT.Player('woonkly-video-container', {
           width,
           height,
-          videoId: 'X7MUGidMIgw',
-          events: {
-            'onReady': function (event) {
-              event.target.mute()
-            }
-          },
+          videoId: 'uihUNcGTe9A',
           playerVars: {
-            autoplay: 1,
             modestbranding: 1,
             enablejsapi: 1
           }
@@ -76,6 +70,9 @@ export default {
 #woonkly-video-with-frame {
   position: relative;
   z-index: 100;
+  max-width: 600px;
+  margin: 0 auto;
+
   #woonkly-video-container {
     position: absolute;
     left: 3.2%;
