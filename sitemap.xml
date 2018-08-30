@@ -4,27 +4,34 @@
     <url>
         <loc>http://dev.woonkly.com/#/</loc>
         <priority>1.0</priority>
-        <changefreq>monthly</changefreq>
-        <lastmod>2018-08-17</lastmod>
+        <changefreq>yearly</changefreq>
+        <lastmod>2018-09-01</lastmod>
     </url>
 
     <url>
         <loc>http://dev.woonkly.com/#/privacy-policy</loc>
         <priority>0.8</priority>
         <changefreq>yearly</changefreq>
-        <lastmod>2018-08-28</lastmod>
+        <lastmod>2018-09-01</lastmod>
     </url>
 
     <url>
         <loc>http://dev.woonkly.com/#/about</loc>
         <priority>0.8</priority>
         <changefreq>yearly</changefreq>
-        <lastmod>2018-08-28</lastmod>
+        <lastmod>2018-09-01</lastmod>
     </url>
 
     <url>
         <loc>http://dev.woonkly.com/#/cookies</loc>
         <priority>0.5</priority>
+        <changefreq>yearly</changefreq>
+        <lastmod>2018-08-28</lastmod>
+    </url>
+
+    <url>
+        <loc>http://dev.woonkly.com/#/not-found</loc>
+        <priority>0.8</priority>
         <changefreq>yearly</changefreq>
         <lastmod>2018-08-28</lastmod>
     </url>
