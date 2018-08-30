@@ -248,6 +248,12 @@
       "yourEmail": "Tu Email",
       "yourMessage": "Tu Mensaje"
     },
-    "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Políticas de privacidad |"
+    "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | ",
+    "privacyPolicyLink":{
+      "title":"Políticas de privacidad | "
+    },
+    "cookiesLink":{
+      "title":"Uso de cookies"
+    }
   }
 }

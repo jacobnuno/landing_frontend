@@ -21,7 +21,11 @@
         </a>
     </div>
     <div class="w-div">
-      <p class="is-size-7-mobile is-size-5-tablet">{{ $t('message.copyRight') }}</p>
+      <p class="is-size-7-mobile is-size-5-tablet">
+          {{ $t('message.copyRight') }}
+          <router-link to="/privacy-policy" id="text-cookies-and-copyrights">{{ $t('message.privacyPolicyLink.title') }}</router-link>
+          <router-link to="/cookies" id="text-cookies-and-copyrights">{{$t('message.cookiesLink.title')}}</router-link>
+      </p>
     </div>
   </footer>
 
@@ -77,5 +81,9 @@ export default {
     transform: rotate(230deg) scale(1.3);
   }
   100% { transform: rotate(360deg) scale(1) }
+}
+
+#text-cookies-and-copyrights{
+    color: rgb(255,255,255);
 }
 </style>
