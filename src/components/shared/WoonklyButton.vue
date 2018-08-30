@@ -13,132 +13,132 @@
 
 <script>
 export default {
- props: {
-   href: {
-     default: null
-   },
-   buttonClass: ""
- },
- computed: {
-   chooseClass: function() {
-     switch (this.buttonClass) {
-       case "woonkly-button-light-to-dark": {
-       }
-       case "woonkly-button-opacity-to-light": {
-       }
-       case "woonkly-button": {
-         return this.buttonClass;
-       }
-       default: {
-         return "woonkly-button";
-       }
-     }
-   }
- }
+  props: {
+    href: {
+      default: null
+    },
+    buttonClass: ''
+  },
+  computed: {
+    chooseClass: function () {
+      switch (this.buttonClass) {
+        case 'woonkly-button-light-to-dark':
+          {}
+        case 'woonkly-button-opacity-to-light':
+          {}
+        case 'woonkly-button':
+          {
+            return this.buttonClass;
+          }
+        default:
+          {
+            return 'woonkly-button';
+          }
+      }
+    }
+  }
 };
 </script>
 
 
 <style lang="scss">
 .woonkly-button {
- border: none;
- background: none;
- color: var(--woonkly-light-blue) !important;
- padding: 0.25em;
- border: 0.8px var(--woonkly-light-blue-quarter-opacity) solid;
- cursor: pointer;
- border-radius: 3em;
- font-size: 12.5px;
- white-space: nowrap;
+  border: none;
+  background: none;
+  color: var(--woonkly-light-blue) !important;
+  padding: 0.25em;
+  border: 0.8px var(--woonkly-light-blue-quarter-opacity) solid;
+  cursor: pointer;
+  border-radius: 3em;
+  font-size: 12.5px;
+  white-space: nowrap;
 
- .inner-border {
-   border-radius: inherit;
-   padding: 8.5px;
-   display: block;
-   border: 1.2px var(--woonkly-light-blue) solid;
-   font-size: 1.19em;
- }
+  .inner-border {
+    border-radius: inherit;
+    padding: 8.5px;
+    display: block;
+    border: 1.2px var(--woonkly-light-blue) solid;
+    font-size: 1.19em;
+  }
 
- &:focus,
- &:hover {
-   text-decoration: none;
-   -webkit-box-shadow: 0px 0px 85px 4px #08c2ee;
-   box-shadow: 0px 0px 40px 4px var(--woonkly-light-blue-quarter-opacity);
-   color: white !important;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 85px 4px #08c2ee;
+    box-shadow: 0px 0px 40px 4px var(--woonkly-light-blue-quarter-opacity);
+    color: white !important;
 
-   .inner-border {
-     background: var(--woonkly-gradient-dark-opacity-to-light-right);
-   }
- }
+    .inner-border {
+      background: var(--woonkly-gradient-dark-opacity-to-light-right);
+    }
+  }
 }
+
 .woonkly-button-opacity-to-light {
- border: none;
- color: white !important;
- padding: 0.25em;
- border: 0.8px var(--woonkly-light-blue-quarter-opacity) solid;
- cursor: pointer;
- border-radius: 3em;
- font-size: 12.5px;
- text-decoration: none;
- background: none;
+  border: none;
+  color: white !important;
+  padding: 0.25em;
+  border: 0.8px var(--woonkly-light-blue-quarter-opacity) solid;
+  cursor: pointer;
+  border-radius: 3em;
+  font-size: 12.5px;
+  text-decoration: none;
+  background: none;
   white-space: nowrap;
 
+  .inner-border {
+    background: none;
+    background: var(--woonkly-gradient-opacity-to-light-right);
+    border-radius: inherit;
+    padding: 8.5px;
+    display: block;
+    font-size: 1.19em;
+  }
 
- .inner-border {
-   background: none;
-   background: var(--woonkly-gradient-opacity-to-light-right);
-   border-radius: inherit;
-   padding: 8.5px;
-   display: block;
-   font-size: 1.19em;
- }
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 85px 4px #08c2ee;
+    box-shadow: 0px 0px 40px 4px var(--woonkly-light-blue-quarter-opacity);
+    color: white !important;
 
- &:focus,
- &:hover {
-   text-decoration: none;
-   -webkit-box-shadow: 0px 0px 85px 4px #08c2ee;
-   box-shadow: 0px 0px 40px 4px var(--woonkly-light-blue-quarter-opacity);
-   color: white !important;
-
-   .inner-border {
-     background: var(--woonkly-light-blue);
-   }
- }
-
+    .inner-border {
+      background: var(--woonkly-light-blue);
+    }
+  }
 }
+
 .woonkly-button-light-to-dark {
- border: none;
- color: white !important;
- padding: 0.25em;
- border: 0.8px var(--woonkly-light-blue-quarter-opacity) solid;
- cursor: pointer;
- border-radius: 3em;
- font-size: 12.5px;
- text-decoration: none;
- background: none;
+  border: none;
+  color: white !important;
+  padding: 0.25em;
+  border: 0.8px var(--woonkly-light-blue-quarter-opacity) solid;
+  cursor: pointer;
+  border-radius: 3em;
+  font-size: 12.5px;
+  text-decoration: none;
+  background: none;
   white-space: nowrap;
 
+  .inner-border {
+    background: none;
+    background: var(--woonkly-gradient-light-to-dark-right);
+    border-radius: inherit;
+    padding: 8.5px;
+    display: block;
+    font-size: 1.19em;
+  }
 
- .inner-border {
-   background: none;
-   background: var(--woonkly-gradient-light-to-dark-right);
-   border-radius: inherit;
-   padding: 8.5px;
-   display: block;
-   font-size: 1.19em;
- }
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 85px 4px #08c2ee;
+    box-shadow: 0px 0px 40px 4px var(--woonkly-light-blue-quarter-opacity);
 
- &:focus,
- &:hover {
-   text-decoration: none;
-   -webkit-box-shadow: 0px 0px 85px 4px #08c2ee;
-   box-shadow: 0px 0px 40px 4px var(--woonkly-light-blue-quarter-opacity);
-   .inner-border {
-     background: var(--woonkly-light-blue);
-   }
- }
-
- 
+    .inner-border {
+      background: var(--woonkly-light-blue);
+    }
+  }
 }
 </style>
 
