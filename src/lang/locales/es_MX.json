@@ -261,8 +261,7 @@
     },
     "cookiesLink":{
       "title":"Uso de cookies"
-    }
-
+    },
     "carousel": {
       "amsterdam": {
         "title": "Woonkly en Amsterdam",
@@ -274,6 +273,5 @@
       }
     },
     "woonklyTelegramLink": "https://t.me/woonklyes"
-
   }
 }
