@@ -31,7 +31,7 @@ export default new Router({
       component: Cookies
     },
     {
-      path: '/not-found',
+      path: '*',
       name: 'not found',
       component: NotFound
     }
