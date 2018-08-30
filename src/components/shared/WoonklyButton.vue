@@ -61,6 +61,10 @@ export default {
     display: block;
     border: 1.2px var(--woonkly-light-blue) solid;
   }
+
+  @media screen and (max-width: 1104px) {
+    font-size: 10px;
+  }
 }
 .woonkly-button-opacity-to-light {
   border: none;
@@ -81,6 +85,10 @@ export default {
     display: block;
     font-size: 1.19em;
     //text-decoration: none;
+  }
+
+  @media screen and (max-width: 1104px) {
+    font-size: 10px;
   }
 }
 .woonkly-button-light-to-dark {
