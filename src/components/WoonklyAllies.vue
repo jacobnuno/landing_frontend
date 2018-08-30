@@ -13,9 +13,10 @@
       <figure>
         <img id="unitedcoin" src="/img/icons/unitedcoin.png" alt="United Coin">
       </figure>
-      <span class="is-size-1-desktop is-size-5-mobile has-text-centered is-uppercase">{{$t('message.seenOn')}}</span>
-      <div class="black-line"></div>
+      <!-- <span class="is-size-1-desktop is-size-5-mobile has-text-centered is-uppercase">{{$t('message.seenOn')}}</span>
+      <div class="black-line"></div> -->
       <!-- static images  -->
+      <!--
       <div class="seen-on">
         <figure>
           <img id="forbes" src="/img/icons/forbes.png" alt="Forbes">
@@ -29,7 +30,7 @@
         <figure>
           <img id="bef-logo" src="/img/icons/bef.svg" alt="Blockchain Economic Forum">
         </figure>
-      </div>
+      </div> -->
       <!-- static circle decoration svg  -->
       <img class="rellax" data-rellax-speed="0.4" src="/img/icons/gradient-circle1.svg" id="gradient-circle-right" alt="Woonkly blue circle">
     </div>

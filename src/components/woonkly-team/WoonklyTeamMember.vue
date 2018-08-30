@@ -78,9 +78,9 @@ export default {
         position: relative;
         z-index: 10;
         transition: transform 450ms cubic-bezier(.68,-0.55,.27,1.55);
-        transform: rotate(15deg);
+        transform: rotate(0);
         &:hover {
-          transform: rotate(0);
+          transform: rotate(15deg);
         }
       }
     }

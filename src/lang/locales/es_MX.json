@@ -7,64 +7,71 @@
       "team": "Equipo",
       "faqs": "FAQs",
       "buttonBuy": "Comprar",
-      "buttonFaucet": "Faucet Beta"
+      "buttonFaucet": "Faucet Beta",
+      "buttonLogin": "Entrar"
     },
-    "earnMoney": "Gana dinero por ver, compartir e interactuar con contenido digital",
+    "earnMoney": "Gana criptomonedas por ver, compartir e interactuar con contenido digital",
     "connectingCreators": "Conectando creadores de contenido, anunciantes y personas de la mejor forma posible.",
     "icoPhaseBonus": "Fase <span class=\"w-light-blue\">{phase}</span> ({bonus}% Bonus)",
     "buyWithBonus": "Compra WNK con {bonus}% bonus",
     "whitepaperWoonkly": "Whitepaper Woonkly",
     "attentionValue": "La atención de las personas tiene un valor medible",
-    "contentCreators": "Creadores de contenido y anunciantes tienen algo en común. Quieren llegar a su público objetivo y pagarán por hacerlo, pero esta vez, a los usuarios que los ven.",
+    "contentCreators": "Creadores de contenido y anunciantes tienen algo en común. Quieren llegar a su público objetivo y pagarán por hacerlo, pero esta vez, en vez de a agencias y medios, a los usuarios que lo ven.",
     "woonklyWhatIs": "¿Qué es Woonkly?",
     "woonklyIsTheFirstPlatform": "Woonkly es la primera plataforma que paga a las personas por ver y compartir contenido digital (vídeo, imagen y texto) de diferentes plataformas.",
-    "signUpInWoonkly": "El registro en woonkly es gratuito tanto para creadores de contenido como para usuarios. Los creadores de contenido pueden enlazar en woonkly sus vídeos, imágenes o posts de diferentes plataformas de manera gratuita para con ello conseguir más exposición o si lo prefieren pueden pagarle a su público objetivo usando nuestra criptomoneda “woonk” para conseguir miles e incluso millones de visualizaciones o interactuaciones en cuestión de horas, minutos o incluso segundos.",
+    "signUpInWoonkly": "El registro en Woonkly es gratuito tanto para creadores de contenido como para usuarios. Los creadores de contenido pueden enlazar en Woonkly sus vídeos, imágenes o posts de diferentes plataformas de manera gratuita y de esta manera conseguir mayor exposición de los mismos. O si lo desean, pueden pagarle a directamente a su público objetivo usando nuestra criptomoneda “Woonk” y conseguir miles e incluso millones de visualizaciones o interactuaciones en cuestión de horas, minutos o incluso segundos.",
     "discoverWoonklyTv": "Descubre Woonkly TV 1.0",
-    "contentCreatorsAnyPlatform": "Los creadores de contenido de cualquier plataforma centralizada (Youtube, imeo…) o descentralizada (Viuli…) y los anunciantes de todo el mundo tienen al fin una herramienta para alcanzar a su público objetivo de manera casi instantánea y por un costo varias veces inferior a cualquier otro método publicitario y los usuarios tienen al fin una herramienta que les permite ganar dinero por su tiempo, su atención y su interacción con vídeos que les interesen.",
+    "contentCreatorsAnyPlatform": "Los creadores de contenido de cualquier plataforma centralizada (Youtube, Vimeo, etc.) o descentralizada (Como el caso de Viuly) y los anunciantes de todo el mundo, tienen al fin una herramienta para alcanzar a su público objetivo de manera casi instantánea y por un costo varias veces inferior a cualquier otro método publicitario. Por otro lado, los usuarios tienen al fin una herramienta que les permite ganar dinero (en criptomonedas) por su tiempo, su atención y su interacción con contenido publicitario que les interesen.",
     "woonklyTvBriefs": [
       "Woonkly nace de la idea de que compartir es la base del éxito. Nuestra filosofía consiste en que todos ganen.",
       "Piénsalo. A nivel internacional la inversión publicitaria anual supera los 600 mil millones de dólares, o 600 billones. Imagina que parte de ese dinero se fuera directamente a las personas que ven esa publicidad. ¿No sería más justo? ¿Más lógico?.",
-      "Eso es Woonkly. La conexión entre el capital que invierten las empresas o artistas en publicidad y las personas que ven los vídeos de dichas empresas o artistas. Conectamos el capital de los"
+      "Eso es Woonkly. La conexión entre el capital que invierten las empresas o artistas en publicidad y las personas que ven los vídeos de dichas empresas o artistas."
     ],
     "principalBenefits": "Los beneficios principales para cada grupo son",
     "benefits": [
-      "Gana dinero por ver vídeos",
-      "Gana dinero por compartir contenido digital",
-      "Gana dinero por interactuar con Vídeos, imágenes y post",
-      "Participa en loterías diarias gratuitas de criptomonedas"
+      "Gana criptomonedas por ver vídeos.",
+      "Gana criptomonedas por compartir contenido digital.",
+      "Gana criptomonedas por interactuar con Vídeos, imágenes y post.",
+      "Gana criptomonedas por estar conectado a la plataforma."
     ],
     "acquireTokens": "Adquirir Tokens",
-    "withTheObjectiveOf": "Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido , hemos creado nuestra criptomoneda, llamada “woonk”. Los creadores de contenido y anunciantes pueden comprar woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial de nuestra criptomoneda:",
+    "withTheObjectiveOf": "Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido digital , hemos creado nuestra criptomoneda, llamada “Woonk”. Los creadores de contenido y anunciantes pueden comprar Woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial de nuestra criptomoneda:",
     "acquireTokensFirstList": [
       {
-          "title": "1 Mayo-1 Junio:",
-          "content": "Venta privada para suscriptores de Mr. Santos en Youtube (50%Bonus)"
+          "title": "1 Mayo - 1 Junio:",
+          "content": "Venta privada para suscriptores de Mr. Santos en Youtube (50%Bonus)",
+          "endTime": "1527811200"
       },
       {
-          "title": "1 Junio-1 Julio:",
-          "content": "Venta privada para suscriptores de otros canales de Youtube (40% Bonus)"
+          "title": "1 Junio - 1 Julio:",
+          "content": "Venta privada para suscriptores de otros canales de Youtube (40% Bonus)",
+          "endTime": "1530403200"
       },
       {
-          "title": "1 Julio- 1 Septiembre:",
-          "content": "Venta privada (Capitales de Emiratos Árabes, Hong Kong y Europa) (30% Bonus)"
+          "title": "1 Julio - 1 Septiembre:",
+          "content": "Venta privada (Capitales de Emiratos Árabes, Hong Kong y Europa) (30% Bonus)",
+          "endTime": "1535760000"
       },
       {
-          "title": "1 Septiembre-1 Octubre:",
-          "content": "ICO Fase 1 (20% Bonus)"
+          "title": "1 Septiembre - 1 Octubre:",
+          "content": "ICO Fase 1 (20% Bonus)",
+          "endTime": "1538352000"
       },
       {
-          "title": "1 Octubre- 1 Noviembre:",
-          "content": "ICO Fase 2 (10% Bonus)"
+          "title": "1 Octubre - 1 Noviembre:",
+          "content": "ICO Fase 2 (10% Bonus)",
+          "endTime": "1541030400"
       },
       {
-          "title": "1 Noviembre- 31 Diciembre:",
-          "content": "ICO Fase 3 (0% Bonus)"
+          "title": "1 Noviembre - 31 Diciembre:",
+          "content": "ICO Fase 3 (0% Bonus)",
+          "endTime": "1543622400"
       }
     ],
     "acquireTokenSecondList": [
       {
-          "title": "Inicio",
-          "content": "1 Mayo 2018"
+          "title": "Inicio Oficial ICO",
+          "content": "1 Septiembre 2018"
       },
       {
           "title": "Número de Woonks a la venta",
@@ -93,7 +100,6 @@
     "teamMembers": {
         "santos": { "position": "Presidente & CEO" },
         "mateiAntohi": { "position": "Co-Fundador" },
-        "davidLeonardo": { "position": "Dir. de Operaciones" },
         "oscarCardenas": { "position": "Director de Blockchain" },
         "saraSantos": { "position": "Directora de Marketing" },
         "carlosPavia": { "position": "Dir. de Desarollo Web" },
@@ -104,7 +110,7 @@
         "kevinQuino": { "position": "Diseñador UX & UI" },
         "juanSandoval": { "position": "Desarrollador" },
         "jorgeVillasenor": { "position": "Desarrollador Web" },
-        "ilichArredondo": { "position": "Desarrollador Frontend" },
+        "ilichArredondo": { "position": "Frontend Lead" },
         "derekJones": { "position": "Financial Blockchain Manager" },
         "ghaliElKasri": { "position": "Arquitecto de Blockchain" },
         "ghitaElKasri": { "position": "Blockchain financial arquitect" },
@@ -121,44 +127,45 @@
         "danielMuvdi": { "position": "Advisor" },
         "mendySrugo": { "position": "Advisor & Investor" },
         "davidBattaglia": { "position": "Advisor" },
-        "robertoMedrano": { "position": "Advisor" }
+        "robertoMedrano": { "position": "Advisor" },
+        "davidLeonardo": { "position": "Inversor" }
     },
     "roadMapMilestones": [
       { "title": "Enero 2017",
-        "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD."
+        "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD."
       },
       { "title": "Junio 2017",
-        "description": "Creación primer MVP."
+        "description": "Creación primer MVP."
       },
       { "title": "Enero 2018",
-        "description": "Ganador aceleración mejor Startup Plug and Play Silicon Valley LATAM 2018."
+        "description": "Ganador aceleración mejor Startup Plug and Play Silicon Valley LATAM 2018."
       },
       { "title": "Febrero 2018",
-        "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD."
+        "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD."
       },
       { "title": "Marzo 2018",
-        "description": "Aceleración en Tecnológico de Monterrey de Guadalajara."
+        "description": "Aceleración en Tecnológico de Monterrey de Guadalajara."
       },
       { "title": "Marzo 2018",
-        "description": "Preparación de ICO."
+        "description": "Preparación de ICO."
       },
       { "title": "Abril 2018",
-        "description": "Creación de plataforma ICO, Token ERC20 y Smart contracts."
+        "description": "Creación de plataforma ICO, Token ERC20 y Smart contracts."
       },
       { "title": "Mayo 2018",
-        "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0."
+        "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0."
       },
       { "title": "Julio 2018",
-        "description": "Comienza la venta privada a inversores y fondos de inversión de capital riesgo (VCs)."
+        "description": "Comienza la venta privada a inversores y fondos de inversión de capital riesgo (VCs)."
       },
       { "title": "Septiembre 2018",
-        "description": "Preparación de ICO."
+        "description": "Preparación de ICO."
       },
       { "title": "Enero 2019",
         "description": "Finaliza la ICO y el \"woonk\" es listado en exchanges."
       },
       { "title": "Marzo 2019",
-        "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0."
+        "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0."
       }
     ],
     "tokenDistribution": "Distribución de tokens",
@@ -255,5 +262,18 @@
     "cookiesLink":{
       "title":"Uso de cookies"
     }
+
+    "carousel": {
+      "amsterdam": {
+        "title": "Woonkly en Amsterdam",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+      },
+      "bef": {
+        "title": "Woonkly en Blockchain Economic Forum",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+      }
+    },
+    "woonklyTelegramLink": "https://t.me/woonklyes"
+
   }
 }

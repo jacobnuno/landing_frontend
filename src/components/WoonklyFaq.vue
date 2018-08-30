@@ -26,7 +26,7 @@
         {{$t('message.preIcoAndIco')}}
       </w-gradient-button>
 
-      <w-collabsible v-for="(q, index) in selectedArrayOfQuestions" :collapsible-id="`faqs-${index}`">
+      <w-collabsible v-for="(q, index) in selectedArrayOfQuestions" :key="`faqs-${index}`" :collapsible-id="`faqs-${index}`">
         <template slot="label">{{q.question}}</template>
         <template slot="content">{{q.answer}}</template>
       </w-collabsible>
@@ -48,7 +48,7 @@ export default {
   },
   data () {
     return {
-        selectedQuestions: 'userQuestions'
+      selectedQuestions: 'userQuestions'
     }
   },
   computed: {
@@ -91,6 +91,20 @@ export default {
   text-align: center;
   position: relative;
 
+  .w-new-carousel {
+    position: relative;
+    z-index: 1000;
+    max-width: 800px;
+    margin: 0 auto 2em auto;
+  }
+
+  #woonkly-around-the-world {
+    .tns-item {
+      // max-width: 160px;
+      padding: 0;
+    }
+  }
+
   & > div.title:nth-of-type(2) {
     margin: 3em 0 0 0;
   }
@@ -118,13 +132,17 @@ export default {
     top: 0;
     line-height: .8;
     left: 0;
+    z-index: 1;
   }
 }
+
+// Desktop styles
 @media only screen and (min-width: 769px) {
   #woonkly-faq {
     .w-span {
       font-size: 19em;
       line-height: 1.5;
+      top: 1.55em;
     }
     .woonkly-gradient-button {
       margin: 3em 1em 3em 1em;

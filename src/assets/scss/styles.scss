@@ -1,8 +1,9 @@
 // Import bulma from node_modules
 @import '~bulma/bulma';
+@import 'node_modules/bulma-carousel/dist/css/bulma-carousel.sass';
 
 @import './fonts';
-@import './colors'; 
+@import './colors';
 @import './classes';
 
 // Remove outline to everything

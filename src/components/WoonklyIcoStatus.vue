@@ -15,7 +15,7 @@
     </div>
 
     <div class="column has-text-centered">
-      <w-button>{{$t('message.buyWithBonus', {bonus} )}}</w-button>
+      <w-button :buttonClass="'woonkly-button-light-to-dark'">{{$t('message.buyWithBonus', {bonus} )}}</w-button>
     </div>
     <div class="column has-text-centered">
       <w-button>{{$t('message.whitepaperWoonkly')}}</w-button>
@@ -24,7 +24,7 @@
     <div class="column is-12 counter-wrapper">
       <div class="spark-container">
         <img class="rellax" data-rellax-speed="2" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
-        <img class="rellax" data-rellax-speed="4" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
+        <img class="rellax" data-rellax-speed="1" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
         <img class="rellax" data-rellax-speed="2" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
       </div>
       <div class="counter">
@@ -104,23 +104,21 @@ export default {
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
+      bottom: -10em;
       display: flex;
-      justify-content: space-evenly;
-      transform: translateY(-0.7em);
+      justify-content: space-between;
+      transform: translateY(-5em);
       z-index: -1;
 
       img {
-        width: 32px;
-        // &:nth-of-type(1) {
-        //   width: 10px;
-        // }
-        // &:nth-of-type(2) {
-        //   width: 8px;
-        // }
-        // &:nth-of-type(3) {
-        //   width: 6px;
-        // }
+        width: 2px;
+        &:first-of-type {
+          margin-left: 2.5em;
+        }
+        &:last-of-type {
+          margin-top: 1em;
+          margin-right: 2.5em;
+        }
       }
     }
 
@@ -173,6 +171,35 @@ export default {
 
       .colon {
         line-height: 2em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #woonkly-ico-status {
+
+    .counter-wrapper {
+
+      .spark-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -14em;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-0.7em);
+        z-index: -1;
+
+        img {
+          &:first-of-type {
+            margin-left: -4em;
+          }
+          &:last-of-type {
+            margin-right: -4em;
+          }
+        }
+
       }
     }
   }

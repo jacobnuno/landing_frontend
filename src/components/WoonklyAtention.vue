@@ -1,9 +1,9 @@
 <template>
   <section id="woonkly-atention" class="section">
-    <img id="woonkly-moon" class="rellax glowing-circle" data-rellax-speed="-0.5" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Moon">
-    <img id="triangle" src="/img/icons/transparent-triangle.svg" alt="Woonkly triangle">
     <div class="columns">
       <div class="column is-12-mobile is-half-tablet atention">
+        <img id="woonkly-moon" class="rellax glowing-circle" data-rellax-speed="-0.5" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Moon">
+        <img id="triangle" src="/img/icons/transparent-triangle.svg" alt="Woonkly triangle">
         <div class="wrapper">
           <h3 class="title is-3">{{$t('message.attentionValue')}}</h3>
           <p>{{$t('message.contentCreators')}}</p>
@@ -32,6 +32,10 @@ export default {
   position: relative;
 
   .columns {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+
     & > .atention {
       display: flex;
       flex-direction: column;
@@ -47,11 +51,13 @@ export default {
     z-index: 1;
     width: 7em;
     position: absolute;
+    top: 0;
     left: -22%;
   }
 
   #triangle {
     position: absolute;
+    top: 0;
     width: 8em;
     left: 2em;
   }
@@ -77,6 +83,22 @@ export default {
         align-items: flex-end;
         .wrapper {
           max-width: 500px;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #woonkly-atention {
+
+    .columns {
+      & > .atention {
+        align-items: center;
+        .wrapper {
+          margin-top: -25%;
+          max-width: unset;
         }
       }
     }
