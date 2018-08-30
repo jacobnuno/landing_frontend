@@ -137,7 +137,7 @@ export default {
   transition: background-color 400ms ease-in-out;
 
   &.scrolled {
-    background: var(--woonkly-header);
+    background: var(--woonkly-black-blue);
   }
 
   .hidden {
@@ -199,12 +199,12 @@ export default {
       display: inline-block;
       font-size: 1.5em;
       color: var(--woonkly-light-blue);
-      transition: transform 600ms ease-out;
+      transition: transform 450ms ease-out;
 
       &:hover,
       &:active,
       &:focus {
-        animation: slightly-scale 1s ease-out;
+        transform: scale(1.3);
       }
     }
 

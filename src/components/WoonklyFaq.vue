@@ -2,47 +2,6 @@
   <section v-observe-visibility="{ callback: visibilityChanged, intersection: { threshold: 0.25 } }" id="woonkly-faq">
     <w-divider/>
     <div class="section">
-      <w-carousel :has_description="1">
-        <div class="carousel-item is-active" data="amsterdam">
-          <w-element-carousel :img-url="'https://hipertextual.com/files/2017/02/imagen_17117_social.jpg'">
-          </w-element-carousel>
-        </div>
-        <!-- <div class="carousel-item" data="amsterdam">
-          <w-element-carousel :img-url="'http://www.comingsoon.net/assets/uploads/2018/01/rey-in-star-wars-the-last-jedi-5j.jpg'">
-          </w-element-carousel>
-        </div> -->
-        <div class="carousel-item" data="amsterdam">
-          <w-element-carousel  :img-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png'">
-          </w-element-carousel>
-        </div>
-        <div class="carousel-item" data="bef">
-          <w-element-carousel :img-url="'https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/08/Sphero-Star-wars-r2-d2-bb-9e-796x424.jpg'">
-          </w-element-carousel>
-        </div>
-        <div class="carousel-item" data="bef">
-          <w-element-carousel :img-url="'https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/pyr/55673ed52a98bb41703ed903/dia-star-wars.jpg'">
-          </w-element-carousel>
-        </div>
-      </w-carousel>
-
-      <!-- Rating Carousel -->
-      <w-carousel :has_description="0">
-        <div class="carousel-item">
-          <w-rating-element :rating="4" :img-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png'">4.0</w-rating-element>
-        </div>
-        <div class="carousel-item">
-          <w-rating-element :rating="3" :img-url="'https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/pyr/55673ed52a98bb41703ed903/dia-star-wars.jpg'">3.0</w-rating-element>
-        </div>
-        <div class="carousel-item">
-          <w-rating-element :rating="5" :img-url="'https://hipertextual.com/files/2017/02/imagen_17117_social.jpg'">5.0</w-rating-element>
-        </div>
-        <div class="carousel-item">
-          <w-rating-element :rating="2" :img-url="'https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg'">2.0</w-rating-element>
-        </div>
-        <div class="carousel-item">
-          <w-rating-element :rating="1" :img-url="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsXtquyiv3k0oQtXPojvQ9lTP955aIRI91h_q4B5_zS_2LaGfRag'">1.0</w-rating-element>
-        </div>
-      </w-carousel>
       <div>
         <span class="w-span is-uppercase">{{$t('message.questions')}}</span>
       </div>
@@ -52,7 +11,7 @@
       <div class="line"></div>
 
       <div class="columns is-mobile is-multiline">
-        <div class="column is-12-mobile is-half-tablet is-half-desktop is-offset-3-tablet is-offset-3-desktop is-size-4">{{$t('message.ifYouHaveDoubts')}}</div>
+        <div class="column is-12-mobile is-half-tablet is-half-desktop is-offset-3-tablet is-offset-3-desktop is-size-5">{{$t('message.ifYouHaveDoubts')}}</div>
       </div>
 
       <w-gradient-button @click.native="selectedQuestions = 'userQuestions'" class="green-blue has-text-uppercase" back-text="USU">
@@ -67,7 +26,7 @@
         {{$t('message.preIcoAndIco')}}
       </w-gradient-button>
 
-      <w-collabsible v-for="(q, index) in selectedArrayOfQuestions" :collapsible-id="`faqs-${index}`">
+      <w-collabsible v-for="(q, index) in selectedArrayOfQuestions" :key="`faqs-${index}`" :collapsible-id="`faqs-${index}`">
         <template slot="label">{{q.question}}</template>
         <template slot="content">{{q.answer}}</template>
       </w-collabsible>
@@ -78,24 +37,18 @@
 
 <script>
 import wDivider from '@/components/wavy-dividers/WoonklyWavy4'
-import wCarousel from '@/components/shared/WoonklyCarousel/WoonklyCarousel'
 import wGradientButton from '@/components/shared/WoonklyGradientButton'
 import wCollabsible from '@/components/shared/WoonklyCollabsible'
-import wElementCarousel from '@/components/shared/WoonklyCarousel/SingleElement'
-import wRatingElement from '@/components/shared/WoonklyCarousel/WoonklyRatingElement'
 
 export default {
   components: {
     wGradientButton,
     wCollabsible,
-    wDivider,
-    wCarousel,
-    wElementCarousel,
-    wRatingElement
+    wDivider
   },
   data () {
     return {
-        selectedQuestions: 'userQuestions'
+      selectedQuestions: 'userQuestions'
     }
   },
   computed: {
@@ -138,6 +91,20 @@ export default {
   text-align: center;
   position: relative;
 
+  .w-new-carousel {
+    position: relative;
+    z-index: 1000;
+    max-width: 800px;
+    margin: 0 auto 2em auto;
+  }
+
+  #woonkly-around-the-world {
+    .tns-item {
+      // max-width: 160px;
+      padding: 0;
+    }
+  }
+
   & > div.title:nth-of-type(2) {
     margin: 3em 0 0 0;
   }
@@ -165,8 +132,11 @@ export default {
     top: 0;
     line-height: .8;
     left: 0;
+    z-index: 1;
   }
 }
+
+// Desktop styles
 @media only screen and (min-width: 769px) {
   #woonkly-faq {
     .w-span {

@@ -5,8 +5,8 @@
         <img id="woonkly-moon" class="rellax glowing-circle" data-rellax-speed="-0.5" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Moon">
         <img id="triangle" src="/img/icons/transparent-triangle.svg" alt="Woonkly triangle">
         <div class="wrapper">
-          <h3 class="title is-2">{{$t('message.attentionValue')}}</h3>
-          <p class="is-size-5-tablet">{{$t('message.contentCreators')}}</p>
+          <h3 class="title is-3">{{$t('message.attentionValue')}}</h3>
+          <p>{{$t('message.contentCreators')}}</p>
         </div>
       </div>
       <div class="column is-12-mobile is-half-tablet">

@@ -38,14 +38,15 @@ export default {
         case 3: return 'is-three'
         case 4: return 'is-four'
         case 5: return 'is-five'
-        default: return 'is-five'
       }
     }
   },
-  props: [
-    'rating',
-    'imgUrl'
-  ]
+  props: {
+    rating: {
+      default: 5
+    },
+    imgUrl: String
+  }
 }
 </script>
 
@@ -53,7 +54,9 @@ export default {
 .woonkly-rating-element {
   width: 100%;
   height: 100%;
+  max-width: 300px;
   text-align: center;
+  margin: 0 auto;
 
   .star {
     width: 5em;
@@ -77,13 +80,14 @@ export default {
     border-radius: .3em;
     margin: 1em 0 1em 10%;
     background-position: center center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .bar {
     position: relative;
     height: 1.5em;
     margin-bottom: 1em;
+    
     .colorBar {
       width: 100%;
       height: 1.5em;
