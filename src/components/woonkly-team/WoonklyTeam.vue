@@ -39,15 +39,6 @@ export default {
           }
         },
         {
-          name: 'Oscar Cardenas',
-          position: this.$t('message.teamMembers.oscarCardenas.position'),
-          img: 'oscarcardenas.png',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/cardedeveloper/',
-            twitter: 'https://twitter.com/CardeDeveloper'
-          }
-        },
-        {
           name: 'Sara Santos',
           position: this.$t('message.teamMembers.saraSantos.position'),
           img: 'sarasantos.png',
@@ -228,11 +219,6 @@ export default {
           name: 'David Battaglia',
           position: this.$t('message.teamAdvisors.davidBattaglia.position'),
           img: 'davidbattaglia.png'
-        },
-        {
-          name: 'Roberto Medrano',
-          position: this.$t('message.teamAdvisors.robertoMedrano.position'),
-          img: 'robertomedrano.png'
         }
       ]
     }
