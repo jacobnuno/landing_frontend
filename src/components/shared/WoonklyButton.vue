@@ -49,6 +49,7 @@ export default {
  cursor: pointer;
  border-radius: 3em;
  font-size: 12.5px;
+ white-space: nowrap;
 
  .inner-border {
    border-radius: inherit;
@@ -69,10 +70,6 @@ export default {
      background: var(--woonkly-gradient-dark-opacity-to-light-right);
    }
  }
-
- @media screen and (max-width: 1104px) {
-   font-size: 10px;
- }
 }
 .woonkly-button-opacity-to-light {
  border: none;
@@ -84,6 +81,8 @@ export default {
  font-size: 12.5px;
  text-decoration: none;
  background: none;
+  white-space: nowrap;
+
 
  .inner-border {
    background: none;
@@ -106,9 +105,6 @@ export default {
    }
  }
 
- @media screen and (max-width: 1104px) {
-   font-size: 10px;
- }
 }
 .woonkly-button-light-to-dark {
  border: none;
@@ -120,6 +116,8 @@ export default {
  font-size: 12.5px;
  text-decoration: none;
  background: none;
+  white-space: nowrap;
+
 
  .inner-border {
    background: none;
@@ -140,9 +138,7 @@ export default {
    }
  }
 
- @media screen and (max-width: 1104px) {
-   font-size: 10px;
- }
+ 
 }
 </style>
 
