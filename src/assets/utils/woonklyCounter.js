@@ -1,29 +1,52 @@
-import moment from 'moment'
+let intervalId
 
-let intervalId = null
+var calculateTimeLeft = function (endTimestamp, updateFunction) {
+  var remaining = 0
+  var diff = 0
+  var timer = { d:0, h:0, m:0, s:0 }
 
-export function counter (setTime) {
-  // TODO: Make this function to work with more time steps
-  let endTimestamp = 1538352000
-  let startTimestamp = null
+  diff = endTimestamp - Date.now()
 
-  intervalId = setInterval(function () {
-    startTimestamp = moment.utc().unix()
-    let timeLeft = moment.duration((endTimestamp - startTimestamp), 'seconds')
-
-    if (setTime) {
-      setTime({
-        days: Math.floor(timeLeft.days()),
-        hours: Math.floor(timeLeft.hours()),
-        minutes: Math.floor(timeLeft.minutes()),
-        seconds: Math.floor(timeLeft.seconds())
-      })
-    } else {
-      console.log(`D: ${Math.floor(timeLeft.asDays())}, H: ${Math.floor(timeLeft.hours())}, M: ${Math.floor(timeLeft.hours())}, S: ${Math.floor(timeLeft.hours())}`)
-    }
-  }, 1000)
+  timer.d = Math.floor(diff / 86400000)
+  remaining = diff % 86400000
+  timer.h = Math.floor(remaining / 3600000)
+  remaining = remaining % 3600000
+  timer.m = Math.floor(remaining / 60000)
+  remaining = remaining % 60000
+  timer.s = Math.floor(remaining / 1000)
+  updateFunction(timer)
 }
 
-export function cleanInterval () {
+export function determineCurrentMessage (messagesArray, endMessage) {
+  let messageToReturn = null
+
+  for (let i = 0; i < messagesArray.length; i++) {
+    if (messagesArray[i].date >= Date.now()) {
+      return messagesArray[i].message
+    }
+  }
+
+  return endMessage
+}
+
+export function startTimer (stepTimes, updateFunction) {
+  var selectedDate = 0
+  
+  if (stepTimes[stepTimes.length-1] < Date.now()) {
+    console.log('The timer has no more dates to diplay')
+    return false
+  } 
+  
+  for(let i = 0; i < stepTimes.length; i++) {
+    if (stepTimes[i] > Date.now()) {
+      selectedDate = stepTimes[i]
+      break
+    }
+  }
+  
+  intervalId = setInterval(calculateTimeLeft, 1000, selectedDate, updateFunction)
+}
+
+export function cleanTimerInterval () {
   clearInterval(intervalId)
 }
