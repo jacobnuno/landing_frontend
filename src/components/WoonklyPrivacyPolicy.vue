@@ -192,7 +192,6 @@
                 <b>Dirección:</b> Balanza 3821 La Calma Zapopan, Jalisco. México<br>
                 <b>Teléfono:</b> +52 3312050503<br>
                 <b>Correo:</b> shuberth@woonkly.com<br>
-
             </p>
         </div>
     </div>
