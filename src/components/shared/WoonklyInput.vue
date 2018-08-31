@@ -1,7 +1,13 @@
 <template>
   <div class="columns is-mobile">
     <div class="woonkly-input column is-12-mobile is-6-desktop is-offset-3-desktop">
-      <input v-if="!isTextarea" type="text" class="w-input is-size-6-mobile is-size-4-tablet" :placeholder="wPlaceholder">
+      <input
+        v-if="!isTextarea"
+        class="w-input is-size-6-mobile is-size-4-tablet"
+        type="text"
+        :placeholder="wPlaceholder"
+        v-model="localValue"
+        @input="$emit('input', localValue)">
       <textarea v-else class="w-input is-size-6-mobile is-size-4-tablet" :placeholder="wPlaceholder" rows="8" cols="80"></textarea>
     </div>
   </div>
@@ -11,14 +17,19 @@
 export default {
   data () {
     return {
-      placeholder: null
+      placeholder: null,
+      localValue: ''
     }
   },
   props: {
     wPlaceholder: String,
+    value: String,
     isTextarea: {
       default: false
     }
+  },
+  mounted () {
+    this.localValue = this.value
   }
 }
 </script>

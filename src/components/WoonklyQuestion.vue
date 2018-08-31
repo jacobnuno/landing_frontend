@@ -25,10 +25,17 @@
       </div>
     </div>
 
-    <w-input :w-placeholder="$t('message.contactFormPlaceHolders.yourName')"></w-input>
-    <w-input :w-placeholder="$t('message.contactFormPlaceHolders.yourEmail')"></w-input>
-    <w-input is-textarea :w-placeholder="$t('message.contactFormPlaceHolders.yourMessage')"></w-input>
-    <button type="button" class="w-button has-text-uppercase">{{ $t('message.contactNow') }}</button>
+    <w-input
+      :w-placeholder="$t('message.contactFormPlaceHolders.yourName')"
+      v-model="form.name" />
+    <w-input
+      :w-placeholder="$t('message.contactFormPlaceHolders.yourEmail')"
+      v-model="form.email" />
+    <w-input
+      is-textarea
+      :w-placeholder="$t('message.contactFormPlaceHolders.yourMessage')"
+      v-model="form.message" />
+    <button type="button" class="w-button has-text-uppercase" @click="sendFormData">{{ $t('message.contactNow') }}</button>
     <img src="/img/icons/gradient-circle1.svg" id="gradient-circle1" alt="Woonkly blue circle">
 
   </section>
@@ -43,6 +50,38 @@ library.add(faEnvelope)
 library.add(faTelegramPlane)
 
 export default {
+  data () {
+    return {
+      form: {
+        name: '',
+        email: '',
+        message: ''
+      }
+    }
+  },
+  methods: {
+    sendFormData () {
+      let { form } = this
+      fetch(`${process.env.VUE_APP_API_URL}/contact-form`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          to: form.email,
+          subject: this.$t('message.woonklyEmailSubject'),
+          type: 'html',
+          content: this.$t('message.emailContent', { name: form.name })
+        })
+      }).then(res => {
+        if (res.status === 200) {
+          form = { name: '', email: '', message: '' }
+          console.log('Success!')
+        } else {
+          console.log('Something went wrong :(')
+          alert(this.$t('message.somethingWentWrong'))
+        }
+      })
+    }
+  },
   components: {
     wInput
   }
