@@ -272,6 +272,9 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
       }
     },
-    "woonklyTelegramLink": "https://t.me/woonklyes"
+    "woonklyTelegramLink": "https://t.me/woonklyes",
+    "woonklyEmailSubject": "Contacto Woonkly",
+    "emailContent": "<h1>¡Gracias por contactarnos!</h1><hr><p>Pronto nos pondremos en contacto contigo, {name}. Gracias.</p><br><br><small>Woonkly © 2018</small>",
+    "somethingWentWrong": "Algo salió mal, lo sentimos mucho. Por favor intente más tarde, si los errores persisten contacte al personal pertinente, gracias. support@woonkly.com"
   }
 }

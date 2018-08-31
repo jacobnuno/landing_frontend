@@ -250,6 +250,9 @@
       "yourMessage": "Your message"
     },
     "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Privacy Politics |",
-    "woonklyTelegramLink": "https://t.me/woonklyen"
+    "woonklyTelegramLink": "https://t.me/woonklyen",
+    "woonklyEmailSubject": "Woonkly Contact",
+    "emailContent": "<h1>Thank you for contacting us!</h1><hr><p>Soon will be in touch with you, {name}. ;) </p><br><br><small>Woonkly © 2018</small>",
+    "somethingWentWrong": "Something went wrong, We are so sorry. Please try later, if errors persist contact the relevant personnel, thank you. support@woonkly.com"
   }
 }
