@@ -216,8 +216,7 @@
         text-align: center;
     }
     .text-privacy-policy{
-        padding:            4em 5em;
-        margin-top:         4em;
+        padding: 5em 3em 0.5em 3em;
         background-color:   var(--woonkly-black-blue);
         color:              white;
         text-align:         justify;
