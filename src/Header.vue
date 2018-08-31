@@ -72,6 +72,7 @@
       </div>
     </aside>
   </nav>
+
 </header>
 </template>
 
@@ -225,8 +226,9 @@ export default {
   }
 }
 
+#woonkly-header {
+
 @media screen and (min-width: 1104px) {
-  #woonkly-header {
 
     nav.navbar {
       max-width: 1250px;

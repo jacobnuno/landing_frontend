@@ -253,7 +253,9 @@
       "title":"Políticas de privacidad | "
     },
     "cookiesLink":{
-      "title":"Uso de cookies"
+      "title": "Uso de cookies",
+      "adviceMain": "Woonkly utiliza cookies. Esto nos ayuda a proporcionarle una buena experiencia al navegar por nuestro sitio, así como a mejorarlo. Si continúa navegando, presta su consentimiento para usar nuestras cookies. Nuestra política de privacidad explica cómo cuidamos sus datos personales cuando visita nuestro sitio web y le informa sobre sus derechos de privacidad y cómo la ley lo protege. Para obtener más información, lea nuestra Política sobre cookies. ",
+      "adiviceLink": "Leer más..."
     }
   }
 }

@@ -23,8 +23,8 @@
     <div class="w-div">
       <p class="is-size-7-mobile is-size-5-tablet">
           {{ $t('message.copyRight') }}
-          <router-link to="/privacy-policy" id="text-cookies-and-copyrights">{{ $t('message.privacyPolicyLink.title') }}</router-link>
-          <router-link to="/cookies" id="text-cookies-and-copyrights">{{$t('message.cookiesLink.title')}}</router-link>
+          <router-link to="/privacy-policy" id="text-cookies-and-copyrights" target="_blank">{{ $t('message.privacyPolicyLink.title') }}</router-link>
+          <router-link to="/cookies" id="text-cookies-and-copyrights" target="_blank">{{$t('message.cookiesLink.title')}}</router-link>
       </p>
     </div>
   </footer>

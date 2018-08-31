@@ -14,12 +14,6 @@
         <div class="content-wrapper" :style="{fontSize: `${fontSize}px`}" style="font-size:16px">
             <p>
                 <h1>Política de cookies</h1><br>
-
-                <b>Descargo de responsabilidad de cookies (el cartelito pequeño)</b><br><br>
-
-                Woonkly utiliza cookies. Esto nos ayuda a proporcionarle una buena experiencia al navegar por nuestro sitio, así como a mejorarlo. Si continúa navegando, presta su consentimiento para usar nuestras cookies. Nuestra política de privacidad explica cómo cuidamos sus datos personales cuando visita nuestro sitio web y le informa sobre sus derechos de privacidad y cómo la ley lo protege. Para obtener más información, lea nuestra Política sobre cookies. Leer más...<br><br>
-
-
                 <b>Descargo de responsabilidad y cookies.</b><br><br>
 
                 las cookies son pequeños archivos de números y letras que transferimos al disco duro de su computadora. Algunas cookies utilizadas en este sitio son esenciales y son necesarias para garantizar que el sitio funcione correctamente, como mantener la imagen de fondo que ve en cada página web.<br><br>
