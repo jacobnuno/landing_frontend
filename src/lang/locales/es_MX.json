@@ -130,6 +130,7 @@
         "robertoMedrano": { "position": "Advisor" },
         "davidLeonardo": { "position": "Inversor" }
     },
+    "milestonesAndObjectives": "Logros y Objetivos",
     "roadMapMilestones": [
       { "title": "Enero 2017",
         "description": "Entrada en la incubadora de Startups Fitec1 e inversión de 75,000USD."
@@ -272,6 +273,14 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
       }
     },
-    "woonklyTelegramLink": "https://t.me/woonklyes"
+    "woonklyTelegramLink": "https://t.me/woonklyes",
+    "woonklyEmailSubject": "Contacto Woonkly",
+    "emailContent": "<h1>¡Gracias por contactarnos!</h1><hr><p>Pronto nos pondremos en contacto contigo, {name}. Gracias.</p><br><br><small>Woonkly © 2018</small>",
+    "somethingWentWrong": "Algo salió mal, lo sentimos mucho. Por favor intente más tarde, si los errores persisten contacte al personal pertinente, gracias. support@woonkly.com",
+    "buyWoonksMessage": [
+      "Comprar WNK con 30% de bonus",
+      "¡Unete a nuestra ICO!"
+    ],
+    "icoHasEnded": "El ICO de Woonkly ha terminado"
   }
 }

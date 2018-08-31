@@ -3,7 +3,7 @@
     <div class="container">
       <!-- progress-bar decoration svg  -->
       <img id="progress-bar" src="/img/sections/roadmap/progress.svg" alt="Roadmap">
-      <div class="title is-uppercase is-size-1-desktop is-size-5-mobile has-text-centered">Logros y objetivos</div>
+      <div class="title is-uppercase is-size-1-desktop is-size-5-mobile has-text-centered">{{$t('message.milestonesAndObjectives')}}</div>
 
       <!-- background circles decoration svg  -->
       <img class="background-circle" id="bg-c1" src="/img/icons/gradient-circle1.svg" alt="circle">
@@ -27,10 +27,10 @@
                 <img class="roadmap-line" :src="getLineImg(roadmap[i*2].date)" alt="Done line">
                 <div class="data-container">
                     <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
-                        {{ roadmap[i * 2].title }}
+                        {{$t(roadmap[i * 2].title)}}
                     </h3>
                     <p class="roadmap-description is-size-7-mobile">
-                        {{ roadmap[i * 2].description }}
+                        {{$t(roadmap[i * 2].description)}}
                     </p>
                 </div>
             </div>
@@ -40,10 +40,10 @@
                 <span><img class="roadmap-circle" :src="getCircleImg(roadmap[i*2+1].date)" alt="Done circle"></span>
                 <div class="data-container">
                     <h3 class="roadmap-title is-uppercase is-bold is-size-7-mobile">
-                        {{ roadmap[i * 2 + 1].title }}
+                        {{$t(roadmap[i * 2 + 1].title)}}
                     </h3>
                     <p class="roadmap-description is-size-7-mobile">
-                        {{ roadmap[i * 2 + 1].description }}
+                        {{$t(roadmap[i * 2 + 1].description)}}
                     </p>
                 </div>
             </div>
@@ -62,17 +62,17 @@ export default Vue.extend({
         return {
             roadmap: [
               // months start at 0
-              { title: this.$t('message.roadMapMilestones[0].title'), description: this.$t('message.roadMapMilestones[0].description'), date: new Date(2017, 0, 1) },
-              { title: this.$t('message.roadMapMilestones[1].title'), description: this.$t('message.roadMapMilestones[1].description'), date: new Date(2017, 5, 1) },
-              { title: this.$t('message.roadMapMilestones[2].title'), description: this.$t('message.roadMapMilestones[2].description'), date: new Date(2018, 0, 1) },
-              { title: this.$t('message.roadMapMilestones[3].title'), description: this.$t('message.roadMapMilestones[3].description'), date: new Date(2018, 1, 1) },
-              { title: this.$t('message.roadMapMilestones[4].title'), description: this.$t('message.roadMapMilestones[4].description'), date: new Date(2018, 2, 1) },
-              { title: this.$t('message.roadMapMilestones[5].title'), description: this.$t('message.roadMapMilestones[5].description'), date: new Date(2018, 2, 1) },
-              { title: this.$t('message.roadMapMilestones[6].title'), description: this.$t('message.roadMapMilestones[6].description'), date: new Date(2018, 3, 1) },
-              { title: this.$t('message.roadMapMilestones[7].title'), description: this.$t('message.roadMapMilestones[7].description'), date: new Date(2018, 4, 1) },
-              { title: this.$t('message.roadMapMilestones[8].title'), description: this.$t('message.roadMapMilestones[8].description'), date: new Date(2018, 6, 1) },
-              { title: this.$t('message.roadMapMilestones[9].title'), description: this.$t('message.roadMapMilestones[9].description'), date: new Date(2018, 8, 1) },
-              { title: this.$t('message.roadMapMilestones[10].title'), description: this.$t('message.roadMapMilestones[10].description'), date: new Date(2019, 0, 1) },
+              { title: 'message.roadMapMilestones[0].title', description: 'message.roadMapMilestones[0].description', date: new Date(2017, 0, 1) },
+              { title: 'message.roadMapMilestones[1].title', description: 'message.roadMapMilestones[1].description', date: new Date(2017, 5, 1) },
+              { title: 'message.roadMapMilestones[2].title', description: 'message.roadMapMilestones[2].description', date: new Date(2018, 0, 1) },
+              { title: 'message.roadMapMilestones[3].title', description: 'message.roadMapMilestones[3].description', date: new Date(2018, 1, 1) },
+              { title: 'message.roadMapMilestones[4].title', description: 'message.roadMapMilestones[4].description', date: new Date(2018, 2, 1) },
+              { title: 'message.roadMapMilestones[5].title', description: 'message.roadMapMilestones[5].description', date: new Date(2018, 2, 1) },
+              { title: 'message.roadMapMilestones[6].title', description: 'message.roadMapMilestones[6].description', date: new Date(2018, 3, 1) },
+              { title: 'message.roadMapMilestones[7].title', description: 'message.roadMapMilestones[7].description', date: new Date(2018, 4, 1) },
+              { title: 'message.roadMapMilestones[8].title', description: 'message.roadMapMilestones[8].description', date: new Date(2018, 6, 1) },
+              { title: 'message.roadMapMilestones[9].title', description: 'message.roadMapMilestones[9].description', date: new Date(2018, 8, 1) },
+              { title: 'message.roadMapMilestones[10].title', description: 'message.roadMapMilestones[10].description', date: new Date(2019, 0, 1) },
             ]
         }
     },

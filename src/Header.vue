@@ -70,7 +70,7 @@
       <a href="https://github.com/Woonkly" target="_blank">
         <fai :icon="['fab', 'github']" class="icons" />
       </a>
-      <a>
+      <!-- <a>
         <fai :icon="['fab', 'bitcoin']" class="icons" />
       </a>
       <a>
@@ -78,7 +78,7 @@
       </a>
       <a>
         <fai :icon="['fab', 'medium-m']" class="icons" />
-      </a>
+      </a> -->
     </div>
   </header>
 </template>
@@ -205,6 +205,13 @@ export default {
       &:active,
       &:focus {
         transform: scale(1.3);
+      }
+
+      &:first-of-type {
+        margin-left: 10px;
+      }
+      &:last-of-type {
+        margin-right: 10px;
       }
     }
 

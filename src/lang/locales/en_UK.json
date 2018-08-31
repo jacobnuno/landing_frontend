@@ -1,6 +1,5 @@
 {
   "message": {
-
     "menu": {
       "project": "Project",
       "tokens": "Tokens",
@@ -8,7 +7,8 @@
       "team": "Team",
       "faqs": "FAQs",
       "buttonBuy": "Buy",
-      "buttonFaucet": "Faucet Beta"
+      "buttonFaucet": "Faucet Beta",
+      "buttonLogin": "Login"
     },
     "earnMoney": "Win cryptocurrencies by watching, sharing and interacting with digital content.",
     "connectingCreators": "Connecting content creators, advertisers and people with the best way possible.",
@@ -17,7 +17,7 @@
     "whitepaperWoonkly": "Whitepaper Woonkly",
     "attentionValue": "People's attention has a measurable value.",
     "contentCreators": "Content creators and advertisers has something in common. They want to reach a target audience and they will pay to do it, but this time,instead of agencies and media, they will pay the users who watch them.",
-    "woonklyWhatIs": "¿Qué es Woonkly?",
+    "woonklyWhatIs": "What is Woonkly?",
     "woonklyIsTheFirstPlatform": "Woonkly is the first plataform that pays people by watching and sharing digital content (video, picture and text) on different platforms.",
     "signUpInWoonkly": "Woonkly's registration is free for both content creators and users. The content creators can link in Woonkly their videos, pictures or post from different platforms freely in order to get more exposure or if they want it, they can pay their target audience using our cryptocurrency “Woonk” in order to get thousands even millons of visualization or interactions in a matter of hours, minutes or seconds.",
     "discoverWoonklyTv": "Discover Woonkly TV 1.0",
@@ -39,27 +39,33 @@
     "acquireTokensFirstList": [
       {
           "title": "1 May-1 June:",
-          "content": "Private sale for subscribers of Mr. Santos on Youtube (50% Bonus)"
+          "content": "Private sale for subscribers of Mr. Santos on Youtube (50% Bonus)",
+          "endTime": "1527811200"
       },
       {
           "title": "1 June-1 July:",
-          "content": "Private sale for subscribers of other YouTube channels (40% Bonus)"
+          "content": "Private sale for subscribers of other YouTube channels (40% Bonus)",
+          "endTime": "1530403200"
       },
       {
           "title": "1 July- 1 September:",
-          "content": "Private sale (Capitals of Arab Emirates, Hong Kong and Europe) (30% Bonus)"
+          "content": "Private sale (Capitals of Arab Emirates, Hong Kong and Europe) (30% Bonus)",
+          "endTime": "1535760000"
       },
       {
           "title": "1 September-1 October:",
-          "content": "ICO Phase 1 (20% Bonus)"
+          "content": "ICO Phase 1 (20% Bonus)",
+          "endTime": "1538352000"
       },
       {
           "title": "1 October- 1 November:",
-          "content": "ICO Phase 2 (10% Bonus)"
+          "content": "ICO Phase 2 (10% Bonus)",
+          "endTime": "1541030400"
       },
       {
           "title": "1 November- 31 December:",
-          "content": "ICO Phase 3 (0% Bonus)"
+          "content": "ICO Phase 3 (0% Bonus)",
+          "endTime": "1543622400"
       }
     ],
     "acquireTokenSecondList": [
@@ -94,7 +100,6 @@
     "teamMembers": {
         "santos": { "position": "President & CEO" },
         "mateiAntohi": { "position": "Co-Founder" },
-        "davidLeonardo": { "position": "Dir. de Operaciones" },
         "oscarCardenas": { "position": "Chief Blockchain Officer" },
         "saraSantos": { "position": "Chief Marketing Officer" },
         "carlosPavia": { "position": "Web Development Manager" },
@@ -122,8 +127,10 @@
         "danielMuvdi": { "position": "Advisor" },
         "mendySrugo": { "position": "Advisor & Investor" },
         "davidBattaglia": { "position": "Advisor" },
-        "robertoMedrano": { "position": "Advisor" }
+        "robertoMedrano": { "position": "Advisor" },
+        "davidLeonardo": { "position": "Dir. de Operaciones" }
     },
+    "milestonesAndObjectives": "Milestones & Objectives",
     "roadMapMilestones": [
       { "title": "January 2017",
         "description": "Entry into the Startups incubator Fitec1 and investment of 75,000USD"
@@ -250,6 +257,20 @@
       "yourMessage": "Your message"
     },
     "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Privacy Politics |",
-    "woonklyTelegramLink": "https://t.me/woonklyen"
+    "privacyPolicyLink":{
+      "title":"Privacy Policy | "
+    },
+    "cookiesLink":{
+      "title":"Cookies Use"
+    },
+    "woonklyTelegramLink": "https://t.me/woonklyen",
+    "woonklyEmailSubject": "Woonkly Contact",
+    "emailContent": "<h1>Thank you for contacting us!</h1><hr><p>Soon will be in touch with you, {name}. ;) </p><br><br><small>Woonkly © 2018</small>",
+    "somethingWentWrong": "Something went wrong, We are so sorry. Please try later, if errors persist contact the relevant personnel, thank you. support@woonkly.com",
+    "buyWoonksMessage": [
+      "Buy WNK with a 30% bonus",
+      "Join to our ICO!"
+    ],
+    "icoHasEnded": "The Woonkly's ICO has finished"
   }
 }

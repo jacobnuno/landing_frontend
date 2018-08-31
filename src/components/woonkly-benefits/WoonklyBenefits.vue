@@ -6,7 +6,6 @@
       <div class="column is-12">
         <h3 class="title is-12">{{$t('message.principalBenefits')}}</h3>
       </div>
-      <!-- TODO: Poner los cuadros de los beneficios aqui -->
     </div>
 
     <aside>
