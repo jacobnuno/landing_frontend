@@ -1,6 +1,14 @@
 <template lang="html">
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="214.58 4404.5 528.37 517.26">
     <defs>
+      <filter id="dropshadow" height="130%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+        <feOffset dx="0" dy="0" result="offsetblur"/>
+        <feMerge>
+          <feMergeNode/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
         <filter id="b" height="132.08" width="132.08" y="4567.6" x="418.2" filterUnits="userSpaceOnUse">
             <feOffset input="SourceAlpha" dy="3" />
             <feGaussianBlur stdDeviation="3" result="blur" />
@@ -156,49 +164,70 @@
         </g>
         <path d="m42.34 2.525a11.733 11.733 0 0 0 -13.34 -0.779c-0.9 0.5-3.859 1.92-7.119 10.058-4.437-3.204-8.157-5.019-14.276-3.879-9.439 2-7.6 9.3-7.079 10.978 1 3.739 5.859 10.478 11.878 9.978a13.144 13.144 0 0 0 11.118 -8.259 17.785 17.785 0 0 0 -5.2 -3.419c-2.7 3.359-4.359 4.1-6.019 4.7-2.66 0.86-6.259 0.3-6.2-3.939 0.16-4.019 7.9-3.239 11.738-1.44a27.475 27.475 0 0 1 5.8 3.339c1.14 0.76 2.34 1.46 2.34 1.46 7.079 4.059 16.177 1.58 19.277-2.46 4.042-5.063 1.381-12.838-2.918-16.338zm-3.659 12.458c-1.7 1.46-5.979 3.14-10.878-1a8.425 8.425 0 0 1 7.5 -5c5.057 0.281 5.897 3.961 3.378 6z" data-name="Path 128" class="cls-6" transform="translate(408.65,4581.4)" fill="#fff" />
     </g>
-    <circle opacity=".3" class="cls-9" cy="4508.2" cx="553.82" r="13.597" fill="#00d3ff" />
+    <circle opacity=".3" class="cls-9" cy="4508.2" cx="553.82" r="13.597" fill="#00d3ff">
+      <animate id="distributionCircleAnimation1" attributeName="r" begin="0s;distributionCircleAnimation2.end" fill="freeze" dur="1s" from="13.597" to="22"/>
+      <animate id="distributionCircleAnimation2" attributeName="r" begin="distributionCircleAnimation1.end+0s" fill="freeze" dur="1500ms" from="22" to="13.597"/>
+    </circle>
     <g filter="url(#p)" class="cls-24">
         <circle transform="translate(544.8,4499.2)" data-name="Ellipse 57" class="cls-5" cy="9.018" cx="9.018" r="9.018" fill="url(#u)" />
     </g>
     <g filter="url(#i)" class="cls-23">
         <circle data-name="Ellipse 58" transform="translate(551.92,4506.3)" cy="1.898" cx="1.898" r="1.898" class="cls-6" fill="#fff" />
     </g>
-    <circle opacity=".3" class="cls-9" cy="4581.3" cx="343.49" r="20.979" fill="#00d3ff" />
+    <circle opacity=".3" class="cls-9" cy="4581.3" cx="343.49" r="20.979" fill="#00d3ff">
+      <animate attributeName="r" begin="0s;distributionCircleAnimation2.end" fill="freeze" dur="1s" from="20.979" to="29"/>
+      <animate attributeName="r" begin="distributionCircleAnimation1.end+0s" fill="freeze" dur="1500ms" from="29" to="20.979"/>
+    </circle>
     <g filter="url(#o)" class="cls-22">
         <circle transform="translate(329.57,4567.4)" data-name="Ellipse 57" class="cls-5" cy="13.913" cx="13.913" r="13.913" fill="url(#a)" />
     </g>
     <g filter="url(#h)" class="cls-21">
         <circle transform="translate(340.56,4578.4)" data-name="Ellipse 58" class="cls-6" cy="2.929" cx="2.929" r="2.929" fill="#fff" />
     </g>
-    <circle opacity=".3" class="cls-9" cy="4733.8" cx="583.41" r="20.979" fill="#00d3ff" />
+    <circle opacity=".3" class="cls-9" cy="4733.8" cx="583.41" r="20.979" fill="#00d3ff">
+      <animate attributeName="r" begin="0s;distributionCircleAnimation2.end" fill="freeze" dur="1s" from="20.979" to="30"/>
+      <animate attributeName="r" begin="distributionCircleAnimation1.end+0s" fill="freeze" dur="1500ms" from="30" to="20.979"/>
+    </circle>
     <g filter="url(#n)" class="cls-20">
         <circle transform="translate(569.49,4719.8)" data-name="Ellipse 57" class="cls-5" cy="13.913" cx="13.913" r="13.913" fill="url(#a)" />
     </g>
     <g filter="url(#g)" class="cls-19">
         <circle transform="translate(580.47,4730.8)" data-name="Ellipse 58" class="cls-6" cy="2.929" cx="2.929" r="2.929" fill="#fff" />
     </g>
-    <circle opacity=".3" cy="4773.1" cx="476.42" r="26.668" class="cls-9" fill="#00d3ff" />
+    <circle opacity=".3" cy="4773.1" cx="476.42" r="26.668" class="cls-9" fill="#00d3ff">
+      <animate attributeName="r" begin="0s;distributionCircleAnimation2.end" fill="freeze" dur="1s" from="26.668" to="33"/>
+      <animate attributeName="r" begin="distributionCircleAnimation1.end+0s" fill="freeze" dur="1500ms" from="33" to="26.668"/>
+    </circle>
     <g filter="url(#m)" class="cls-18">
         <circle class="cls-5" data-name="Ellipse 57" transform="translate(458.73,4755.4)" cy="17.687" cx="17.687" r="17.687" fill="url(#t)" />
     </g>
     <g filter="url(#f)" class="cls-17">
         <circle class="cls-6" data-name="Ellipse 58" transform="translate(472.7,4769.4)" cy="3.724" cx="3.724" r="3.724" fill="#fff" />
     </g>
-    <circle opacity=".3" class="cls-9" cy="4695.7" cx="368.15" r="15.636" fill="#00d3ff" />
+    <circle opacity=".3" class="cls-9" cy="4695.7" cx="368.15" r="15.636" fill="#00d3ff">
+      <animate attributeName="r" begin="0s;distributionCircleAnimation2.end" fill="freeze" dur="1s" from="15.636" to="22"/>
+      <animate attributeName="r" begin="distributionCircleAnimation1.end+0s" fill="freeze" dur="1500ms" from="22" to="15.636"/>
+    </circle>
     <g filter="url(#l)" class="cls-16">
         <circle transform="translate(357.79,4685.4)" data-name="Ellipse 57" class="cls-5" cy="10.37" cx="10.37" r="10.37" fill="url(#s)" />
     </g>
     <g filter="url(#e)" class="cls-15">
         <circle transform="translate(365.97,4693.6)" data-name="Ellipse 58" class="cls-6" cy="2.183" cx="2.183" r="2.183" fill="#fff" />
     </g>
-    <circle opacity=".3" class="cls-9" cy="4503.5" cx="421.06" r="20.979" fill="#00d3ff" />
+    <circle opacity=".3" class="cls-9" cy="4503.5" cx="421.06" r="20.979" filter="url(#dropshadow)" fill="#00d3ff">
+      <animate attributeName="r" begin="0s;distributionCircleAnimation2.end" fill="freeze" dur="1s" from="20.979" to="28"/>
+      <animate attributeName="r" begin="distributionCircleAnimation1.end+0s" fill="freeze" dur="1500ms" from="28" to="20.979"/>
+    </circle>
     <g filter="url(#k)" class="cls-14">
         <circle transform="translate(407.15,4489.5)" data-name="Ellipse 57" class="cls-5" cy="13.913" cx="13.913" r="13.913" fill="url(#a)" />
     </g>
     <g filter="url(#d)" class="cls-13">
         <circle transform="translate(418.13,4500.5)" data-name="Ellipse 58" class="cls-6" cy="2.929" cx="2.929" r="2.929" fill="#fff" />
     </g>
-    <circle opacity=".3" class="cls-9" cy="4633" cx="624.99" r="25.562" fill="#00d3ff" />
+    <circle opacity=".3" class="cls-9" cy="4633" cx="624.99" r="25.562" fill="#00d3ff">
+      <animate attributeName="r" begin="0s;distributionCircleAnimation2.end" fill="freeze" dur="1s" from="25.562" to="35"/>
+      <animate attributeName="r" begin="distributionCircleAnimation1.end+0s" fill="freeze" dur="1500ms" from="35" to="25.562"/>
+    </circle>
     <g filter="url(#j)" class="cls-12">
         <circle transform="translate(608.04,4616)" data-name="Ellipse 57" class="cls-5" cy="16.953" cx="16.953" r="16.953" fill="url(#r)" />
     </g>
@@ -269,24 +298,7 @@
 
 <script>
 export default {
-  methods: {
-    calculateCenter () {
-      var paths = document.querySelectorAll('#animated-ellipses path[id*="ellipse"]');
-      var animationDelays = ['0', '300ms', '500ms', '1s', '1500ms', '2s',]
-
-      for (var i = 0; i < paths.length; i++) {
-        var _paths$i$getBoundingC = paths[i].getBoundingClientRect(),
-            height = _paths$i$getBoundingC.height,
-            width = _paths$i$getBoundingC.width;
-
-        paths[i].style.transformOrigin = height / 2 + "px " + width / 2 + "px";
-        paths[i].style.animationDelay = animationDelays[Math.floor(Math.random() * animationDelays.length)]
-      }
-    }
-  },
-  mounted () {
-    this.calculateCenter()
-  }
+  name: 'DistributionToken'
 }
 </script>
 

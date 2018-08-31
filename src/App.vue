@@ -42,7 +42,6 @@ export default {
 #woonkly, body, button, input, select, textarea {
   font-family: 'Futura', arial, sans-serif !important;
   font-weight: normal;
-
   .title {
     font-family: 'Futura', arial, sans-serif !important;
     font-weight: bold;

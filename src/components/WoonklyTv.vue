@@ -1,10 +1,10 @@
 <template>
   <section id="woonkly-tv" ref="section">
   <w-divider/>
-  <w-cash-animate id="billetes-1" :class="{'animate':animateCash}"/>
-  <w-cash-animate id="billetes-2" :class="{'animate':animateCash}"/>
   <div class="section">
     <div class="columns is-mobile is-multiline">
+      <w-cash-animate id="billetes-1" :class="{'animate':animateCash}"/>
+      <w-cash-animate id="billetes-2" :class="{'animate':animateCash}"/>
       <div class="column is-12">
         <h3 class="title is-3 has-text-centered">{{$t('message.discoverWoonklyTv')}}</h3>
       </div>
@@ -13,13 +13,15 @@
         <img id="line1" class="glowing-line rellax" data-rellax-speed="0.6" src="/img/icons/glowing-line.svg" alt="Line">
         <img id="line2" class="glowing-line rellax" data-rellax-speed="0.4" src="/img/icons/glowing-line.svg" alt="Line">
         <img id="line3" class="glowing-line rellax" data-rellax-speed="0.5" src="/img/icons/glowing-line.svg" alt="Line">
-        <p class="brief">{{$t('message.contentCreatorsAnyPlatform')}}</p>
+
+        <p class="brief is-size-5-tablet has-text-justified">{{$t('message.contentCreatorsAnyPlatform')}}</p>
         <figure class="image">
           <img src="/img/sections/woonkly_tv.jpg" alt="Woonkly Tv">
         </figure>
-        <p class="brief">{{$t('message.woonklyTvBriefs[0]')}}</p>
-        <p class="brief">{{$t('message.woonklyTvBriefs[1]')}}</p>
-        <p class="brief">{{$t('message.woonklyTvBriefs[2]')}}</p>
+        <p class="brief is-size-5-tablet has-text-justified">{{$t('message.woonklyTvBriefs[0]')}}</p>
+        <p class="brief is-size-5-tablet has-text-justified">{{$t('message.woonklyTvBriefs[1]')}}</p>
+        <p class="brief is-size-5-tablet has-text-justified">{{$t('message.woonklyTvBriefs[2]')}}</p>
+
       </div>
 
     </div>
@@ -73,6 +75,14 @@ export default {
 
 #woonkly-tv {
   position: relative;
+
+  .section {
+    & > .columns.is-mobile.is-multiline {
+      position: relative;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+  }
 
   .main-content-wrapper {
     position: relative;
@@ -130,7 +140,7 @@ export default {
 @media screen and (min-width: 769px) {
   #woonkly-tv {
     .main-content-wrapper {
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       .image {
         float: left;

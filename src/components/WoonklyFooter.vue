@@ -17,6 +17,12 @@
           <fai :icon="['fab', 'github']" class="icons" />
         </a>
         <a>
+          <fai :icon="['fab', 'bitcoin']" class="icons" />
+        </a>
+        <a>
+          <fai :icon="['fab', 'reddit']" class="icons" />
+        </a>
+        <a>
           <fai :icon="['fab', 'medium-m']" class="icons" />
         </a>
     </div>
@@ -33,8 +39,8 @@
 
 <script>
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFacebookF, faTelegramPlane, faTwitter, faYoutube, faGithub, faMediumM } from '@fortawesome/fontawesome-free-brands'
-library.add(faFacebookF, faTelegramPlane, faTwitter, faYoutube, faGithub, faMediumM)
+import { faFacebookF, faTelegramPlane, faTwitter, faYoutube, faGithub, faMediumM, faBitcoin, faReddit } from '@fortawesome/fontawesome-free-brands'
+library.add(faFacebookF, faTelegramPlane, faTwitter, faYoutube, faGithub, faMediumM, faBitcoin, faReddit)
 
 export default {
 }
