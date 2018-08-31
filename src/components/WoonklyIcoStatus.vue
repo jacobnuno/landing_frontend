@@ -7,7 +7,7 @@
     </div>
 
     <div class="column is-12 progress is-marginless">
-      <w-progress :value="90" />
+      <w-progress :value="95" />
     </div>
 
     <div class="column is-12 has-text-centered wonks-sold">
@@ -15,10 +15,10 @@
     </div>
 
     <div class="column has-text-centered">
-      <w-button :buttonClass="'woonkly-button-light-to-dark'">{{$t('message.buyWithBonus', {bonus} )}}</w-button>
+      <w-button :buttonClass="'woonkly-button-light-to-dark'" href="//woonkly.com/privateico/login/">{{buttonMsg}}</w-button>
     </div>
     <div class="column has-text-centered">
-      <w-button>{{$t('message.whitepaperWoonkly')}}</w-button>
+      <w-button href="//woonkly.com/whitepaper.pdf">{{$t('message.whitepaperWoonkly')}}</w-button>
     </div>
 
     <div class="column is-12 counter-wrapper">
@@ -28,13 +28,13 @@
         <img class="rellax" data-rellax-speed="2" src="/img/icons/glowing-line.svg" alt="Glowing Line" height="16px">
       </div>
       <div class="counter">
-        <span class="time-digit">{{time.days}}</span>
+        <span class="time-digit">{{time.d}}</span>
         <span class="colon">:</span>
-        <span class="time-digit">{{time.hours}}</span>
+        <span class="time-digit">{{time.h}}</span>
         <span class="colon">:</span>
-        <span class="time-digit">{{time.minutes}}</span>
+        <span class="time-digit">{{time.m}}</span>
         <span class="colon">:</span>
-        <span class="time-digit">{{time.seconds}}</span>
+        <span class="time-digit">{{time.s}}</span>
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { counter, cleanInterval } from '@/assets/utils/woonklyCounter'
+import { startTimer, cleanTimerInterval, determineCurrentMessage } from '@/assets/utils/woonklyCounter'
 
 import wProgress from '@/components/shared/WoonklyProgress'
 import wButton from '@/components/shared/WoonklyButton'
@@ -51,21 +51,42 @@ export default {
   data () {
     return {
       time: {},
-      wnkSold: '9827376',
+      buttonMsg: null,
+      wnkSold: null,
       phase: 3,
       bonus: 30
     }
   },
   methods: {
-    setTimeOnThisContext (timeObject) {
-      this.time = timeObject
+    setCurrentMessage () {
+      var messageDates = [
+        { date: 1535760000000, message: this.$t('message.buyWoonksMessage[0]') },
+        { date: 1538352000000, message: this.$t('message.buyWoonksMessage[1]') }
+      ]
+      this.buttonMsg = determineCurrentMessage(messageDates, this.$t('message.icoHasEnded'))
+    },
+    getCurrentSoldWoonks () {
+      fetch('https://www.woonklypanel.com/woonkly')
+        .then(res => {
+          if (res.status === 200) {
+            return res.json()
+          }
+          this.wnkSold = 9827376
+        })
+        .then(json => {
+          this.wnkSold = Math.floor(parseFloat(json.tokens))
+        })
     }
   },
   mounted () {
-    counter(this.setTimeOnThisContext)
+    // The first parameter is an array containing all the step dates
+    // The second parameter is to update the local time object
+    startTimer([1535760000000, 1538352000000, 1541030400000, 1543622400000], (t) => { this.time = t })
+    this.setCurrentMessage()
+    this.getCurrentSoldWoonks()
   },
   destroyed () {
-    cleanInterval()
+    cleanTimerInterval()
   },
   components: {
     wButton,
