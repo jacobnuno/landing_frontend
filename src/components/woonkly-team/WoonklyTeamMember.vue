@@ -2,11 +2,11 @@
   <article class="woonkly-member">
     <figure class="image">
       <div class="w-member-image">
-        <img class="is-rounded" :src="`/img/team/${member.img}`" :alt="`${member.name} ${member.position}`">
+        <img class="is-rounded" :src="`/img/team/${member.img}`" :alt="`${member.name} ${memberPosition}`">
       </div>
       <figcaption class="has-text-centered">
         <span class="w-name is-size-5">{{member.name}}</span>
-        <span class="w-positon is-size-7 has-text-weight-light">{{member.position}}</span>
+        <span class="w-positon is-size-7 has-text-weight-light">{{memberPosition}}</span>
       </figcaption>
     </figure>
     <div v-if="member.links" class="icons is-flex">
@@ -30,6 +30,11 @@ import { faYoutube, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-i
 library.add(faYoutube, faTwitter, faLinkedin)
 
 export default {
+  computed: {
+    memberPosition () {
+      return this.$t(this.member.position)
+    }
+  },
   props: {
     member: Object
   }
