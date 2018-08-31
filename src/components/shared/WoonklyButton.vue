@@ -1,10 +1,10 @@
 <template>
- <a v-if="href" :href="href" target="_self" v-bind:class="chooseClass">
+ <a v-if="href" :href="href" target="blank" :class="chooseClass">
    <span class="inner-border">
      <slot/>
    </span>
  </a>
- <button v-else v-bind:class="chooseClass">
+ <button v-else :class="chooseClass">
    <span class="inner-border">
      <slot/>
    </span>
@@ -52,6 +52,7 @@ export default {
   border-radius: 3em;
   font-size: 12.5px;
   white-space: nowrap;
+  display: inline-block;
 
   .inner-border {
     border-radius: inherit;
@@ -85,6 +86,7 @@ export default {
   text-decoration: none;
   background: none;
   white-space: nowrap;
+  display: inline-block;
 
   .inner-border {
     background: none;
@@ -119,6 +121,7 @@ export default {
   text-decoration: none;
   background: none;
   white-space: nowrap;
+  display: inline-block;
 
   .inner-border {
     background: none;
