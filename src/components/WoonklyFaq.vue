@@ -132,7 +132,7 @@ export default {
     top: 0;
     line-height: .8;
     left: 0;
-    z-index: 1;
+    z-index: 0 !important;
   }
 }
 

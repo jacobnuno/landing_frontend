@@ -2,11 +2,10 @@
 <section id="error404" class="columns is-multiline is-mobile is-marginless">
   <div id="left" class="column is-6-tablet is-10-mobile is-offset-1-mobile">
     <div id="message">
-      <span id="m1">Ops!</span>
-      <span id="m2">Something is not working right.</span>
-      <span id="m3">Please try again soon.</span>
+      <span id="m1">{{$t('message._404page.oops')}}</span>
+      <p class="has-text-white is-size-4" v-html="$t('message._404page.message')"></p>
       <router-link to="/">
-        <button id="btn" type="button" class="button is-rounded has-text-weight-semibold" name="button">BACK TO HOME</button>
+        <button id="btn" type="button" class="button is-rounded has-text-weight-semibold is-uppercase" name="button">{{$t('message._404page.back')}}</button>
       </router-link>
     </div>
     <img id="bb1_l" src='/img/icons/gradient-circle1.svg'>
@@ -39,6 +38,7 @@ export default {
 
     #message {
       position: absolute;
+      z-index: 1;
       max-width: 308px;
     }
 

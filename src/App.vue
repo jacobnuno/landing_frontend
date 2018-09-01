@@ -2,6 +2,7 @@
   <main id="woonkly">
     <w-header :current-section="currentSection"/>
     <router-view @userEnteredSection="currentSection = $event"/>
+    <w-cookies-banner/>
   </main>
 </template>
 
@@ -9,6 +10,7 @@
 // Parallax library
 import Rellax from 'rellax'
 import wHeader from '@/Header'
+import wCookiesBanner from '@/components/shared/WoonklyCookieBanner'
 
 export default {
   name: 'App',
@@ -18,7 +20,8 @@ export default {
     }
   },
   components: {
-    wHeader
+    wHeader,
+    wCookiesBanner
   },
   mounted () {
     if (window.matchMedia('screen and (min-width: 769px)').matches) {

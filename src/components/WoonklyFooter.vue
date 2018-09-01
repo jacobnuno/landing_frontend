@@ -16,7 +16,7 @@
         <a href="https://github.com/Woonkly" target="_blank">
           <fai :icon="['fab', 'github']" class="icons" />
         </a>
-        <a>
+        <!-- <a>
           <fai :icon="['fab', 'bitcoin']" class="icons" />
         </a>
         <a>
@@ -24,7 +24,7 @@
         </a>
         <a>
           <fai :icon="['fab', 'medium-m']" class="icons" />
-        </a>
+        </a> -->
     </div>
     <div class="w-div">
       <p class="is-size-7-mobile is-size-5-tablet">

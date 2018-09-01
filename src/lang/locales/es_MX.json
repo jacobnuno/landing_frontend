@@ -115,7 +115,8 @@
         "ghaliElKasri": { "position": "Arquitecto de Blockchain" },
         "ghitaElKasri": { "position": "Blockchain financial arquitect" },
         "hassanLahlou": { "position": "Director Matemático de Blockchain" },
-        "woonkzalo": { "position": "Lead Support / Pet / Influencer" }
+        "woonkzalo": { "position": "Lead Support / Pet / Influencer" },
+        "isaiasRamirez": { "position": "Desarrollador" }
     },
     "teamAdvisors": {
         "rodrigoDeLaPena": { "position": "Inversor" },
@@ -276,11 +277,19 @@
     "woonklyTelegramLink": "https://t.me/woonklyes",
     "woonklyEmailSubject": "Contacto Woonkly",
     "emailContent": "<h1>¡Gracias por contactarnos!</h1><hr><p>Pronto nos pondremos en contacto contigo, {name}. Gracias.</p><br><br><small>Woonkly © 2018</small>",
-    "somethingWentWrong": "Algo salió mal, lo sentimos mucho. Por favor intente más tarde, si los errores persisten contacte al personal pertinente, gracias. support@woonkly.com",
+    "somethingWentWrong": "Algo salió mal, lo sentimos mucho. Por favor intente más tarde, si los errores persisten contacte al personal pertinente, gracias. contact@woonkly.com",
     "buyWoonksMessage": [
       "Comprar WNK con 30% de bonus",
       "¡Unete a nuestra ICO!"
     ],
-    "icoHasEnded": "El ICO de Woonkly ha terminado"
+    "icoHasEnded": "El ICO de Woonkly ha terminado",
+    "_404page": {
+      "oops": "¡Ups!",
+      "message": "Algo no esta funcionando bien. <br> Por favor inténtelo pronto.",
+      "back": "Regresar al inicio"
+    },
+    "cookiesUseText": "Woonkly utiliza cookies. Esto nos ayuda a proporcionarle una buena experiencia al navegar por nuestro sitio, así como a mejorarlo. Si continúa navegando, presta su consentimiento para usar nuestras cookies. Nuestra política de privacidad explica cómo cuidamos sus datos personales cuando visita nuestro sitio web y le informa sobre sus derechos de privacidad y cómo la ley lo protege. Para obtener más información, lea nuestra Política sobre cookies.",
+    "readMore": "Leer más...",
+    "whitePaperPdf": "/whitepaper/whitepaper-woonkly-julio-ESP.pdf"
   }
 }

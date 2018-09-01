@@ -115,7 +115,8 @@
         "ghaliElKasri": { "position": "Blockchain Architect" },
         "ghitaElKasri": { "position": "Blockchain Financial Architect" },
         "hassanLahlou": { "position": "Blockchain Mathematician Director" },
-        "woonkzalo": { "position": "Lead Support / Pet / Influencer" }
+        "woonkzalo": { "position": "Lead Support / Pet / Influencer" },
+        "isaiasRamirez": { "position": "Developer" }
     },
     "teamAdvisors": {
         "rodrigoDeLaPena": { "position": "Investor" },
@@ -266,11 +267,19 @@
     "woonklyTelegramLink": "https://t.me/woonklyen",
     "woonklyEmailSubject": "Woonkly Contact",
     "emailContent": "<h1>Thank you for contacting us!</h1><hr><p>Soon will be in touch with you, {name}. ;) </p><br><br><small>Woonkly © 2018</small>",
-    "somethingWentWrong": "Something went wrong, We are so sorry. Please try later, if errors persist contact the relevant personnel, thank you. support@woonkly.com",
+    "somethingWentWrong": "Something went wrong, We are so sorry. Please try later, if errors persist contact the relevant personnel, thank you. contact@woonkly.com",
     "buyWoonksMessage": [
       "Buy WNK with a 30% bonus",
       "Join to our ICO!"
     ],
-    "icoHasEnded": "The Woonkly's ICO has finished"
+    "icoHasEnded": "The Woonkly's ICO has finished",
+    "_404page": {
+      "oops": "Ops!",
+      "message": "Something is not working right. <br> Please try again soon.",
+      "back": "Back to home"
+    },
+    "cookiesUseText": "Woonkly utiliza cookies. Esto nos ayuda a proporcionarle una buena experiencia al navegar por nuestro sitio, así como a mejorarlo. Si continúa navegando, presta su consentimiento para usar nuestras cookies. Nuestra política de privacidad explica cómo cuidamos sus datos personales cuando visita nuestro sitio web y le informa sobre sus derechos de privacidad y cómo la ley lo protege. Para obtener más información, lea nuestra Política sobre cookies.",
+    "readMore": "Read more...",
+    "whitePaperPdf": "/whitepaper/whitepaper-woonkly-julio-ENG.pdf"
   }
 }

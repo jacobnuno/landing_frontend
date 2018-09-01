@@ -47,24 +47,25 @@
 </script>
 
 <style>
+  h1 {
+    text-align: center
+  }
 
-    h1{
-        text-align: center
-    }
-    .text-cookies{
-        padding:            4em 5em;
-        margin-top: 4em;
-        background-color:   var(--woonkly-black-blue);
-        color:              white;
-        text-align:         justify;
-    }
+  .text-cookies {
+    padding: 4em 12px;
+    padding-top: 8em;
+    background-color: var(--woonkly-black-blue);
+    color: white;
+    text-align: justify;
+  }
 
-    .content-wrapper {
-        padding: 0 1em;
-    }
-    .content-wrapper > p {
-        max-width: 500px;
-        margin: 0 auto;
-        margin-bottom: 4em;
-    }
+  .content-wrapper {
+    padding: 0 1em;
+  }
+
+  .content-wrapper>p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+  }
 </style>

@@ -75,6 +75,16 @@ export default {
         if (res.status === 200) {
           form = { name: '', email: '', message: '' }
           console.log('Success!')
+          fetch(`${process.env.VUE_APP_API_URL}/contact-form`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              to: 'contact@woonkly.com',
+              subject: 'New Woonkly Form Submission',
+              type: 'html',
+              content: `Name: ${form.name}<br>Email: ${form.email}<br>Message: ${form.message}`
+            })
+          })
         } else {
           console.log('Something went wrong :(')
           alert(this.$t('message.somethingWentWrong'))
