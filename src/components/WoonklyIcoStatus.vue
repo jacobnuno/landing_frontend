@@ -15,10 +15,11 @@
     </div>
 
     <div class="column has-text-centered">
-      <w-button :buttonClass="'woonkly-button-light-to-dark'" href="//woonkly.com/privateico/login/">{{buttonMsg}}</w-button>
+      <w-button :buttonClass="'woonkly-button-light-to-dark'" href="//woonkly.com/privateico/whitelist-private/">{{buttonMsg}}</w-button>
     </div>
+
     <div class="column has-text-centered">
-      <w-button href="//woonkly.com/whitepaper.pdf">{{$t('message.whitepaperWoonkly')}}</w-button>
+      <w-button :href="$t('message.whitePaperPdf')">{{$t('message.whitepaperWoonkly')}}</w-button>
     </div>
 
     <div class="column is-12 counter-wrapper">

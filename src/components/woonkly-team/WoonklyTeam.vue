@@ -79,6 +79,14 @@ export default {
           }
         },
         {
+          name: 'Isaías Ramírez',
+          position: 'message.teamMembers.isaiasRamirez.position',
+          img: 'isaias.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/ralois/'
+          }
+        },
+        {
           name: 'Jacob Nuño',
           position: 'message.teamMembers.jacobNuno.position',
           img: 'jacob.png',
