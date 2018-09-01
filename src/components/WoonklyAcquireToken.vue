@@ -54,7 +54,7 @@ export default {
     isDone (textTimestamp) {
       textTimestamp = parseInt(textTimestamp)
       let localDate = new Date()
-      let utcDate = Math.floor(localDate.valueOf() / 1000) - (localDate.getTimezoneOffset() * 60)
+      let utcDate = localDate.valueOf()/1000 + localDate.getTimezoneOffset() * 60
       if (textTimestamp > utcDate) {
         allDatesDone++
       }
