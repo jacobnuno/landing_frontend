@@ -26,12 +26,12 @@ export default {
     acceptCookies () {
       this.isOk = true
       // Check if localStorage is defined
-      if (typeof(Storage) === "undefined") return false
+      if (typeof(Storage) === 'undefined') return false
       localStorage.setItem("cookiesAccepted", "true");
     },
     checkLocalStorage () {
       // Check if localStorage is defined
-      if (typeof(Storage) === "undefined") return false
+      if (typeof(Storage) === 'undefined') return false
       
       this.isOk = !!localStorage.getItem("cookiesAccepted")
     }
