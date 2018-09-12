@@ -12,7 +12,7 @@
   <w-allies/>
   <w-faq @currentSectionChanged="changeCurrentSection"/>
   <w-question/>
-  <w-footer/>
+  
 </section>
 </template>
 
@@ -26,14 +26,10 @@ import wTeam from '@/components/woonkly-team/WoonklyTeam'
 import wFaq from '@/components/WoonklyFaq'
 import wBenefits from '@/components/woonkly-benefits/WoonklyBenefits'
 import wQuestion from '@/components/WoonklyQuestion'
-import wFooter from '@/components/WoonklyFooter'
 import wAcToken from '@/components/WoonklyAcquireToken'
 import wDisToken from '@/components/WoonklyDistributionToken'
 import wAllies from '@/components/WoonklyAllies'
 import wRoadmap from '@/components/WoonklyRoadmap'
-
-
-
 
 export default {
   name: 'Home',
@@ -47,7 +43,6 @@ export default {
     wTeam,
     wFaq,
     wQuestion,
-    wFooter,
     wAcToken,
     wRoadmap,
     wDisToken,
