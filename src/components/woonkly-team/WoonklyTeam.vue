@@ -132,7 +132,10 @@ export default {
         {
           name: 'Roberto Medrano',
           position: 'message.teamAdvisors.robertoMedrano.position',
-          img: 'robertomedrano.png'
+          img: 'robertomedrano.png',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/robertomedrano/'
+          }
         },
         {
           name: 'David Leonardo',
@@ -190,7 +193,10 @@ export default {
         {
           name: 'Paul D´Souza',
           position: 'message.teamAdvisors.paulDSouza.position',
-          img: 'pauldsouza.png'
+          img: 'pauldsouza.png',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/pauldsouza/'
+          }
         },
         {
           name: 'Álvaro Santos',
@@ -210,7 +216,7 @@ export default {
           position: 'message.teamAdvisors.javierGarcia.position',
           img: 'javergarcia.png',
           links: {
-            linkedin: 'https://www.linkedin.com/in/javier-garc%C3%ADa-9921a7141/'
+            linkedin: 'https://www.linkedin.com/in/javier-garc%C3%ADa-lemus-9921a7141/'
           }
         },
         {
@@ -221,7 +227,10 @@ export default {
         {
           name: 'Mendy Srugo',
           position: 'message.teamAdvisors.mendySrugo.position',
-          img: 'mendysrugo.png'
+          img: 'mendysrugo.png',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/mendy-srugo-1b7674165/'
+          }
         },
         {
           name: 'David Battaglia',
