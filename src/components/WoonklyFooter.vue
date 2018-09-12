@@ -27,10 +27,10 @@
         </a> -->
     </div>
     <div class="w-div">
-      <p class="is-size-7-mobile is-size-5-tablet">
+      <p class="is-size-7-mobile is-size-5-tablet has-text-white">
           {{ $t('message.copyRight') }}
-          <router-link to="/privacy-policy" id="text-cookies-and-copyrights">{{ $t('message.privacyPolicyLink.title') }}</router-link>
-          <router-link to="/cookies" id="text-cookies-and-copyrights">{{$t('message.cookiesLink.title')}}</router-link>
+          <router-link :to="`/${$route.params.lang}/privacy-policy`" id="text-cookies-and-copyrights">{{ $t('message.privacyPolicyLink.title') }}</router-link>
+          <router-link :to="`/${$route.params.lang}/cookies`" id="text-cookies-and-copyrights">{{$t('message.cookiesLink.title')}}</router-link>
       </p>
     </div>
   </footer>
