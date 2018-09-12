@@ -113,7 +113,7 @@ export default Vue.extend({
 
     #woonkly-roadmap{
         background-color: var(--woonkly-black-blue);
-        background-image: url('/img/backgrounds/BACKGROUND 5_2.png');
+        // background-image: url('/img/backgrounds/BACKGROUND 5_2.png');
         background-position: bottom;
         background-position-y: 650px;
         background-repeat: no-repeat;
