@@ -287,8 +287,9 @@
       "message": "Something is not working right. <br> Please try again soon.",
       "back": "Back to home"
     },
-    "cookiesUseText": "Woonkly utiliza cookies. Esto nos ayuda a proporcionarle una buena experiencia al navegar por nuestro sitio, así como a mejorarlo. Si continúa navegando, presta su consentimiento para usar nuestras cookies. Nuestra política de privacidad explica cómo cuidamos sus datos personales cuando visita nuestro sitio web y le informa sobre sus derechos de privacidad y cómo la ley lo protege. Para obtener más información, lea nuestra Política sobre cookies.",
+    "cookiesUseText": "Woonkly uses cookies. This helps us provide you with a good experience when browsing our site, as well as improving it. If you continue browsing, you consent to use our cookies. Our privacy policy explains how we take care of your personal data when you visit our website and inform you of your privacy rights and how the law protects you. For more information, read our Cookies Policy.",
     "readMore": "Read more...",
-    "whitePaperPdf": "/whitepaper/whitepaper-woonkly-julio-ENG.pdf"
+    "whitePaperPdf": "/whitepaper/whitepaper-woonkly-julio-ENG.pdf",
+    "cookiesDisclaimer": "<h1 class=\"title is-4 has-text-centered\">Disclaimer and cookies.</h1><p>Cookies are small files of numbers and letters that we transfer to your computer's hard drive. Some cookies used on this site are essential and are necessary to ensure that the site works properly, such as maintaining the background image you see on each web page.</p><p>The services contained in this section allow the data controller to monitor and analyze traffic data and are used to track user behavior.</p><p>This website uses Google Analytics and Yandex as a tool to track visits and user behavior on the website. Both are web analysis services. use the personal information collected in order to evaluate the use of the website and prepare reports in order to improve the user experience.</p><p>By accessing and using our website, you accept our use of cookies. If you are not satisfied with the use of cookies, you can disable them by changing the settings of your browser. However, if you disable cookies, certain parts of our site will not be available to you.</p>"
   }
 }
