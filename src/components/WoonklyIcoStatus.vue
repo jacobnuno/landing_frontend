@@ -3,11 +3,11 @@
   <div class="columns is-mobile is-multiline">
 
     <div class="column is-12 has-text-centered phase">
-      <strong v-html="$t('message.icoPhaseBonus', {phase, bonus} )"></strong>
+      <strong v-html="$t(pahseMsgString)"></strong>
     </div>
 
     <div class="column is-12 progress is-marginless">
-      <w-progress :value="95" />
+      <w-progress :value="75" />
     </div>
 
     <div class="column is-12 has-text-centered wonks-sold">
@@ -15,7 +15,7 @@
     </div>
 
     <div class="column has-text-centered">
-      <w-button :buttonClass="'woonkly-button-light-to-dark'" href="//woonkly.com/privateico/whitelist-private/">{{buttonMsg}}</w-button>
+      <w-button :buttonClass="'woonkly-button-light-to-dark'" href="//woonkly.com/privateico/whitelist-private/">{{$t(buttonMsgString)}}</w-button>
     </div>
 
     <div class="column has-text-centered">
@@ -52,7 +52,8 @@ export default {
   data () {
     return {
       time: {},
-      buttonMsg: null,
+      buttonMsgString: null,
+      pahseMsgString: null,
       wnkSold: null,
       phase: 3,
       bonus: 30
@@ -60,11 +61,21 @@ export default {
   },
   methods: {
     setCurrentMessage () {
+      var seasons = [
+      { date: 1525132800000, message: 'message.woonklyPhaseTexts[0]' },
+      { date: 1527811200000, message: 'message.woonklyPhaseTexts[1]' },
+      { date: 1530403200000, message: 'message.woonklyPhaseTexts[2]' },
+      { date: 1535760000000, message: 'message.woonklyPhaseTexts[3]' },
+      { date: 1538352000000, message: 'message.woonklyPhaseTexts[4]' },
+      { date: 1541030400000, message: 'message.woonklyPhaseTexts[5]' },
+      { date: 1546300800000, message: 'message.woonklyPhaseTexts[6]' }
+    ]
+    this.pahseMsgString = determineCurrentMessage(seasons, 'message.woonklyPhaseTexts[6]')
       var messageDates = [
-        { date: 1535760000000, message: this.$t('message.buyWoonksMessage[0]') },
-        { date: 1538352000000, message: this.$t('message.buyWoonksMessage[1]') }
+        { date: 1535760000000, message: 'message.buyWoonksMessage[0]' },
+        { date: 1538352000000, message: 'message.buyWoonksMessage[1]' }
       ]
-      this.buttonMsg = determineCurrentMessage(messageDates, this.$t('message.icoHasEnded'))
+      this.buttonMsgString = determineCurrentMessage(messageDates, this.$t('message.icoHasEnded'))
     },
     getCurrentSoldWoonks () {
       fetch('https://www.woonklypanel.com/woonkly')
@@ -72,7 +83,7 @@ export default {
           if (res.status === 200) {
             return res.json()
           }
-          this.wnkSold = 9827376
+          this.wnkSold = 13976913
         })
         .then(json => {
           this.wnkSold = Math.floor(parseFloat(json.tokens))
@@ -80,9 +91,17 @@ export default {
     }
   },
   mounted () {
+    var timeStamps = [1525132800000,
+      1527811200000,
+      1530403200000,
+      1535760000000,
+      1538352000000,
+      1541030400000,
+      1546300800000
+    ]
     // The first parameter is an array containing all the step dates
     // The second parameter is to update the local time object
-    startTimer([1535760000000, 1538352000000, 1541030400000, 1543622400000], (t) => { this.time = t })
+    startTimer(timeStamps, (t) => { this.time = t })
     this.setCurrentMessage()
     this.getCurrentSoldWoonks()
   },
