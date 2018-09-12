@@ -91,6 +91,15 @@ export default {
   text-align: center;
   position: relative;
 
+  .section {
+    position: relative;
+    z-index: 2500;
+
+    & > div:nth-of-type(1) span {
+      z-index: -1 !important;
+    }
+  }
+
   .w-new-carousel {
     position: relative;
     z-index: 1000;
