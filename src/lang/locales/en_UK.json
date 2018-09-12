@@ -257,7 +257,7 @@
       "yourEmail": "Your email",
       "yourMessage": "Your message"
     },
-    "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV | Privacy Politics |",
+    "copyRight": "Copyright © 2018, Woonkly by Inversión semántica SAPI de CV |",
     "privacyPolicyLink":{
       "title":"Privacy Policy | "
     },
@@ -271,6 +271,15 @@
     "buyWoonksMessage": [
       "Buy WNK with a 30% bonus",
       "Join to our ICO!"
+    ],
+    "woonklyPhaseTexts": [
+      "Stage <span class=\"w-light-blue\">1</span> (55% Bonus)",
+      "Stage <span class=\"w-light-blue\">2</span> (50% Bonus)",
+      "Stage <span class=\"w-light-blue\">3</span> (40% Bonus)",
+      "Stage <span class=\"w-light-blue\">4</span> (30% Bonus)",
+      "Stage <span class=\"w-light-blue\">5</span> (20% Bonus)",
+      "Stage <span class=\"w-light-blue\">6</span> (10% Bonus)",
+      "ICO <span class=\"w-light-blue\">1</span> ETH = 50,000 WNK"
     ],
     "icoHasEnded": "The Woonkly's ICO has finished",
     "_404page": {

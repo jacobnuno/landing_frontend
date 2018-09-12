@@ -282,6 +282,15 @@
       "Comprar WNK con 30% de bonus",
       "¡Unete a nuestra ICO!"
     ],
+    "woonklyPhaseTexts": [
+      "Fase <span class=\"w-light-blue\">1</span> (55% Bonus)",
+      "Fase <span class=\"w-light-blue\">2</span> (50% Bonus)",
+      "Fase <span class=\"w-light-blue\">3</span> (40% Bonus)",
+      "Fase <span class=\"w-light-blue\">4</span> (30% Bonus)",
+      "Fase <span class=\"w-light-blue\">5</span> (20% Bonus)",
+      "Fase <span class=\"w-light-blue\">6</span> (10% Bonus)",
+      "ICO <span class=\"w-light-blue\">1</span> ETH = 50,000 WNK"
+    ],
     "icoHasEnded": "El ICO de Woonkly ha terminado",
     "_404page": {
       "oops": "¡Ups!",
