@@ -1,5 +1,28 @@
 <template>
   <section id="woonkly-atention" class="section">
+    
+    <div class="colum">
+      <div class="column is-12">
+        <w-carousel class="w-new-carousel">
+          <li>
+            <w-rating-element :rating="4" img-url="https://www.invoxfinance.io/images/featuredIn/foxico.png">
+              <span>4.80</span>
+            </w-rating-element>
+          </li>
+          <li>
+            <w-rating-element :rating="3" img-url="https://icoholder.com/assets/app/img/logo_white.svg">
+              <span>3.26</span>
+            </w-rating-element>
+          </li>
+          <li>
+            <w-rating-element :rating="4" img-url="https://www.trackico.io/static/img/partner_logo_white.png">
+              <span>4.80</span>
+            </w-rating-element>
+          </li>
+        </w-carousel>
+      </div>
+    </div>
+
     <div class="columns">
       <div class="column is-12-mobile is-half-tablet atention">
         <img id="woonkly-moon" class="rellax glowing-circle" data-rellax-speed="-0.5" src="/img/icons/gradient-circle-2.svg" alt="Woonkly Moon">
@@ -18,11 +41,15 @@
 
 <script>
 import wVideoFrame from '@/components/shared/WoonklyVideoFrame'
+import wRatingElement from '@/components/shared/WoonklyCarousel/WoonklyRatingElement'
+import wCarousel from '@/components/shared/WoonklyTinyCarousel'
 
 export default {
   name: 'WoonklyAtention',
   components: {
-    wVideoFrame
+    wVideoFrame,
+    wRatingElement,
+    wCarousel
   }
 }
 </script>
