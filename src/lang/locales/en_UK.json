@@ -116,7 +116,9 @@
         "ghitaElKasri": { "position": "Blockchain Financial Architect" },
         "hassanLahlou": { "position": "Blockchain Mathematician Director" },
         "woonkzalo": { "position": "Lead Support / Pet / Influencer" },
-        "isaiasRamirez": { "position": "Developer" }
+        "isaiasRamirez": { "position": "Developer" },
+        "yahirPerez": { "position": "Blockchain Developer" },
+        "enriquePerez": { "position": "Blockchain Developer" }
     },
     "teamAdvisors": {
         "rodrigoDeLaPena": { "position": "Investor" },
@@ -129,7 +131,8 @@
         "mendySrugo": { "position": "Advisor & Investor" },
         "davidBattaglia": { "position": "Advisor" },
         "robertoMedrano": { "position": "Advisor" },
-        "davidLeonardo": { "position": "Dir. de Operaciones" }
+        "davidLeonardo": { "position": "Operation Director" },
+        "ignacioArellano": { "position": "Advisor" }
     },
     "milestonesAndObjectives": "Milestones & Objectives",
     "roadMapMilestones": [

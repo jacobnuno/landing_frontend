@@ -18,24 +18,24 @@
     "attentionValue": "La atención de las personas tiene un valor medible",
     "contentCreators": "Creadores de contenido y anunciantes tienen algo en común. Quieren llegar a su público objetivo y pagarán por hacerlo, pero esta vez, en vez de a agencias y medios, a los usuarios que lo ven.",
     "woonklyWhatIs": "¿Qué es Woonkly?",
-    "woonklyIsTheFirstPlatform": "Woonkly es la primera plataforma que paga a las personas por ver y compartir contenido digital (vídeo, imagen y texto) de diferentes plataformas.",
-    "signUpInWoonkly": "El registro en Woonkly es gratuito tanto para creadores de contenido como para usuarios. Los creadores de contenido pueden enlazar en Woonkly sus vídeos, imágenes o posts de diferentes plataformas de manera gratuita y de esta manera conseguir mayor exposición de los mismos. O si lo desean, pueden pagarle a directamente a su público objetivo usando nuestra criptomoneda “Woonk” y conseguir miles e incluso millones de visualizaciones o interactuaciones en cuestión de horas, minutos o incluso segundos.",
+    "woonklyIsTheFirstPlatform": "Woonkly es la primera plataforma que paga a las personas por ver y compartir contenido digital (video, imagen y texto) de diferentes plataformas.",
+    "signUpInWoonkly": "El registro en Woonkly es gratuito tanto para creadores de contenido como para usuarios. Los creadores de contenido pueden enlazar en Woonkly sus videos, imágenes o posts de diferentes plataformas de manera gratuita y de esta manera conseguir mayor exposición de los mismos. O si lo desean, pueden pagarle a directamente a su público objetivo usando nuestra criptomoneda “Woonk” y conseguir miles e incluso millones de visualizaciones o interactuaciones en cuestión de horas, minutos o incluso segundos.",
     "discoverWoonklyTv": "Descubre Woonkly TV 1.0",
     "contentCreatorsAnyPlatform": "Los creadores de contenido de cualquier plataforma centralizada (Youtube, Vimeo, etc.) o descentralizada (Como el caso de Viuly) y los anunciantes de todo el mundo, tienen al fin una herramienta para alcanzar a su público objetivo de manera casi instantánea y por un costo varias veces inferior a cualquier otro método publicitario. Por otro lado, los usuarios tienen al fin una herramienta que les permite ganar dinero (en criptomonedas) por su tiempo, su atención y su interacción con contenido publicitario que les interesen.",
     "woonklyTvBriefs": [
       "Woonkly nace de la idea de que compartir es la base del éxito. Nuestra filosofía consiste en que todos ganen.",
       "Piénsalo. A nivel internacional la inversión publicitaria anual supera los 600 mil millones de dólares, o 600 billones. Imagina que parte de ese dinero se fuera directamente a las personas que ven esa publicidad. ¿No sería más justo? ¿Más lógico?.",
-      "Eso es Woonkly. La conexión entre el capital que invierten las empresas o artistas en publicidad y las personas que ven los vídeos de dichas empresas o artistas."
+      "Eso es Woonkly. La conexión entre el capital que invierten las empresas o artistas en publicidad y las personas que ven los videos de dichas empresas o artistas."
     ],
     "principalBenefits": "Los beneficios principales para cada grupo son",
     "benefits": [
-      "Gana criptomonedas por ver vídeos.",
+      "Gana criptomonedas por ver videos.",
       "Gana criptomonedas por compartir contenido digital.",
-      "Gana criptomonedas por interactuar con Vídeos, imágenes y post.",
+      "Gana criptomonedas por interactuar con videos, imágenes y post.",
       "Gana criptomonedas por estar conectado a la plataforma."
     ],
     "acquireTokens": "Adquirir Tokens",
-    "withTheObjectiveOf": "Con el objetivo de premiar la atención de las personas cuando ven vídeos o interactúan con el contenido digital , hemos creado nuestra criptomoneda, llamada “Woonk”. Los creadores de contenido y anunciantes pueden comprar Woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial de nuestra criptomoneda:",
+    "withTheObjectiveOf": "Con el objetivo de premiar la atención de las personas cuando ven videos o interactúan con el contenido digital , hemos creado nuestra criptomoneda, llamada “Woonk”. Los creadores de contenido y anunciantes pueden comprar Woonks para repartirlos entre las personas que vean, compartan e interactuen con su contenido. Estas son las fases de la Oferta inicial de nuestra criptomoneda:",
     "acquireTokensFirstList": [
       {
           "title": "1 Mayo - 1 Junio:",
@@ -116,7 +116,9 @@
         "ghitaElKasri": { "position": "Blockchain financial arquitect" },
         "hassanLahlou": { "position": "Director Matemático de Blockchain" },
         "woonkzalo": { "position": "Lead Support / Pet / Influencer" },
-        "isaiasRamirez": { "position": "Desarrollador" }
+        "isaiasRamirez": { "position": "Desarrollador" },
+        "yahirPerez": { "position": "Desarrollador Blockchain" },
+        "enriquePerez": { "position": "Desarrollador Blockchain" }
     },
     "teamAdvisors": {
         "rodrigoDeLaPena": { "position": "Inversor" },
@@ -129,7 +131,8 @@
         "mendySrugo": { "position": "Advisor & Investor" },
         "davidBattaglia": { "position": "Advisor" },
         "robertoMedrano": { "position": "Advisor" },
-        "davidLeonardo": { "position": "Inversor" }
+        "davidLeonardo": { "position": "Inversor" },
+        "ignacioArellano": { "position": "Advisor" }
     },
     "milestonesAndObjectives": "Logros y Objetivos",
     "roadMapMilestones": [
@@ -202,11 +205,11 @@
           },
           {
             "question": "¿Cómo puedo viralizar aun más mi video?",
-            "answer": "Viralizar tu video consiste en vincular tu cuenta o vídeo de Youtube, Vimeo, Viuli... con Woonkly y comprar woonks para repartirlos con las personas que te ven!. Además Puedes contratar el \"Super woonk\". Con él, cada vez que un usuario \"lo cace\" repercutirá sobre seguidores y likes en sus redes sociales. Si un millón de usuarios están viendo su vídeo, ¡Significaría un millón de visitas o likes en tu canal!"
+            "answer": "Viralizar tu video consiste en vincular tu cuenta o video de Youtube, Vimeo, Viuli... con Woonkly y comprar woonks para repartirlos con las personas que te ven!. Además Puedes contratar el \"Super woonk\". Con él, cada vez que un usuario \"lo cace\" repercutirá sobre seguidores y likes en sus redes sociales. Si un millón de usuarios están viendo su video, ¡Significaría un millón de visitas o likes en tu canal!"
           },
           {
-            "question": "¿Cómo sé que han visto mi vídeo?",
-            "answer": "Woonkly tiene un sistema de publicidad medible. Su algoritmo del woonk, permite saber cuánta gente está pendiente del vídeo y evade boots y otros sistemas."
+            "question": "¿Cómo sé que han visto mi video?",
+            "answer": "Woonkly tiene un sistema de publicidad medible. Su algoritmo del woonk, permite saber cuánta gente está pendiente del video y evade boots y otros sistemas."
           },
           {
             "question": "¿Por qué debo subir mi contenido/anuncios a woonkly?",
