@@ -35,7 +35,7 @@ export default {
           position: 'message.teamMembers.mateiAntohi.position',
           img: 'mateantohi.png',
           links: {
-            linkedin: 'https://www.linkedin.com/in/matei-antohi-18950865/'
+            linkedin: 'https://www.linkedin.com/in/matei-antohi-97b08713a/'
           }
         },
         {
@@ -76,6 +76,22 @@ export default {
           img: 'woonkzalo.png',
           links: {
             linkedin: 'https://www.linkedin.com/in/gustavo-adolfo-rueda-enr%C3%ADquez-5873b114a/'
+          }
+        },
+        {
+          name: 'Yhair Perez',
+          position: 'message.teamMembers.yahirPerez.position',
+          img: 'bryan.jpeg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/bryam-yhair-perez-diaz-57098a153/'
+          }
+        },
+        {
+          name: 'Enrique Perez',
+          position: 'message.teamMembers.enriquePerez.position',
+          img: 'enrique.jpg',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/enrique-emmanuel-perez-ramirez-a08b66140/'
           }
         },
         {
@@ -138,12 +154,9 @@ export default {
           }
         },
         {
-          name: 'David Leonardo',
-          position: 'message.teamAdvisors.davidLeonardo.position',
-          img: 'davidleonardo.png',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/davidleonardoc/'
-          }
+          name: 'Ignacio Arellano',
+          position: 'message.teamAdvisors.ignacioArellano.position',
+          img: 'ignacio.jpg'
         },
         {
           name: 'Derek Jones',
@@ -225,18 +238,18 @@ export default {
           img: 'danielmuvdi.png'
         },
         {
-          name: 'Mendy Srugo',
-          position: 'message.teamAdvisors.mendySrugo.position',
-          img: 'mendysrugo.png',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/mendy-srugo-1b7674165/'
-          }
-        },
-        {
           name: 'David Battaglia',
           position: 'message.teamAdvisors.davidBattaglia.position',
           img: 'davidbattaglia.png'
-        }
+        },
+        {
+          name: 'David Leonardo',
+          position: 'message.teamAdvisors.davidLeonardo.position',
+          img: 'davidleonardo.png',
+          links: {
+            linkedin: 'https://www.linkedin.com/in/davidleonardoc/'
+          }
+        },
       ]
     }
   },
