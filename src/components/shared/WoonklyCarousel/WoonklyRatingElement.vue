@@ -80,7 +80,7 @@ export default {
     border-radius: .3em;
     margin: 1em 0 1em 10%;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   .bar {
