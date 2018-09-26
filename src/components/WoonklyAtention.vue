@@ -5,19 +5,46 @@
       <div class="column is-12">
         <w-carousel class="w-new-carousel">
           <li>
-            <w-rating-element :rating="4" img-url="https://www.invoxfinance.io/images/featuredIn/foxico.png">
-              <span>4.80</span>
-            </w-rating-element>
+            <a href="https://foxico.io/project/woonkly" target="_blank">
+              <w-rating-element :rating="4" img-url="https://www.invoxfinance.io/images/featuredIn/foxico.png">
+                <span>4.80</span>
+              </w-rating-element>
+            </a>
           </li>
           <li>
-            <w-rating-element :rating="3" img-url="https://icoholder.com/assets/app/img/logo_white.svg">
-              <span>3.26</span>
-            </w-rating-element>
+            <a href="https://icoholder.com/en/woonkly-ico-23874" target="_blank">
+              <w-rating-element :rating="3" img-url="https://icoholder.com/assets/app/img/logo_white.svg">
+                <span>3.26</span>
+              </w-rating-element>
+            </a>
           </li>
           <li>
-            <w-rating-element :rating="4" img-url="https://www.trackico.io/static/img/partner_logo_white.png">
-              <span>4.80</span>
-            </w-rating-element>
+            <a href="https://www.trackico.io/ico/woonkly/" target="_blank">
+              <w-rating-element :rating="4" img-url="https://www.trackico.io/static/img/partner_logo_white.png">
+                <span>4.80</span>
+              </w-rating-element>
+            </a>
+          </li>
+          <li>
+            <a href="https://foxico.io/project/woonkly" target="_blank">
+              <w-rating-element :rating="4" img-url="https://www.invoxfinance.io/images/featuredIn/foxico.png">
+                <span>4.80</span>
+              </w-rating-element>
+            </a>
+          </li>
+          <li>
+            <a href="https://icoholder.com/en/woonkly-ico-23874" target="_blank">
+              <w-rating-element :rating="3" img-url="https://icoholder.com/assets/app/img/logo_white.svg">
+                <span>3.26</span>
+              </w-rating-element>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.trackico.io/ico/woonkly/" target="_blank">
+              <w-rating-element :rating="4" img-url="https://www.trackico.io/static/img/partner_logo_white.png">
+                <span>4.80</span>
+              </w-rating-element>
+            </a>
           </li>
         </w-carousel>
       </div>
