@@ -13,6 +13,9 @@
       <figure>
         <img id="unitedcoin" src="/img/icons/unitedcoin.png" alt="United Coin">
       </figure>
+      <figure>
+        <img id="xstrata" src="/img/icons/xstrata.png" alt="Xstrata">
+      </figure>
       <!-- <span class="is-size-1-desktop is-size-5-mobile has-text-centered is-uppercase">{{$t('message.seenOn')}}</span>
       <div class="black-line"></div> -->
       <!-- static images  -->
@@ -109,6 +112,9 @@ export default {
   #bef-logo {
     max-width: 40%;
   }
+  #xstrata {
+    max-width: 60%;
+  }
 }
 
 // changes the css properties if the size of the screen is equal or bigger than a tablet
@@ -145,6 +151,11 @@ export default {
       bottom: -2%;
       width: 20em;
       right: -10em;
+    }
+
+    #xstrata {
+      max-width: 25%;
+      margin-bottom: 2em;
     }
   }
 }
