@@ -6,17 +6,9 @@ import PrivacyPolicy from './components/WoonklyPrivacyPolicy.vue'
 import Cookies from './components/WoonklyCookies.vue'
 import NotFound from './components/NotFound404.vue'
 // Change lang function
-import { loadLanguageAsync } from '@/lang'
+import { loadLanguageAsync, determineLanguage } from '@/lang'
 
 Vue.use(Router)
-
-var determineLanguage = function (lang) {
-  if (lang.includes('en')) {
-    return { simple: 'en', i18n: 'en_UK' }
-  } else if(lang.includes('es')) {
-    return { simple: 'es', i18n: 'es_MX' }
-  } else return { simple: 'en', i18n: 'en_UK' }
-}
 
 const router = new Router({
   routes: [

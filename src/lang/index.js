@@ -40,3 +40,11 @@ export function loadLanguageAsync (lang) {
   }
   return Promise.resolve(lang)
 }
+
+export var determineLanguage = function (lang) {
+  if (lang.includes('en')) {
+    return { simple: 'en', i18n: 'en_UK' }
+  } else if(lang.includes('es')) {
+    return { simple: 'es', i18n: 'es_MX' }
+  } else return { simple: 'en', i18n: 'en_UK' }
+}
