@@ -8,8 +8,8 @@
 </template>
 
 <script>
+import { loadLanguageAsync, determineLanguage } from '@/lang'
 import vClickOutside from 'v-click-outside'
-import { loadLanguageAsync } from '@/lang'
 
 export default {
   name: 'WoonklylanguageSelector',
@@ -35,7 +35,8 @@ export default {
     changeLanguage (lang) {
       this.isListVisible = false
       this.selectedLanguage = lang
-      loadLanguageAsync(lang.locale)
+      var routeLang = determineLanguage(lang.locale)
+      this.$router.push({ name: 'home', params: { lang: routeLang.simple }})
     },
     closeOptions () {
       if (this.isListVisible) {
@@ -44,7 +45,11 @@ export default {
     }
   },
   mounted () {
-    this.selectedLanguage = this.languages[0]
+    if (this.$route.params.lang == 'es') {
+      this.selectedLanguage = this.languages[0]
+    } else {
+      this.selectedLanguage = this.languages[1]
+    }
   },
   directives: {
     clickOutside: vClickOutside.directive
