@@ -15,7 +15,7 @@
     </div>
 
     <div class="column has-text-centered">
-      <w-button :buttonClass="'woonkly-button-light-to-dark'" href="//woonkly.com/privateico/whitelist-private/">{{$t(buttonMsgString)}}</w-button>
+      <w-button :buttonClass="'woonkly-button-light-to-dark'" href="//woonkly.com/privateico/whitelist-private/">Woonkly ICO</w-button>
     </div>
 
     <div class="column has-text-centered">
@@ -75,6 +75,7 @@ export default {
         { date: 1535760000000, message: 'message.buyWoonksMessage[0]' },
         { date: 1538352000000, message: 'message.buyWoonksMessage[1]' }
       ]
+      // TODO: Resolve this hardcoded string
       this.buttonMsgString = determineCurrentMessage(messageDates, this.$t('message.icoHasEnded'))
     },
     getCurrentSoldWoonks () {
@@ -91,7 +92,8 @@ export default {
     }
   },
   mounted () {
-    var timeStamps = [1525132800000,
+    var timeStamps = [
+      1525132800000,
       1527811200000,
       1530403200000,
       1535760000000,

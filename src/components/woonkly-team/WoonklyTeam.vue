@@ -236,20 +236,12 @@ export default {
           name: 'Daniel Muvdi',
           position: 'message.teamAdvisors.danielMuvdi.position',
           img: 'danielmuvdi.png'
-        },
-        {
-          name: 'David Battaglia',
-          position: 'message.teamAdvisors.davidBattaglia.position',
-          img: 'davidbattaglia.png'
-        },
-        {
-          name: 'David Leonardo',
-          position: 'message.teamAdvisors.davidLeonardo.position',
-          img: 'davidleonardo.png',
-          links: {
-            linkedin: 'https://www.linkedin.com/in/davidleonardoc/'
-          }
-        },
+        }
+        // {
+        //   name: 'David Battaglia',
+        //   position: 'message.teamAdvisors.davidBattaglia.position',
+        //   img: 'davidbattaglia.png'
+        // }
       ]
     }
   },
