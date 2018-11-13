@@ -29,7 +29,7 @@
           <div class="column is-5 is-12-mobile is-4-tablet buttons">
             <w-button :buttonClass="'woonkly-button-opacity-to-light'" :href="'https://woonkly.com/privateico/whitelist-private/'">{{ $t('message.menu.buttonBuy') }}</w-button>
             <w-button :href="'https://woonkly.com/tv11/'">{{ $t('message.menu.buttonFaucet') }}</w-button>
-            <w-button :href="'https://woonkly.com/privateico/login/'">{{ $t('message.menu.buttonLogin') }}</w-button>
+            <w-button :href="'https://woonkly.com/workingonit/index.html'">{{ $t('message.menu.buttonLogin') }}</w-button>
           </div>
 
           <nav class="column is-12-mobile is-5-tablet navigation">
