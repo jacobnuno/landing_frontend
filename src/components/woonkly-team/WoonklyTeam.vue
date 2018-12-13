@@ -231,12 +231,12 @@ export default {
           links: {
             linkedin: 'https://www.linkedin.com/in/javier-garc%C3%ADa-lemus-9921a7141/'
           }
-        },
-        {
-          name: 'Daniel Muvdi',
-          position: 'message.teamAdvisors.danielMuvdi.position',
-          img: 'danielmuvdi.png'
         }
+        // {
+        //   name: 'Daniel Muvdi',
+        //   position: 'message.teamAdvisors.danielMuvdi.position',
+        //   img: 'danielmuvdi.png'
+        // }
         // {
         //   name: 'David Battaglia',
         //   position: 'message.teamAdvisors.davidBattaglia.position',
