@@ -2,10 +2,13 @@
 <section id="woonkly-ico-status" class="section">
   <div class="columns is-mobile is-multiline">
 
+      
     <div class="column is-12 has-text-centered phase">
-      <strong v-html="$t(pahseMsgString)"></strong>
+      <!--<strong v-html="$t(pahseMsgString)"></strong>-->
+      <strong id="end_of_ico">{{$t('message.endOfICO.title')}}</strong>
+      <span id="time_left_to_beta">{{$t('message.endOfICO.timeLeftToBeta')}}</span>
     </div>
-
+    <!--
     <div class="column is-12 progress is-marginless">
       <w-progress :value="75" />
     </div>
@@ -21,6 +24,7 @@
     <div class="column has-text-centered">
       <w-button :href="$t('message.whitePaperPdf')">{{$t('message.whitepaperWoonkly')}}</w-button>
     </div>
+    -->
 
     <div class="column is-12 counter-wrapper">
       <div class="spark-container">
@@ -99,7 +103,8 @@ export default {
       1535760000000,
       1538352000000,
       1541030400000,
-      1546300800000
+      1546300800000,
+      1551398400000
     ]
     // The first parameter is an array containing all the step dates
     // The second parameter is to update the local time object
@@ -123,6 +128,17 @@ export default {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
   // background: #06062c
+
+  #end_of_ico{
+    display:inline-block;
+    font-size: 1.5em;
+  }
+
+  #time_left_to_beta{
+    margin-top: 1em;
+    display:inline-block;
+    font-size: 1.3em;
+  }
 
   .phase {
     strong {

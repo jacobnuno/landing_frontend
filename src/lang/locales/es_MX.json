@@ -2,13 +2,17 @@
   "message": {
     "menu": {
       "project": "Proyecto",
-      "tokens": "Tokens",
+      "distribution": "Distribución",
       "objectives": "Objetivos",
       "team": "Equipo",
       "faqs": "FAQs",
       "buttonBuy": "Comprar",
       "buttonFaucet": "Faucet Beta",
       "buttonLogin": "Entrar"
+    },
+    "endOfICO":{
+      "title":"¡La ICO ha terminado!",
+      "timeLeftToBeta":"Woonkly Beta estará disponible en:"
     },
     "earnMoney": "Gana criptomonedas por ver, compartir e interactuar con contenido digital",
     "connectingCreators": "Conectando creadores de contenido, anunciantes y personas de la mejor forma posible.",
@@ -167,7 +171,7 @@
         "description": "Preparación de ICO."
       },
       { "title": "Enero 2019",
-        "description": "Finaliza la ICO y el \"woonk\" es listado en exchanges."
+        "description": "Finaliza la ICO."
       },
       { "title": "Marzo 2019",
         "description": "Comienza la Pre-venta de tokens y se lanza la versión beta 1.0."

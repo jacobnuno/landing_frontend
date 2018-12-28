@@ -23,13 +23,21 @@ import wAtention from '@/components/WoonklyAtention'
 import wWhatIs from '@/components/WoonklyWhat'
 import wTv from '@/components/WoonklyTv'
 import wTeam from '@/components/woonkly-team/WoonklyTeam'
-import wFaq from '@/components/WoonklyFaq'
 import wBenefits from '@/components/woonkly-benefits/WoonklyBenefits'
 import wQuestion from '@/components/WoonklyQuestion'
-import wAcToken from '@/components/WoonklyAcquireToken'
 import wDisToken from '@/components/WoonklyDistributionToken'
 import wAllies from '@/components/WoonklyAllies'
 import wRoadmap from '@/components/WoonklyRoadmap'
+
+/*---REMOVED BECAUSE ICO ENDED--*/
+/*---
+  If you want to restore one of this
+  component, add it to the components
+  down below
+
+  import wFaq from '@/components/WoonklyFaq'
+  import wAcToken from '@/components/WoonklyAcquireToken'
+---*/ 
 
 export default {
   name: 'Home',
@@ -38,12 +46,9 @@ export default {
     wAtention,
     wWhatIs,
     wTv,
-    wFaq,
     wBenefits,
     wTeam,
-    wFaq,
     wQuestion,
-    wAcToken,
     wRoadmap,
     wDisToken,
     wAllies

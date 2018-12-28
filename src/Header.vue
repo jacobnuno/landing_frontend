@@ -27,9 +27,12 @@
             <w-language-selector/>
           </div>
           <div class="column is-5 is-12-mobile is-4-tablet buttons">
+            <!-- REMOVED BECAUSE ICO ENDED
             <w-button :buttonClass="'woonkly-button-opacity-to-light'" :href="'https://woonkly.com/privateico/whitelist-private/'">{{ $t('message.menu.buttonBuy') }}</w-button>
             <w-button :href="'https://woonkly.com/tv11/'">{{ $t('message.menu.buttonFaucet') }}</w-button>
+            -->
             <w-button :href="'https://woonkly.com/privateico/login/'">{{ $t('message.menu.buttonLogin') }}</w-button>
+            
           </div>
 
           <nav class="column is-12-mobile is-5-tablet navigation">
@@ -38,7 +41,7 @@
                 <a href="" v-scroll-to="{ el: '#woonkly-description', onDone: closeMenu }">{{ $t('message.menu.project') }}</a>
               </li>
               <li :class="{'selected':currentSection == 'WoonklyDistributionToken'}">
-                <a href="" v-scroll-to="{ el: '#woonkly-dis-token', onDone: closeMenu }">{{ $t('message.menu.tokens') }}</a>
+                <a href="" v-scroll-to="{ el: '#woonkly-dis-token', onDone: closeMenu }">{{ $t('message.menu.distribution') }}</a>
               </li>
               <li :class="{'selected':currentSection == 'WoonklyRoadmap'}">
                 <a href="" v-scroll-to="{ el: '#woonkly-roadmap', onDone: closeMenu }">{{ $t('message.menu.objectives') }}</a>
@@ -46,9 +49,11 @@
               <li :class="{'selected':currentSection == 'WoonklyTeam'}">
                 <a href="" v-scroll-to="{ el: '#woonkly-team', onDone: closeMenu }">{{ $t('message.menu.team') }}</a>
               </li>
+              <!-- REMOVED BECAUSE ICO ENDED
               <li :class="{'selected':currentSection == 'WoonklyFaq'}">
                 <a href="" v-scroll-to="{ el: '#woonkly-faq', onDone: closeMenu }">{{ $t('message.menu.faqs') }}</a>
               </li>
+              -->
             </ul>
           </nav>
         </div>
